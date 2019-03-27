@@ -44644,6 +44644,41 @@ map.on('load', function(e) {
     }
   });
 
+  map.addSource("conservacion", {
+  "type": "vector",
+  "url": "mapbox://helden9.cjtrooin40lb0efn3kr4ad4o3-064rk"
+  });
+
+  map.addLayer({
+    "id": "preservacion",
+    "type": "fill",
+    "source": "conservacion",
+    "source-layer": "conservacion_poel_2014",
+    "layout":{
+      "visibility":"none"
+    },
+    "paint": {
+      "fill-color": "#fff3cd",
+      "fill-opacity": ["case",
+      ["boolean", ["feature-state", "click"], false],
+      1,
+      0.5
+      ]
+  }
+  });
+
+  map.addLayer({
+    "id":"conservacion_lineas",
+    "type":"line",
+    "source": "conservacion",
+    "source-layer": "conservacion_poel_2014",
+    "layout":{
+      "visibility":"none"
+    },
+    "paint":{
+      "line-color":"#856404"
+    }
+  });
 
 
 
