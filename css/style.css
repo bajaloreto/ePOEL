@@ -1,0 +1,88 @@
+
+#menu_principal{
+  font-family: Helvetica Neue;
+  font-size: 15px;
+  position: absolute;
+width: 16.3%;
+height: 90%;
+z-index: 10;
+background: white;
+border: 1px solid rgba(0, 0, 0, 0.25);
+border-radius: 3px;
+overflow-y: auto;
+overflow-x: auto;
+
+}
+
+
+#capas_base{
+  position: absolute;
+  width: 15%;
+  z-index: 10;
+  background: white;
+
+  bottom: 1.9%;
+  left: 85%;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+
+#map{
+  width: 100%;
+  height: 100%;
+  border-left: 1px solid #fff;
+  position: absolute;
+
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+
+.map {
+
+}
+
+.pad2 {
+
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+#navegacion{
+  position: relative;
+  z-index: 80;
+  margin-right: 0px;
+
+}
+.menu{
+  margin-right: 0px;
+
+}
+
+#logo{
+  background-color:#033848;
+}
+
+.card{
+background-color:#BFBFBF;
+}
+.activo{
+  background-color:#1C7CD5;
+  
+}
+ul.list-unstyled > li{
+  font-family: Helvetica Neue;
+  font-size: 13px;
+}
+.nav-link, .fa-bars{
+  color:white;
+}
+.item{
+  cursor: pointer;
+}
+#ugas-politica{
+  display: none;
+}
