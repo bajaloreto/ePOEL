@@ -38,7 +38,7 @@
   <a class="nav-link active" href="#">INICIO</a>
   <a class="nav-link" href="#">BITACORA</a>
 
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu_principal" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<button id="toggle_principal" class="" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
 <i class="fas fa-info-circle"></i>
 </button>
 </nav>
@@ -71991,6 +71991,13 @@ $(document).ready(function(){
 
     }
   });
+
+$("#toggle_principal").click(function(){
+  $("#menu_principal").fadeToggle();
+
+});
+
+
 
 });
 
