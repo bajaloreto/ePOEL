@@ -86,3 +86,8 @@ ul.list-unstyled > li{
 #ugas-politica{
   display: none;
 }
+.form-check {
+    position: relative;
+    display: block;
+    padding-left: 2.25rem;
+}
