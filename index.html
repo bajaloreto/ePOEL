@@ -71718,7 +71718,7 @@ map.on('click', function (e) {
 
   //  var markerHeight = -25, markerRadius = 25, linearOffset = 100;
 
-document.getElementById("datos").innerHTML ='<h3> Nombre:'+features[0].properties.nombre+'</h3>' +'<p>Actividad:' + features[0].properties.clasificacion + '</p>'+'<p>Localidad:' + features[0].properties.localidad + '</p>'+'<p>Superficie total:' + features[0].properties.superficie_total  + '</p>' +'<p>Poblacion:' + features[0].properties.poblacion + '</p>'  +'<p>Conflictos potenciales' + features[0].properties.conflictos_potenciales + '</p>'  +'<p>Politica ambiental' + features[0].properties.politica_ambiental + '</p>';
+document.getElementById("datos").innerHTML ='<h3>'+clickedListing.properties.nombre+' </h3> <ul class="list-group"> <li class="list-group-item"> Localidad de Referencia: '+clickedListing.properties.localidad_referencia+'</li>  <ul class="list-group"> <li class="list-group-item"> Superficie Total: '+clickedListing.properties.superficie_total+' Ha </li> <ul class="list-group"> <li class="list-group-item"> Poblacion: '+clickedListing.properties.poblacion+'</li> <li class="list-group-item"> Actividad: '+clickedListing.properties.actividad+'</li><li class="list-group-item"> Politica Ambiental: '+clickedListing.properties.politica_ambiental+'</li> <li class="list-group-item"> Fragilidad: '+clickedListing.properties.fragilidad+'</li> <li class="list-group-item"> Vulnerabilidad: '+clickedListing.properties.vulnerabilidad+'</li> <li class="list-group-item"> Presion: '+clickedListing.properties.presion+'</li> <li class="list-group-item"> Conflictos Potenciales: '+clickedListing.properties.conflictos_potenciales+'</li> <li class="list-group-item"> Ficha Completa: <a href="assets/pdf/3 Unidades de Gestion Ambiental/'+link+'.pdf" target="_blank"> PDF </a> </ul>';
 $("#ugas-politica").css("display","none");
 });
 
@@ -71820,7 +71820,7 @@ listing.removeChild(listing.lastChild);
       }
       this.parentNode.classList.add('active');
       var link =clickedListing.properties.nombre.substring(4);
-      
+
       document.getElementById("datos").innerHTML = '<h3>'+clickedListing.properties.nombre+' </h3> <ul class="list-group"> <li class="list-group-item"> Localidad de Referencia: '+clickedListing.properties.localidad_referencia+'</li>  <ul class="list-group"> <li class="list-group-item"> Superficie Total: '+clickedListing.properties.superficie_total+' Ha </li> <ul class="list-group"> <li class="list-group-item"> Poblacion: '+clickedListing.properties.poblacion+'</li> <li class="list-group-item"> Actividad: '+clickedListing.properties.actividad+'</li><li class="list-group-item"> Politica Ambiental: '+clickedListing.properties.politica_ambiental+'</li> <li class="list-group-item"> Fragilidad: '+clickedListing.properties.fragilidad+'</li> <li class="list-group-item"> Vulnerabilidad: '+clickedListing.properties.vulnerabilidad+'</li> <li class="list-group-item"> Presion: '+clickedListing.properties.presion+'</li> <li class="list-group-item"> Conflictos Potenciales: '+clickedListing.properties.conflictos_potenciales+'</li> <li class="list-group-item"> Ficha Completa: <a href="assets/pdf/3 Unidades de Gestion Ambiental/'+link+'.pdf" target="_blank"> PDF </a> </ul>';
 
     });
@@ -71905,7 +71905,7 @@ $(document).ready(function(){
     $("#diagnostico,#propuesta").collapse('hide');
       $("#diagnostico-card,#propuesta-card").removeClass("activo");
     });
-    $("input[type=radio]").on('change',function(){
+    $("input[type=radio]").on('click',function(){
 
       var radio= this.id;
     switch (radio) {
