@@ -71721,7 +71721,7 @@ alert(features[0].properties.nombre);
 var link =features[0].properties.nombre.substring(4);
 document.getElementById("datos").innerHTML ='<h3>'+features[0].properties.nombre+' </h3> <ul class="list-group"> <li class="list-group-item"> Localidad de Referencia: '+features[0].properties.localidad_referencia+'</li>  <ul class="list-group"> <li class="list-group-item"> Superficie Total: '+features[0].properties.superficie_total+' Ha </li> <ul class="list-group"> <li class="list-group-item"> Poblacion: '+features[0].properties.poblacion+'</li> <li class="list-group-item"> Actividad: '+features[0].properties.actividad+'</li><li class="list-group-item"> Politica Ambiental: '+features[0].properties.politica_ambiental+'</li> <li class="list-group-item"> Fragilidad: '+features[0].properties.fragilidad+'</li> <li class="list-group-item"> Vulnerabilidad: '+features[0].properties.vulnerabilidad+'</li> <li class="list-group-item"> Presion: '+features[0].properties.presion+'</li> <li class="list-group-item"> Conflictos Potenciales: '+features[0].properties.conflictos_potenciales+'</li> <li class="list-group-item"> Ficha Completa: <a href="assets/pdf/3 Unidades de Gestion Ambiental/'+link+'.pdf" target="_blank"> PDF </a> </ul>';
 $("#ugas-politica").css("display","none");
-$("#datos").css("display","inherit");
+$("#datos").css("display","initial");
 });
 
 map.on('mousemove',function (e) {
