@@ -71712,7 +71712,7 @@ map.on('click', function (e) {
     var clickedListing = map.queryRenderedFeatures(e.point, {
  layers: ['aprovechamiento-sustentable','preservacion', 'conservacion','restauracion']
  });
-  if (!features.length) {
+  if (!clickedListing.length) {
  return;
  }
 
