@@ -71698,14 +71698,14 @@ map.setFeatureState({source: 'aprovechamiento_sustentable',sourceLayer:'aprovech
 //map.setFeatureState({source: 'aprovechamiento_sustentable',sourceLayer:'aprovechamiento_sustentable',id: hoveredStateId}, { click: true});
 }
 });
-*/
+
 map.on("mouseleave", "aprovechamiento-sustentable", function() {
 if (hoveredStateId) {
 map.setFeatureState({source: 'aprovechamiento_sustentable',sourceLayer:'aprovechamiento-sustentable', id: hoveredStateId}, { click: false});
 }
 hoveredStateId =  null;
 });
-
+*/
 
 map.on('click', function (e) {
     var features = map.queryRenderedFeatures(e.point, {
