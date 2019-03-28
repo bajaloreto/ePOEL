@@ -71906,7 +71906,7 @@ $(document).ready(function(){
       $("#diagnostico-card,#propuesta-card").removeClass("activo");
     });
     $("input[type=radio]").on('click',function(){
-
+      $("#datos").css("display","none")
       var radio= this.id;
     switch (radio) {
       case "aprovechamiento_sustentable":{
