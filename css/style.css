@@ -91,6 +91,6 @@ ul.list-unstyled > li{
     display: block;
     padding-left: 2.25rem;
 }
-nav{
+.nav{
   line-height: 3;
 }
