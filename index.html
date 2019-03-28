@@ -71662,7 +71662,7 @@ map.on('load', function(e) {
       "visibility":"none"
     },
     "paint": {
-      "fill-color": "#d1ecf1",
+      "fill-color": "#f8d7da",
       "fill-opacity": ["case",
       ["boolean", ["feature-state", "click"], false],
       1,
@@ -71680,13 +71680,13 @@ map.on('load', function(e) {
       "visibility":"none"
     },
     "paint":{
-      "line-color":"#0c5460"
+      "line-color":"#721c24"
     }
   });
 
 
 });
-
+/*
 map.on("click", "aprovechamiento-sustentable", function(e) {
 if (e.features.length > 0) {
   hoveredStateId = e.features[0].id;
@@ -71698,6 +71698,7 @@ map.setFeatureState({source: 'aprovechamiento_sustentable',sourceLayer:'aprovech
 //map.setFeatureState({source: 'aprovechamiento_sustentable',sourceLayer:'aprovechamiento_sustentable',id: hoveredStateId}, { click: true});
 }
 });
+*/
 map.on("mouseleave", "aprovechamiento-sustentable", function() {
 if (hoveredStateId) {
 map.setFeatureState({source: 'aprovechamiento_sustentable',sourceLayer:'aprovechamiento-sustentable', id: hoveredStateId}, { click: false});
@@ -71708,7 +71709,7 @@ hoveredStateId =  null;
 
 map.on('click', function (e) {
     var features = map.queryRenderedFeatures(e.point, {
- layers: ['aprovechamiento-sustentable']
+ layers: ['aprovechamiento-sustentable','preservacion', 'conservacion','restauracion']
  });
   if (!features.length) {
  return;
@@ -71722,7 +71723,7 @@ document.getElementById("datos").innerHTML ='<h3> Nombre:'+features[0].propertie
 
 map.on('mousemove',function (e) {
     var features = map.queryRenderedFeatures(e.point, {
- layers: ['aprovechamiento-sustentable']
+ layers: ['aprovechamiento-sustentable','preservacion', 'conservacion','restauracion']
  });
 
 
