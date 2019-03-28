@@ -77,7 +77,7 @@ ul.list-unstyled > li{
   font-family: Helvetica Neue;
   font-size: 13px;
 }
-.nav-link, .fa-bars{
+.nav-link, .fa-bars,.fa-info-circle{
   color:white;
 }
 .item{
