@@ -71820,7 +71820,8 @@ listing.removeChild(listing.lastChild);
       }
       this.parentNode.classList.add('active');
 
-      document.getElementById("datos").innerHTML ='<h3> Nombre:'+clickedListing.properties.nombre+'</h3>' +'<p>Actividad:' + clickedListing.properties.clasificacion + '</p>'+'<p>Localidad:' + clickedListing.properties.localidad + '</p>'+'<p>Superficie total:' + clickedListing.properties.superficie_total  + '</p>' +'<p>Poblacion:' + clickedListing.properties.poblacion + '</p>'  +'<p>Conflictos potenciales' + clickedListing.properties.conflictos_potenciales + '</p>'  +'<p>Politica ambiental' + clickedListing.properties.politica_ambiental + '</p>';
+      document.getElementById("datos").innerHTML = '<h3>'+clickedListing.properties.nombre+' </h3> <ul class="list-group"> <li class="list-group-item"> Localidad de Referencia: '+clickedListing.properties.localidad_referencia+'</li>  <ul class="list-group"> <li class="list-group-item"> Superficie Total: '+clickedListing.properties.superficie_total+' Ha </li> <ul class="list-group"> <li class="list-group-item"> Poblacion: '+clickedListing.properties.poblacion+'</li> <li class="list-group-item"> Actividad: '+clickedListing.properties.actividad+'</li><li class="list-group-item"> Politica Ambiental: '+clickedListing.properties.politica_ambiental+'</li> <li class="list-group-item"> Fragilidad: '+clickedListing.properties.fragilidad+'</li> <li class="list-group-item"> Vulnerabilidad: '+clickedListing.properties.vulnerabilidad+'</li> <li class="list-group-item"> Presion: '+clickedListing.properties.presion+'</li> <li class="list-group-item"> Conflictos Potenciales: '+clickedListing.properties.conflictos_potenciales+'</li> </ul>';
+
     });
     var link = listing.appendChild(document.createElement('td'));
     link.href = '#';
