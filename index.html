@@ -186,12 +186,22 @@
 
 </div>
 
+
+
+<div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
+
 </body>
 
 
 
 <script type="text/javascript">
-
+$('#myModal').modal('show');
 mapboxgl.accessToken = 'pk.eyJ1IjoiaGVsZGVuOSIsImEiOiJjam54Z2sxankweDEyM3ZuZGd1OGV2b2NsIn0.xuzmd6tEA2f6lgJYLfW_VQ';
 // This adds the map to your page
 var map = new mapboxgl.Map({
