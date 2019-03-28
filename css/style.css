@@ -94,3 +94,6 @@ ul.list-unstyled > li{
 .nav{
   line-height: 3;
 }
+#myModal{
+  background-color: #260C0C;
+}
