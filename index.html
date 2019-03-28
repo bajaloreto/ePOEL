@@ -71719,7 +71719,7 @@ map.on('click', function (e) {
   //  var markerHeight = -25, markerRadius = 25, linearOffset = 100;
 
 document.getElementById("datos").innerHTML ='<h3> Nombre:'+features[0].properties.nombre+'</h3>' +'<p>Actividad:' + features[0].properties.clasificacion + '</p>'+'<p>Localidad:' + features[0].properties.localidad + '</p>'+'<p>Superficie total:' + features[0].properties.superficie_total  + '</p>' +'<p>Poblacion:' + features[0].properties.poblacion + '</p>'  +'<p>Conflictos potenciales' + features[0].properties.conflictos_potenciales + '</p>'  +'<p>Politica ambiental' + features[0].properties.politica_ambiental + '</p>';
-
+$("#ugas-politica").css("display","none");
 });
 
 map.on('mousemove',function (e) {
