@@ -96,10 +96,10 @@
       <li class="">
         <input type="checkbox" id="Division_Ejidal" name="" value=""> <label for="">Division Ejidal</label> </a>
         <div id="Division_Ejidal_colapsable" class="collapse">
-          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="asentamientos_humanos"> <label class="form-check-label" for="asentamientos_humanos">Asentamientos humanos</label></div>
-          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="zona_parcelaria"> <label class="form-check-label" for="zona_parcelaria">Zona parcelaria</label></div>
-          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="tierras_uso_comun"> <label class="form-check-label" for="tierras_uso_comun">Tierras uso común</label></div>
-          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="limies_perimetrales"> <label class="form-check-label" for="limies_perimetrales">Limites perimetrales</label></div>
+          <div class="form-check"> <input class="form-check-input" name="Division_Ejidal" type="checkbox" value="" id="asentamientos_humanos"> <label class="form-check-label" for="asentamientos_humanos">Asentamientos humanos</label></div>
+          <div class="form-check"> <input class="form-check-input" name="Division_Ejidal"  type="checkbox" value="" id="zona_parcelaria"> <label class="form-check-label" for="zona_parcelaria">Zona parcelaria</label></div>
+          <div class="form-check"> <input class="form-check-input" name="Division_Ejidal"  type="checkbox" value="" id="tierras_uso_comun"> <label class="form-check-label" for="tierras_uso_comun">Tierras uso común</label></div>
+          <div class="form-check"> <input class="form-check-input" name="Division_Ejidal"  type="checkbox" value="" id="limies_perimetrales"> <label class="form-check-label" for="limies_perimetrales">Limites perimetrales</label></div>
         </div>
       </li>
       <li class="">
@@ -735,12 +735,14 @@
 
       });
 
-      var bandera=false;
+      var banderaI=false, banderaDE=false;
+
       $("#infraestructura").click(function() {
 
         if (bandera) {
           $("#infrestructura_colapsable").collapse('hide');
           $("input[name='infraestructura']").prop("checked",false);
+          $("#infraestructura").prop("indeterminate", false);
           map.setLayoutProperty('localidades', 'visibility', 'none');
           map.setLayoutProperty('vialidades', 'visibility', 'none');
           map.setLayoutProperty('unidades-economicas', 'visibility', 'none');
@@ -760,6 +762,25 @@
       $("#Division_Ejidal").click(function() {
 
         $("#Division_Ejidal_colapsable").collapse('toggle');
+
+                if (banderaDE) {
+                  $("#Division_Ejidal_colapsable").collapse('hide');
+                  $("input[name='Division_Ejidal']").prop("checked",false);
+                    $("#Division_Ejidal").prop("indeterminate", false);
+                  map.setLayoutProperty('asentamiento_humanos', 'visibility', 'none');
+                  map.setLayoutProperty('zona_parcelaria', 'visibility', 'none');
+                  map.setLayoutProperty('tierras_uso_comun', 'visibility', 'none');
+                  banderaDE=false;
+                }
+                else{
+                  $("#Division_Ejidal_colapsable").collapse('show');
+                  $("input[name='infraestructura']").prop("checked",true);
+                  $("#Division_Ejidal").prop("indeterminate", true);
+                  map.setLayoutProperty('asentamiento_humanos', 'visibility', 'visible');
+                  map.setLayoutProperty('zona_parcelaria', 'visibility', 'visible');
+                  map.setLayoutProperty('tierras_uso_comun', 'visibility', 'visible');
+                  banderaDE=true;
+                }
 
       });
       $("#Geografia").click(function() {
@@ -816,6 +837,44 @@
 
       });
 
+      ///
+
+      ///
+      //
+      ///
+
+      $("#asentamientos_humanos").on('change',function() {
+
+          if (map.getLayoutProperty('asentamiento_humanos', 'visibility')=='visible') {
+              map.setLayoutProperty('asentamiento_humanos', 'visibility', 'none');
+          }
+          else{
+              map.setLayoutProperty('asentamiento_humanos', 'visibility', 'visible');
+          }
+
+      });
+
+      $("#zona_parcelaria").on('change',function() {
+
+          if (map.getLayoutProperty('zona_parcelaria', 'visibility')=='visible') {
+              map.setLayoutProperty('zona_parcelaria', 'visibility', 'none');
+          }
+          else{
+              map.setLayoutProperty('zona_parcelaria', 'visibility', 'visible');
+          }
+
+      });
+
+      $("#tierras_uso_comun").on('change',function() {
+
+          if (map.getLayoutProperty('tierras_uso_comun', 'visibility')=='visible') {
+              map.setLayoutProperty('tierras_uso_comun', 'visibility', 'none');
+          }
+          else{
+              map.setLayoutProperty('tierras_uso_comun', 'visibility', 'visible');
+          }
+
+      });
     });
   </script>
 
