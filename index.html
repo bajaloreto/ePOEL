@@ -65,10 +65,10 @@
           <div id="collapse4" class="panel-collapse collapse">
 
             <ul class="list-unstyled">
-              <a data-toggle="collapse" href="#"><input type="checkbox" name="" value="">  <label for="">Infrestructura</label> </a>
+            <input type="checkbox" id="infraestructura" name="" value="">  <label for="">Infrestructura</label> </a>
               <li class="">
 
-                <div id="infrestructura"class="collapse">
+                <div id="infrestructura_colapsable"class="collapse">
 
 
                   <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Loalidad</label></div>
@@ -648,6 +648,11 @@ $(document).ready(function(){
 $("#toggle_principal").click(function(){
 
   $("#menu_principal").fadeToggle();
+
+});
+$("#infraestructura").click(function(){
+
+  $("#infrestructura_colapsable").collapse('toggle');
 
 });
 
