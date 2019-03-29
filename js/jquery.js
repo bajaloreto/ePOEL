@@ -2,6 +2,7 @@
 <script>
 
 $(document).ready(function(){
+  $('#myModal').modal('show');
   $("#diagnostico-card").click(function(){
     if ($("#diagnostico-card").hasClass( "activo" )) {
       $("#diagnostico-card").removeClass("activo");
