@@ -776,7 +776,7 @@
 
       });
 
-      $("#localidad]").on('change',function() {
+      $("#localidad").on('change',function() {
 
           if (map.getLayoutProperty('localidades', 'visibility')=='visible') {
               map.setLayoutProperty('localidades', 'visibility', 'none');
@@ -786,6 +786,18 @@
           }
 
       });
+
+      $("#vialidades").on('change',function() {
+
+          if (map.getLayoutProperty('vialidades', 'visibility')=='visible') {
+              map.setLayoutProperty('vialidades', 'visibility', 'none');
+          }
+          else{
+              map.setLayoutProperty('vialidades', 'visibility', 'visible');
+          }
+
+      });
+
 
     });
   </script>
