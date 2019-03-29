@@ -739,7 +739,7 @@
       $("#infraestructura").click(function() {
 
         if (bandera) {
-          $("#infrestructura_colapsable").collapse('toggle');
+          $("#infrestructura_colapsable").collapse('hide');
           $("input[name='infraestructura']").prop("checked",false);
           map.setLayoutProperty('localidades', 'visibility', 'none');
           map.setLayoutProperty('vialidades', 'visibility', 'none');
@@ -747,7 +747,7 @@
           bandera=false;
         }
         else{
-          $("#infrestructura_colapsable").collapse('toggle');
+          $("#infrestructura_colapsable").collapse('show');
           $("input[name='infraestructura']").prop("checked",true);
           $("#infraestructura").prop("indeterminate", true);
           map.setLayoutProperty('localidades', 'visibility', 'visible');
