@@ -735,6 +735,7 @@
 
       });
       $("#infraestructura").click(function() {
+        alert($("#infraestructura").prop("indeterminate"));
         if ($("#infraestructura").prop("indeterminate")) {
           $("#infrestructura_colapsable").collapse('toggle');
           $("input[name='infraestructura']").prop("checked",false);
