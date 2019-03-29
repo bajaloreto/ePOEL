@@ -738,7 +738,11 @@
 
         $("#infrestructura_colapsable").collapse('toggle');
         $("input[name='infraestructura']").prop("checked",true);
+              $("#infraestructura").prop("interminate",true);
+        map.setLayoutProperty('localidades', 'visibility', 'visible');
 
+        map.setLayoutProperty('vialidades', 'visibility', 'visible');
+        map.setLayoutProperty('unidades-economicas', 'visibility', 'visible');
       });
       $("#Division_Ejidal").click(function() {
 
