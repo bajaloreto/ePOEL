@@ -15,7 +15,7 @@ overflow-x: auto;
 }
 
 
-.panel-collapse{
+#capas_base{
   position: absolute;
   width: 15%;
   z-index: 10;
