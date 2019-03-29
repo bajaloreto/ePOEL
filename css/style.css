@@ -111,6 +111,7 @@ ul.list-unstyled > li{
 }
 .modal-content{
   background-color: #48556670;
+  color: white;
 }
 .card-header{
   background-color: #1C7CD5;
