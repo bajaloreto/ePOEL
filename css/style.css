@@ -20,11 +20,13 @@ overflow-x: auto;
   width: 15%;
   z-index: 10;
   background: white;
-
+height: 65%;
   bottom: 1.9%;
   left: 85%;
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 3px;
+  overflow-y: auto;
+  overflow-x: auto;
 }
 
 #acercaDe{
