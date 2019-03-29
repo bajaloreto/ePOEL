@@ -115,3 +115,7 @@ ul.list-unstyled > li{
 .card-header{
   background-color: #1C7CD5;
 }
+
+.dropdown-menu{
+  transform: translate3d(-44px, 64px, 0px);
+}
