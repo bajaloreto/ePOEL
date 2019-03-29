@@ -1,4 +1,4 @@
-<script type="text/javascript">
+
 var aprovechaminto_sustentable= {
   "type": "FeatureCollection",
   "features": [
@@ -71355,4 +71355,3 @@ var restauracion={
     ]
 
 }
-</script>
