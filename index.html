@@ -766,8 +766,14 @@
 
 
       $("#localidad").on('change',function() {
-          alert(map.getLayoutProperty('localidades', 'visibility'));
-          map.setLayoutProperty('localidades', 'visibility', 'visible');
+
+          if (map.getLayoutProperty('localidades', 'visibility')=='visible') {
+              map.setLayoutProperty('localidades', 'visibility', 'none');
+          }
+          else{
+              map.setLayoutProperty('localidades', 'visibility', 'visible');
+          }
+          
       });
 
 
