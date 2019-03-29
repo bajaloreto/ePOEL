@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>POEL</title>
-<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>POEL</title>
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
 
-<script type="text/javascript" src="js/variablesgeojsons.js"></script>
+  <script type="text/javascript" src="js/variablesgeojsons.js"></script>
 
 
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
 <body>
   <div id="navegacion" class="row clearfix h-25">
     <div id="logo" class="col-sm-2 ">
-      <a class="" >
-         <img class="img-fluid" src="assets/EAL_Logo.png" style="width:80%;height:80%;"  alt="">
+      <a class="">
+        <img class="img-fluid" src="assets/EAL_Logo.png" style="width:80%;height:80%;" alt="">
 
-       </a>
+      </a>
 
     </div>
 
     <div class="col-sm-10 " style="background-color:#1C7CD5">
       <nav class="nav justify-content-end">
-        <button id="toggle_principal"  class="navbar-toggler" type="button"  data-target="" >
-     <i class="fas fa-bars"></i>
-   </button>
+        <button id="toggle_principal" class="navbar-toggler" type="button" data-target="">
+          <i class="fas fa-bars"></i>
+        </button>
 
-      <a class="nav-link" href="#">Programa de Ordenamiento Ecologico Terriorial de Loreto B.C.S.</a>
+        <a class="nav-link" href="#">Programa de Ordenamiento Ecologico Terriorial de Loreto B.C.S.</a>
 
 
-  <a id="inicio" class="nav-link active" href="#">INICIO</a>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Otros</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Bitácora Ambiental</a>
-      <a class="dropdown-item" href="#">PSDUL</a>
-      <a class="dropdown-item" href="#">Loretoideal</a>
+        <a id="inicio" class="nav-link active" href="#">INICIO</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Otros</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Bitácora Ambiental</a>
+            <a class="dropdown-item" href="#">PSDUL</a>
+            <a class="dropdown-item" href="#">Loretoideal</a>
 
-  </li>
+        </li>
 
-<button id="acerca_de" class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
-<i class="fas fa-info-circle"></i>
-</button>
-</nav>
+        <button id="acerca_de" class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
+          <i class="fas fa-info-circle"></i>
+        </button>
+      </nav>
 
-</div>
+    </div>
 
   </div>
 
@@ -64,150 +65,154 @@
 
 
     <a data-toggle="collapse" href="#collapse4">
-          <div class="card">
-            <p class="">
-            Capas de Soporte<i class="fas fa-angle-down"></i>
-            </p></a>
-          </div>
-
-          <div id="collapse4" class="panel-collapse collapse">
-
-            <ul class="list-unstyled">
-            <input type="checkbox" id="infraestructura" name="" value="">  <label for="">Infrestructura</label> </a>
-              <li class="">
-
-                <div id="infrestructura_colapsable"class="collapse">
-
-
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Loalidad</label></div>
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Vialidades</label></div>
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Unidades Económicas</label></div>
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Red Eléctrica</label></div>
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Red Hidráulica</label></div>
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Red Comunicaciones</label></div>
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Red sanitaria</label></div>
-
-      </div>
-
-              </li>
-
-              <li class="">
-                <input type="checkbox" id="Division_Ejidal" name="" value="">  <label for="">Division Ejidal</label> </a>
-                <div id="Division_Ejidal_colapsable"class="collapse">
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Asentamientos humanos</label></div>
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Zona parcelaria</label></div>
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Tierras uso común</label></div>
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Limites perimetrales</label></div>
-                </div>
-              </li>
-              <li class="">
-                <input type="checkbox" id="Geografia" name="" value="">  <label for="">Geografia</label> </a>
-                <div id="Geografia_colapsable"class="collapse">
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Cuencas hidrológicas</label></div>
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Aguas subterráneas</label></div>
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Parque Nacional Bahia de Loreto (PNBL)</label></div>
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Area de Influencia del PNBL</label></div>
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Humedales</label></div>
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Division politica municipal</label></div>
-                </div>
-              </li>
-              <li class="">
-                <input type="checkbox" id="Plan_Sub_regional_Desarrollo_Urbano" name="" value="">  <label for="">Plan Sub-regional Desarrollo Urbano</label> </a>
-                <div id="Plan_Sub_regional_Desarrollo_Urbano_colapsable"class="collapse">
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Area Limite</label></div>
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Subcuenca Limite </label></div>
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Zona Canadas </label></div>
-
-                </div>
-              </li>
-              <li class="">
-                <input type="checkbox" id="Mineria" name="" value="">  <label for="">Minería</label> </a>
-                <div id="Mineria_colapsable"class="collapse">
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Concesiones Vigentes</label></div>
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Concesiones Canceladas</label></div>
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Asignaciones-Falta</label></div>
-                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Prospección Azure-Falta</label></div>
-                </div>
-              </li>
-
-
-
-            </ul>
-
-</div>
-
-
-          </div>
+      <div class="card">
+        <p class="">
+          Capas de Soporte<i class="fas fa-angle-down"></i>
+        </p>
+    </a>
   </div>
 
-<div id="menu_principal" class="collapse show ">
+  <div id="collapse4" class="panel-collapse collapse">
 
-  <div id="" class="row menu">
-    <div class="col-sm-12">
+    <ul class="list-unstyled">
+      <input type="checkbox" id="infraestructura" name="" value=""> <label for="">Infrestructura</label> </a>
+      <li class="">
+
+        <div id="infrestructura_colapsable" class="collapse">
+
+
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Loalidad</label></div>
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Vialidades</label></div>
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Unidades Económicas</label></div>
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Red Eléctrica</label></div>
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Red Hidráulica</label></div>
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Red Comunicaciones</label></div>
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Red sanitaria</label></div>
+
+        </div>
+
+      </li>
+
+      <li class="">
+        <input type="checkbox" id="Division_Ejidal" name="" value=""> <label for="">Division Ejidal</label> </a>
+        <div id="Division_Ejidal_colapsable" class="collapse">
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Asentamientos humanos</label></div>
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Zona parcelaria</label></div>
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Tierras uso común</label></div>
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Limites perimetrales</label></div>
+        </div>
+      </li>
+      <li class="">
+        <input type="checkbox" id="Geografia" name="" value=""> <label for="">Geografia</label> </a>
+        <div id="Geografia_colapsable" class="collapse">
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Cuencas hidrológicas</label></div>
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Aguas subterráneas</label></div>
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Parque Nacional Bahia de Loreto (PNBL)</label></div>
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Area de Influencia del PNBL</label></div>
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Humedales</label></div>
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Division politica municipal</label></div>
+        </div>
+      </li>
+      <li class="">
+        <input type="checkbox" id="Plan_Sub_regional_Desarrollo_Urbano" name="" value=""> <label for="">Plan Sub-regional Desarrollo Urbano</label> </a>
+        <div id="Plan_Sub_regional_Desarrollo_Urbano_colapsable" class="collapse">
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Area Limite</label></div>
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Subcuenca Limite </label></div>
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Zona Canadas </label></div>
+
+        </div>
+      </li>
+      <li class="">
+        <input type="checkbox" id="Mineria" name="" value=""> <label for="">Minería</label> </a>
+        <div id="Mineria_colapsable" class="collapse">
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Concesiones Vigentes</label></div>
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Concesiones Canceladas</label></div>
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Asignaciones-Falta</label></div>
+          <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <label class="form-check-label" for="defaultCheck1">Prospección Azure-Falta</label></div>
+        </div>
+      </li>
 
 
 
-<a  data-toggle="collapse" href="">
-      <div id="diagnostico-card" class="card">
-        <p class="">
-          Diagnostico / Pronóstico <i class="fas fa-angle-down"></i>
-        </p></a>
+    </ul>
+
+  </div>
+
+
+  </div>
+  </div>
+
+  <div id="menu_principal" class="collapse show ">
+
+    <div id="" class="row menu">
+      <div class="col-sm-12">
+
+
+
+        <a data-toggle="collapse" href="">
+          <div id="diagnostico-card" class="card">
+            <p class="">
+              Diagnostico / Pronóstico <i class="fas fa-angle-down"></i>
+            </p>
+        </a>
       </div>
-      <div id="diagnostico"  class="panel-collapse collapse">
+      <div id="diagnostico" class="panel-collapse collapse">
         <ul class="list-unstyled">
-          <li>Introduccion<a href="pdf/1 Introduccion.pdf" target="_blank"> PDF</a>  </li>
+          <li>Introduccion<a href="pdf/1 Introduccion.pdf" target="_blank"> PDF</a> </li>
           <li>Características Físicas <a href="#"> PDF</a> </li>
           <li>Poblacion <a href="#"> PDF</a> </li>
           <li>Analisis de Aptitud<a href="#"> PDF</a> </li>
           <li>Regionalización <a href="#"> PDF</a> </li>
           <li>Pronóstico <a href="#"> PDF</a> </li>
 
-</ul>
+        </ul>
       </div>
-<a  data-toggle="collapse" href="">
-      <div id="propuesta-card"  class="card">
-        <p class="">
-          Propuesta <i class="fas fa-angle-down"></i>
-        </p></a>
-      </div>
-      <div id="propuesta" class="panel-collapse collapse">
-        <ul class="list-unstyled">
-          <li>Definición<a href="#"> PDF</a>  </li>
-          <li>Politicas Ambientales <a href="#"> PDF</a> </li>
-          <li>Lineamientos Ecológicos <a href="#"> PDF</a> </li>
-          <li>Estrateias Ecológicas<a href="#"> PDF</a> </li>
-          <li>Criterios de Regulacion Ecológica<a href="#"> PDF</a> </li>
-
-
-</ul>
-      </div>
-      <a   data-toggle="collapse" href="">
-            <div id="ugas-card" class="card">
-              <p class="">
-                Unidades de Gestión Ambiental <i class="fas fa-angle-down"></i>
-              </p></a>
-            </div>
-            <div id="ugas" class="panel-collapse collapse">
-              <div class="radio">
- <p class="alert-success"> Aprovechamiento Sustentatable <input id="aprovechamiento_sustentable" type="radio" name="optradio"autocomplete="off" ></p>
-</div>
-<div class="radio">
-<p class="alert-warning">Preservación <input type="radio" id="preservacion" name="optradio" autocomplete="off" ></p>
-</div>
-<div class="radio">
-<p class="alert-info">Conservación <input type="radio" id="conservacion" name="optradio" autocomplete="off"></p>
-</div>
-<div class="radio">
-<p class="alert-danger">Restauración <input type="radio" id="restauracion" name="optradio" autocomplete="off" ></p>
-</div>
-            </div>
-</div>
-
-
-
-
-
+      <a data-toggle="collapse" href="">
+        <div id="propuesta-card" class="card">
+          <p class="">
+            Propuesta <i class="fas fa-angle-down"></i>
+          </p>
+      </a>
     </div>
+    <div id="propuesta" class="panel-collapse collapse">
+      <ul class="list-unstyled">
+        <li>Definición<a href="#"> PDF</a> </li>
+        <li>Politicas Ambientales <a href="#"> PDF</a> </li>
+        <li>Lineamientos Ecológicos <a href="#"> PDF</a> </li>
+        <li>Estrateias Ecológicas<a href="#"> PDF</a> </li>
+        <li>Criterios de Regulacion Ecológica<a href="#"> PDF</a> </li>
+
+
+      </ul>
+    </div>
+    <a data-toggle="collapse" href="">
+      <div id="ugas-card" class="card">
+        <p class="">
+          Unidades de Gestión Ambiental <i class="fas fa-angle-down"></i>
+        </p>
+    </a>
+  </div>
+  <div id="ugas" class="panel-collapse collapse">
+    <div class="radio">
+      <p class="alert-success"> Aprovechamiento Sustentatable <input id="aprovechamiento_sustentable" type="radio" name="optradio" autocomplete="off"></p>
+    </div>
+    <div class="radio">
+      <p class="alert-warning">Preservación <input type="radio" id="preservacion" name="optradio" autocomplete="off"></p>
+    </div>
+    <div class="radio">
+      <p class="alert-info">Conservación <input type="radio" id="conservacion" name="optradio" autocomplete="off"></p>
+    </div>
+    <div class="radio">
+      <p class="alert-danger">Restauración <input type="radio" id="restauracion" name="optradio" autocomplete="off"></p>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+  </div>
 
 
   <div id="ugas-politica" class="row menu">
@@ -227,528 +232,539 @@
 
   </div>
   <div class="row">
-      <div id="datos" class="col-sm-12" display="none">
+    <div id="datos" class="col-sm-12" display="none">
 
-      </div>
+    </div>
   </div>
-</div>
+  </div>
 
-<div id="map" class="map pad2">
+  <div id="map" class="map pad2">
 
-</div>
+  </div>
 
 
 
-<div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  <div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div id="acercaDe" class="">
-  <div class="card text-center">
-  <div class="card-header">
-  <h4>Acerca de</h4>
+  <div id="acercaDe" class="">
+    <div class="card text-center">
+      <div class="card-header">
+        <h4>Acerca de</h4>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">CartoMinMex</h5>
+        <p class="card-text">CartoMinMex es un Sistema de consulta gratuita y de carácter público, elaborado por la Dirección General de Minas, Subdirección de Cartografía, con información relativa al catastro minero mexicano constituido en una
+          primera etapa por la Cartografía Minera y su Registro Público.
+
+          Fue diseñado especialmente para el sector minero y público en general, permite constatar el carácter libre de los lotes que sean objeto de solicitudes de concesión o de asignación minera, conocer la delimitación y ubicación de lotes
+          amparados por concesiones, asignaciones y reservas mineras, ya sean vigentes o canceladas, así como de solicitudes de concesiones o asignaciones en trámite.
+
+        </p>
+        <a href="#" class="btn btn-primary">Introducción a CartoMinMex</a>
+        <p>Versión del Portal: 1.2</p>
+      </div>
+    </div>
   </div>
-  <div class="card-body">
-    <h5 class="card-title">CartoMinMex</h5>
-    <p class="card-text">CartoMinMex es un Sistema de consulta gratuita y de carácter público, elaborado por la Dirección General de Minas, Subdirección de Cartografía, con información relativa al catastro minero mexicano constituido en una primera etapa por la Cartografía Minera y su Registro Público.
 
-Fue diseñado especialmente para el sector minero y público en general, permite constatar el carácter libre de los lotes que sean objeto de solicitudes de concesión o de asignación minera, conocer la delimitación y ubicación de lotes amparados por concesiones, asignaciones y reservas mineras, ya sean vigentes o canceladas, así como de solicitudes de concesiones o asignaciones en trámite.
 
-</p>
-    <a href="#" class="btn btn-primary">Introducción a CartoMinMex</a>
-    <p>Versión del Portal: 1.2</p>
-  </div>
-</div>
-</div>
 
-
-
-<script type="text/javascript">
-
-
-mapboxgl.accessToken = 'pk.eyJ1IjoiaGVsZGVuOSIsImEiOiJjam54Z2sxankweDEyM3ZuZGd1OGV2b2NsIn0.xuzmd6tEA2f6lgJYLfW_VQ';
-// This adds the map to your page
-var map = new mapboxgl.Map({
-// container id specified in the HTML
-container: 'map',
-// style URL
-style: 'mapbox://styles/helden9/cjtkd5bsp2ura1fo2g5hrwfkw',
-// initial position in [lon, lat] format
-center: [ -111.348502,26.011936],
-// initial zoom
-zoom: 10,
-bearing: -100
-});
-var hoveredStateId =  null;
-
-map.on('load', function(e) {
-
-  map.addSource("aprovechamiento_sustentable", {
-  "type": "vector",
-  "url": "mapbox://helden9.cjtronjo20l8ae5o4agw8et3k-8trxr"
-  });
-
-  map.addLayer({
-    "id": "aprovechamiento-sustentable",
-    "type": "fill",
-    "source": "aprovechamiento_sustentable",
-    "source-layer": "aprovechamiento_sustentable_poel",
-    "layout":{
-      "visibility":"none"
-    },
-    "paint": {
-      "fill-color": "#d4edda",
-      "fill-opacity": ["case",
-      ["boolean", ["feature-state", "click"], false],
-      1,
-      0.5
-      ]
-  }
-});
-
-  map.addLayer({
-    "id":"aprovechamiento_sustentable_lineas",
-    "type":"line",
-    "source": "aprovechamiento_sustentable",
-    "source-layer": "aprovechamiento_sustentable_poel",
-    "layout":{
-      "visibility":"none"
-    },
-    "paint":{
-      "line-color":"#155724"
-    }
-  });
-
-  map.addSource("preservacion", {
-  "type": "vector",
-  "url": "mapbox://helden9.cjtropb4h02rh2xmutx2w0rtw-6jw2b"
-  });
-
-  map.addLayer({
-    "id": "preservacion",
-    "type": "fill",
-    "source": "preservacion",
-    "source-layer": "preservacion_poel_2014",
-    "layout":{
-      "visibility":"none"
-    },
-    "paint": {
-      "fill-color": "#fff3cd",
-      "fill-opacity": ["case",
-      ["boolean", ["feature-state", "click"], false],
-      1,
-      0.5
-      ]
-  }
-  });
-
-  map.addLayer({
-    "id":"preservacion_lineas",
-    "type":"line",
-    "source": "preservacion",
-    "source-layer": "preservacion_poel_2014",
-    "layout":{
-      "visibility":"none"
-    },
-    "paint":{
-      "line-color":"#856404"
-    }
-  });
-
-  map.addSource("conservacion", {
-  "type": "vector",
-  "url": "mapbox://helden9.cjtrooin40lb0efn3kr4ad4o3-064rk"
-  });
-
-  map.addLayer({
-    "id": "conservacion",
-    "type": "fill",
-    "source": "conservacion",
-    "source-layer": "conservacion_poel_2014",
-    "layout":{
-      "visibility":"none"
-    },
-    "paint": {
-      "fill-color": "#d1ecf1",
-      "fill-opacity": ["case",
-      ["boolean", ["feature-state", "click"], false],
-      1,
-      0.5
-      ]
-  }
-  });
-
-  map.addLayer({
-    "id":"conservacion_lineas",
-    "type":"line",
-    "source": "conservacion",
-    "source-layer": "conservacion_poel_2014",
-    "layout":{
-      "visibility":"none"
-    },
-    "paint":{
-      "line-color":"#0c5460"
-    }
-  });
-
-  map.addSource("restauracion", {
-  "type": "vector",
-  "url": "mapbox://helden9.cjtropxcj0l6k26qq3tsi9k6t-4jyxa"
-  });
-
-  map.addLayer({
-    "id": "restauracion",
-    "type": "fill",
-    "source": "restauracion",
-    "source-layer": "restauracion_poel_2014",
-    "layout":{
-      "visibility":"none"
-    },
-    "paint": {
-      "fill-color": "#f8d7da",
-      "fill-opacity": ["case",
-      ["boolean", ["feature-state", "click"], false],
-      1,
-      0.5
-      ]
-  }
-  });
-
-  map.addLayer({
-    "id":"restauracion_lineas",
-    "type":"line",
-    "source": "restauracion",
-    "source-layer": "restauracion_poel_2014",
-    "layout":{
-      "visibility":"none"
-    },
-    "paint":{
-      "line-color":"#721c24"
-    }
-  });
-
-
-});
-/*
-map.on("click", "aprovechamiento-sustentable", function(e) {
-if (e.features.length > 0) {
-  hoveredStateId = e.features[0].id;
-  alert(hoveredStateId);
-if (hoveredStateId) {
-map.setFeatureState({source: 'aprovechamiento_sustentable',sourceLayer:'aprovechamiento-sustentable', id: hoveredStateId}, { click: true});
-}
-
-//map.setFeatureState({source: 'aprovechamiento_sustentable',sourceLayer:'aprovechamiento_sustentable',id: hoveredStateId}, { click: true});
-}
-});
-
-map.on("mouseleave", "aprovechamiento-sustentable", function() {
-if (hoveredStateId) {
-map.setFeatureState({source: 'aprovechamiento_sustentable',sourceLayer:'aprovechamiento-sustentable', id: hoveredStateId}, { click: false});
-}
-hoveredStateId =  null;
-});
-*/
-
-map.on('click', function (e) {
-    var features = map.queryRenderedFeatures(e.point, {
- layers: ['aprovechamiento-sustentable','preservacion', 'conservacion','restauracion']
- });
-  if (!features.length) {
- return;
- }
-
-  //  var markerHeight = -25, markerRadius = 25, linearOffset = 100;
-
-var link =features[0].properties.nombre.substring(4);
-document.getElementById("datos").innerHTML ='<h3>'+features[0].properties.nombre+' </h3> <ul class="list-group"> <li class="list-group-item"> Localidad de Referencia: '+features[0].properties.localidad_referencia+'</li>  <ul class="list-group"> <li class="list-group-item"> Superficie Total: '+features[0].properties.superficie_total+' Ha </li> <ul class="list-group"> <li class="list-group-item"> Poblacion: '+features[0].properties.poblacion+'</li> <li class="list-group-item"> Actividad: '+features[0].properties.actividad+'</li><li class="list-group-item"> Politica Ambiental: '+features[0].properties.politica_ambiental+'</li> <li class="list-group-item"> Fragilidad: '+features[0].properties.fragilidad+'</li> <li class="list-group-item"> Vulnerabilidad: '+features[0].properties.vulnerabilidad+'</li> <li class="list-group-item"> Presion: '+features[0].properties.presion+'</li> <li class="list-group-item"> Conflictos Potenciales: '+features[0].properties.conflictos_potenciales+'</li> <li class="list-group-item"> Ficha Completa: <a href="assets/pdf/3 Unidades de Gestion Ambiental/'+link+'.pdf" target="_blank"> PDF </a> </ul>';
-$("#ugas-politica").css("display","none");
-$("#datos").css("display","initial");
-});
-
-map.on('mousemove',function (e) {
-    var features = map.queryRenderedFeatures(e.point, {
- layers: ['aprovechamiento-sustentable','preservacion', 'conservacion','restauracion']
- });
-
-
-    if (features.length > 0) {
- //use the following code to change the
- //cursor to a pointer ('pointer') instead of the default ('')
- map.getCanvas().style.cursor = (features[0].properties.Name !== null) ? 'pointer' : '';
- }
- //if there are no points under our mouse,
- //then change the cursor back to the default
- else {
- map.getCanvas().style.cursor = '';
- }
-
-
-});
-
-var link = $('.checkbox');
-for (var i = 0; i < link.length; i++) {
-
-
-link[i].onclick = function (e) {
-var clickedLayer = this.id;
-
-
-var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
-
-if (visibility === 'visible') {
-map.setLayoutProperty(clickedLayer, 'visibility', 'none');
-
-
-} else {
-
-map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
-
-}
-};
-}
-
-
-
-
-
-function buildLocationList(data) {
-
-var listing = document.getElementById('tabla_ugas');
-while (listing.lastChild) {
-listing.removeChild(listing.lastChild);
-}
-// Iterate through the list of stores
-  for (i = 0; i < data.features.length; i++) {
-    var currentFeature = data.features[i];
-    // Shorten data.feature.properties to just `prop` so we're not
-    // writing this long form over and over again.
-    var prop = currentFeature.properties;
-    // Select the listing container in the HTML and append a div
-    // with the class 'item' for each store
-
-
-
-
- listing = document.getElementById('tabla_ugas');
-     listing = listing.appendChild(document.createElement('tr'));
-
-    listing.className = 'item';
-    listing.id = 'listing-' + i;
-
-    // Create a new link with the class 'title' for each store
-    // and fill it with the store address
-
-  listing.dataPosition = i;
-
-
-    // Create a new div with the class 'details' for each store
-    // and fill it with the city and phone number
-
-
-
-
-
-      listing.addEventListener('click', function(e) {
-        // Update the currentFeature to the store associated with the clicked link
-        var clickedListing = data.features[this.dataPosition];
-
-      // 1. Fly to the point associated with the clicked link
-      flyToStore(clickedListing);
-      // 2. Close all other popups and display popup for clicked store
-
-      // 3. Highlight listing in sidebar (and remove highlight for all other listings)
-      var activeItem = document.getElementsByClassName('active');
-      if (activeItem[0]) {
-        activeItem[0].classList.remove('active');
-      }
-      this.parentNode.classList.add('active');
-      var link =clickedListing.properties.nombre.substring(4);
-
-      document.getElementById("datos").innerHTML = '<h3>'+clickedListing.properties.nombre+' </h3> <ul class="list-group"> <li class="list-group-item"> Localidad de Referencia: '+clickedListing.properties.localidad_referencia+'</li>  <ul class="list-group"> <li class="list-group-item"> Superficie Total: '+clickedListing.properties.superficie_total+' Ha </li> <ul class="list-group"> <li class="list-group-item"> Poblacion: '+clickedListing.properties.poblacion+'</li> <li class="list-group-item"> Actividad: '+clickedListing.properties.actividad+'</li><li class="list-group-item"> Politica Ambiental: '+clickedListing.properties.politica_ambiental+'</li> <li class="list-group-item"> Fragilidad: '+clickedListing.properties.fragilidad+'</li> <li class="list-group-item"> Vulnerabilidad: '+clickedListing.properties.vulnerabilidad+'</li> <li class="list-group-item"> Presion: '+clickedListing.properties.presion+'</li> <li class="list-group-item"> Conflictos Potenciales: '+clickedListing.properties.conflictos_potenciales+'</li> <li class="list-group-item"> Ficha Completa: <a href="assets/pdf/3 Unidades de Gestion Ambiental/'+link+'.pdf" target="_blank"> PDF </a> </ul>';
-      $("#datos").css("display","initial");
+  <script type="text/javascript">
+    mapboxgl.accessToken = 'pk.eyJ1IjoiaGVsZGVuOSIsImEiOiJjam54Z2sxankweDEyM3ZuZGd1OGV2b2NsIn0.xuzmd6tEA2f6lgJYLfW_VQ';
+    // This adds the map to your page
+    var map = new mapboxgl.Map({
+      // container id specified in the HTML
+      container: 'map',
+      // style URL
+      style: 'mapbox://styles/helden9/cjtkd5bsp2ura1fo2g5hrwfkw',
+      // initial position in [lon, lat] format
+      center: [-111.348502, 26.011936],
+      // initial zoom
+      zoom: 10,
+      bearing: -100
     });
-    var link = listing.appendChild(document.createElement('td'));
-    link.href = '#';
-    link.className = 'title';
+    var hoveredStateId = null;
 
-    link.innerHTML = prop.nombre;
-    var link = listing.appendChild(document.createElement('td'));
+    map.on('load', function(e) {
 
-    link.href = '#';
-    link.className = 'title';
-    link.innerHTML = prop.localidad_referencia;
-}
-}
+      map.addSource("aprovechamiento_sustentable", {
+        "type": "vector",
+        "url": "mapbox://helden9.cjtronjo20l8ae5o4agw8et3k-8trxr"
+      });
 
-
-
-
-
-function flyToStore(currentFeature) {
-  // Geographic coordinates of the LineString
-  var coordinates = currentFeature.geometry.coordinates[0];
-
-  // Pass the first coordinates in the LineString to `lngLatBounds` &
-  // wrap each coordinate pair in `extend` to include them in the bounds
-  // result. A variation of this technique could be applied to zooming
-  // to the bounds of multiple Points or Polygon geomteries - it just
-  // requires wrapping all the coordinates with the extend method.
-  var bounds = coordinates.reduce(function(bounds, coord) {
-      return bounds.extend(coord);
-  }, new mapboxgl.LngLatBounds(coordinates[0], coordinates[0]));
-
-  map.fitBounds(bounds, {
-      padding: 20
-  });
-
-/*
-  map.flyTo({
-    center: currentFeature.geometry.coordinates,
-    zoom: 15
-  });*/
-$("#ugas-politica").css("display","none");
-}
-
-
-
-
-$(document).ready(function(){
-
-  $('#myModal').modal('show');
-  $("#diagnostico-card").click(function(){
-    if ($("#diagnostico-card").hasClass( "activo" )) {
-      $("#diagnostico-card").removeClass("activo");
-    }
-    else {
-      $("#diagnostico-card").addClass("activo");
-    }
-
-    $("#diagnostico").collapse('toggle');
-    $("#propuesta,#ugas").collapse('hide');
-      $("#propuesta-card,#ugas-card").removeClass("activo");
-    });
-
-  $("#propuesta-card").click(function(){
-    if ($("#propuesta-card").hasClass( "activo" )) {
-      $("#propuesta-card").removeClass("activo");
-    }
-    else {
-      $("#propuesta-card").addClass("activo");
-    }
-
-    $("#propuesta").collapse('toggle');
-    $("#diagnostico,#ugas").collapse('hide');
-      $("#diagnostico-card,#ugas-card").removeClass("activo");
-    });
-
-  $("#ugas-card").click(function(){
-    if ($("#ugas-card").hasClass( "activo" )) {
-      $("#ugas-card").removeClass("activo");
-    }
-    else {
-      $("#ugas-card").addClass("activo");
-    }
-
-    $("#ugas").collapse('toggle');
-    $("#diagnostico,#propuesta").collapse('hide');
-      $("#diagnostico-card,#propuesta-card").removeClass("activo");
-    });
-    $("input[type=radio]").on('click',function(){
-      $("#datos").css("display","none")
-      var radio= this.id;
-    switch (radio) {
-      case "aprovechamiento_sustentable":{
-        map.setLayoutProperty('aprovechamiento-sustentable', 'visibility','visible');
-        map.setLayoutProperty('aprovechamiento_sustentable_lineas', 'visibility','visible');
-        buildLocationList(aprovechaminto_sustentable);
-        $("#ugas-politica").css("display","inherit");
-      }
-        break;
-        case "preservacion":{
-          map.setLayoutProperty('preservacion', 'visibility','visible');
-          map.setLayoutProperty('preservacion_lineas', 'visibility','visible');
-          buildLocationList(preservacion);
-          $("#ugas-politica").css("display","inherit");
+      map.addLayer({
+        "id": "aprovechamiento-sustentable",
+        "type": "fill",
+        "source": "aprovechamiento_sustentable",
+        "source-layer": "aprovechamiento_sustentable_poel",
+        "layout": {
+          "visibility": "none"
+        },
+        "paint": {
+          "fill-color": "#d4edda",
+          "fill-opacity": ["case",
+            ["boolean", ["feature-state", "click"], false],
+            1,
+            0.5
+          ]
         }
-          break;
-          case "conservacion":{
-            map.setLayoutProperty('conservacion', 'visibility','visible');
-            map.setLayoutProperty('conservacion_lineas', 'visibility','visible');
-            buildLocationList(conservacion);
-            $("#ugas-politica").css("display","inherit");
-          }
-            break;
-            case "restauracion":{
-              map.setLayoutProperty('restauracion', 'visibility','visible');
-              map.setLayoutProperty('restauracion_lineas', 'visibility','visible');
-              buildLocationList(restauracion);
-              $("#ugas-politica").css("display","inherit");
-            }
-              break;
-      default:
+      });
 
+      map.addLayer({
+        "id": "aprovechamiento_sustentable_lineas",
+        "type": "line",
+        "source": "aprovechamiento_sustentable",
+        "source-layer": "aprovechamiento_sustentable_poel",
+        "layout": {
+          "visibility": "none"
+        },
+        "paint": {
+          "line-color": "#155724"
+        }
+      });
+
+      map.addSource("preservacion", {
+        "type": "vector",
+        "url": "mapbox://helden9.cjtropb4h02rh2xmutx2w0rtw-6jw2b"
+      });
+
+      map.addLayer({
+        "id": "preservacion",
+        "type": "fill",
+        "source": "preservacion",
+        "source-layer": "preservacion_poel_2014",
+        "layout": {
+          "visibility": "none"
+        },
+        "paint": {
+          "fill-color": "#fff3cd",
+          "fill-opacity": ["case",
+            ["boolean", ["feature-state", "click"], false],
+            1,
+            0.5
+          ]
+        }
+      });
+
+      map.addLayer({
+        "id": "preservacion_lineas",
+        "type": "line",
+        "source": "preservacion",
+        "source-layer": "preservacion_poel_2014",
+        "layout": {
+          "visibility": "none"
+        },
+        "paint": {
+          "line-color": "#856404"
+        }
+      });
+
+      map.addSource("conservacion", {
+        "type": "vector",
+        "url": "mapbox://helden9.cjtrooin40lb0efn3kr4ad4o3-064rk"
+      });
+
+      map.addLayer({
+        "id": "conservacion",
+        "type": "fill",
+        "source": "conservacion",
+        "source-layer": "conservacion_poel_2014",
+        "layout": {
+          "visibility": "none"
+        },
+        "paint": {
+          "fill-color": "#d1ecf1",
+          "fill-opacity": ["case",
+            ["boolean", ["feature-state", "click"], false],
+            1,
+            0.5
+          ]
+        }
+      });
+
+      map.addLayer({
+        "id": "conservacion_lineas",
+        "type": "line",
+        "source": "conservacion",
+        "source-layer": "conservacion_poel_2014",
+        "layout": {
+          "visibility": "none"
+        },
+        "paint": {
+          "line-color": "#0c5460"
+        }
+      });
+
+      map.addSource("restauracion", {
+        "type": "vector",
+        "url": "mapbox://helden9.cjtropxcj0l6k26qq3tsi9k6t-4jyxa"
+      });
+
+      map.addLayer({
+        "id": "restauracion",
+        "type": "fill",
+        "source": "restauracion",
+        "source-layer": "restauracion_poel_2014",
+        "layout": {
+          "visibility": "none"
+        },
+        "paint": {
+          "fill-color": "#f8d7da",
+          "fill-opacity": ["case",
+            ["boolean", ["feature-state", "click"], false],
+            1,
+            0.5
+          ]
+        }
+      });
+
+      map.addLayer({
+        "id": "restauracion_lineas",
+        "type": "line",
+        "source": "restauracion",
+        "source-layer": "restauracion_poel_2014",
+        "layout": {
+          "visibility": "none"
+        },
+        "paint": {
+          "line-color": "#721c24"
+        }
+      });
+
+
+    });
+    /*
+    map.on("click", "aprovechamiento-sustentable", function(e) {
+    if (e.features.length > 0) {
+      hoveredStateId = e.features[0].id;
+      alert(hoveredStateId);
+    if (hoveredStateId) {
+    map.setFeatureState({source: 'aprovechamiento_sustentable',sourceLayer:'aprovechamiento-sustentable', id: hoveredStateId}, { click: true});
     }
-  });
 
-$("#toggle_principal").click(function(){
+    //map.setFeatureState({source: 'aprovechamiento_sustentable',sourceLayer:'aprovechamiento_sustentable',id: hoveredStateId}, { click: true});
+    }
+    });
 
-  $("#menu_principal").slideToggle();
+    map.on("mouseleave", "aprovechamiento-sustentable", function() {
+    if (hoveredStateId) {
+    map.setFeatureState({source: 'aprovechamiento_sustentable',sourceLayer:'aprovechamiento-sustentable', id: hoveredStateId}, { click: false});
+    }
+    hoveredStateId =  null;
+    });
+    */
 
-});
-$("#acerca_de").click(function(){
+    map.on('click', function(e) {
+      var features = map.queryRenderedFeatures(e.point, {
+        layers: ['aprovechamiento-sustentable', 'preservacion', 'conservacion', 'restauracion']
+      });
+      if (!features.length) {
+        return;
+      }
 
-  $("#acercaDe").fadeToggle();
+      //  var markerHeight = -25, markerRadius = 25, linearOffset = 100;
 
-});
-$("#infraestructura").click(function(){
+      var link = features[0].properties.nombre.substring(4);
+      document.getElementById("datos").innerHTML = '<h3>' + features[0].properties.nombre + ' </h3> <ul class="list-group"> <li class="list-group-item"> Localidad de Referencia: ' + features[0].properties.localidad_referencia +
+        '</li>  <ul class="list-group"> <li class="list-group-item"> Superficie Total: ' + features[0].properties.superficie_total + ' Ha </li> <ul class="list-group"> <li class="list-group-item"> Poblacion: ' + features[0].properties.poblacion +
+        '</li> <li class="list-group-item"> Actividad: ' + features[0].properties.actividad + '</li><li class="list-group-item"> Politica Ambiental: ' + features[0].properties.politica_ambiental +
+        '</li> <li class="list-group-item"> Fragilidad: ' + features[0].properties.fragilidad + '</li> <li class="list-group-item"> Vulnerabilidad: ' + features[0].properties.vulnerabilidad + '</li> <li class="list-group-item"> Presion: ' +
+        features[0].properties.presion + '</li> <li class="list-group-item"> Conflictos Potenciales: ' + features[0].properties.conflictos_potenciales +
+        '</li> <li class="list-group-item"> Ficha Completa: <a href="assets/pdf/3 Unidades de Gestion Ambiental/' + link + '.pdf" target="_blank"> PDF </a> </ul>';
+      $("#ugas-politica").css("display", "none");
+      $("#datos").css("display", "initial");
+    });
 
-  $("#infrestructura_colapsable").collapse('toggle');
+    map.on('mousemove', function(e) {
+      var features = map.queryRenderedFeatures(e.point, {
+        layers: ['aprovechamiento-sustentable', 'preservacion', 'conservacion', 'restauracion']
+      });
 
-});
-$("#Division_Ejidal").click(function(){
 
-  $("#Division_Ejidal_colapsable").collapse('toggle');
+      if (features.length > 0) {
+        //use the following code to change the
+        //cursor to a pointer ('pointer') instead of the default ('')
+        map.getCanvas().style.cursor = (features[0].properties.Name !== null) ? 'pointer' : '';
+      }
+      //if there are no points under our mouse,
+      //then change the cursor back to the default
+      else {
+        map.getCanvas().style.cursor = '';
+      }
 
-});
-$("#Geografia").click(function(){
 
-  $("#Geografia_colapsable").collapse('toggle');
+    });
 
-});
-$("#Plan_Sub_regional_Desarrollo_Urbano").click(function(){
+    var link = $('.checkbox');
+    for (var i = 0; i < link.length; i++) {
 
-  $("#Plan_Sub_regional_Desarrollo_Urbano_colapsable").collapse('toggle');
 
-});
-$("#Mineria").click(function(){
+      link[i].onclick = function(e) {
+        var clickedLayer = this.id;
 
-  $("#Mineria_colapsable").collapse('toggle');
 
-});
+        var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
 
-$("#inicio").click(function(){
-  location.reload();
-});
+        if (visibility === 'visible') {
+          map.setLayoutProperty(clickedLayer, 'visibility', 'none');
 
-});
-</script>
+
+        } else {
+
+          map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+
+        }
+      };
+    }
+
+
+
+
+
+    function buildLocationList(data) {
+
+      var listing = document.getElementById('tabla_ugas');
+      while (listing.lastChild) {
+        listing.removeChild(listing.lastChild);
+      }
+      // Iterate through the list of stores
+      for (i = 0; i < data.features.length; i++) {
+        var currentFeature = data.features[i];
+        // Shorten data.feature.properties to just `prop` so we're not
+        // writing this long form over and over again.
+        var prop = currentFeature.properties;
+        // Select the listing container in the HTML and append a div
+        // with the class 'item' for each store
+
+
+
+
+        listing = document.getElementById('tabla_ugas');
+        listing = listing.appendChild(document.createElement('tr'));
+
+        listing.className = 'item';
+        listing.id = 'listing-' + i;
+
+        // Create a new link with the class 'title' for each store
+        // and fill it with the store address
+
+        listing.dataPosition = i;
+
+
+        // Create a new div with the class 'details' for each store
+        // and fill it with the city and phone number
+
+
+
+
+
+        listing.addEventListener('click', function(e) {
+          // Update the currentFeature to the store associated with the clicked link
+          var clickedListing = data.features[this.dataPosition];
+
+          // 1. Fly to the point associated with the clicked link
+          flyToStore(clickedListing);
+          // 2. Close all other popups and display popup for clicked store
+
+          // 3. Highlight listing in sidebar (and remove highlight for all other listings)
+          var activeItem = document.getElementsByClassName('active');
+          if (activeItem[0]) {
+            activeItem[0].classList.remove('active');
+          }
+          this.parentNode.classList.add('active');
+          var link = clickedListing.properties.nombre.substring(4);
+
+          document.getElementById("datos").innerHTML = '<h3>' + clickedListing.properties.nombre + ' </h3> <ul class="list-group"> <li class="list-group-item"> Localidad de Referencia: ' + clickedListing.properties.localidad_referencia +
+            '</li>  <ul class="list-group"> <li class="list-group-item"> Superficie Total: ' + clickedListing.properties.superficie_total + ' Ha </li> <ul class="list-group"> <li class="list-group-item"> Poblacion: ' + clickedListing.properties
+            .poblacion + '</li> <li class="list-group-item"> Actividad: ' + clickedListing.properties.actividad + '</li><li class="list-group-item"> Politica Ambiental: ' + clickedListing.properties.politica_ambiental +
+            '</li> <li class="list-group-item"> Fragilidad: ' + clickedListing.properties.fragilidad + '</li> <li class="list-group-item"> Vulnerabilidad: ' + clickedListing.properties.vulnerabilidad +
+            '</li> <li class="list-group-item"> Presion: ' + clickedListing.properties.presion + '</li> <li class="list-group-item"> Conflictos Potenciales: ' + clickedListing.properties.conflictos_potenciales +
+            '</li> <li class="list-group-item"> Ficha Completa: <a href="assets/pdf/3 Unidades de Gestion Ambiental/' + link + '.pdf" target="_blank"> PDF </a> </ul>';
+          $("#datos").css("display", "initial");
+        });
+        var link = listing.appendChild(document.createElement('td'));
+        link.href = '#';
+        link.className = 'title';
+
+        link.innerHTML = prop.nombre;
+        var link = listing.appendChild(document.createElement('td'));
+
+        link.href = '#';
+        link.className = 'title';
+        link.innerHTML = prop.localidad_referencia;
+      }
+    }
+
+
+
+
+
+    function flyToStore(currentFeature) {
+      // Geographic coordinates of the LineString
+      var coordinates = currentFeature.geometry.coordinates[0];
+
+      // Pass the first coordinates in the LineString to `lngLatBounds` &
+      // wrap each coordinate pair in `extend` to include them in the bounds
+      // result. A variation of this technique could be applied to zooming
+      // to the bounds of multiple Points or Polygon geomteries - it just
+      // requires wrapping all the coordinates with the extend method.
+      var bounds = coordinates.reduce(function(bounds, coord) {
+        return bounds.extend(coord);
+      }, new mapboxgl.LngLatBounds(coordinates[0], coordinates[0]));
+
+      map.fitBounds(bounds, {
+        padding: 20
+      });
+
+      /*
+        map.flyTo({
+          center: currentFeature.geometry.coordinates,
+          zoom: 15
+        });*/
+      $("#ugas-politica").css("display", "none");
+    }
+
+
+
+
+    $(document).ready(function() {
+
+      $('#myModal').modal('show');
+      $("#diagnostico-card").click(function() {
+        if ($("#diagnostico-card").hasClass("activo")) {
+          $("#diagnostico-card").removeClass("activo");
+        } else {
+          $("#diagnostico-card").addClass("activo");
+        }
+
+        $("#diagnostico").collapse('toggle');
+        $("#propuesta,#ugas").collapse('hide');
+        $("#propuesta-card,#ugas-card").removeClass("activo");
+      });
+
+      $("#propuesta-card").click(function() {
+        if ($("#propuesta-card").hasClass("activo")) {
+          $("#propuesta-card").removeClass("activo");
+        } else {
+          $("#propuesta-card").addClass("activo");
+        }
+
+        $("#propuesta").collapse('toggle');
+        $("#diagnostico,#ugas").collapse('hide');
+        $("#diagnostico-card,#ugas-card").removeClass("activo");
+      });
+
+      $("#ugas-card").click(function() {
+        if ($("#ugas-card").hasClass("activo")) {
+          $("#ugas-card").removeClass("activo");
+        } else {
+          $("#ugas-card").addClass("activo");
+        }
+
+        $("#ugas").collapse('toggle');
+        $("#diagnostico,#propuesta").collapse('hide');
+        $("#diagnostico-card,#propuesta-card").removeClass("activo");
+      });
+      $("input[type=radio]").on('click', function() {
+        $("#datos").css("display", "none")
+        var radio = this.id;
+        switch (radio) {
+          case "aprovechamiento_sustentable":
+            {
+              map.setLayoutProperty('aprovechamiento-sustentable', 'visibility', 'visible');
+              map.setLayoutProperty('aprovechamiento_sustentable_lineas', 'visibility', 'visible');
+              buildLocationList(aprovechaminto_sustentable);
+              $("#ugas-politica").css("display", "inherit");
+            }
+            break;
+          case "preservacion":
+            {
+              map.setLayoutProperty('preservacion', 'visibility', 'visible');
+              map.setLayoutProperty('preservacion_lineas', 'visibility', 'visible');
+              buildLocationList(preservacion);
+              $("#ugas-politica").css("display", "inherit");
+            }
+            break;
+          case "conservacion":
+            {
+              map.setLayoutProperty('conservacion', 'visibility', 'visible');
+              map.setLayoutProperty('conservacion_lineas', 'visibility', 'visible');
+              buildLocationList(conservacion);
+              $("#ugas-politica").css("display", "inherit");
+            }
+            break;
+          case "restauracion":
+            {
+              map.setLayoutProperty('restauracion', 'visibility', 'visible');
+              map.setLayoutProperty('restauracion_lineas', 'visibility', 'visible');
+              buildLocationList(restauracion);
+              $("#ugas-politica").css("display", "inherit");
+            }
+            break;
+          default:
+
+        }
+      });
+
+      $("#toggle_principal").click(function() {
+
+        $("#menu_principal").slideToggle();
+
+      });
+      $("#acerca_de").click(function() {
+
+        $("#acercaDe").fadeToggle();
+
+      });
+      $("#infraestructura").click(function() {
+
+        $("#infrestructura_colapsable").collapse('toggle');
+
+      });
+      $("#Division_Ejidal").click(function() {
+
+        $("#Division_Ejidal_colapsable").collapse('toggle');
+
+      });
+      $("#Geografia").click(function() {
+
+        $("#Geografia_colapsable").collapse('toggle');
+
+      });
+      $("#Plan_Sub_regional_Desarrollo_Urbano").click(function() {
+
+        $("#Plan_Sub_regional_Desarrollo_Urbano_colapsable").collapse('toggle');
+
+      });
+      $("#Mineria").click(function() {
+
+        $("#Mineria_colapsable").collapse('toggle');
+
+      });
+
+      $("#inicio").click(function() {
+        location.reload();
+      });
+
+    });
+  </script>
 
 
 
