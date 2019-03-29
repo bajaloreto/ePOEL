@@ -734,14 +734,17 @@
         $("#acercaDe").fadeToggle();
 
       });
+
+      var bandera=false;
       $("#infraestructura").click(function() {
-        alert($("#infraestructura").prop("indeterminate"));
-        if ($("#infraestructura").prop("indeterminate")) {
+
+        if (bandera) {
           $("#infrestructura_colapsable").collapse('toggle');
           $("input[name='infraestructura']").prop("checked",false);
           map.setLayoutProperty('localidades', 'visibility', 'none');
           map.setLayoutProperty('vialidades', 'visibility', 'none');
           map.setLayoutProperty('unidades-economicas', 'visibility', 'none');
+          bandera=false;
         }
         else{
           $("#infrestructura_colapsable").collapse('toggle');
@@ -750,7 +753,7 @@
           map.setLayoutProperty('localidades', 'visibility', 'visible');
           map.setLayoutProperty('vialidades', 'visibility', 'visible');
           map.setLayoutProperty('unidades-economicas', 'visibility', 'visible');
-
+          bandera=true;
         }
 
       });
