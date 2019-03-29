@@ -1,5 +1,5 @@
-<script type="text/javascript">
-$('#myModal').modal('show');
+<script>
+
 mapboxgl.accessToken = 'pk.eyJ1IjoiaGVsZGVuOSIsImEiOiJjam54Z2sxankweDEyM3ZuZGd1OGV2b2NsIn0.xuzmd6tEA2f6lgJYLfW_VQ';
 // This adds the map to your page
 var map = new mapboxgl.Map({
