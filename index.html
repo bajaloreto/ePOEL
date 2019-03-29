@@ -214,7 +214,18 @@
   </div>
 </div>
 
+<div id="acercaDe" class="row">
+  <div class="col-sm-12">
+    <p>CartoMinMex
 
+CartoMinMex es un Sistema de consulta gratuita y de carácter público, elaborado por la Dirección General de Minas, Subdirección de Cartografía, con información relativa al catastro minero mexicano constituido en una primera etapa por la Cartografía Minera y su Registro Público.
+
+Fue diseñado especialmente para el sector minero y público en general, permite constatar el carácter libre de los lotes que sean objeto de solicitudes de concesión o de asignación minera, conocer la delimitación y ubicación de lotes amparados por concesiones, asignaciones y reservas mineras, ya sean vigentes o canceladas, así como de solicitudes de concesiones o asignaciones en trámite.
+
+Introducción a CartoMinMex
+Versión del Portal: 1.2</p>
+  </div>
+</div>
 
 
 
@@ -650,12 +661,17 @@ $("#toggle_principal").click(function(){
   $("#menu_principal").fadeToggle();
 
 });
+$("#acerca_de").click(function(){
+
+  $("#acercaDe").fadeToggle();
+
+});
 $("#infraestructura").click(function(){
 
   $("#infrestructura_colapsable").collapse('toggle');
 
 });
-
+ $("#acercaDe").hide();
 
 
 });
