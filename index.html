@@ -767,18 +767,18 @@
                   $("#Division_Ejidal_colapsable").collapse('hide');
                   $("input[name='Division_Ejidal']").prop("checked",false);
                     $("#Division_Ejidal").prop("indeterminate", false);
-                  map.setLayoutProperty('asentamiento_humanos', 'visibility', 'none');
-                  map.setLayoutProperty('zona_parcelaria', 'visibility', 'none');
-                  map.setLayoutProperty('tierras_uso_comun', 'visibility', 'none');
+                  map.setLayoutProperty('asentamiento-humanos', 'visibility', 'none');
+                  map.setLayoutProperty('zona-parcelaria', 'visibility', 'none');
+                  map.setLayoutProperty('tierras-uso-comun', 'visibility', 'none');
                   banderaDE=false;
                 }
                 else{
                   $("#Division_Ejidal_colapsable").collapse('show');
                   $("input[name='infraestructura']").prop("checked",true);
                   $("#Division_Ejidal").prop("indeterminate", true);
-                  map.setLayoutProperty('asentamiento_humanos', 'visibility', 'visible');
-                  map.setLayoutProperty('zona_parcelaria', 'visibility', 'visible');
-                  map.setLayoutProperty('tierras_uso_comun', 'visibility', 'visible');
+                  map.setLayoutProperty('asentamiento-humanos', 'visibility', 'visible');
+                  map.setLayoutProperty('zona-parcelaria', 'visibility', 'visible');
+                  map.setLayoutProperty('tierras-uso-comun', 'visibility', 'visible');
                   banderaDE=true;
                 }
 
@@ -845,33 +845,33 @@
 
       $("#asentamientos_humanos").on('change',function() {
 
-          if (map.getLayoutProperty('asentamiento_humanos', 'visibility')=='visible') {
-              map.setLayoutProperty('asentamiento_humanos', 'visibility', 'none');
+          if (map.getLayoutProperty('asentamiento-humanos', 'visibility')=='visible') {
+              map.setLayoutProperty('asentamiento-humanos', 'visibility', 'none');
           }
           else{
-              map.setLayoutProperty('asentamiento_humanos', 'visibility', 'visible');
+              map.setLayoutProperty('asentamiento-humanos', 'visibility', 'visible');
           }
 
       });
 
       $("#zona_parcelaria").on('change',function() {
 
-          if (map.getLayoutProperty('zona_parcelaria', 'visibility')=='visible') {
-              map.setLayoutProperty('zona_parcelaria', 'visibility', 'none');
+          if (map.getLayoutProperty('zona-parcelaria', 'visibility')=='visible') {
+              map.setLayoutProperty('zona-parcelaria', 'visibility', 'none');
           }
           else{
-              map.setLayoutProperty('zona_parcelaria', 'visibility', 'visible');
+              map.setLayoutProperty('zona-parcelaria', 'visibility', 'visible');
           }
 
       });
 
       $("#tierras_uso_comun").on('change',function() {
 
-          if (map.getLayoutProperty('tierras_uso_comun', 'visibility')=='visible') {
-              map.setLayoutProperty('tierras_uso_comun', 'visibility', 'none');
+          if (map.getLayoutProperty('tierras-uso_comun', 'visibility')=='visible') {
+              map.setLayoutProperty('tierras-uso-comun', 'visibility', 'none');
           }
           else{
-              map.setLayoutProperty('tierras_uso_comun', 'visibility', 'visible');
+              map.setLayoutProperty('tierras-uso-comun', 'visibility', 'visible');
           }
 
       });
