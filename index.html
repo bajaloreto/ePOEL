@@ -38,7 +38,7 @@
       <a class="nav-link" href="#">Programa de Ordenamiento Ecologico Terriorial de Loreto B.C.S.</a>
 
 
-  <a class="nav-link active" href="#">INICIO</a>
+  <a id="inicio" class="nav-link active" href="#">INICIO</a>
   <a class="nav-link" href="#">BITACORA</a>
 
 <button id="acerca_de" class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
@@ -217,7 +217,7 @@
 <div id="acercaDe" class="">
   <div class="card text-center">
   <div class="card-header">
-  <h4>Acerca de</h4>  
+  <h4>Acerca de</h4>
   </div>
   <div class="card-body">
     <h5 class="card-title">CartoMinMex</h5>
@@ -678,7 +678,9 @@ $("#infraestructura").click(function(){
 
 });
 
-
+$("#inicio").click(function(){
+  location.reload();
+});
 
 });
 </script>
