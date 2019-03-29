@@ -46,7 +46,7 @@
       <a class="dropdown-item" href="#">Bitácora Ambiental</a>
       <a class="dropdown-item" href="#">PSDUL</a>
       <a class="dropdown-item" href="#">Loretoideal</a>
-      
+
   </li>
 
 <button id="acerca_de" class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
@@ -66,7 +66,7 @@
     <a data-toggle="collapse" href="#collapse4">
           <div class="card">
             <p class="">
-            Capas Base<i class="fas fa-angle-down"></i>
+            Capas de Soporte<i class="fas fa-angle-down"></i>
             </p></a>
           </div>
 
@@ -91,7 +91,44 @@
 
               </li>
 
+              <li class="">
+                <input type="checkbox" id="Division_Ejidal" name="" value="">  <label for="">Division Ejidal</label> </a>
+                <div id="Division_Ejidal_colapsable"class="collapse">
+                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Asentamientos humanos</label></div>
+                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Zona parcelaria</label></div>
+                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Tierras uso común</label></div>
+                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Limites perimetrales</label></div>
+                </div>
+              </li>
+              <li class="">
+                <input type="checkbox" id="Geografia" name="" value="">  <label for="">Geografia</label> </a>
+                <div id="Geografia_colapsable"class="collapse">
+                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Cuencas hidrológicas</label></div>
+                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Aguas subterráneas</label></div>
+                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Parque Nacional Bahia de Loreto (PNBL)</label></div>
+                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Area de Influencia del PNBL</label></div>
+                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Humedales</label></div>
+                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Division politica municipal</label></div>
+                </div>
+              </li>
+              <li class="">
+                <input type="checkbox" id="Plan_Sub_regional_Desarrollo_Urbano" name="" value="">  <label for="">Plan Sub-regional Desarrollo Urbano</label> </a>
+                <div id="Plan_Sub_regional_Desarrollo_Urbano_colapsable"class="collapse">
+                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Area Limite</label></div>
+                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Subcuenca Limite </label></div>
+                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Zona Canadas </label></div>
 
+                </div>
+              </li>
+              <li class="">
+                <input type="checkbox" id="Mineria" name="" value="">  <label for="">Minería</label> </a>
+                <div id="Mineria_colapsable"class="collapse">
+                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Concesiones Vigentes</label></div>
+                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Concesiones Canceladas</label></div>
+                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Asignaciones-Falta</label></div>
+                  <div class="form-check">  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">  <label class="form-check-label" for="defaultCheck1">Prospección Azure-Falta</label></div>
+                </div>
+              </li>
 
 
 
@@ -683,6 +720,26 @@ $("#acerca_de").click(function(){
 $("#infraestructura").click(function(){
 
   $("#infrestructura_colapsable").collapse('toggle');
+
+});
+$("#Division_Ejidal").click(function(){
+
+  $("#Division_Ejidal_colapsable").collapse('toggle');
+
+});
+$("#Geografia").click(function(){
+
+  $("#Geografia_colapsable").collapse('toggle');
+
+});
+$("#Plan_Sub_regional_Desarrollo_Urbano").click(function(){
+
+  $("#Plan_Sub_regional_Desarrollo_Urbano_colapsable").collapse('toggle');
+
+});
+$("#Mineria").click(function(){
+
+  $("#Mineria_colapsable").collapse('toggle');
 
 });
 
