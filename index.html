@@ -739,7 +739,7 @@
 
       $("#infraestructura").click(function() {
 
-        if (bandera) {
+        if (banderaI) {
           $("#infrestructura_colapsable").collapse('hide');
           $("input[name='infraestructura']").prop("checked",false);
           $("#infraestructura").prop("indeterminate", false);
@@ -755,7 +755,7 @@
           map.setLayoutProperty('localidades', 'visibility', 'visible');
           map.setLayoutProperty('vialidades', 'visibility', 'visible');
           map.setLayoutProperty('unidades-economicas', 'visibility', 'visible');
-          bandera=true;
+          banderaI=true;
         }
 
       });
@@ -774,7 +774,7 @@
                 }
                 else{
                   $("#Division_Ejidal_colapsable").collapse('show');
-                  $("input[name='infraestructura']").prop("checked",true);
+                  $("input[name='Division_Ejidal']").prop("checked",true);
                   $("#Division_Ejidal").prop("indeterminate", true);
                   map.setLayoutProperty('asentamiento-humanos', 'visibility', 'visible');
                   map.setLayoutProperty('zona-parcelaria', 'visibility', 'visible');
