@@ -746,7 +746,7 @@
           map.setLayoutProperty('localidades', 'visibility', 'none');
           map.setLayoutProperty('vialidades', 'visibility', 'none');
           map.setLayoutProperty('unidades-economicas', 'visibility', 'none');
-          bandera=false;
+          banderaI=false;
         }
         else{
           $("#infrestructura_colapsable").collapse('show');
@@ -867,7 +867,7 @@
 
       $("#tierras_uso_comun").on('change',function() {
 
-          if (map.getLayoutProperty('tierras-uso_comun', 'visibility')=='visible') {
+          if (map.getLayoutProperty('tierras-uso-comun', 'visibility')=='visible') {
               map.setLayoutProperty('tierras-uso-comun', 'visibility', 'none');
           }
           else{
