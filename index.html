@@ -773,9 +773,19 @@
           else{
               map.setLayoutProperty('localidades', 'visibility', 'visible');
           }
-          
+
       });
 
+      $("#localidad,#vialidades").on('change',function() {
+
+          if (map.getLayoutProperty('localidades', 'visibility')=='visible') {
+              map.setLayoutProperty('localidades', 'visibility', 'none');
+          }
+          else{
+              map.setLayoutProperty('localidades', 'visibility', 'visible');
+          }
+
+      });
 
     });
   </script>
