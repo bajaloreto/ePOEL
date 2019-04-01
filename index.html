@@ -1007,6 +1007,15 @@
           }
 
       });
+
+
+      $("#infraestructura,#Division_Ejidal,#Geografia,#Plan_Sub_regional_Desarrollo_Urbano,#Mineria").on('change',function(){
+        if ($("#capas_base").height()>=333) {
+          $("#capas_base").addClass('scrollable');
+        }
+
+      });
+
     });
   </script>
 
