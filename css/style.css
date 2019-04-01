@@ -28,7 +28,11 @@ overflow-x: auto;
   overflow-y: auto;
   overflow-x: auto;
 }
-
+.scrollable{
+  overflow-y: auto;
+  overflow-x: auto;
+  height: 333px;
+}
 #acercaDe{
   position: absolute;
   display: none;
