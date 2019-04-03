@@ -124,3 +124,7 @@ ul.list-unstyled > li{
 .dropdown-menu{
   transform: translate3d(-44px, 64px, 0px);
 }
+
+li > a{
+  text-align: right;
+}
