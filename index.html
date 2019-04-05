@@ -27,19 +27,21 @@
 
   <div id="navegacion" class="row clearfix h-25">
     <div id="logo" class="col-sm-2 ">
-      <a class="">
-        <img class="img-fluid" src="assets/EAL_Logo.png" style="width:80%;height:80%;" alt="">
+      <a class="img-fluid">
+        <img class="img-fluid" src="assets/EAL_Logo.png" style="display: block; margin-left:auto; margin-right:auto" alt="">
 
       </a>
 
     </div>
     <div class="col-sm-10" style="background-color:#1C7CD5">
-      <nav class="navbar navbar-expand-lg">
-        <a id="toggle_principal" class=""  data-target="">
+      <nav class="navbar navbar-expand-sm">
+
+
+        <a href="#" id="toggle_principal" class="nav-item" data-target="">
           <i class="fa fa-bars fa-2x"></i>
         </a>
-        <p class="navbar-brand">POEL B.C.S</p>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <p id="titulo" class="navbar-brand">Programa de Ordenamiento Ecologico Territorial de Loreto B.C.S</p>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars fa-2x"></i>
         </button>
 
@@ -86,9 +88,9 @@
   <div id="collapse4" class="panel-collapse collapse">
 
     <ul class="list-unstyled">
-      <input type="checkbox" id="infraestructura" name="" value=""> <label for="infraestructura">Infrestructura</label> </a>
-      <li class="">
 
+      <li class="">
+        <input type="checkbox" id="infraestructura" name="" value=""> <label for="infraestructura">Infrestructura</label> </a>
         <div id="infrestructura_colapsable" class="collapse">
 
 
@@ -154,11 +156,62 @@
 
   </div>
   </div>
+
+  <div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Bienvenidos <br> ePOEL | La Plataforma electronica del POEL de Loreto B.C.S.[Version BETA]</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>El Plan de Ordenamiento Ecologico Local de Loreto B.C.S. es un instrumento de política ambiental cuyo objeto es regular o inducir el uso del suelo y
+            las actividades productivas, con el fin de lograr la protección del medio ambiente y la preservación y el aprovechamiento sustentable de los recursos naturales,
+            a partir de las tendencias de deterioro y las potencialidades de aprovechamiento de los mismos, buscando el equilibrio entre las actividades productivas y
+            la protección a la naturaleza, identificando los ecosistemas que, por su diversidad biológica y vulnerabilidad, requieren de programas de gobierno para su protección o restauración.</p>
+          <p>Esta plataforma digital esta en proceso de desarrollo por parte del equipo de Eco-Alianza, como parte nuestro programa de Conservacion de Cuencas,
+            se trabaja de manera conjunta con el gobierno del Ayuntamiento de Loreto, como parte del convenio de colaboracion establecido, y con el soporte financiero de varias fundaciones, como
+            estrategia de administracion y defensa del territorio .</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="acercaDe" class="">
+    <div class="card text-center">
+      <div class="card-header">
+        <h4>Acerca de</h4>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">ePOEL</h5>
+        <p class="card-text">ePOEL platea como un Portal o Plataforma de consulta gratuita y de carácter público,
+          desarrollado por Eco-Alianza de Loreto, con informacion obtenida de fuentes publicas de datos
+          abiertos, y de la digitalizacion manual del Plan de Ordenamiento Ecologico de Loreto.
+          Forma parte complementaria del proceso de reforzamiento de las capacidades y habilidades del los ciudadanos,
+          organizaciones y gobierno local para la conservacion del territorio y cuencas del Municipio de Loreto,
+          integrando los instrumentos legales de planeacion y control del desarrollo urbano y economico, con que cuenta
+          nuestro municipio, y que incorporan consejos y comités para la participación ciudadana.
+        </p>
+        <a href="#" class="btn btn-primary">Manual de Uso del ePOEL</a>
+        <p>Versión del Portal: Beta</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
   <div class="wrapper">
     <div id="menu_principal" class="collapse show ">
 
-      <div id="" class="row menu">
-        <div class="col-sm-12">
+      <div id="" class="menu">
+        <div class="">
 
 
 
@@ -258,52 +311,7 @@
 
 
 
-  <div id="myModal" class="modal fade bd-example-modal-xs" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xs modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Bienvenidos <br> ePOEL | La Plataforma electronica del POEL de Loreto B.C.S.[Version BETA]</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>El Plan de Ordenamiento Ecologico Local de Loreto B.C.S. es un instrumento de política ambiental cuyo objeto es regular o inducir el uso del suelo y
-            las actividades productivas, con el fin de lograr la protección del medio ambiente y la preservación y el aprovechamiento sustentable de los recursos naturales,
-            a partir de las tendencias de deterioro y las potencialidades de aprovechamiento de los mismos, buscando el equilibrio entre las actividades productivas y
-            la protección a la naturaleza, identificando los ecosistemas que, por su diversidad biológica y vulnerabilidad, requieren de programas de gobierno para su protección o restauración.</p>
-          <p>Esta plataforma digital esta en proceso de desarrollo por parte del equipo de Eco-Alianza, como parte nuestro programa de Conservacion de Cuencas,
-            se trabaja de manera conjunta con el gobierno del Ayuntamiento de Loreto, como parte del convenio de colaboracion establecido, y con el soporte financiero de varias fundaciones, como
-            estrategia de administracion y defensa del territorio .</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="acercaDe" class="">
-    <div class="card text-center">
-      <div class="card-header">
-        <h4>Acerca de</h4>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">ePOEL</h5>
-        <p class="card-text">ePOEL platea como un Portal o Plataforma de consulta gratuita y de carácter público,
-          desarrollado por Eco-Alianza de Loreto, con informacion obtenida de fuentes publicas de datos
-          abiertos, y de la digitalizacion manual del Plan de Ordenamiento Ecologico de Loreto.
-          Forma parte complementaria del proceso de reforzamiento de las capacidades y habilidades del los ciudadanos,
-          organizaciones y gobierno local para la conservacion del territorio y cuencas del Municipio de Loreto,
-          integrando los instrumentos legales de planeacion y control del desarrollo urbano y economico, con que cuenta
-          nuestro municipio, y que incorporan consejos y comités para la participación ciudadana.
-        </p>
-        <a href="#" class="btn btn-primary">Manual de Uso del ePOEL</a>
-        <p>Versión del Portal: Beta</p>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -746,12 +754,12 @@
 
       $("#toggle_principal").click(function() {
 
-        $("#menu_principal").slideToggle();
+        $("#menu_principal").toggleClass('active');
 
       });
       $("#acerca_de").click(function() {
 
-        $("#acercaDe").fadeToggle();
+        $("#acercaDe").slideToggle();
 
       });
 
@@ -1014,6 +1022,18 @@
         }
 
       });
+
+
+
+      $(window).resize(function(){
+
+       if ($('#menu_principal').width() == 200 ){
+
+              $("#titulo").value("POEL B.C.S");
+
+       }
+
+});
 
     });
   </script>
