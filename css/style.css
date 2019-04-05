@@ -10,24 +10,25 @@
   font-family: Helvetica Neue;
   font-size: 15px;
   position: absolute;
-  min-width: 230px;
-  max-width: 230px;
-  height: 80%;
+  min-width: 200px;
+  max-width: 200px;
+  height: 50%;
   z-index: 10;
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   overflow-y: auto;
   overflow-x: auto;
+  transition: all 0.5s ease-in-out;
 }
 
 #capas_base {
   position: absolute;
-  width: 15%;
+  width: 200px;
   z-index: 10;
   background: white;
   bottom: 1.9%;
-  left: 85%;
+  right: 0%;
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   overflow-y: auto;
@@ -133,10 +134,29 @@ ul.list-unstyled>li {
 }
 
 li{
-  text-align: right;
+
 }
 .btn{
   background-color: #1C7CD5;
   color: white;
     border: none;
+}
+#menu_principal.active {
+    margin-left: -200px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+@media (min-width: 992px){
+
+ #menu_principal{
+
+   min-width: 240px;
+   max-width: 240px;
+   height: 80%;
+
+
+ }
+
+
 }
