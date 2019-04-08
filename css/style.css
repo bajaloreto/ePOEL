@@ -88,7 +88,7 @@
 }
 
 .card {
-  background-color: #BFBFBF;
+  background-color: #EBEBEB;
 }
 
 .activo {
@@ -169,4 +169,15 @@ div > label {
     border-radius: 3px;
     font-size: 11px;
     color: white;
+}
+
+.navbar-brand{
+  color: white;
+  margin: 0px 0px 0px 15px;
+
+}
+
+a[data-toggle="collapse"]{
+
+  color: black;
 }
