@@ -252,7 +252,7 @@
 
         </ul>
       </div>
-      <a data-toggle="collapse" href="">
+      <a data-toggle="collapse" href="#">
         <div id="ugas-card" class="card">
           <p class="">
             Unidades de Gestión Ambiental <i class="fas fa-angle-down"></i>
@@ -260,17 +260,17 @@
       </a>
     </div>
     <div id="ugas" class="panel-collapse collapse">
-      <div class="radio">
-        <p class="alert-success"> Aprovechamiento Sustentatable <input id="aprovechamiento_sustentable" type="radio" name="optradio" autocomplete="off"></p>
+      <div class=" custom-radio">
+          <label class="bg-success"> Aprovechamiento Sustentatable </label> <input id="aprovechamiento_sustentable" class="" type="radio" name="optradio" autocomplete="off">
       </div>
       <div class="radio">
-        <p class="alert-warning">Preservación <input type="radio" id="preservacion" name="optradio" autocomplete="off"></p>
+        <label class="bg-warning">Preservación </label> <input type="radio" id="preservacion" name="optradio" autocomplete="off">
       </div>
       <div class="radio">
-        <p class="alert-info">Conservación <input type="radio" id="conservacion" name="optradio" autocomplete="off"></p>
+        <label class="bg-info">Conservación </label> <input type="radio" id="conservacion" name="optradio" autocomplete="off">
       </div>
       <div class="radio">
-        <p class="alert-danger">Restauración <input type="radio" id="restauracion" name="optradio" autocomplete="off"></p>
+        <label class="bg-danger">Restauración </label> <input type="radio" id="restauracion" name="optradio" autocomplete="off">
       </div>
     </div>
   </div>
@@ -347,11 +347,11 @@
           "visibility": "none"
         },
         "paint": {
-          "fill-color": "#d4edda",
+          "fill-color": "#28a745",
           "fill-opacity": ["case",
             ["boolean", ["feature-state", "click"], false],
             1,
-            0.5
+            0.3
           ]
         }
       });
@@ -365,7 +365,7 @@
           "visibility": "none"
         },
         "paint": {
-          "line-color": "#155724"
+          "line-color": "#28a745"
         }
       });
 
@@ -383,11 +383,11 @@
           "visibility": "none"
         },
         "paint": {
-          "fill-color": "#fff3cd",
+          "fill-color": "#ffc107",
           "fill-opacity": ["case",
             ["boolean", ["feature-state", "click"], false],
             1,
-            0.5
+            0.3
           ]
         }
       });
@@ -401,7 +401,7 @@
           "visibility": "none"
         },
         "paint": {
-          "line-color": "#856404"
+          "line-color": "#ffc107"
         }
       });
 
@@ -419,11 +419,11 @@
           "visibility": "none"
         },
         "paint": {
-          "fill-color": "#d1ecf1",
+          "fill-color": "#17a2b8",
           "fill-opacity": ["case",
             ["boolean", ["feature-state", "click"], false],
             1,
-            0.5
+            0.3
           ]
         }
       });
@@ -437,7 +437,7 @@
           "visibility": "none"
         },
         "paint": {
-          "line-color": "#0c5460"
+          "line-color": "#17a2b8"
         }
       });
 
@@ -455,11 +455,11 @@
           "visibility": "none"
         },
         "paint": {
-          "fill-color": "#f8d7da",
+          "fill-color": "#dc3545",
           "fill-opacity": ["case",
             ["boolean", ["feature-state", "click"], false],
             1,
-            0.5
+            0.3
           ]
         }
       });
@@ -473,7 +473,7 @@
           "visibility": "none"
         },
         "paint": {
-          "line-color": "#721c24"
+          "line-color": "#dc3545"
         }
       });
 
@@ -1027,10 +1027,13 @@
 
       $(window).resize(function(){
 
-       if ($('#menu_principal').width() == 200 ){
+       if ($('#menu_principal').width() <= 200 ){
 
-              $("#titulo").value("POEL B.C.S");
+              $("#titulo").text("POEL B.C.S");
 
+       }
+       else{
+         $("#titulo").text("Programa de Ordenamiento Ecologico Territorial de Loreto B.C.S");
        }
 
 });
