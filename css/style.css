@@ -46,9 +46,10 @@
   display: none;
   z-index: 10;
   background: white;
-  height: 50%;
-  top: 10%;
-  left: 75%;
+  height:50%;
+  width: 200px;
+
+  right: 0%;
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   overflow-y: auto;
@@ -93,6 +94,7 @@
 
 .activo {
   background-color: #1C7CD5;
+  color: white;
 }
 
 ul.list-unstyled>li {
@@ -160,10 +162,26 @@ li{
  .dropdown-menu{
    transform: translate(-40px);
  }
-
+ #menu_principal.active {
+     margin-left: -240px;
+     transition: all 0.5s ease-in-out;
+ }
+ #acercaDe {
+   position: absolute;
+   display: none;
+   z-index: 11;
+   background: white;
+   height:550px;
+   width: 600px;
+   right: 0%;
+   border: 1px solid rgba(0, 0, 0, 0.25);
+   border-radius: 3px;
+   overflow-y: auto;
+   overflow-x: auto;
+ }
 }
 
-div > label {
+div.radio > label {
     display: inline-block;
 
     padding: 2px 2px 2px 2px;
@@ -182,4 +200,12 @@ div > label {
 a[data-toggle="collapse"]{
 
   color: black;
+}
+
+
+ul.list-unstyled>li {
+    font-family: Helvetica Neue;
+    font-size: 13px;
+    padding-left: 10px;
+    line-height: 1.5;
 }
