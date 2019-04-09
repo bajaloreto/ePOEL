@@ -48,7 +48,7 @@
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
+              <a id="inicio" class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item dropdown">
@@ -56,10 +56,10 @@
                 OTROS
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Bitácora Ambiental</a>
+                <a class="dropdown-item" href="http://site-1408664-1563-7213.strikingly.com/" target="_blank">Bitácora Ambiental</a>
                 <a class="dropdown-item" href="#">PSDUL</a>
 
-                <a class="dropdown-item" href="#">Loretoideal</a>
+                <a class="dropdown-item" href="https://www.loretoideal.org/" target="_blank">Loretoideal</a>
 
             </li>
             <li class="nav-item"> <a id="acerca_de" href="#" class="" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
@@ -198,8 +198,11 @@
           integrando los instrumentos legales de planeacion y control del desarrollo urbano y economico, con que cuenta
           nuestro municipio, y que incorporan consejos y comités para la participación ciudadana.
         </p>
-        <a href="#" class="btn btn-primary">Manual de Uso del ePOEL</a>
-        <p>Versión del Portal: Beta</p>
+        <div class="card-footer">
+          <a href="#" class="btn btn-primary">Manual de Uso del ePOEL</a>
+          <p>Versión del Portal: Beta</p>
+        </div>
+
       </div>
     </div>
   </div>
@@ -215,7 +218,7 @@
 
 
 
-          <a data-toggle="collapse" href="">
+          <a data-toggle="collapse" href="" class="">
             <div id="diagnostico-card" class="card">
               <p class="">
                 Diagnostico / Pronóstico <i class="fas fa-angle-down"></i>
@@ -260,8 +263,8 @@
       </a>
     </div>
     <div id="ugas" class="panel-collapse collapse">
-      <div class=" custom-radio">
-          <label class="bg-success"> Aprovechamiento Sustentatable </label> <input id="aprovechamiento_sustentable" class="" type="radio" name="optradio" autocomplete="off">
+      <div class="radio">
+        <label class="bg-success"> Aprovechamiento Sustentatable </label> <input id="aprovechamiento_sustentable" class="" type="radio" name="optradio" autocomplete="off">
       </div>
       <div class="radio">
         <label class="bg-warning">Preservación </label> <input type="radio" id="preservacion" name="optradio" autocomplete="off">
@@ -681,6 +684,7 @@
           $("#diagnostico-card").removeClass("activo");
         } else {
           $("#diagnostico-card").addClass("activo");
+
         }
 
         $("#diagnostico").collapse('toggle');
@@ -1025,18 +1029,17 @@
 
 
 
-      $(window).resize(function(){
+      $(window).resize(function() {
 
-       if ($('#menu_principal').width() <= 200 ){
+        if ($('#menu_principal').width() <= 200) {
 
-              $("#titulo").text("POEL B.C.S");
+          $("#titulo").text("POEL B.C.S");
 
-       }
-       else{
-         $("#titulo").text("Programa de Ordenamiento Ecologico Territorial de Loreto B.C.S");
-       }
+        } else {
+          $("#titulo").text("Programa de Ordenamiento Ecologico Territorial de Loreto B.C.S");
+        }
 
-});
+      });
 
     });
   </script>
