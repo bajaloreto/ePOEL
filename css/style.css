@@ -157,7 +157,9 @@ li{
 
 
  }
-
+ .dropdown-menu{
+   transform: translate(-40px);
+ }
 
 }
 
