@@ -22,43 +22,56 @@
 </head>
 
 <body>
+
+
+
   <div id="navegacion" class="row clearfix h-25">
     <div id="logo" class="col-sm-2 ">
-      <a class="">
-        <img class="img-fluid" src="assets/EAL_Logo.png" style="width:80%;height:80%;" alt="">
+      <a class="img-fluid">
+        <img class="img-fluid" src="assets/EAL_Logo.png" style="display: block; margin-left:auto; margin-right:auto" alt="">
 
       </a>
 
     </div>
+    <div class="col-sm-10" style="background-color:#1C7CD5">
+      <nav class="navbar navbar-expand-sm">
 
-    <div class="col-sm-10 " style="background-color:#1C7CD5">
-      <nav class="nav justify-content-end">
-        <button id="toggle_principal" class="navbar-toggler" type="button" data-target="">
-          <i class="fas fa-bars"></i>
+
+        <a href="#" id="toggle_principal" class="nav-item" data-target="">
+          <i class="fa fa-bars fa-2x"></i>
+        </a>
+        <p id="titulo" class="navbar-brand">Programa de Ordenamiento Ecologico Territorial de Loreto B.C.S</p>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars fa-2x"></i>
         </button>
 
-        <a class="nav-link" href="#">Programa de Ordenamiento Ecologico Terriorial de Loreto B.C.S.</a>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a id="inicio" class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
+            </li>
 
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                OTROS
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="http://site-1408664-1563-7213.strikingly.com/" target="_blank">Bitácora Ambiental</a>
+                <a class="dropdown-item" href="#">PSDUL</a>
 
-        <a id="inicio" class="nav-link active" href="#">INICIO</a>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Otros</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Bitácora Ambiental</a>
-            <a class="dropdown-item" href="#">PSDUL</a>
-            <a class="dropdown-item" href="#">Loretoideal</a>
+                <a class="dropdown-item" href="https://www.loretoideal.org/" target="_blank">Loretoideal</a>
 
-        </li>
+            </li>
+            <li class="nav-item"> <a id="acerca_de" href="#" class="" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
+                <i class="fa fa-info-circle fa-2x"></i>
+              </a></li>
 
-        <button id="acerca_de" class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
-          <i class="fas fa-info-circle"></i>
-        </button>
-      </nav>
+        </div>
 
     </div>
+    </nav>
 
   </div>
-
 
 
   <div id="capas_base" class="">
@@ -75,13 +88,13 @@
   <div id="collapse4" class="panel-collapse collapse">
 
     <ul class="list-unstyled">
-      <input type="checkbox" id="infraestructura" name="" value=""> <label for="infraestructura">Infrestructura</label> </a>
-      <li class="">
 
+      <li class="">
+        <input type="checkbox" id="infraestructura" name="" value=""> <label for="infraestructura">Infrestructura</label> </a>
         <div id="infrestructura_colapsable" class="collapse">
 
 
-          <div class="form-check"> <input class="form-check-input" name="infraestructura"  type="checkbox" value="" id="localidad"> <label class="form-check-label" for="localidad">Loalidad</label></div>
+          <div class="form-check"> <input class="form-check-input" name="infraestructura" type="checkbox" value="" id="localidad"> <label class="form-check-label" for="localidad">Loalidad</label></div>
           <div class="form-check"> <input class="form-check-input" name="infraestructura" type="checkbox" value="" id="vialidades"> <label class="form-check-label" for="vialidades">Vialidades</label></div>
           <div class="form-check"> <input class="form-check-input" name="infraestructura" type="checkbox" value="" id="unidades_economicas"> <label class="form-check-label" for="unidades_economicas">Unidades Económicas</label></div>
           <div class="form-check"> <input class="form-check-input" name="infraestructura" type="checkbox" value="" id="red_electrica"> <label class="form-check-label" for="res_electrica">Red Eléctrica</label></div>
@@ -97,20 +110,22 @@
         <input type="checkbox" id="Division_Ejidal" name="" value=""> <label for="">Division Ejidal</label> </a>
         <div id="Division_Ejidal_colapsable" class="collapse">
           <div class="form-check"> <input class="form-check-input" name="Division_Ejidal" type="checkbox" value="" id="asentamientos_humanos"> <label class="form-check-label" for="asentamientos_humanos">Asentamientos humanos</label></div>
-          <div class="form-check"> <input class="form-check-input" name="Division_Ejidal"  type="checkbox" value="" id="zona_parcelaria"> <label class="form-check-label" for="zona_parcelaria">Zona parcelaria</label></div>
-          <div class="form-check"> <input class="form-check-input" name="Division_Ejidal"  type="checkbox" value="" id="tierras_uso_comun"> <label class="form-check-label" for="tierras_uso_comun">Tierras uso común</label></div>
-          <div class="form-check"> <input class="form-check-input" name="Division_Ejidal"  type="checkbox" value="" id="limies_perimetrales"> <label class="form-check-label" for="limies_perimetrales">Limites perimetrales</label></div>
+          <div class="form-check"> <input class="form-check-input" name="Division_Ejidal" type="checkbox" value="" id="zona_parcelaria"> <label class="form-check-label" for="zona_parcelaria">Zona parcelaria</label></div>
+          <div class="form-check"> <input class="form-check-input" name="Division_Ejidal" type="checkbox" value="" id="tierras_uso_comun"> <label class="form-check-label" for="tierras_uso_comun">Tierras uso común</label></div>
+          <div class="form-check"> <input class="form-check-input" name="Division_Ejidal" type="checkbox" value="" id="limies_perimetrales"> <label class="form-check-label" for="limies_perimetrales">Limites perimetrales</label></div>
         </div>
       </li>
       <li class="">
         <input type="checkbox" id="Geografia" name="" value=""> <label for="">Geografia</label> </a>
         <div id="Geografia_colapsable" class="collapse">
           <div class="form-check"> <input class="form-check-input" name="Geografia" type="checkbox" value="" id="cuencas_hidrologicas"> <label class="form-check-label" for="cuencas_hidrologicas">Cuencas hidrológicas</label></div>
-          <div class="form-check"> <input class="form-check-input" name="Geografia"  type="checkbox" value="" id="aguas_subterraneas"> <label class="form-check-label" for="aguas_subterraneas">Aguas subterráneas</label></div>
-          <div class="form-check"> <input class="form-check-input" name="Geografia"  type="checkbox" value="" id="Parque_nacional_bahia_loreto"> <label class="form-check-label" for="Parque_nacional_bahia_loreto">Parque Nacional Bahia de Loreto (PNBL)</label></div>
-          <div class="form-check"> <input class="form-check-input" name="Geografia"  type="checkbox" value="" id="area_influencia_PNBL"> <label class="form-check-label" for="area_influencia_PNBL">Area de Influencia del PNBL</label></div>
-          <div class="form-check"> <input class="form-check-input" name="Geografia"  type="checkbox" value="" id="humedales"> <label class="form-check-label" for="humedales">Humedales</label></div>
-          <div class="form-check"> <input class="form-check-input" name="Geografia"  type="checkbox" value="" id="division_politica_municipal"> <label class="form-check-label" for="division_politica_municipal">Division politica municipal</label></div>
+          <div class="form-check"> <input class="form-check-input" name="Geografia" type="checkbox" value="" id="aguas_subterraneas"> <label class="form-check-label" for="aguas_subterraneas">Aguas subterráneas</label></div>
+          <div class="form-check"> <input class="form-check-input" name="Geografia" type="checkbox" value="" id="Parque_nacional_bahia_loreto"> <label class="form-check-label" for="Parque_nacional_bahia_loreto">Parque Nacional Bahia de Loreto
+              (PNBL)</label></div>
+          <div class="form-check"> <input class="form-check-input" name="Geografia" type="checkbox" value="" id="area_influencia_PNBL"> <label class="form-check-label" for="area_influencia_PNBL">Area de Influencia del PNBL</label></div>
+          <div class="form-check"> <input class="form-check-input" name="Geografia" type="checkbox" value="" id="humedales"> <label class="form-check-label" for="humedales">Humedales</label></div>
+          <div class="form-check"> <input class="form-check-input" name="Geografia" type="checkbox" value="" id="division_politica_municipal"> <label class="form-check-label" for="division_politica_municipal">Division politica municipal</label>
+          </div>
         </div>
       </li>
       <li class="">
@@ -126,7 +141,7 @@
         <input type="checkbox" id="Mineria" name="" value=""> <label for="">Minería</label> </a>
         <div id="Mineria_colapsable" class="collapse">
           <div class="form-check"> <input class="form-check-input" name="Mineria" type="checkbox" value="" id="concesiones_vigentes"> <label class="form-check-label" for="concesiones_vigentes">Concesiones Vigentes</label></div>
-          <div class="form-check"> <input class="form-check-input" name="Mineria"  type="checkbox" value="" id="concesiones_canceladas"> <label class="form-check-label" for="defaultCheck1">Concesiones Canceladas</label></div>
+          <div class="form-check"> <input class="form-check-input" name="Mineria" type="checkbox" value="" id="concesiones_canceladas"> <label class="form-check-label" for="defaultCheck1">Concesiones Canceladas</label></div>
           <div class="form-check"> <input class="form-check-input" name="Mineria" type="checkbox" value="" id="asignaciones"> <label class="form-check-label" for="asignaciones">Asignaciones</label></div>
           <div class="form-check"> <input class="form-check-input" name="Mineria" type="checkbox" value="" id="prospeccion"> <label class="form-check-label" for="prospeccion">Prospección Azure</label></div>
         </div>
@@ -142,71 +157,125 @@
   </div>
   </div>
 
-  <div id="menu_principal" class="collapse show ">
+  <div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Bienvenidos <br> ePOEL | La Plataforma electronica del POEL de Loreto B.C.S.[Version BETA]</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>El Plan de Ordenamiento Ecologico Local de Loreto B.C.S. es un instrumento de política ambiental cuyo objeto es regular o inducir el uso del suelo y
+            las actividades productivas, con el fin de lograr la protección del medio ambiente y la preservación y el aprovechamiento sustentable de los recursos naturales,
+            a partir de las tendencias de deterioro y las potencialidades de aprovechamiento de los mismos, buscando el equilibrio entre las actividades productivas y
+            la protección a la naturaleza, identificando los ecosistemas que, por su diversidad biológica y vulnerabilidad, requieren de programas de gobierno para su protección o restauración.</p>
+          <p>Esta plataforma digital esta en proceso de desarrollo por parte del equipo de Eco-Alianza, como parte nuestro programa de Conservacion de Cuencas,
+            se trabaja de manera conjunta con el gobierno del Ayuntamiento de Loreto, como parte del convenio de colaboracion establecido, y con el soporte financiero de varias fundaciones, como
+            estrategia de administracion y defensa del territorio .</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 
-    <div id="" class="row menu">
-      <div class="col-sm-12">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="acercaDe" class="">
+    <div class="card text-center">
+      <div class="card-header">
+        <h4>Acerca de</h4>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">ePOEL</h5>
+        <p class="card-text">ePOEL platea como un Portal o Plataforma de consulta gratuita y de carácter público,
+          desarrollado por Eco-Alianza de Loreto, con informacion obtenida de fuentes publicas de datos
+          abiertos, y de la digitalizacion manual del Plan de Ordenamiento Ecologico de Loreto.
+          Forma parte complementaria del proceso de reforzamiento de las capacidades y habilidades del los ciudadanos,
+          organizaciones y gobierno local para la conservacion del territorio y cuencas del Municipio de Loreto,
+          integrando los instrumentos legales de planeacion y control del desarrollo urbano y economico, con que cuenta
+          nuestro municipio, y que incorporan consejos y comités para la participación ciudadana.
+        </p>
+        <div class="card-footer">
+          <a href="#" class="btn btn-primary">Manual de Uso del ePOEL</a>
+          <p>Versión del Portal: Beta</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="wrapper">
+    <div id="menu_principal" class="collapse show ">
+
+      <div id="" class="menu">
+        <div class="">
+
+
+
+          <a data-toggle="collapse" href="" class="">
+            <div id="diagnostico-card" class="card">
+              <p class="">
+                Diagnostico / Pronóstico <i class="fas fa-angle-down"></i>
+              </p>
+          </a>
+        </div>
+        <div id="diagnostico" class="panel-collapse collapse">
+          <ul class="list-unstyled">
+            <li>Introduccion <a href="assets/pdf/1 Diagnostico Pronostico/1 Introduccion.pdf" target="_blank"> PDF</a> </li>
+            <li>Características Físicas <a href="assets/pdf/1 Diagnostico Pronostico/2 Caracteristicas Fisicas.pdf" target="_blank"> PDF</a> </li>
+            <li>Características Biologicas <a href="assets/pdf/1 Diagnostico Pronostico/3 Caracteristicas Biologicas.pdf" target="_blank"> PDF</a> </li>
+            <li>Poblacion <a href="assets/pdf/1 Diagnostico Pronostico/4 Poblacion.pdf" target="_blank"> PDF</a> </li>
+            <li>Analisis de Aptitud<a href="assets/pdf/1 Diagnostico Pronostico/5 Analisis de Aptitud.pdf" target="_blank"="#"> PDF</a> </li>
+            <li>Regionalización <a href="assets/pdf/1 Diagnostico Pronostico/6 Regionalizacion.pdf" target="_blank"> PDF</a> </li>
+            <li>Pronóstico <a href="assets/pdf/1 Diagnostico Pronostico/7 Pronostico.pdf" target="_blank"> PDF</a> </li>
+
+          </ul>
+        </div>
         <a data-toggle="collapse" href="">
-          <div id="diagnostico-card" class="card">
+          <div id="propuesta-card" class="card">
             <p class="">
-              Diagnostico / Pronóstico <i class="fas fa-angle-down"></i>
+              Propuesta <i class="fas fa-angle-down"></i>
             </p>
         </a>
       </div>
-      <div id="diagnostico" class="panel-collapse collapse">
+      <div id="propuesta" class="panel-collapse collapse">
         <ul class="list-unstyled">
-          <li>Introduccion <a href="assets/pdf/1 Diagnostico Pronostico/1 Introduccion.pdf" target="_blank"> PDF</a> </li>
-          <li>Características Físicas <a href="assets/pdf/1 Diagnostico Pronostico/2 Caracteristicas Fisicas.pdf" target="_blank"> PDF</a> </li>
-          <li>Características Biologicas <a href="assets/pdf/1 Diagnostico Pronostico/3 Caracteristicas Biologicas.pdf" target="_blank"> PDF</a> </li>
-          <li>Poblacion <a href="assets/pdf/1 Diagnostico Pronostico/4 Poblacion.pdf" target="_blank"> PDF</a> </li>
-          <li>Analisis de Aptitud<a href="assets/pdf/1 Diagnostico Pronostico/5 Analisis de Aptitud.pdf" target="_blank"="#"> PDF</a> </li>
-          <li>Regionalización <a href="assets/pdf/1 Diagnostico Pronostico/6 Regionalizacion.pdf" target="_blank"> PDF</a> </li>
-          <li>Pronóstico <a href="assets/pdf/1 Diagnostico Pronostico/7 Pronostico.pdf" target="_blank"> PDF</a> </li>
+          <li>Definición<a href="assets/pdf/2 Propuesta/8 Definicion.pdf" target="_blank"> PDF</a> </li>
+          <li>Politicas Ambientales <a href="assets/pdf/2 Propuesta/9 Politicas Ambientales.pdf" target="_blank"> PDF</a> </li>
+          <li>Lineamientos Ecológicos <a href="assets/pdf/2 Propuesta/10 Lineamientos Ecologicos.pdf" target="_blank"> PDF</a> </li>
+          <li>Estrateias Ecológicas<a href="assets/pdf/2 Propuesta/11 Estrategias Ecologicas.pdf" target="_blank"> PDF</a> </li>
+          <li>Criterios de Regulacion Ecológica<a href="assets/pdf/2 Propuesta/12 Criterios de Regulacion Ecologica.pdf" target="_blank"> PDF</a> </li>
+
 
         </ul>
       </div>
-      <a data-toggle="collapse" href="">
-        <div id="propuesta-card" class="card">
+      <a data-toggle="collapse" href="#">
+        <div id="ugas-card" class="card">
           <p class="">
-            Propuesta <i class="fas fa-angle-down"></i>
+            Unidades de Gestión Ambiental <i class="fas fa-angle-down"></i>
           </p>
       </a>
     </div>
-    <div id="propuesta" class="panel-collapse collapse">
-      <ul class="list-unstyled">
-        <li>Definición<a href="assets/pdf/2 Propuesta/8 Definicion.pdf" target="_blank"> PDF</a> </li>
-        <li>Politicas Ambientales <a href="assets/pdf/2 Propuesta/9 Politicas Ambientales.pdf" target="_blank"> PDF</a> </li>
-        <li>Lineamientos Ecológicos <a href="assets/pdf/2 Propuesta/10 Lineamientos Ecologicos.pdf" target="_blank"> PDF</a> </li>
-        <li>Estrateias Ecológicas<a href="assets/pdf/2 Propuesta/11 Estrategias Ecologicas.pdf" target="_blank"> PDF</a> </li>
-        <li>Criterios de Regulacion Ecológica<a href="assets/pdf/2 Propuesta/12 Criterios de Regulacion Ecologica.pdf" target="_blank"> PDF</a> </li>
-
-
-      </ul>
+    <div id="ugas" class="panel-collapse collapse">
+      <div class="radio">
+        <label class="bg-success"> Aprovechamiento Sustentatable </label> <input id="aprovechamiento_sustentable" class="" type="radio" name="optradio" autocomplete="off">
+      </div>
+      <div class="radio">
+        <label class="bg-warning">Preservación </label> <input type="radio" id="preservacion" name="optradio" autocomplete="off">
+      </div>
+      <div class="radio">
+        <label class="bg-info">Conservación </label> <input type="radio" id="conservacion" name="optradio" autocomplete="off">
+      </div>
+      <div class="radio">
+        <label class="bg-danger">Restauración </label> <input type="radio" id="restauracion" name="optradio" autocomplete="off">
+      </div>
     </div>
-    <a data-toggle="collapse" href="">
-      <div id="ugas-card" class="card">
-        <p class="">
-          Unidades de Gestión Ambiental <i class="fas fa-angle-down"></i>
-        </p>
-    </a>
-  </div>
-  <div id="ugas" class="panel-collapse collapse">
-    <div class="radio">
-      <p class="alert-success"> Aprovechamiento Sustentatable <input id="aprovechamiento_sustentable" type="radio" name="optradio" autocomplete="off"></p>
-    </div>
-    <div class="radio">
-      <p class="alert-warning">Preservación <input type="radio" id="preservacion" name="optradio" autocomplete="off"></p>
-    </div>
-    <div class="radio">
-      <p class="alert-info">Conservación <input type="radio" id="conservacion" name="optradio" autocomplete="off"></p>
-    </div>
-    <div class="radio">
-      <p class="alert-danger">Restauración <input type="radio" id="restauracion" name="optradio" autocomplete="off"></p>
-    </div>
-  </div>
   </div>
 
 
@@ -245,52 +314,7 @@
 
 
 
-  <div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Bienvenidos <br> ePOEL | La Plataforma electronica del POEL de Loreto B.C.S.[Version BETA]</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>El Plan de Ordenamiento Ecologico Local de Loreto B.C.S. es un instrumento de política ambiental cuyo objeto es regular o inducir el uso del suelo y
-            las actividades productivas, con el fin de lograr la protección del medio ambiente y la preservación y el aprovechamiento sustentable de los recursos naturales,
-            a partir de las tendencias de deterioro y las potencialidades de aprovechamiento de los mismos, buscando el equilibrio entre las actividades productivas y
-            la protección a la naturaleza, identificando los ecosistemas que, por su diversidad biológica y vulnerabilidad, requieren de programas de gobierno para su protección o restauración.</p>
-          <p>Esta plataforma digital esta en proceso de desarrollo por parte del equipo de Eco-Alianza, como parte nuestro programa de Conservacion de Cuencas,
-            se trabaja de manera conjunta con el gobierno del Ayuntamiento de Loreto, como parte del convenio de colaboracion establecido, y con el soporte financiero de varias fundaciones, como
-             estrategia de administracion y defensa del territorio .</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="acercaDe" class="">
-    <div class="card text-center">
-      <div class="card-header">
-        <h4>Acerca de</h4>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">ePOEL</h5>
-        <p class="card-text">ePOEL platea como un Portal o Plataforma de consulta gratuita y de carácter público,
-          desarrollado por Eco-Alianza de Loreto, con informacion obtenida de fuentes publicas de datos
-          abiertos, y de la digitalizacion manual del Plan de Ordenamiento Ecologico de Loreto.
-          Forma parte complementaria del proceso de reforzamiento de las capacidades y habilidades del los ciudadanos,
-          organizaciones y gobierno local para la conservacion del territorio y cuencas del Municipio de Loreto,
-          integrando los instrumentos legales de planeacion y control del desarrollo urbano y economico, con que cuenta
-          nuestro municipio, y que incorporan consejos y comités para la participación ciudadana.
-        </p>
-        <a href="#" class="btn btn-primary">Manual de Uso del ePOEL</a>
-        <p>Versión del Portal: Beta</p>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -326,11 +350,11 @@
           "visibility": "none"
         },
         "paint": {
-          "fill-color": "#d4edda",
+          "fill-color": "#28a745",
           "fill-opacity": ["case",
             ["boolean", ["feature-state", "click"], false],
             1,
-            0.5
+            0.3
           ]
         }
       });
@@ -344,7 +368,7 @@
           "visibility": "none"
         },
         "paint": {
-          "line-color": "#155724"
+          "line-color": "#28a745"
         }
       });
 
@@ -362,11 +386,11 @@
           "visibility": "none"
         },
         "paint": {
-          "fill-color": "#fff3cd",
+          "fill-color": "#ffc107",
           "fill-opacity": ["case",
             ["boolean", ["feature-state", "click"], false],
             1,
-            0.5
+            0.3
           ]
         }
       });
@@ -380,7 +404,7 @@
           "visibility": "none"
         },
         "paint": {
-          "line-color": "#856404"
+          "line-color": "#ffc107"
         }
       });
 
@@ -398,11 +422,11 @@
           "visibility": "none"
         },
         "paint": {
-          "fill-color": "#d1ecf1",
+          "fill-color": "#17a2b8",
           "fill-opacity": ["case",
             ["boolean", ["feature-state", "click"], false],
             1,
-            0.5
+            0.3
           ]
         }
       });
@@ -416,7 +440,7 @@
           "visibility": "none"
         },
         "paint": {
-          "line-color": "#0c5460"
+          "line-color": "#17a2b8"
         }
       });
 
@@ -434,11 +458,11 @@
           "visibility": "none"
         },
         "paint": {
-          "fill-color": "#f8d7da",
+          "fill-color": "#dc3545",
           "fill-opacity": ["case",
             ["boolean", ["feature-state", "click"], false],
             1,
-            0.5
+            0.3
           ]
         }
       });
@@ -452,7 +476,7 @@
           "visibility": "none"
         },
         "paint": {
-          "line-color": "#721c24"
+          "line-color": "#dc3545"
         }
       });
 
@@ -660,6 +684,7 @@
           $("#diagnostico-card").removeClass("activo");
         } else {
           $("#diagnostico-card").addClass("activo");
+
         }
 
         $("#diagnostico").collapse('toggle');
@@ -691,7 +716,7 @@
         $("#diagnostico-card,#propuesta-card").removeClass("activo");
       });
       $("input[type=radio]").on('click', function() {
-        $("#datos").css("display", "none")
+        $("#datos").css("display", "none");
         var radio = this.id;
         switch (radio) {
           case "aprovechamiento_sustentable":
@@ -733,36 +758,38 @@
 
       $("#toggle_principal").click(function() {
 
-        $("#menu_principal").slideToggle();
+        $("#menu_principal").toggleClass('active');
 
       });
       $("#acerca_de").click(function() {
 
-        $("#acercaDe").fadeToggle();
+        $("#acercaDe").slideToggle();
 
       });
 
-      var banderaI=false, banderaDE=false,banderaG=false,banderaM=false;
+      var banderaI = false,
+        banderaDE = false,
+        banderaG = false,
+        banderaM = false;
 
       $("#infraestructura").click(function() {
 
         if (banderaI) {
           $("#infrestructura_colapsable").collapse('hide');
-          $("input[name='infraestructura']").prop("checked",false);
+          $("input[name='infraestructura']").prop("checked", false);
           $("#infraestructura").prop("indeterminate", false);
           map.setLayoutProperty('localidades', 'visibility', 'none');
           map.setLayoutProperty('vialidades', 'visibility', 'none');
           map.setLayoutProperty('unidades-economicas', 'visibility', 'none');
-          banderaI=false;
-        }
-        else{
+          banderaI = false;
+        } else {
           $("#infrestructura_colapsable").collapse('show');
-          $("input[name='infraestructura']").prop("checked",true);
+          $("input[name='infraestructura']").prop("checked", true);
           $("#infraestructura").prop("indeterminate", true);
           map.setLayoutProperty('localidades', 'visibility', 'visible');
           map.setLayoutProperty('vialidades', 'visibility', 'visible');
           map.setLayoutProperty('unidades-economicas', 'visibility', 'visible');
-          banderaI=true;
+          banderaI = true;
         }
 
       });
@@ -770,50 +797,48 @@
 
         $("#Division_Ejidal_colapsable").collapse('toggle');
 
-                if (banderaDE) {
-                  $("#Division_Ejidal_colapsable").collapse('hide');
-                  $("input[name='Division_Ejidal']").prop("checked",false);
-                    $("#Division_Ejidal").prop("indeterminate", false);
-                  map.setLayoutProperty('asentamiento-humanos', 'visibility', 'none');
-                  map.setLayoutProperty('zona-parcelaria', 'visibility', 'none');
-                  map.setLayoutProperty('tierras-uso-comun', 'visibility', 'none');
-                  banderaDE=false;
-                }
-                else{
-                  $("#Division_Ejidal_colapsable").collapse('show');
-                  $("input[name='Division_Ejidal']").prop("checked",true);
-                  $("#Division_Ejidal").prop("indeterminate", true);
-                  map.setLayoutProperty('asentamiento-humanos', 'visibility', 'visible');
-                  map.setLayoutProperty('zona-parcelaria', 'visibility', 'visible');
-                  map.setLayoutProperty('tierras-uso-comun', 'visibility', 'visible');
-                  banderaDE=true;
-                }
+        if (banderaDE) {
+          $("#Division_Ejidal_colapsable").collapse('hide');
+          $("input[name='Division_Ejidal']").prop("checked", false);
+          $("#Division_Ejidal").prop("indeterminate", false);
+          map.setLayoutProperty('asentamiento-humanos', 'visibility', 'none');
+          map.setLayoutProperty('zona-parcelaria', 'visibility', 'none');
+          map.setLayoutProperty('tierras-uso-comun', 'visibility', 'none');
+          banderaDE = false;
+        } else {
+          $("#Division_Ejidal_colapsable").collapse('show');
+          $("input[name='Division_Ejidal']").prop("checked", true);
+          $("#Division_Ejidal").prop("indeterminate", true);
+          map.setLayoutProperty('asentamiento-humanos', 'visibility', 'visible');
+          map.setLayoutProperty('zona-parcelaria', 'visibility', 'visible');
+          map.setLayoutProperty('tierras-uso-comun', 'visibility', 'visible');
+          banderaDE = true;
+        }
 
       });
       $("#Geografia").click(function() {
 
         if (banderaG) {
           $("#Geografia_colapsable").collapse('hide');
-          $("input[name='Geografia']").prop("checked",false);
-            $("#Geografia").prop("indeterminate", false);
+          $("input[name='Geografia']").prop("checked", false);
+          $("#Geografia").prop("indeterminate", false);
           map.setLayoutProperty('cuencas-hidrologicas', 'visibility', 'none');
           map.setLayoutProperty('aguas-subterraneas', 'visibility', 'none');
           map.setLayoutProperty('parque-nacional-bahia-loreto', 'visibility', 'none');
           map.setLayoutProperty('area-influencia-pnbl', 'visibility', 'none');
           map.setLayoutProperty('humedales', 'visibility', 'none');
-          banderaG=false;
-        }
-        else{
+          banderaG = false;
+        } else {
           $("#Geografia_colapsable").collapse('show');
-          $("input[name='Geografia']").prop("checked",true);
+          $("input[name='Geografia']").prop("checked", true);
           $("#Geografia").prop("indeterminate", true);
 
           map.setLayoutProperty('cuencas-hidrologicas', 'visibility', 'visible');
-              map.setLayoutProperty('aguas-subterraneas', 'visibility', 'visible');
+          map.setLayoutProperty('aguas-subterraneas', 'visibility', 'visible');
           map.setLayoutProperty('parque-nacional-bahia-loreto', 'visibility', 'visible');
           map.setLayoutProperty('area-influencia-pnbl', 'visibility', 'visible');
           map.setLayoutProperty('humedales', 'visibility', 'visible');
-          banderaG=true;
+          banderaG = true;
         }
 
       });
@@ -825,25 +850,24 @@
       $("#Mineria").click(function() {
 
 
-                if (banderaM) {
-                  $("#Mineria_colapsable").collapse('hide');
-                  $("input[name='Mineria']").prop("checked",false);
-                    $("#Mineria").prop("indeterminate", false);
-                  map.setLayoutProperty('concesiones-vigentes', 'visibility', 'none');
-                  map.setLayoutProperty('concesiones-canceladas', 'visibility', 'none');
+        if (banderaM) {
+          $("#Mineria_colapsable").collapse('hide');
+          $("input[name='Mineria']").prop("checked", false);
+          $("#Mineria").prop("indeterminate", false);
+          map.setLayoutProperty('concesiones-vigentes', 'visibility', 'none');
+          map.setLayoutProperty('concesiones-canceladas', 'visibility', 'none');
 
-                  banderaM=false;
-                }
-                else{
-                  $("#Mineria_colapsable").collapse('show');
-                  $("input[name='Mineria']").prop("checked",true);
-                  $("#Mineria").prop("indeterminate", true);
+          banderaM = false;
+        } else {
+          $("#Mineria_colapsable").collapse('show');
+          $("input[name='Mineria']").prop("checked", true);
+          $("#Mineria").prop("indeterminate", true);
 
-                  map.setLayoutProperty('concesiones-vigentes', 'visibility', 'visible');
-                  map.setLayoutProperty('concesiones-canceladas', 'visibility', 'visible');
+          map.setLayoutProperty('concesiones-vigentes', 'visibility', 'visible');
+          map.setLayoutProperty('concesiones-canceladas', 'visibility', 'visible');
 
-                  banderaM=true;
-                }
+          banderaM = true;
+        }
 
       });
 
@@ -852,36 +876,33 @@
       });
 
 
-      $("#localidad").on('change',function() {
+      $("#localidad").on('change', function() {
 
-          if (map.getLayoutProperty('localidades', 'visibility')=='visible') {
-              map.setLayoutProperty('localidades', 'visibility', 'none');
-          }
-          else{
-              map.setLayoutProperty('localidades', 'visibility', 'visible');
-          }
-
-      });
-
-      $("#vialidades").on('change',function() {
-
-          if (map.getLayoutProperty('vialidades', 'visibility')=='visible') {
-              map.setLayoutProperty('vialidades', 'visibility', 'none');
-          }
-          else{
-              map.setLayoutProperty('vialidades', 'visibility', 'visible');
-          }
+        if (map.getLayoutProperty('localidades', 'visibility') == 'visible') {
+          map.setLayoutProperty('localidades', 'visibility', 'none');
+        } else {
+          map.setLayoutProperty('localidades', 'visibility', 'visible');
+        }
 
       });
 
-      $("#unidades_economicas").on('change',function() {
+      $("#vialidades").on('change', function() {
 
-          if (map.getLayoutProperty('unidades-economicas', 'visibility')=='visible') {
-              map.setLayoutProperty('unidades-economicas', 'visibility', 'none');
-          }
-          else{
-              map.setLayoutProperty('unidades-economicas', 'visibility', 'visible');
-          }
+        if (map.getLayoutProperty('vialidades', 'visibility') == 'visible') {
+          map.setLayoutProperty('vialidades', 'visibility', 'none');
+        } else {
+          map.setLayoutProperty('vialidades', 'visibility', 'visible');
+        }
+
+      });
+
+      $("#unidades_economicas").on('change', function() {
+
+        if (map.getLayoutProperty('unidades-economicas', 'visibility') == 'visible') {
+          map.setLayoutProperty('unidades-economicas', 'visibility', 'none');
+        } else {
+          map.setLayoutProperty('unidades-economicas', 'visibility', 'visible');
+        }
 
       });
 
@@ -891,128 +912,131 @@
       //
       ///
 
-      $("#asentamientos_humanos").on('change',function() {
+      $("#asentamientos_humanos").on('change', function() {
 
-          if (map.getLayoutProperty('asentamiento-humanos', 'visibility')=='visible') {
-              map.setLayoutProperty('asentamiento-humanos', 'visibility', 'none');
-          }
-          else{
-              map.setLayoutProperty('asentamiento-humanos', 'visibility', 'visible');
-          }
-
-      });
-
-      $("#zona_parcelaria").on('change',function() {
-
-          if (map.getLayoutProperty('zona-parcelaria', 'visibility')=='visible') {
-              map.setLayoutProperty('zona-parcelaria', 'visibility', 'none');
-          }
-          else{
-              map.setLayoutProperty('zona-parcelaria', 'visibility', 'visible');
-          }
+        if (map.getLayoutProperty('asentamiento-humanos', 'visibility') == 'visible') {
+          map.setLayoutProperty('asentamiento-humanos', 'visibility', 'none');
+        } else {
+          map.setLayoutProperty('asentamiento-humanos', 'visibility', 'visible');
+        }
 
       });
 
-      $("#tierras_uso_comun").on('change',function() {
+      $("#zona_parcelaria").on('change', function() {
 
-          if (map.getLayoutProperty('tierras-uso-comun', 'visibility')=='visible') {
-              map.setLayoutProperty('tierras-uso-comun', 'visibility', 'none');
-          }
-          else{
-              map.setLayoutProperty('tierras-uso-comun', 'visibility', 'visible');
-          }
-
-      });
-      $("#tierras_uso_comun").on('change',function() {
-
-          if (map.getLayoutProperty('tierras-uso-comun', 'visibility')=='visible') {
-              map.setLayoutProperty('tierras-uso-comun', 'visibility', 'none');
-          }
-          else{
-              map.setLayoutProperty('tierras-uso-comun', 'visibility', 'visible');
-          }
+        if (map.getLayoutProperty('zona-parcelaria', 'visibility') == 'visible') {
+          map.setLayoutProperty('zona-parcelaria', 'visibility', 'none');
+        } else {
+          map.setLayoutProperty('zona-parcelaria', 'visibility', 'visible');
+        }
 
       });
 
-      $("#cuencas_hidrologicas").on('change',function() {
+      $("#tierras_uso_comun").on('change', function() {
 
-          if (map.getLayoutProperty('cuencas-hidrologicas', 'visibility')=='visible') {
-              map.setLayoutProperty('cuencas-hidrologicas', 'visibility', 'none');
-          }
-          else{
-              map.setLayoutProperty('cuencas-hidrologicas', 'visibility', 'visible');
-          }
-
-      });
-      $("#aguas_subterraneas").on('change',function() {
-
-          if (map.getLayoutProperty('aguas-subterraneas', 'visibility')=='visible') {
-              map.setLayoutProperty('aguas-subterraneas', 'visibility', 'none');
-          }
-          else{
-              map.setLayoutProperty('aguas-subterraneas', 'visibility', 'visible');
-          }
+        if (map.getLayoutProperty('tierras-uso-comun', 'visibility') == 'visible') {
+          map.setLayoutProperty('tierras-uso-comun', 'visibility', 'none');
+        } else {
+          map.setLayoutProperty('tierras-uso-comun', 'visibility', 'visible');
+        }
 
       });
-      $("#Parque_nacional_bahia_loreto").on('change',function() {
+      $("#tierras_uso_comun").on('change', function() {
 
-          if (map.getLayoutProperty('parque-nacional-bahia-loreto', 'visibility')=='visible') {
-              map.setLayoutProperty('parque-nacional-bahia-loreto', 'visibility', 'none');
-          }
-          else{
-              map.setLayoutProperty('parque-nacional-bahia-loreto', 'visibility', 'visible');
-          }
-
-      });
-      $("#area_influencia_PNBL").on('change',function() {
-
-          if (map.getLayoutProperty('area-influencia-pnbl', 'visibility')=='visible') {
-              map.setLayoutProperty('area-influencia-pnbl', 'visibility', 'none');
-          }
-          else{
-              map.setLayoutProperty('area-influencia-pnbl', 'visibility', 'visible');
-          }
+        if (map.getLayoutProperty('tierras-uso-comun', 'visibility') == 'visible') {
+          map.setLayoutProperty('tierras-uso-comun', 'visibility', 'none');
+        } else {
+          map.setLayoutProperty('tierras-uso-comun', 'visibility', 'visible');
+        }
 
       });
 
-      $("#humedales").on('change',function() {
+      $("#cuencas_hidrologicas").on('change', function() {
 
-          if (map.getLayoutProperty('humedales', 'visibility')=='visible') {
-              map.setLayoutProperty('humedales', 'visibility', 'none');
-          }
-          else{
-              map.setLayoutProperty('humedales', 'visibility', 'visible');
-          }
+        if (map.getLayoutProperty('cuencas-hidrologicas', 'visibility') == 'visible') {
+          map.setLayoutProperty('cuencas-hidrologicas', 'visibility', 'none');
+        } else {
+          map.setLayoutProperty('cuencas-hidrologicas', 'visibility', 'visible');
+        }
+
+      });
+      $("#aguas_subterraneas").on('change', function() {
+
+        if (map.getLayoutProperty('aguas-subterraneas', 'visibility') == 'visible') {
+          map.setLayoutProperty('aguas-subterraneas', 'visibility', 'none');
+        } else {
+          map.setLayoutProperty('aguas-subterraneas', 'visibility', 'visible');
+        }
+
+      });
+      $("#Parque_nacional_bahia_loreto").on('change', function() {
+
+        if (map.getLayoutProperty('parque-nacional-bahia-loreto', 'visibility') == 'visible') {
+          map.setLayoutProperty('parque-nacional-bahia-loreto', 'visibility', 'none');
+        } else {
+          map.setLayoutProperty('parque-nacional-bahia-loreto', 'visibility', 'visible');
+        }
+
+      });
+      $("#area_influencia_PNBL").on('change', function() {
+
+        if (map.getLayoutProperty('area-influencia-pnbl', 'visibility') == 'visible') {
+          map.setLayoutProperty('area-influencia-pnbl', 'visibility', 'none');
+        } else {
+          map.setLayoutProperty('area-influencia-pnbl', 'visibility', 'visible');
+        }
+
+      });
+
+      $("#humedales").on('change', function() {
+
+        if (map.getLayoutProperty('humedales', 'visibility') == 'visible') {
+          map.setLayoutProperty('humedales', 'visibility', 'none');
+        } else {
+          map.setLayoutProperty('humedales', 'visibility', 'visible');
+        }
 
       });
 
 
-      $("#concesiones_vigentes").on('change',function() {
+      $("#concesiones_vigentes").on('change', function() {
 
-          if (map.getLayoutProperty('concesiones-vigentes', 'visibility')=='visible') {
-              map.setLayoutProperty('concesiones-vigentes', 'visibility', 'none');
-          }
-          else{
-              map.setLayoutProperty('concesiones-vigentes', 'visibility', 'visible');
-          }
-
-      });
-
-      $("#concesiones_canceladas").on('change',function() {
-
-          if (map.getLayoutProperty('concesiones-canceladas', 'visibility')=='visible') {
-              map.setLayoutProperty('concesiones-canceladas', 'visibility', 'none');
-          }
-          else{
-              map.setLayoutProperty('concesiones-canceladas', 'visibility', 'visible');
-          }
+        if (map.getLayoutProperty('concesiones-vigentes', 'visibility') == 'visible') {
+          map.setLayoutProperty('concesiones-vigentes', 'visibility', 'none');
+        } else {
+          map.setLayoutProperty('concesiones-vigentes', 'visibility', 'visible');
+        }
 
       });
 
+      $("#concesiones_canceladas").on('change', function() {
 
-      $("#infraestructura,#Division_Ejidal,#Geografia,#Plan_Sub_regional_Desarrollo_Urbano,#Mineria").on('change',function(){
-        if ($("#capas_base").height()>=333) {
+        if (map.getLayoutProperty('concesiones-canceladas', 'visibility') == 'visible') {
+          map.setLayoutProperty('concesiones-canceladas', 'visibility', 'none');
+        } else {
+          map.setLayoutProperty('concesiones-canceladas', 'visibility', 'visible');
+        }
+
+      });
+
+
+      $("#infraestructura,#Division_Ejidal,#Geografia,#Plan_Sub_regional_Desarrollo_Urbano,#Mineria").on('change', function() {
+        if ($("#capas_base").height() >= 333) {
           $("#capas_base").addClass('scrollable');
+        }
+
+      });
+
+
+
+      $(window).resize(function() {
+
+        if ($('#menu_principal').width() <= 200) {
+
+          $("#titulo").text("POEL B.C.S");
+
+        } else {
+          $("#titulo").text("Programa de Ordenamiento Ecologico Territorial de Loreto B.C.S");
         }
 
       });
@@ -1021,7 +1045,7 @@
   </script>
 
 
-
+  </div>
 
 </body>
 
