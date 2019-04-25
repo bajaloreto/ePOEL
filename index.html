@@ -41,7 +41,7 @@
           <i class="fa fa-bars fa-2x"></i>
         </a>
         <p id="titulo" class="navbar-brand">Programa de Ordenamiento Ecologico Territorial de Loreto B.C.S</p>
-        <p id="titulo-corto" class="navbar-brand" >POEL B.C.S</p>
+        <p id="titulo-corto" class="navbar-brand">POEL B.C.S</p>
         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars fa-2x"></i>
         </button>
@@ -527,7 +527,7 @@
 
     map.on('mousemove', function(e) {
       var features = map.queryRenderedFeatures(e.point, {
-        layers: ['aprovechamiento-sustentable', 'preservacion', 'conservacion', 'restauracion']
+        layers: ['aprovechamiento-sustentable', 'preservacion', 'conservacion', 'restauracion','localidades']
       });
 
 
@@ -675,7 +675,56 @@
     }
 
 
+    // When a click event occurs on a feature in the states layer, open a popup at the
+    // location of the click, with description HTML from its properties.
+    map.on('click', function(e) {
+      var features = map.queryRenderedFeatures(e.point, {
+        layers: ['localidades']
+      });
+      if (!features.length) {
+        return;
+      }
 
+      //  var markerHeight = -25, markerRadius = 25, linearOffset = 100;
+
+      var markerWidth = 60;
+      var markerHeight = -25;
+      var markerRadius = markerWidth / 2;
+      var linearOffset = Math.round(Math.sqrt(0.5 * Math.pow(markerRadius, 2)));
+      var popupOffsets = {
+        'top': [0, 0],
+        'top-left': [0, 0], //[linearOffset, (markerHeight - markerRadius - linearOffset) * -1],
+        'top-right': [0, 0], //[-linearOffset, (markerHeight - markerRadius - linearOffset) * -1],
+        'bottom': [5, -markerHeight],
+        'bottom-left': [linearOffset, (markerHeight - markerRadius + linearOffset) * -1],
+        'bottom-right': [-linearOffset, (markerHeight - markerRadius + linearOffset) * -1],
+        'left': [markerRadius, (markerHeight - markerRadius) * -1],
+        'right': [-markerRadius, (markerHeight - markerRadius) * -1]
+      };
+
+
+
+      if (features[0].layer.id == "Concesiones mineras") {
+
+        new mapboxgl.Popup({
+            offset: popupOffsets
+          })
+          .setLngLat(e.lngLat)
+          .setHTML('<h3>Titulo:' + features[0].properties.TITULO + '</h3>' +
+            '<h4>Nombre:' + features[0].properties.NOMBRELOTE + '</h4>' + '<h4>Titular:' + features[0].properties.TITULAR + '</h4>' + '<h4>Superficie total:' + features[0].properties.SUPERFICIE + '</h4>' + '<h4>Expedicion:' + features[0]
+            .properties.EXPEDICION + '</h4>')
+          .addTo(map);
+      } else {
+        new mapboxgl.Popup({
+            offset: popupOffsets
+          })
+          .setLngLat(e.lngLat)
+          .setHTML('<h3>Actividad:' + features[0].properties.actividad + '</h3>' +
+            '<h4>Nombre:' + features[0].properties.nombre + '</h4>' + '<h4>Localidad:' + features[0].properties.localidad + '</h4>' + '<h4>Superficie total:' + features[0].properties.superficie_total + '</h4>' + '<h4>Poblacion:' + features[0]
+            .properties.poblacion + '</h4>' + '<h4>Conflictos potenciales' + features[0].properties.conflictos_potenciales + '</h4>' + '<h4>Politica ambiental' + features[0].properties.politica_ambiental + '</h4>')
+          .addTo(map);
+      }
+    });
 
     $(document).ready(function() {
 
