@@ -481,6 +481,45 @@
         }
       });
 
+map.addSource("psdu", {
+  "type": "vector",
+  "url": "mapbox://helden9.ck41k95s60f1n2rqdi0hsc92r-4l3hv"
+});
+
+map.addLayer({
+  "id": "psdu",
+  "type": "fill",
+  "source": "psdu",
+  "source-layer": "psdu-perimetro",
+  "layout": {
+    "visibility": "none"
+  },
+  "paint": {
+    "fill-color": "#19E1B4",
+    "fill-opacity": ["case",
+      ["boolean", ["feature-state", "click"], false],
+      1,
+      0.3
+    ]
+  }
+});
+
+map.addLayer({
+  "id": "psdu_lineas",
+  "type": "line",
+  "source": "psdu",
+  "source-layer": "psdu-perimetro",
+  "layout": {
+    "visibility": "none"
+  },
+  "paint": {
+    "line-color": "#19E1B4"
+  }
+});
+
+
+
+
 
     });
     /*
@@ -863,6 +902,7 @@
         banderaDE = false,
         banderaG = false,
         banderaM = false;
+        banderaPSDU= false;
 
       $("#infraestructura").click(function() {
 
@@ -936,7 +976,34 @@
       });
       $("#Plan_Sub_regional_Desarrollo_Urbano").click(function() {
 
-        $("#Plan_Sub_regional_Desarrollo_Urbano_colapsable").collapse('toggle');
+        //$("#Plan_Sub_regional_Desarrollo_Urbano_colapsable").collapse('toggle');
+
+        if (map.getLayoutProperty('psdu', 'visibility') == 'visible') {
+          map.setLayoutProperty('psdu', 'visibility', 'none');
+          map.setLayoutProperty('psdu_lineas', 'visibility', 'none');
+        } else {
+          map.setLayoutProperty('psdu', 'visibility', 'visible');
+          map.setLayoutProperty('psdu_lineas', 'visibility', 'visible');
+        }
+        /*
+        if (banderaPSDU) {
+          $("#Plan_Sub_regional_Desarrollo_Urbano_colapsable").collapse('hide');
+          $("input[name='Division_Ejidal']").prop("checked", false);
+          $("#Division_Ejidal").prop("indeterminate", false);
+          map.setLayoutProperty('asentamiento-humanos', 'visibility', 'none');
+          map.setLayoutProperty('zona-parcelaria', 'visibility', 'none');
+          map.setLayoutProperty('tierras-uso-comun', 'visibility', 'none');
+          banderaDE = false;
+        } else {
+          $("#Division_Ejidal_colapsable").collapse('show');
+          $("input[name='Division_Ejidal']").prop("checked", true);
+          $("#Division_Ejidal").prop("indeterminate", true);
+          map.setLayoutProperty('asentamiento-humanos', 'visibility', 'visible');
+          map.setLayoutProperty('zona-parcelaria', 'visibility', 'visible');
+          map.setLayoutProperty('tierras-uso-comun', 'visibility', 'visible');
+          banderaPSDU = true;
+        }
+        */
 
       });
       $("#Mineria").click(function() {
