@@ -1,130 +1,219 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: stretch;
+}
 
-#menu_principal{
+#menu_principal {
   font-family: Helvetica Neue;
   font-size: 15px;
   position: absolute;
-width: 16.3%;
-height: 90%;
-z-index: 10;
-background: white;
-border: 1px solid rgba(0, 0, 0, 0.25);
-border-radius: 3px;
-overflow-y: auto;
-overflow-x: auto;
-
-}
-
-
-#capas_base{
-  position: absolute;
-  width: 15%;
+  min-width: 200px;
+  max-width: 200px;
+  height: 50%;
   z-index: 10;
   background: white;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  overflow-y: auto;
+  overflow-x: auto;
+  transition: all 0.5s ease-in-out;
+}
 
+#capas_base {
+  position: absolute;
+  width: 200px;
+  z-index: 10;
+  background: white;
   bottom: 1.9%;
-  left: 85%;
+  right: 0%;
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   overflow-y: auto;
   overflow-x: auto;
 }
-.scrollable{
+
+.scrollable {
   overflow-y: auto;
   overflow-x: auto;
   height: 333px;
 }
-#acercaDe{
+
+#acercaDe {
   position: absolute;
   display: none;
   z-index: 10;
   background: white;
-height: 50%;
-top:10%;
-  left: 75%;
+  height: 50%;
+  width: 200px;
+  right: 0%;
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   overflow-y: auto;
   overflow-x: auto;
 }
 
-#map{
+#map {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   border-left: 1px solid #fff;
   position: absolute;
-
   width: 100%;
   top: 0;
   bottom: 0;
 }
 
-
-.map {
-
-}
-
 .pad2 {
-
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-#navegacion{
+#navegacion {
   position: relative;
   z-index: 80;
   margin-right: 0px;
-
 }
-.menu{
+
+.menu {
   margin-right: 0px;
-
 }
 
-#logo{
-  background-color:#033848;
+#logo {
+  background-color: #033848;
 }
 
-.card{
-background-color:#BFBFBF;
+.card {
+  background-color: #EBEBEB;
 }
-.activo{
-  background-color:#1C7CD5;
 
+.activo {
+  background-color: #1C7CD5;
+  color: white;
 }
-ul.list-unstyled > li{
+
+ul.list-unstyled>li {
   font-family: Helvetica Neue;
   font-size: 13px;
 }
-.nav-link, .fa-bars,.fa-info-circle{
-  color:white;
+
+.nav-link, .fa-bars, .fa-info-circle {
+  color: white;
 }
-.item{
+
+.item {
   cursor: pointer;
 }
-#ugas-politica{
+
+#ugas-politica {
   display: none;
 }
+
 .form-check {
-    position: relative;
-    display: block;
-    padding-left: 2.25rem;
+  position: relative;
+  display: block;
+  padding-left: 2.25rem;
 }
-.nav{
-  line-height: 3;
+
+.nav, .navbar-toggler {
+  line-height: 2.3;
+  color: white;
+  font-family: Helvetica Neue;
 }
-.modal-content{
+
+.modal-content {
   background-color: #48556670;
   color: white;
 }
-.card-header{
+
+.card-header {
   background-color: #1C7CD5;
 }
 
-.dropdown-menu{
-  transform: translate3d(-44px, 64px, 0px);
+li {}
+
+.btn {
+  background-color: #1C7CD5;
+  color: white;
+  border: none;
 }
 
-li > a{
-  text-align: right;
+#menu_principal.active {
+  margin-left: -200px;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 992px) {
+  #menu_principal {
+    min-width: 240px;
+    max-width: 240px;
+    height: 80%;
+  }
+
+  .dropdown-menu {
+    transform: translate(-40px);
+  }
+
+  #menu_principal.active {
+    margin-left: -240px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  #acercaDe {
+    position: absolute;
+    display: none;
+    z-index: 11;
+    background: white;
+    height: 550px;
+    width: 600px;
+    right: 0%;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+
+  #titulo {
+    display: inline;
+
+  }
+
+  #titulo-corto {
+    display: none;
+  }
+}
+@media (max-width: 991px){
+  #titulo {
+    display: none;
+  }
+
+  #titulo-corto {
+    display: inline;
+  }
+}
+
+div.radio>label {
+  display: inline-block;
+  padding: 2px 2px 2px 2px;
+  margin: 5px 5px 5px 5px;
+  border-radius: 3px;
+  font-size: 11px;
+  color: white;
+}
+
+.navbar-brand {
+  color: white;
+  margin: 0px 0px 0px 15px;
+}
+
+a[data-toggle="collapse"] {
+  color: black;
+}
+
+ul.list-unstyled>li {
+  font-family: Helvetica Neue;
+  font-size: 13px;
+  padding-left: 10px;
+  line-height: 1.5;
 }

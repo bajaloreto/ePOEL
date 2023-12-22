@@ -1,3 +1,8 @@
-# ePOET
-Plataforma Digital de Plan de Ordenamiento Ecologico de Local de Loreto B.C.S.
-Enlace al sitio en vivo: https://bajaloreto.github.io/ePOEL/
+# ePOEL - Loreto
+
+Plataforma Digital del Plan de Ordenamiento Ecologico de Local de Loreto B.C.S.
+
+* Enlace al sitio version Beta: http://pitha.io/ePOEL/
+
+
+
