@@ -48,12 +48,10 @@ Las contribuciones son bienvenidas. Si deseas reportar errores, sugerir mejoras 
 
 ## Licencia
 
-[Especifica aquí la licencia que deseas usar, por ejemplo: MIT, CC BY-NC, etc.]
+Este proyecto se distribuye bajo la **licencia MIT**. Puedes consultar el archivo [LICENSE](LICENSE) para más detalles.
 
 ---
 
 **Proyecto desarrollado por Hugo Quintero**
 
-## Licencia
 
-Este proyecto se distribuye bajo la **licencia MIT**. Puedes consultar el archivo [LICENSE](LICENSE) para más detalles.
