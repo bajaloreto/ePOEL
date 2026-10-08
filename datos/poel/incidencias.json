@@ -199,5 +199,24 @@
     "resolucion": "La 7a se digitaliza del mapa impreso en la ficha 6 y la 7b del de su propia ficha; la 6 queda sin polígono hasta contar con otra fuente.",
     "registrada": "2026-10-08",
     "texto_ficha": "En el Boletín, la ficha 6 trae el mapa de la 7a y la ficha 7a el de la 7b. Aquí cada polígono se tomó del mapa que corresponde a su UGA; la UGA 6 no tiene mapa propio en el Boletín."
+  },
+  {
+    "id": "INC-013",
+    "estado": "abierta",
+    "titulo": "Superficie de la ficha incompatible con su propio mapa",
+    "descripcion": "La superficie declarada en estas fichas no corresponde a la zona que dibuja su mapa de ubicación, georreferenciado con sus rótulos UTM: UGA 31 declara 1,311.55 ha y su mapa dibuja tres partes, rotuladas 31a y 31b, que suman unas 4,550 ha (igual que en 2019), aunque el Apéndice 10 no tiene fichas 31a ni 31b; UGA 88c declara 193.88 ha y su mapa mide unas 300 ha; UGA 88d declara 133.85 ha y su mapa mide unas 197 ha (201 ha en 2019); UGA 88e declara 30.12 ha y su mapa mide unas 214 ha (206 ha en 2019); UGA 91 declara 0.01 ha.",
+    "fuentes": [
+      "Boletín Oficial No. 12, Apéndice 10, fichas de las UGAs 31, 88e y 91"
+    ],
+    "ugas": [
+      "31",
+      "88c",
+      "88d",
+      "88e",
+      "91"
+    ],
+    "resolucion": "El polígono se toma del mapa; la superficie de la ficha no se usa como control y la ubicación se corrobora con la escala de los rótulos UTM y, cuando existe, con el polígono de 2019.",
+    "registrada": "2026-10-08",
+    "texto_ficha": "La superficie que declara esta ficha en el Boletín no coincide con la zona que dibuja su mapa; el polígono sigue el mapa."
   }
 ]

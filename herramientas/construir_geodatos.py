@@ -55,6 +55,28 @@ def incidencia_para_ficha(inc, procedencia):
             "texto": inc.get("texto_ficha") or inc["titulo"]}
 
 
+def recortar_traslapes(geometrias):
+    """Las UGAs dividen el territorio sin traslaparse. Donde dos polígonos se enciman, cede el de menor resolución
+    ante uno aceptado más preciso: un mapa a 80 m/píxel rellena los enclaves pequeños (p. ej. la 80 dentro de la
+    73b) y suaviza los bordes que un mapa a 10 m/píxel dibuja con detalle. Los polígonos «revisar» y los de 2019
+    no recortan a nadie."""
+    def rango(uid):
+        g, p = geometrias[uid]
+        if p["metodo"] == "digitalizada":
+            return (0 if p["validacion"] == "aceptada" else 1, p["precision_m"] or 1e9)
+        return (2, 1e9)
+    for uid, (g, p) in geometrias.items():
+        if g is None:
+            continue
+        mejores = [h for otra, (h, q) in geometrias.items()
+                   if otra != uid and h is not None and q["metodo"] == "digitalizada" and q["validacion"] == "aceptada"
+                   and rango(otra) < rango(uid) and h.intersects(g)]
+        if mejores:
+            recortada = g.difference(unary_union(mejores)).buffer(0)
+            if recortada.area > 0.05 * g.area:  # nunca se borra una UGA entera por un traslape
+                geometrias[uid] = (recortada, p)
+
+
 def main():
     fichas = {p.stem: json.loads(p.read_text()) for p in (DATOS / "ugas").glob("*.json")}
     lin = {l["id"]: l for l in json.loads((DATOS / "lineamientos.json").read_text())}
@@ -68,23 +90,26 @@ def main():
     (SALIDA / "fichas").mkdir(parents=True, exist_ok=True)
     features, indice = [], []
     orden = lambda u: (int(re.match(r"\d+", u).group()), u)
-    for uid in sorted(fichas, key=orden):
-        f = fichas[uid]
+    geometrias = {}
+    for uid in fichas:
         dig = DATOS / "digitalizacion" / f"{uid}.geojson"
         estado_dig = validacion.get(uid, {}).get("estado", "aceptada")
         if dig.exists() and estado_dig in ("aceptada", "revisar"):
             feat = json.loads(dig.read_text())["features"][0]
-            geom = shape(feat["geometry"])
             proc = feat["properties"]["procedencia"]
-            procedencia = {"metodo": "digitalizada", "texto": "Digitalizada del mapa de la ficha del Boletín",
-                           "precision_m": proc["precision_aprox_m"], "revisada": proc["revisada_en_qgis"],
-                           "validacion": estado_dig}
+            geometrias[uid] = (shape(feat["geometry"]).buffer(0), {
+                "metodo": "digitalizada", "texto": "Digitalizada del mapa de la ficha del Boletín",
+                "precision_m": proc["precision_aprox_m"], "revisada": proc["revisada_en_qgis"], "validacion": estado_dig})
         elif uid in v2019:
-            geom = v2019[uid]
-            procedencia = {"metodo": "epoel-2019", "texto": "Provisional: geometría de ePOEL 2019, pendiente de re-digitalizar",
-                           "precision_m": None, "revisada": False}
+            geometrias[uid] = (v2019[uid], {"metodo": "epoel-2019", "texto": "Provisional: geometría de ePOEL 2019, pendiente de re-digitalizar",
+                                            "precision_m": None, "revisada": False})
         else:
-            geom, procedencia = None, {"metodo": "sin-geometria", "texto": "Sin geometría todavía", "precision_m": None, "revisada": False}
+            geometrias[uid] = (None, {"metodo": "sin-geometria", "texto": "Sin geometría todavía", "precision_m": None, "revisada": False})
+    recortar_traslapes(geometrias)
+
+    for uid in sorted(fichas, key=orden):
+        f = fichas[uid]
+        geom, procedencia = geometrias[uid]
 
         incs = [incidencia_para_ficha(i, procedencia) for i in incidencias if uid in i["ugas"]]
         resumen = {

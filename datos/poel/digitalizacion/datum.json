@@ -1,15 +1,15 @@
 {
   "desplazamiento_m": {
     "este": 30,
-    "norte": 165
+    "norte": 170
   },
   "residuo_de_esta_corrida_m": {
-    "este": 0,
+    "este": -5,
     "norte": 0
   },
   "costo_m": {
-    "sin_residuo": 79.0,
-    "con_residuo": 79.0
+    "sin_residuo": 82.7,
+    "con_residuo": 82.7
   },
   "referencia_nad27_a_wgs84_m": {
     "este": -64.6,
@@ -29,9 +29,12 @@
     "33a",
     "33b",
     "36a",
+    "36b",
     "38",
     "3a",
+    "4",
     "45",
+    "46",
     "48",
     "51",
     "56b",
@@ -44,17 +47,25 @@
     "63",
     "64",
     "67a",
+    "74",
     "75",
     "76",
+    "77a",
+    "77b",
     "7a",
     "7b",
     "8",
     "81",
+    "85",
     "86",
     "87",
-    "88a"
+    "88c",
+    "88d",
+    "88e",
+    "88f",
+    "90"
   ],
-  "puntos": 10744,
+  "puntos": 14826,
   "costa": "tierra de public/datos/contexto.geojson (cuencas hidrológicas rescatadas de ePOEL 2019)",
   "fecha": "2026-10-08"
 }

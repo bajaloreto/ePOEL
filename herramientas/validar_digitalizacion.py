@@ -1,11 +1,12 @@
 """Valida las UGAs digitalizadas y decide cuáles usa el sitio.
 
 Controles por UGA:
-  - Área: diferencia con la superficie de la ficha (independiente cuando la escala sale de los rótulos UTM).
+  - Área: diferencia con la superficie de la ficha (independiente cuando la escala sale de los rótulos UTM); salvo
+    en las fichas de INC-013, cuya superficie no corresponde a su mapa.
   - Ubicación: el polígono debe caer en el Municipio de Loreto (a ≤30 km de la tierra de contexto, por las islas).
   - Escala por superficie: como el área no es un control independiente, la ubicación se corrobora con el
     polígono de 2019 (centroides a ≤500 m o IoU ≥ 0.3); si no hay de 2019, queda para revisión.
-  - Traslape: no debe cubrir más del 25 % de otra UGA digitalizada.
+  - Duplicado: no debe ser casi el mismo polígono que otra UGA (IoU > 0.6), señal de un mapa equivocado.
 
 Estados: «aceptada» (se usa), «revisar» (se usa con aviso de revisión pendiente) y «rechazada» (no se usa).
 Resultado: datos/poel/digitalizacion/validacion.json.
@@ -22,6 +23,7 @@ from shapely.ops import unary_union
 
 from boletin import DATOS, RAIZ
 from construir_geodatos import geometrias_2019
+from digitalizar_fichas import AREA_DUDOSA
 
 DIGITALIZACION = DATOS / "digitalizacion"
 A_UTM = Transformer.from_crs("EPSG:4326", "EPSG:32612", always_xy=True)
@@ -50,11 +52,15 @@ def main():
         g, c, motivos = geoms[uga], ctrl[uga], []
         estado = "aceptada"
         d = abs(c["diferencia_area_pct"])
-        if d > 5:
+        previa = v2019.get(uga)
+        if uga in AREA_DUDOSA:
+            motivos.append("superficie de la ficha incompatible con su mapa (INC-013); no se usa como control")
+            if previa is None or g.intersection(previa).area / g.union(previa).area < 0.5:
+                estado = "revisar"
+        elif d > 5:
             estado = "revisar"; motivos.append(f"área {c['diferencia_area_pct']:+.1f} % respecto a la ficha")
         if g.distance(tierra) > 30_000:
             estado = "rechazada"; motivos.append("fuera del Municipio de Loreto: rótulos UTM mal leídos")
-        previa = v2019.get(uga)
         if previa is not None:
             iou = g.intersection(previa).area / g.union(previa).area
             dist = g.centroid.distance(previa.centroid)
@@ -65,11 +71,13 @@ def main():
                 motivos.append("escala por superficie; ubicación corroborada con 2019")
             elif estado != "rechazada":
                 estado = "revisar"; motivos.append("escala por superficie sin corroborar la ubicación")
+        # Los traslapes parciales se resuelven al construir el mapa (cede el polígono menos preciso); aquí solo se
+        # marcan los que parecen el mismo polígono dos veces, señal de un mapa equivocado (como en INC-012)
         for otra, h in geoms.items():
             if otra != uga and g.intersects(h):
-                frac = g.intersection(h).area / min(g.area, h.area)
-                if frac > 0.25 and estado != "rechazada":
-                    estado = "revisar"; motivos.append(f"traslapa {frac:.0%} con la UGA {otra}")
+                iou_otra = g.intersection(h).area / g.union(h).area
+                if iou_otra > 0.6 and estado != "rechazada":
+                    estado = "revisar"; motivos.append(f"casi el mismo polígono que la UGA {otra} (IoU {iou_otra:.2f})")
         salida[uga] = {"estado": estado, "motivos": motivos,
                        "iou_2019": None if iou is None else round(iou, 2),
                        "distancia_centroide_2019_m": None if dist is None else round(dist)}

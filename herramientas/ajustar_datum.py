@@ -8,7 +8,7 @@ La leyenda de los mapas del Boletín declara «Datum WGS84, elipsoide Clarke 186
   2. Busca el desplazamiento (Este, Norte) que acerca más esos bordes a la costa (tierra de contexto.geojson,
      derivada de las cuencas rescatadas de 2019), con una distancia truncada a 150 m para que los tramos
      interiores no pesen.
-  3. Suma el resultado al desplazamiento vigente en datos/poel/digitalizacion/datum.json.
+  3. Suma el resultado al desplazamiento vigente en datos/poel/digitalizacion/datum.json, si pasa de 10 m.
 
 Después hay que volver a correr digitalizar_fichas.py para que el desplazamiento se aplique; una segunda corrida
 de esta herramienta debe dar un residuo cercano a cero.
@@ -65,8 +65,11 @@ def main():
     fino = min((costo(dx, dy), dx, dy) for dx in range(grueso[1] - 20, grueso[1] + 21, 5)
                for dy in range(grueso[2] - 20, grueso[2] + 21, 5))
     previo = json.loads(DATUM.read_text()) if DATUM.exists() else {"desplazamiento_m": {"este": 0, "norte": 0}}
-    este = previo["desplazamiento_m"]["este"] + fino[1]
-    norte = previo["desplazamiento_m"]["norte"] + fino[2]
+    # Un residuo de hasta 10 m es el paso de la búsqueda (5 m) más el ruido de la costa: no se aplica, para que
+    # el desplazamiento no oscile entre corridas
+    aplicar = (fino[1] ** 2 + fino[2] ** 2) ** 0.5 > 10
+    este = previo["desplazamiento_m"]["este"] + (fino[1] if aplicar else 0)
+    norte = previo["desplazamiento_m"]["norte"] + (fino[2] if aplicar else 0)
     nad27 = Transformer.from_crs("EPSG:26712", "EPSG:32612", always_xy=True).transform(465000, 2875000)
     DATUM.write_text(json.dumps({
         "desplazamiento_m": {"este": este, "norte": norte},

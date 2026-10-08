@@ -49,11 +49,15 @@ def desplazamiento_datum():
 # verdadero de una UGA; SIN_MAPA_PROPIO son las fichas cuyo mapa es de otra UGA y no tienen el propio.
 MAPA_EN_FICHA = {"7a": "6"}
 SIN_MAPA_PROPIO = {"6"}
+# INC-013: fichas cuya superficie declarada no corresponde a su mapa; el área no sirve de control
+AREA_DUDOSA = set(next((i["ugas"] for i in json.loads((DATOS / "incidencias.json").read_text())
+                        if i["id"] == "INC-013"), []))
 ESCALA_RENDER = 3  # para mapas vectoriales: píxeles por punto PDF
 # El trazo de contorno de la UGA y el seguimiento por centros de píxel dejan fuera ~1.1–1.7 px de borde
 # (medido en el piloto: UGAs 12, 1a y 45). Se compensa con un margen fijo igual para todas las fichas;
 # la comparación con la superficie de la ficha sigue siendo un control independiente.
 CORRECCION_BORDE_PX = 1.4
+ESCALA_MAX_M_PX = 200
 
 
 def ocr(png):
@@ -64,8 +68,59 @@ def ocr(png):
 
 # Intervalo plausible de coordenadas UTM 12N para el Municipio de Loreto (con margen): descarta lecturas como
 # «143500» en lugar de «443500», que desplazarían la UGA cientos de kilómetros.
-ESTE_LORETO = (380_000, 560_000)
-NORTE_LORETO = (2_740_000, 2_990_000)
+# Extensión de las UGAs aceptadas en la primera corrida (E 422–507 km, N 2,788–2,939 km) más ~15 km de marco.
+ESTE_LORETO = (400_000, 530_000)
+NORTE_LORETO = (2_770_000, 2_955_000)
+
+
+def ocr_con_giros(png):
+    """OCR de la imagen tal cual y girada 90° en ambos sentidos: los rótulos Norte van en vertical y a veces solo
+    se leen bien con la imagen girada. Las cajas de las versiones giradas se devuelven a coordenadas originales y
+    solo se conservan sus lecturas de 7 dígitos (Norte)."""
+    textos = ocr(png)
+    img = cv2.imread(str(png))
+    alto, ancho = img.shape[:2]
+    for giro, a_original in ((cv2.ROTATE_90_CLOCKWISE, lambda cx, cy: (cy, alto - 1 - cx)),
+                             (cv2.ROTATE_90_COUNTERCLOCKWISE, lambda cx, cy: (ancho - 1 - cy, cx))):
+        girada = png.with_suffix(".giro.png")
+        cv2.imwrite(str(girada), cv2.rotate(img, giro))
+        for t in ocr(girada):
+            if len(re.sub(r"\D", "", t["texto"])) != 7:
+                continue
+            cx, cy = a_original(t["x"] + t["w"] / 2, t["y"] + t["h"] / 2)
+            textos.append({**t, "x": cx - t["h"] / 2, "y": cy - t["w"] / 2, "w": t["h"], "h": t["w"]})
+        girada.unlink()
+    return textos
+
+
+def ocr_de_franjas(rgb, marco, tmp):
+    """OCR de las franjas de rótulos que rodean el marco, ampliadas al triple: los rótulos de letra pequeña que el
+    OCR de la imagen completa no ve. Las franjas laterales (Norte, en vertical) se giran antes de leerlas."""
+    alto, ancho = rgb.shape[:2]
+    x0, y0, x1, y1 = marco
+    franjas = [  # (recorte, giro, función que devuelve un punto de la franja a la imagen original)
+        ((0, 0, ancho, y0), None), ((0, y1, ancho, alto), None),
+        ((0, 0, x0, alto), cv2.ROTATE_90_CLOCKWISE), ((x1, 0, min(x1 + (x1 - x0) // 4, ancho), alto), cv2.ROTATE_90_CLOCKWISE),
+    ]
+    textos, z = [], 3
+    for (a, b, c, d), giro in franjas:
+        if c - a < 8 or d - b < 8:
+            continue
+        img = cv2.resize(cv2.cvtColor(rgb[b:d, a:c], cv2.COLOR_RGB2BGR), None, fx=z, fy=z, interpolation=cv2.INTER_CUBIC)
+        h_rec = img.shape[0]
+        if giro is not None:
+            img = cv2.rotate(img, giro)
+        cv2.imwrite(str(tmp), img)
+        for t in ocr(tmp):
+            cx, cy = t["x"] + t["w"] / 2, t["y"] + t["h"] / 2
+            w, h = t["w"] / z, t["h"] / z
+            if giro is not None:  # deshace el giro horario: (x', y') = (h-1-y, x)
+                cx, cy = cy, h_rec - 1 - cx
+                w, h = h, w
+            cx, cy = a + cx / z, b + cy / z
+            textos.append({**t, "x": cx - w / 2, "y": cy - h / 2, "w": w, "h": h})
+    tmp.unlink(missing_ok=True)
+    return textos
 
 
 def rotulos_utm(textos):
@@ -81,38 +136,73 @@ def rotulos_utm(textos):
     return este, norte
 
 
-def limpiar_eje(candidatos, signo):
-    """Corrige y filtra los rótulos de un eje.
-
-    Los rótulos del marco son múltiplos de 500 m: una lectura a ≤300 m de uno se redondea (el OCR confunde 5 y 3).
-    Luego se busca la recta píxel -> metros con más rótulos coherentes (signo +1 para el Este, que crece a la
-    derecha; −1 para el Norte, que decrece hacia abajo) y se descartan las lecturas que no caen en ella
-    (p. ej. «2245000» en lugar de «2845000»).
-    """
+def normalizar(candidatos):
+    """Los rótulos del marco son múltiplos de 500 m: una lectura a ≤300 m de uno se redondea (el OCR confunde 5 y 3)."""
     limpios = []
     for px, v, otro in candidatos:
         r = round(v / 500) * 500
         if abs(r - v) <= 300:
             limpios.append((px, r, otro))
+    return limpios
+
+
+def mejor_grupo(rotulos, pendiente, tolerancia):
+    """Rótulos coherentes con una pendiente dada: los que comparten la misma ordenada (valor − pendiente·píxel).
+    Una lectura con un dígito equivocado («2914000» por «2814000») queda fuera del grupo."""
+    ordenadas = [v - pendiente * px for px, v, _ in rotulos]
+    mejor = []
+    for b in ordenadas:
+        grupo = [r for r, o in zip(rotulos, ordenadas) if abs(o - b) <= tolerancia]
+        clave = (len({v for _, v, _ in grupo}), len(grupo))
+        if clave > (len({v for _, v, _ in mejor}), len(mejor)):
+            mejor = grupo
+    return mejor
+
+
+def georreferenciar(este, norte, escala_fija=None, escala_max=None):
+    """Ajuste conjunto píxel -> UTM de los dos ejes.
+
+    Los mapas tienen píxeles cuadrados: el Este crece con x (pendiente +s) y el Norte decrece con y (−s). Se prueba
+    cada escala s que sugiere un par de rótulos de cualquier eje y se queda la que hace coherentes más rótulos en
+    ambos ejes a la vez; así un rótulo mal leído en un eje no puede imponer una escala absurda. Después, cada eje
+    con al menos dos valores coherentes se ajusta por mínimos cuadrados.
+    Devuelve (ax, bx, ay, by, residuo_m, ejes_con_escala_propia) o None.
+    """
+    este, norte = normalizar(este), normalizar(norte)
+    if not este or not norte:
+        return None
+    if escala_fija:
+        escalas = [escala_fija]
+    else:
+        escalas = []
+        for rot in (este, norte):
+            for (p1, v1, _), (p2, v2, _) in combinations(rot, 2):
+                if v1 != v2 and abs(p1 - p2) >= 20:
+                    e = abs((v2 - v1) / (p2 - p1))
+                    if escala_max is None or e <= escala_max:
+                        escalas.append(e)
+        if not escalas:
+            return None
     mejor = None
-    for (p1, v1, _), (p2, v2, _) in combinations(limpios, 2):
-        if v1 == v2 or abs(p1 - p2) < 5:
-            continue
-        a = (v2 - v1) / (p2 - p1)
-        if a * signo <= 0:
-            continue
-        b = v1 - a * p1
-        dentro = [c for c in limpios if abs(a * c[0] + b - c[1]) < abs(a) * 6]
-        clave = (len({c[1] for c in dentro}), len(dentro))
+    for e in escalas:
+        tol = max(5 * e, 25)
+        ge, gn = mejor_grupo(este, e, tol), mejor_grupo(norte, -e, tol)
+        clave = (len({v for _, v, _ in ge}) + len({v for _, v, _ in gn}), len(ge) + len(gn))
         if mejor is None or clave > mejor[0]:
-            mejor = (clave, dentro)
-    if mejor:
-        return mejor[1]
-    if not limpios:
-        return []
-    # Un solo valor: se conserva el más repetido
-    moda = max({v for _, v, _ in limpios}, key=lambda v: sum(1 for c in limpios if c[1] == v))
-    return [c for c in limpios if c[1] == moda]
+            mejor = (clave, e, ge, gn)
+    _, e, ge, gn = mejor
+    if not escala_fija and mejor[0][0] < 3:
+        return None  # sin al menos tres valores coherentes no hay escala confiable
+    propios = 0
+    if len({v for _, v, _ in ge}) >= 2 and not escala_fija:
+        ax, bx, res_x = ajuste(ge); propios += 1
+    else:
+        ax, bx, res_x = e, float(np.mean([v - e * px for px, v, _ in ge])), 0.0
+    if len({v for _, v, _ in gn}) >= 2 and not escala_fija:
+        ay, by, res_y = ajuste(gn); propios += 1
+    else:
+        ay, by, res_y = -e, float(np.mean([v + e * px for px, v, _ in gn])), 0.0
+    return ax, bx, ay, by, max(res_x, res_y), propios
 
 
 def ajuste(pares):
@@ -126,9 +216,9 @@ def ajuste(pares):
 
 def mascara_uga(rgb, marco, f=1):
     """Relleno rojo oscuro de la UGA dentro del marco del mapa principal."""
-    # El relleno de las UGAs en las fichas es RGB (168, 0, 0); las carreteras usan un rojo más oscuro.
+    # El relleno de las UGAs en las fichas es RGB (168, 0, 0) (en alguna, como la 46, (217, 0, 17)); las carreteras usan un rojo más oscuro.
     r, g, b = [rgb[:, :, i].astype(int) for i in range(3)]
-    rojo = ((r >= 140) & (r <= 200) & (g < 45) & (b < 45) & (r - g > 110)).astype(np.uint8) * 255
+    rojo = ((r >= 140) & (r <= 235) & (g < 45) & (b < 45) & (r - g > 110)).astype(np.uint8) * 255
     x0, y0, x1, y1 = marco
     recorte = np.zeros_like(rojo)
     recorte[y0:y1, x0:x1] = rojo[y0:y1, x0:x1]
@@ -138,9 +228,18 @@ def mascara_uga(rgb, marco, f=1):
 
 
 def marco_del_mapa(rgb):
-    """Rectángulo del mapa principal: el marco más grande formado por líneas oscuras largas, a la izquierda."""
+    """Rectángulo del mapa principal: el marco más grande formado por líneas oscuras largas, a la izquierda.
+    En los mapas ampliados el trazo del marco se aclara, por eso se prueba también un umbral más claro."""
+    for umbral in (110, 170):
+        marco = _marco(rgb, umbral)
+        if marco:
+            return marco
+    return None
+
+
+def _marco(rgb, umbral):
     alto, ancho = rgb.shape[:2]
-    oscuro = (cv2.cvtColor(rgb, cv2.COLOR_RGB2GRAY) < 110).astype(np.uint8) * 255
+    oscuro = (cv2.cvtColor(rgb, cv2.COLOR_RGB2GRAY) < umbral).astype(np.uint8) * 255
     h = cv2.morphologyEx(oscuro, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_RECT, (int(ancho * 0.25), 1)))
     v = cv2.morphologyEx(oscuro, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_RECT, (1, int(alto * 0.25))))
     lineas = cv2.dilate(h | v, np.ones((3, 3), np.uint8))
@@ -211,11 +310,11 @@ def digitalizar(doc, uga):
     validos = [i for i in intentos if i[0]["estado"] == "borrador"]
     if not validos:
         return intentos[0][0]
-    if all(abs(i[0]["diferencia_area_pct"]) > 15 for i in validos):
+    if uga not in AREA_DUDOSA and all(abs(i[0]["diferencia_area_pct"]) > 25 for i in validos):
         # Área incompatible con la ficha: georreferencia o relleno equivocados; no se guarda
         mejor = min(validos, key=lambda i: abs(i[0]["diferencia_area_pct"]))[0]
         return {**mejor, "estado": "rechazada-area"}
-    resultado, feature, diag = min(validos, key=lambda i: (abs(i[0]["diferencia_area_pct"]) > 15,
+    resultado, feature, diag = min(validos, key=lambda i: (uga not in AREA_DUDOSA and abs(i[0]["diferencia_area_pct"]) > 25,
                                                           i[0]["escala_por_superficie"],
                                                           -i[0]["ejes_con_escala_propia"],
                                                           abs(i[0]["diferencia_area_pct"])))
@@ -229,15 +328,17 @@ def intento(doc, uga, ficha, mapa, f):
     origen = MAPA_EN_FICHA.get(uga, uga)
     png = SALIDA / f"{uga}.mapa.png"
     rgb = imagen_del_mapa(doc, mapa, png, f)
-    textos = ocr(png)
+    textos = ocr_con_giros(png)
     png.unlink()
     este, norte = rotulos_utm(textos)
-    este, norte = limpiar_eje(este, +1), limpiar_eje(norte, -1)
-    if not este or not norte:
+    marco = marco_del_mapa(rgb)
+    if marco and (len({v for _, v, _ in normalizar(este)}) < 2 or len({v for _, v, _ in normalizar(norte)}) < 2):
+        mas_este, mas_norte = rotulos_utm(ocr_de_franjas(rgb, marco, SALIDA / f"{uga}.franja.png"))
+        este, norte = este + mas_este, norte + mas_norte
+    if not normalizar(este) or not normalizar(norte):
         return {"id": uga, "estado": "sin-rotulos", "rotulos_utm": {"este": len(este), "norte": len(norte)}}, None, None
     escala_por_superficie = False
     # Marco del mapa principal; si no se detecta, se deduce de los rótulos
-    marco = marco_del_mapa(rgb)
     if marco is None:
         xs_norte = sorted(p[2] for p in norte)
         ys_este = sorted(p[2] for p in este)
@@ -249,25 +350,16 @@ def intento(doc, uga, ficha, mapa, f):
     geom_px = vectorizar(mascara, min_px=60 * f * f)
     if geom_px is None:
         return {"id": uga, "estado": "sin-relleno-rojo"}, None, None
-    # Si un eje tiene un solo valor rotulado, se usa la escala del otro (los mapas tienen píxeles cuadrados)
-    dos_x, dos_y = len({v for _, v, _ in este}) >= 2, len({v for _, v, _ in norte}) >= 2
-    if dos_x:
-        ax, bx, res_x = ajuste(este)
-    if dos_y:
-        ay, by, res_y = ajuste(norte)
-    if not dos_x and not dos_y:
-        # Un solo rótulo por eje: la escala sale de la superficie declarada en la ficha (el control de área
-        # deja de ser independiente y se marca así en la procedencia)
+    # Los mapas de menor detalle del Boletín (UGAs 73a y 73b) rondan 150 m por píxel nativo: una escala mayor sale de
+    # rótulos mal leídos
+    geo = georreferenciar(este, norte, escala_max=ESCALA_MAX_M_PX / f)
+    if geo is None:
+        # Sin escala confiable en los rótulos: sale de la superficie declarada en la ficha (el control de área
+        # deja de ser independiente y se marca así en la procedencia); los rótulos solo dan la posición
         area_px = geom_px.buffer(borde_px, join_style="mitre", mitre_limit=3).area
-        ax = (ficha["superficie_ha"] * 10_000 / area_px) ** 0.5
-        ay = -ax
+        geo = georreferenciar(este, norte, escala_fija=(ficha["superficie_ha"] * 10_000 / area_px) ** 0.5)
         escala_por_superficie = True
-    if not dos_x:
-        ax = -ay if dos_y else ax
-        bx = float(np.mean([v - ax * px for px, v, _ in este])); res_x = 0.0
-    if not dos_y:
-        ay = -ax
-        by = float(np.mean([v - ay * px for px, v, _ in norte])); res_y = 0.0
+    ax, bx, ay, by, residuo, propios = geo
     utm = transformar(geom_px, lambda c: np.column_stack([ax * c[:, 0] + bx, ay * c[:, 1] + by]))
     utm = utm.buffer(abs(ax) * borde_px, join_style="mitre", mitre_limit=3)
     utm = utm.simplify(abs(ax) * f * 0.75)  # tolerancia ~ 3/4 de píxel nativo
@@ -281,11 +373,11 @@ def intento(doc, uga, ficha, mapa, f):
         "estado": "borrador",
         "metros_por_pixel": round(m_por_px, 1),
         "precision_estimada_m": round(m_por_px * 2, 0),
-        "residuo_georreferencia_m": round(max(res_x, res_y), 1),
+        "residuo_georreferencia_m": round(residuo, 1),
         "rotulos_utm": {"este": len(este), "norte": len(norte)},
         "escala_por_superficie": escala_por_superficie,
-        "ejes_con_escala_propia": int(dos_x) + int(dos_y),
-        "pixeles_no_cuadrados_pct": round(100 * abs(abs(ax) - abs(ay)) / abs(ay), 1) if dos_x and dos_y else None,
+        "ejes_con_escala_propia": propios,
+        "pixeles_no_cuadrados_pct": round(100 * abs(abs(ax) - abs(ay)) / abs(ay), 1) if propios == 2 else None,
         "area_digitalizada_ha": round(area_ha, 2),
         "superficie_ficha_ha": ficha["superficie_ha"],
         "diferencia_area_pct": round(100 * (area_ha - ficha["superficie_ha"]) / ficha["superficie_ha"], 1),

@@ -9,95 +9,95 @@
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.87,
-  "distancia_centroide_2019_m": 275
+  "distancia_centroide_2019_m": 258
  },
  "11b": {
   "estado": "revisar",
   "motivos": [
-   "área -7.0 % respecto a la ficha"
+   "área -6.9 % respecto a la ficha"
   ],
   "iou_2019": 0.73,
-  "distancia_centroide_2019_m": 570
+  "distancia_centroide_2019_m": 567
  },
  "12": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.81,
-  "distancia_centroide_2019_m": 157
+  "iou_2019": 0.82,
+  "distancia_centroide_2019_m": 149
  },
  "13": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.79,
-  "distancia_centroide_2019_m": 162
+  "distancia_centroide_2019_m": 155
  },
  "14": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.77,
-  "distancia_centroide_2019_m": 212
+  "distancia_centroide_2019_m": 213
  },
  "15": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.68,
-  "distancia_centroide_2019_m": 98
+  "distancia_centroide_2019_m": 96
  },
  "16": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.93,
-  "distancia_centroide_2019_m": 235
+  "distancia_centroide_2019_m": 229
  },
  "17": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.87,
-  "distancia_centroide_2019_m": 253
+  "iou_2019": 0.88,
+  "distancia_centroide_2019_m": 230
  },
  "18a": {
   "estado": "revisar",
   "motivos": [
-   "área -7.0 % respecto a la ficha"
+   "área -6.9 % respecto a la ficha"
   ],
-  "iou_2019": 0.52,
-  "distancia_centroide_2019_m": 818
+  "iou_2019": 0.55,
+  "distancia_centroide_2019_m": 794
  },
  "18b": {
   "estado": "revisar",
   "motivos": [
    "área -11.6 % respecto a la ficha"
   ],
-  "iou_2019": 0.54,
-  "distancia_centroide_2019_m": 2720
+  "iou_2019": 0.56,
+  "distancia_centroide_2019_m": 2702
  },
  "19": {
   "estado": "revisar",
   "motivos": [
-   "área -7.9 % respecto a la ficha"
+   "área -7.8 % respecto a la ficha"
   ],
-  "iou_2019": 0.78,
-  "distancia_centroide_2019_m": 475
+  "iou_2019": 0.8,
+  "distancia_centroide_2019_m": 451
  },
  "1a": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.34,
+  "iou_2019": 0.35,
   "distancia_centroide_2019_m": 559
  },
  "1b": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.86,
-  "distancia_centroide_2019_m": 99
+  "distancia_centroide_2019_m": 101
  },
  "1c": {
   "estado": "aceptada",
   "motivos": [
    "escala por superficie; ubicación corroborada con 2019"
   ],
-  "iou_2019": 0.86,
-  "distancia_centroide_2019_m": 76
+  "iou_2019": 0.85,
+  "distancia_centroide_2019_m": 81
  },
  "1d": {
   "estado": "aceptada",
@@ -109,7 +109,7 @@
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.87,
-  "distancia_centroide_2019_m": 160
+  "distancia_centroide_2019_m": 165
  },
  "20": {
   "estado": "aceptada",
@@ -121,107 +121,109 @@
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.32,
-  "distancia_centroide_2019_m": 1502
+  "distancia_centroide_2019_m": 1509
  },
  "22a": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.79,
-  "distancia_centroide_2019_m": 284
+  "iou_2019": 0.8,
+  "distancia_centroide_2019_m": 280
  },
  "22b": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.58,
-  "distancia_centroide_2019_m": 739
+  "iou_2019": 0.59,
+  "distancia_centroide_2019_m": 744
  },
  "23": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.0,
-  "distancia_centroide_2019_m": 2016
+  "distancia_centroide_2019_m": 2018
  },
  "24": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.86,
-  "distancia_centroide_2019_m": 217
+  "iou_2019": 0.87,
+  "distancia_centroide_2019_m": 211
  },
  "25": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.92,
-  "distancia_centroide_2019_m": 196
+  "iou_2019": 0.93,
+  "distancia_centroide_2019_m": 180
  },
  "26": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.82,
-  "distancia_centroide_2019_m": 172
+  "iou_2019": 0.83,
+  "distancia_centroide_2019_m": 153
  },
  "27": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.93,
-  "distancia_centroide_2019_m": 213
+  "distancia_centroide_2019_m": 200
  },
  "28": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.0,
-  "distancia_centroide_2019_m": 4072
+  "distancia_centroide_2019_m": 4061
  },
  "29": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.74,
-  "distancia_centroide_2019_m": 476
+  "distancia_centroide_2019_m": 474
  },
  "30": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.83,
-  "distancia_centroide_2019_m": 171
+  "iou_2019": 0.84,
+  "distancia_centroide_2019_m": 163
  },
  "31": {
-  "estado": "sin-digitalizar",
+  "estado": "aceptada",
   "motivos": [
-   "rechazada-area"
-  ]
+   "superficie de la ficha incompatible con su mapa (INC-013); no se usa como control"
+  ],
+  "iou_2019": 0.86,
+  "distancia_centroide_2019_m": 156
  },
  "32": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.74,
-  "distancia_centroide_2019_m": 172
+  "distancia_centroide_2019_m": 169
  },
  "33a": {
   "estado": "revisar",
   "motivos": [
    "área +7.0 % respecto a la ficha"
   ],
-  "iou_2019": 0.83,
-  "distancia_centroide_2019_m": 367
+  "iou_2019": 0.84,
+  "distancia_centroide_2019_m": 354
  },
  "33b": {
   "estado": "revisar",
   "motivos": [
    "área +6.1 % respecto a la ficha"
   ],
-  "iou_2019": 0.46,
-  "distancia_centroide_2019_m": 245
+  "iou_2019": 0.48,
+  "distancia_centroide_2019_m": 228
  },
  "34a": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.86,
-  "distancia_centroide_2019_m": 219
+  "distancia_centroide_2019_m": 217
  },
  "34b": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.83,
-  "distancia_centroide_2019_m": 238
+  "iou_2019": 0.85,
+  "distancia_centroide_2019_m": 195
  },
  "35": {
   "estado": "sin-digitalizar",
@@ -236,42 +238,46 @@
   "distancia_centroide_2019_m": 178
  },
  "36b": {
-  "estado": "sin-digitalizar",
-  "motivos": [
-   "sin-rotulos"
-  ]
+  "estado": "aceptada",
+  "motivos": [],
+  "iou_2019": 0.64,
+  "distancia_centroide_2019_m": 140
  },
  "36c": {
   "estado": "aceptada",
   "motivos": [
    "escala por superficie; ubicación corroborada con 2019"
   ],
-  "iou_2019": 0.66,
-  "distancia_centroide_2019_m": 63
+  "iou_2019": 0.65,
+  "distancia_centroide_2019_m": 60
  },
  "37a": {
-  "estado": "sin-digitalizar",
+  "estado": "revisar",
   "motivos": [
-   "rechazada-area"
-  ]
+   "área -15.3 % respecto a la ficha"
+  ],
+  "iou_2019": 0.72,
+  "distancia_centroide_2019_m": 131
  },
  "37b": {
-  "estado": "sin-digitalizar",
+  "estado": "revisar",
   "motivos": [
-   "rechazada-area"
-  ]
+   "área -18.7 % respecto a la ficha"
+  ],
+  "iou_2019": 0.75,
+  "distancia_centroide_2019_m": 996
  },
  "38": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.8,
-  "distancia_centroide_2019_m": 146
+  "distancia_centroide_2019_m": 144
  },
  "39": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.71,
-  "distancia_centroide_2019_m": 192
+  "iou_2019": 0.73,
+  "distancia_centroide_2019_m": 180
  },
  "3a": {
   "estado": "aceptada",
@@ -288,16 +294,16 @@
   "distancia_centroide_2019_m": null
  },
  "4": {
-  "estado": "sin-digitalizar",
-  "motivos": [
-   "sin-relleno-rojo"
-  ]
+  "estado": "aceptada",
+  "motivos": [],
+  "iou_2019": 0.77,
+  "distancia_centroide_2019_m": 124
  },
  "40": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.81,
-  "distancia_centroide_2019_m": 182
+  "distancia_centroide_2019_m": 180
  },
  "41": {
   "estado": "aceptada",
@@ -305,13 +311,13 @@
    "escala por superficie; ubicación corroborada con 2019"
   ],
   "iou_2019": 0.4,
-  "distancia_centroide_2019_m": 107
+  "distancia_centroide_2019_m": 106
  },
  "42": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.91,
-  "distancia_centroide_2019_m": 210
+  "distancia_centroide_2019_m": 206
  },
  "43": {
   "estado": "revisar",
@@ -324,8 +330,8 @@
  "44": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.83,
-  "distancia_centroide_2019_m": 180
+  "iou_2019": 0.84,
+  "distancia_centroide_2019_m": 171
  },
  "45": {
   "estado": "aceptada",
@@ -334,28 +340,28 @@
   "distancia_centroide_2019_m": null
  },
  "46": {
-  "estado": "sin-digitalizar",
-  "motivos": [
-   "sin-relleno-rojo"
-  ]
+  "estado": "aceptada",
+  "motivos": [],
+  "iou_2019": 0.66,
+  "distancia_centroide_2019_m": 166
  },
  "47": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.91,
-  "distancia_centroide_2019_m": 127
+  "distancia_centroide_2019_m": 124
  },
  "48": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.11,
-  "distancia_centroide_2019_m": 589
+  "distancia_centroide_2019_m": 583
  },
  "49a": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.9,
-  "distancia_centroide_2019_m": 214
+  "distancia_centroide_2019_m": 203
  },
  "49b": {
   "estado": "aceptada",
@@ -368,14 +374,14 @@
   "motivos": [
    "escala por superficie; ubicación corroborada con 2019"
   ],
-  "iou_2019": 0.64,
-  "distancia_centroide_2019_m": 166
+  "iou_2019": 0.65,
+  "distancia_centroide_2019_m": 160
  },
  "51": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.61,
-  "distancia_centroide_2019_m": 145
+  "iou_2019": 0.62,
+  "distancia_centroide_2019_m": 133
  },
  "52a": {
   "estado": "aceptada",
@@ -387,7 +393,7 @@
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.69,
-  "distancia_centroide_2019_m": 367
+  "distancia_centroide_2019_m": 368
  },
  "53": {
   "estado": "aceptada",
@@ -420,20 +426,20 @@
  "56b": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.59,
-  "distancia_centroide_2019_m": 144
+  "iou_2019": 0.58,
+  "distancia_centroide_2019_m": 147
  },
  "56c": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.68,
-  "distancia_centroide_2019_m": 99
+  "iou_2019": 0.67,
+  "distancia_centroide_2019_m": 103
  },
  "56d": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.53,
-  "distancia_centroide_2019_m": 435
+  "iou_2019": 0.52,
+  "distancia_centroide_2019_m": 437
  },
  "57": {
   "estado": "aceptada",
@@ -441,27 +447,27 @@
    "escala por superficie; ubicación corroborada con 2019"
   ],
   "iou_2019": 0.38,
-  "distancia_centroide_2019_m": 142
+  "distancia_centroide_2019_m": 146
  },
  "58": {
   "estado": "aceptada",
   "motivos": [
    "escala por superficie; ubicación corroborada con 2019"
   ],
-  "iou_2019": 0.53,
-  "distancia_centroide_2019_m": 170
+  "iou_2019": 0.54,
+  "distancia_centroide_2019_m": 164
  },
  "59": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.29,
-  "distancia_centroide_2019_m": 267
+  "distancia_centroide_2019_m": 264
  },
  "5a": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.68,
-  "distancia_centroide_2019_m": 459
+  "distancia_centroide_2019_m": 453
  },
  "5b": {
   "estado": "aceptada",
@@ -479,13 +485,13 @@
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.63,
-  "distancia_centroide_2019_m": 134
+  "distancia_centroide_2019_m": 135
  },
  "61": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.48,
-  "distancia_centroide_2019_m": 144
+  "distancia_centroide_2019_m": 146
  },
  "62": {
   "estado": "aceptada",
@@ -496,8 +502,8 @@
  "63": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.47,
-  "distancia_centroide_2019_m": 84
+  "iou_2019": 0.48,
+  "distancia_centroide_2019_m": 81
  },
  "64": {
   "estado": "aceptada",
@@ -508,46 +514,46 @@
  "65a": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.88,
-  "distancia_centroide_2019_m": 251
+  "iou_2019": 0.89,
+  "distancia_centroide_2019_m": 230
  },
  "65b": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.9,
-  "distancia_centroide_2019_m": 219
+  "iou_2019": 0.91,
+  "distancia_centroide_2019_m": 210
  },
  "66": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.93,
-  "distancia_centroide_2019_m": 212
+  "distancia_centroide_2019_m": 210
  },
  "67a": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.91,
-  "distancia_centroide_2019_m": 191
+  "distancia_centroide_2019_m": 186
  },
  "67b": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.86,
-  "distancia_centroide_2019_m": 219
+  "iou_2019": 0.87,
+  "distancia_centroide_2019_m": 194
  },
  "68": {
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.77,
-  "distancia_centroide_2019_m": 266
+  "distancia_centroide_2019_m": 256
  },
  "69": {
   "estado": "aceptada",
   "motivos": [
    "escala por superficie; ubicación corroborada con 2019"
   ],
-  "iou_2019": 0.86,
-  "distancia_centroide_2019_m": 160
+  "iou_2019": 0.85,
+  "distancia_centroide_2019_m": 155
  },
  "70": {
   "estado": "aceptada",
@@ -555,7 +561,7 @@
    "escala por superficie; ubicación corroborada con 2019"
   ],
   "iou_2019": 0.01,
-  "distancia_centroide_2019_m": 115
+  "distancia_centroide_2019_m": 108
  },
  "71": {
   "estado": "aceptada",
@@ -563,33 +569,31 @@
    "escala por superficie; ubicación corroborada con 2019"
   ],
   "iou_2019": 0.49,
-  "distancia_centroide_2019_m": 169
+  "distancia_centroide_2019_m": 164
  },
  "72": {
   "estado": "aceptada",
-  "motivos": [
-   "escala por superficie; ubicación corroborada con 2019"
-  ],
+  "motivos": [],
   "iou_2019": 0.26,
-  "distancia_centroide_2019_m": 462
+  "distancia_centroide_2019_m": 479
  },
  "73a": {
-  "estado": "sin-digitalizar",
-  "motivos": [
-   "rechazada-area"
-  ]
+  "estado": "aceptada",
+  "motivos": [],
+  "iou_2019": null,
+  "distancia_centroide_2019_m": null
  },
  "73b": {
-  "estado": "sin-digitalizar",
-  "motivos": [
-   "rechazada-area"
-  ]
+  "estado": "aceptada",
+  "motivos": [],
+  "iou_2019": null,
+  "distancia_centroide_2019_m": null
  },
  "74": {
-  "estado": "sin-digitalizar",
-  "motivos": [
-   "sin-rotulos"
-  ]
+  "estado": "aceptada",
+  "motivos": [],
+  "iou_2019": null,
+  "distancia_centroide_2019_m": null
  },
  "75": {
   "estado": "aceptada",
@@ -604,28 +608,34 @@
   "distancia_centroide_2019_m": null
  },
  "77a": {
-  "estado": "sin-digitalizar",
+  "estado": "revisar",
   "motivos": [
-   "rechazada-area"
-  ]
+   "área -20.5 % respecto a la ficha"
+  ],
+  "iou_2019": 0.44,
+  "distancia_centroide_2019_m": 632
  },
  "77b": {
-  "estado": "sin-digitalizar",
+  "estado": "revisar",
   "motivos": [
-   "sin-rotulos"
-  ]
+   "área -12.0 % respecto a la ficha"
+  ],
+  "iou_2019": 0.67,
+  "distancia_centroide_2019_m": 911
  },
  "78a": {
-  "estado": "sin-digitalizar",
+  "estado": "revisar",
   "motivos": [
-   "rechazada-area"
-  ]
+   "escala por superficie sin corroborar la ubicación"
+  ],
+  "iou_2019": null,
+  "distancia_centroide_2019_m": null
  },
  "78b": {
-  "estado": "sin-digitalizar",
-  "motivos": [
-   "sin-rotulos"
-  ]
+  "estado": "aceptada",
+  "motivos": [],
+  "iou_2019": null,
+  "distancia_centroide_2019_m": null
  },
  "79": {
   "estado": "revisar",
@@ -645,13 +655,13 @@
   "estado": "aceptada",
   "motivos": [],
   "iou_2019": 0.79,
-  "distancia_centroide_2019_m": 202
+  "distancia_centroide_2019_m": 200
  },
  "8": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.66,
-  "distancia_centroide_2019_m": 489
+  "iou_2019": 0.67,
+  "distancia_centroide_2019_m": 465
  },
  "80": {
   "estado": "revisar",
@@ -664,14 +674,14 @@
  "81": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.65,
-  "distancia_centroide_2019_m": 211
+  "iou_2019": 0.62,
+  "distancia_centroide_2019_m": 234
  },
  "82": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.78,
-  "distancia_centroide_2019_m": 115
+  "iou_2019": 0.79,
+  "distancia_centroide_2019_m": 123
  },
  "83": {
   "estado": "aceptada",
@@ -682,14 +692,14 @@
  "84": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.82,
-  "distancia_centroide_2019_m": 229
+  "iou_2019": 0.83,
+  "distancia_centroide_2019_m": 211
  },
  "85": {
-  "estado": "sin-digitalizar",
-  "motivos": [
-   "sin-rotulos"
-  ]
+  "estado": "aceptada",
+  "motivos": [],
+  "iou_2019": 0.65,
+  "distancia_centroide_2019_m": 651
  },
  "86": {
   "estado": "aceptada",
@@ -700,16 +710,16 @@
  "87": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.57,
-  "distancia_centroide_2019_m": 281
+  "iou_2019": 0.59,
+  "distancia_centroide_2019_m": 270
  },
  "88a": {
   "estado": "revisar",
   "motivos": [
-   "área +10.4 % respecto a la ficha"
+   "área +5.2 % respecto a la ficha"
   ],
-  "iou_2019": 0.47,
-  "distancia_centroide_2019_m": 105
+  "iou_2019": 0.0,
+  "distancia_centroide_2019_m": 9948
  },
  "88b": {
   "estado": "revisar",
@@ -720,28 +730,36 @@
   "distancia_centroide_2019_m": null
  },
  "88c": {
-  "estado": "sin-digitalizar",
+  "estado": "revisar",
   "motivos": [
-   "sin-rotulos"
-  ]
+   "superficie de la ficha incompatible con su mapa (INC-013); no se usa como control"
+  ],
+  "iou_2019": null,
+  "distancia_centroide_2019_m": null
  },
  "88d": {
-  "estado": "sin-digitalizar",
+  "estado": "aceptada",
   "motivos": [
-   "rechazada-area"
-  ]
+   "superficie de la ficha incompatible con su mapa (INC-013); no se usa como control"
+  ],
+  "iou_2019": 0.67,
+  "distancia_centroide_2019_m": 145
  },
  "88e": {
-  "estado": "sin-digitalizar",
+  "estado": "aceptada",
   "motivos": [
-   "rechazada-area"
-  ]
+   "superficie de la ficha incompatible con su mapa (INC-013); no se usa como control"
+  ],
+  "iou_2019": 0.74,
+  "distancia_centroide_2019_m": 207
  },
  "88f": {
-  "estado": "sin-digitalizar",
+  "estado": "revisar",
   "motivos": [
-   "sin-rotulos"
-  ]
+   "área -5.3 % respecto a la ficha"
+  ],
+  "iou_2019": 0.69,
+  "distancia_centroide_2019_m": 153
  },
  "89": {
   "estado": "revisar",
@@ -756,31 +774,33 @@
   "motivos": [
    "escala por superficie; ubicación corroborada con 2019"
   ],
-  "iou_2019": 0.32,
-  "distancia_centroide_2019_m": 990
+  "iou_2019": 0.34,
+  "distancia_centroide_2019_m": 1002
  },
  "90": {
-  "estado": "sin-digitalizar",
-  "motivos": [
-   "rechazada-area"
-  ]
+  "estado": "aceptada",
+  "motivos": [],
+  "iou_2019": 0.78,
+  "distancia_centroide_2019_m": 137
  },
  "91": {
-  "estado": "sin-digitalizar",
+  "estado": "revisar",
   "motivos": [
-   "rechazada-area"
-  ]
+   "superficie de la ficha incompatible con su mapa (INC-013); no se usa como control"
+  ],
+  "iou_2019": null,
+  "distancia_centroide_2019_m": null
  },
  "92": {
   "estado": "aceptada",
   "motivos": [],
-  "iou_2019": 0.7,
-  "distancia_centroide_2019_m": 178
+  "iou_2019": 0.69,
+  "distancia_centroide_2019_m": 185
  },
  "93": {
-  "estado": "sin-digitalizar",
-  "motivos": [
-   "sin-rotulos"
-  ]
+  "estado": "aceptada",
+  "motivos": [],
+  "iou_2019": null,
+  "distancia_centroide_2019_m": null
  }
 }

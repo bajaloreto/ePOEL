@@ -119,7 +119,9 @@ def texto_de(sec):
 
 
 def numero(texto):
-    m = re.search(r"[\d,]+(\.\d+)?", texto or "")
+    # El Boletín a veces deja un espacio tras la coma de miles («53, 280.11 Ha», UGA 73b)
+    texto = re.sub(r"(\d),\s+(\d{3})", r"\1,\2", texto or "")
+    m = re.search(r"[\d,]+(\.\d+)?", texto)
     return float(m.group().replace(",", "")) if m else None
 
 
