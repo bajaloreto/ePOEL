@@ -1,0 +1,290 @@
+[
+  {
+    "capa": "localidades",
+    "tileset": "helden9.cjtubme5700uw9trp4y6tajz4-7cyzp",
+    "zoom_descargado": 12,
+    "zoom_max": 12,
+    "tiles": 135,
+    "features": 145,
+    "bounds": [
+      -111.758888,
+      25.451388,
+      -111.028333,
+      26.553333
+    ],
+    "creado_mapbox": 1553882931036,
+    "modificado_mapbox": 1553882930759
+  },
+  {
+    "capa": "unidades_economicas",
+    "tileset": "helden9.cjtubo0hw0195crqig5v31sss-19lms",
+    "zoom_descargado": 14,
+    "zoom_max": 14,
+    "tiles": 1943,
+    "features": 984,
+    "bounds": [
+      -111.559692,
+      25.257959,
+      -110.951092,
+      26.553532
+    ],
+    "creado_mapbox": 1553882972689,
+    "modificado_mapbox": 1553882972391
+  },
+  {
+    "capa": "vialidades",
+    "tileset": "helden9.cjtubqtub00bvb3pbd6wu2uqq-1uhxz",
+    "zoom_descargado": 13,
+    "zoom_max": 13,
+    "tiles": 476,
+    "features": 127,
+    "bounds": [
+      -111.788101,
+      25.50913,
+      -111.0699,
+      26.583349
+    ],
+    "creado_mapbox": 1553882917068,
+    "modificado_mapbox": 1553882916741
+  },
+  {
+    "capa": "concesiones_canceladas",
+    "tileset": "helden9.cjtubtw0w00z8drm3mp99ru3w-3qcnm",
+    "zoom_descargado": 8,
+    "zoom_max": 8,
+    "tiles": 4,
+    "features": 2,
+    "bounds": [
+      -111.660681,
+      25.074937,
+      -110.91816,
+      26.417467
+    ],
+    "creado_mapbox": 1553882901765,
+    "modificado_mapbox": 1553882901452
+  },
+  {
+    "capa": "concesiones_vigentes",
+    "tileset": "helden9.cjtubud0600hiefru2n6nsta3-3rwr9",
+    "zoom_descargado": 10,
+    "zoom_max": 10,
+    "tiles": 15,
+    "features": 26,
+    "bounds": [
+      -111.609645,
+      25.075839,
+      -110.870191,
+      26.247445
+    ],
+    "creado_mapbox": 1553882892624,
+    "modificado_mapbox": 1553882892334
+  },
+  {
+    "capa": "aguas_subterraneas",
+    "tileset": "helden9.cjtubvd4i00bdo5mxsnmw7yks-9kjo9",
+    "zoom_descargado": 12,
+    "zoom_max": 12,
+    "tiles": 48,
+    "features": 17,
+    "bounds": [
+      -111.773456,
+      26.001971,
+      -111.340413,
+      26.545496
+    ],
+    "creado_mapbox": 1553882887211,
+    "modificado_mapbox": 1553882886992
+  },
+  {
+    "capa": "area_influencia_pnbl",
+    "tileset": "helden9.cjtubvvjo00zg6qqqc3xgjdv5-27kw8",
+    "zoom_descargado": 12,
+    "zoom_max": 12,
+    "tiles": 60,
+    "features": 1,
+    "bounds": [
+      -111.587412,
+      25.538278,
+      -111.131221,
+      26.213195
+    ],
+    "creado_mapbox": 1553882868087,
+    "modificado_mapbox": 1553882867861
+  },
+  {
+    "capa": "cuencas_hidrologicas",
+    "tileset": "helden9.cjtubww3000oldbqi8ikhxhko-3tz8a",
+    "zoom_descargado": 12,
+    "zoom_max": 12,
+    "tiles": 627,
+    "features": 69,
+    "bounds": [
+      -112.444278,
+      24.302849,
+      -110.860163,
+      26.897266
+    ],
+    "creado_mapbox": 1553882844790,
+    "modificado_mapbox": 1553882844575
+  },
+  {
+    "capa": "humedales",
+    "tileset": "helden9.cjtubxll600t79jrpna5pjxsd-21dfx",
+    "zoom_descargado": 10,
+    "zoom_max": 10,
+    "tiles": 160,
+    "features": 20,
+    "bounds": [
+      -113.549092,
+      24.283909,
+      -110.313791,
+      29.040902
+    ],
+    "creado_mapbox": 1553882780173,
+    "modificado_mapbox": 1553882779881
+  },
+  {
+    "capa": "parque_nacional_bahia_loreto",
+    "tileset": "helden9.cjtuby46x02wu9ppb8j4yxjqv-8zmqr",
+    "zoom_descargado": 13,
+    "zoom_max": 13,
+    "tiles": 210,
+    "features": 4,
+    "bounds": [
+      -111.355551,
+      25.588851,
+      -110.750647,
+      26.13065
+    ],
+    "creado_mapbox": 1553882760505,
+    "modificado_mapbox": 1553882760298
+  },
+  {
+    "capa": "asentamiento_humanos",
+    "tileset": "helden9.cjtubz2i700sskjmqz9kk9e2i-3sinc",
+    "zoom_descargado": 12,
+    "zoom_max": 12,
+    "tiles": 56,
+    "features": 9,
+    "bounds": [
+      -111.548495,
+      25.503867,
+      -111.063985,
+      26.042725
+    ],
+    "creado_mapbox": 1553882734274,
+    "modificado_mapbox": 1553882734067
+  },
+  {
+    "capa": "zona_parcelaria",
+    "tileset": "helden9.cjtuc09ow006kkpl872hxtks7-1wlxz",
+    "zoom_descargado": 11,
+    "zoom_max": 11,
+    "tiles": 120,
+    "features": 23,
+    "bounds": [
+      -112.414936,
+      25.031269,
+      -110.87893,
+      26.897135
+    ],
+    "creado_mapbox": 1553882710452,
+    "modificado_mapbox": 1553882710165
+  },
+  {
+    "capa": "tierras_uso_comun",
+    "tileset": "helden9.cjtucxtu10058mhmqxz1uaunw-071em",
+    "zoom_descargado": 15,
+    "zoom_max": 15,
+    "tiles": 780,
+    "features": 249,
+    "bounds": [
+      -111.533484,
+      25.795359,
+      -111.328721,
+      26.169486
+    ],
+    "creado_mapbox": 1553882686850,
+    "modificado_mapbox": 1553882686556
+  },
+  {
+    "capa": "aprovechamiento_sustentable_poel",
+    "tileset": "helden9.cjtronjo20l8ae5o4agw8et3k-8trxr",
+    "zoom_descargado": 12,
+    "zoom_max": 12,
+    "tiles": 160,
+    "features": 50,
+    "bounds": [
+      -111.76622,
+      25.358311,
+      -110.985165,
+      26.565863
+    ],
+    "creado_mapbox": 1553720194025,
+    "modificado_mapbox": 1553720193809
+  },
+  {
+    "capa": "preservacion_poel_2014",
+    "tileset": "helden9.cjtropb4h02rh2xmutx2w0rtw-6jw2b",
+    "zoom_descargado": 13,
+    "zoom_max": 13,
+    "tiles": 684,
+    "features": 76,
+    "bounds": [
+      -111.724856,
+      25.203939,
+      -110.921953,
+      26.552863
+    ],
+    "creado_mapbox": 1553720016207,
+    "modificado_mapbox": 1553720015998
+  },
+  {
+    "capa": "conservacion_poel_2014",
+    "tileset": "helden9.cjtrooin40lb0efn3kr4ad4o3-064rk",
+    "zoom_descargado": 13,
+    "zoom_max": 13,
+    "tiles": 378,
+    "features": 75,
+    "bounds": [
+      -111.788379,
+      25.509007,
+      -111.185416,
+      26.538688
+    ],
+    "creado_mapbox": 1553720142426,
+    "modificado_mapbox": 1553720142205
+  },
+  {
+    "capa": "restauracion_poel_2014",
+    "tileset": "helden9.cjtropxcj0l6k26qq3tsi9k6t-4jyxa",
+    "zoom_descargado": 12,
+    "zoom_max": 12,
+    "tiles": 18,
+    "features": 8,
+    "bounds": [
+      -111.577556,
+      25.91944,
+      -111.396966,
+      26.307621
+    ],
+    "creado_mapbox": 1553719968260,
+    "modificado_mapbox": 1553719968039
+  },
+  {
+    "capa": "psdu-perimetro",
+    "tileset": "helden9.ck41k95s60f1n2rqdi0hsc92r-4l3hv",
+    "zoom_descargado": 12,
+    "zoom_max": 12,
+    "tiles": 18,
+    "features": 1,
+    "bounds": [
+      -111.42898,
+      25.697824,
+      -111.212325,
+      26.074917
+    ],
+    "creado_mapbox": 1576087812796,
+    "modificado_mapbox": 1576087812568
+  }
+]
