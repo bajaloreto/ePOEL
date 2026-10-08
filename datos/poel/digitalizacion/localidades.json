@@ -1,0 +1,1460 @@
+{
+ "10": {
+  "estado": "medida",
+  "precision_m": 115.0,
+  "localidades": 6,
+  "mediana_m": 76.1,
+  "desplazamiento_mediano_m": [
+   37,
+   -44
+  ],
+  "pares": [
+   {
+    "localidad": "El Saucito",
+    "error_m": 138.1,
+    "dx_m": 137,
+    "dy_m": 15
+   },
+   {
+    "localidad": "San Nicolás",
+    "error_m": 40.7,
+    "dx_m": 38,
+    "dy_m": -14
+   },
+   {
+    "localidad": "Jacobo",
+    "error_m": 83.7,
+    "dx_m": 28,
+    "dy_m": -79
+   },
+   {
+    "localidad": "San Antonio",
+    "error_m": 68.4,
+    "dx_m": 23,
+    "dy_m": -64
+   },
+   {
+    "localidad": "• La Presa",
+    "error_m": 90723.5,
+    "dx_m": 41285,
+    "dy_m": -80786
+   },
+   {
+    "localidad": "El Cimarrón",
+    "error_m": 45.0,
+    "dx_m": 37,
+    "dy_m": -25
+   }
+  ]
+ },
+ "11a": {
+  "estado": "medida",
+  "precision_m": 181.0,
+  "localidades": 4,
+  "mediana_m": 150.2,
+  "desplazamiento_mediano_m": [
+   130,
+   -22
+  ],
+  "pares": [
+   {
+    "localidad": "La Ascensión",
+    "error_m": 100.8,
+    "dx_m": 100,
+    "dy_m": 12
+   },
+   {
+    "localidad": "El 47",
+    "error_m": 164.6,
+    "dx_m": 155,
+    "dy_m": -56
+   },
+   {
+    "localidad": "•San Vicente",
+    "error_m": 135.8,
+    "dx_m": 106,
+    "dy_m": -85
+   },
+   {
+    "localidad": "Agua Escondida._..-",
+    "error_m": 2958.2,
+    "dx_m": 1907,
+    "dy_m": 2261
+   }
+  ]
+ },
+ "11b": {
+  "estado": "medida",
+  "precision_m": 181.0,
+  "localidades": 3,
+  "mediana_m": 109.5,
+  "desplazamiento_mediano_m": [
+   98,
+   -50
+  ],
+  "pares": [
+   {
+    "localidad": "La Ascensión",
+    "error_m": 60.6,
+    "dx_m": 57,
+    "dy_m": -21
+   },
+   {
+    "localidad": "El Copalito",
+    "error_m": 109.5,
+    "dx_m": 98,
+    "dy_m": -50
+   },
+   {
+    "localidad": "Las Cuevas",
+    "error_m": 5272.4,
+    "dx_m": 4868,
+    "dy_m": -2025
+   }
+  ]
+ },
+ "12": {
+  "estado": "medida",
+  "precision_m": 52.0,
+  "localidades": 1,
+  "mediana_m": 89.5,
+  "desplazamiento_mediano_m": [
+   71,
+   -54
+  ],
+  "pares": [
+   {
+    "localidad": "El 47",
+    "error_m": 89.5,
+    "dx_m": 71,
+    "dy_m": -54
+   }
+  ]
+ },
+ "13": {
+  "estado": "sin-localidades"
+ },
+ "14": {
+  "estado": "sin-localidades"
+ },
+ "15": {
+  "estado": "sin-localidades"
+ },
+ "16": {
+  "estado": "medida",
+  "precision_m": 95.0,
+  "localidades": 2,
+  "mediana_m": 301.0,
+  "desplazamiento_mediano_m": [
+   -91,
+   -284
+  ],
+  "pares": [
+   {
+    "localidad": "•San Antonio",
+    "error_m": 74.8,
+    "dx_m": -45,
+    "dy_m": -60
+   },
+   {
+    "localidad": "El Troquero",
+    "error_m": 527.2,
+    "dx_m": -138,
+    "dy_m": -509
+   }
+  ]
+ },
+ "17": {
+  "estado": "medida",
+  "precision_m": 97.0,
+  "localidades": 5,
+  "mediana_m": 53.9,
+  "desplazamiento_mediano_m": [
+   49,
+   -23
+  ],
+  "pares": [
+   {
+    "localidad": "La Ascensión",
+    "error_m": 41.7,
+    "dx_m": 41,
+    "dy_m": -8
+   },
+   {
+    "localidad": "•San Antonio",
+    "error_m": 91.1,
+    "dx_m": 59,
+    "dy_m": -69
+   },
+   {
+    "localidad": "-•Los Chamacos",
+    "error_m": 53.9,
+    "dx_m": 49,
+    "dy_m": -23
+   },
+   {
+    "localidad": "•El Cardonal",
+    "error_m": 50.6,
+    "dx_m": 36,
+    "dy_m": -36
+   },
+   {
+    "localidad": "El Troquero",
+    "error_m": 1294.8,
+    "dx_m": 116,
+    "dy_m": 1290
+   }
+  ]
+ },
+ "18a": {
+  "estado": "medida",
+  "precision_m": 149.0,
+  "localidades": 3,
+  "mediana_m": 58.2,
+  "desplazamiento_mediano_m": [
+   54,
+   -22
+  ],
+  "pares": [
+   {
+    "localidad": "El Imposible",
+    "error_m": 58.2,
+    "dx_m": 54,
+    "dy_m": -22
+   },
+   {
+    "localidad": "Cerro Blanco",
+    "error_m": 48.5,
+    "dx_m": -36,
+    "dy_m": -33
+   },
+   {
+    "localidad": "La Venta",
+    "error_m": 252.7,
+    "dx_m": 251,
+    "dy_m": 27
+   }
+  ]
+ },
+ "18b": {
+  "estado": "medida",
+  "precision_m": 152.0,
+  "localidades": 1,
+  "mediana_m": 67.5,
+  "desplazamiento_mediano_m": [
+   67,
+   -7
+  ],
+  "pares": [
+   {
+    "localidad": "El Copalito",
+    "error_m": 67.5,
+    "dx_m": 67,
+    "dy_m": -7
+   }
+  ]
+ },
+ "19": {
+  "estado": "medida",
+  "precision_m": 106.0,
+  "localidades": 4,
+  "mediana_m": 60.8,
+  "desplazamiento_mediano_m": [
+   48,
+   -20
+  ],
+  "pares": [
+   {
+    "localidad": "La Ascensión",
+    "error_m": 25.2,
+    "dx_m": 15,
+    "dy_m": -20
+   },
+   {
+    "localidad": "San Antonio",
+    "error_m": 55.7,
+    "dx_m": 30,
+    "dy_m": -47
+   },
+   {
+    "localidad": "•Los Chamacos",
+    "error_m": 65.8,
+    "dx_m": 66,
+    "dy_m": 0
+   },
+   {
+    "localidad": "El Copalito",
+    "error_m": 132.2,
+    "dx_m": 131,
+    "dy_m": -20
+   }
+  ]
+ },
+ "1a": {
+  "estado": "sin-localidades"
+ },
+ "1b": {
+  "estado": "sin-localidades"
+ },
+ "1c": {
+  "estado": "sin-localidades"
+ },
+ "1d": {
+  "estado": "sin-localidades"
+ },
+ "2": {
+  "estado": "sin-localidades"
+ },
+ "20": {
+  "estado": "sin-localidades"
+ },
+ "21": {
+  "estado": "sin-localidades"
+ },
+ "22a": {
+  "estado": "medida",
+  "precision_m": 49.0,
+  "localidades": 1,
+  "mediana_m": 89827.1,
+  "desplazamiento_mediano_m": [
+   40993,
+   -79928
+  ],
+  "pares": [
+   {
+    "localidad": "•La Presa",
+    "error_m": 89827.1,
+    "dx_m": 40993,
+    "dy_m": -79928
+   }
+  ]
+ },
+ "22b": {
+  "estado": "medida",
+  "precision_m": 49.0,
+  "localidades": 1,
+  "mediana_m": 89824.7,
+  "desplazamiento_mediano_m": [
+   41010,
+   -79917
+  ],
+  "pares": [
+   {
+    "localidad": "La Presa",
+    "error_m": 89824.7,
+    "dx_m": 41010,
+    "dy_m": -79917
+   }
+  ]
+ },
+ "23": {
+  "estado": "sin-localidades"
+ },
+ "24": {
+  "estado": "medida",
+  "precision_m": 81.0,
+  "localidades": 1,
+  "mediana_m": 300.0,
+  "desplazamiento_mediano_m": [
+   300,
+   -3
+  ],
+  "pares": [
+   {
+    "localidad": "•La Venta",
+    "error_m": 300.0,
+    "dx_m": 300,
+    "dy_m": -3
+   }
+  ]
+ },
+ "25": {
+  "estado": "medida",
+  "precision_m": 127.0,
+  "localidades": 4,
+  "mediana_m": 90.0,
+  "desplazamiento_mediano_m": [
+   81,
+   -25
+  ],
+  "pares": [
+   {
+    "localidad": "El Copalito",
+    "error_m": 107.6,
+    "dx_m": 105,
+    "dy_m": 23
+   },
+   {
+    "localidad": "El Imposible",
+    "error_m": 37.0,
+    "dx_m": 27,
+    "dy_m": -25
+   },
+   {
+    "localidad": "El Troquero",
+    "error_m": 72.4,
+    "dx_m": 58,
+    "dy_m": -43
+   },
+   {
+    "localidad": "Lomas Lindas",
+    "error_m": 110.9,
+    "dx_m": 108,
+    "dy_m": -26
+   }
+  ]
+ },
+ "26": {
+  "estado": "medida",
+  "precision_m": 82.0,
+  "localidades": 3,
+  "mediana_m": 51.6,
+  "desplazamiento_mediano_m": [
+   27,
+   -44
+  ],
+  "pares": [
+   {
+    "localidad": "El Copalito",
+    "error_m": 51.8,
+    "dx_m": 39,
+    "dy_m": -34
+   },
+   {
+    "localidad": "El Imposible",
+    "error_m": 50.5,
+    "dx_m": 25,
+    "dy_m": -44
+   },
+   {
+    "localidad": "El Troquero",
+    "error_m": 51.6,
+    "dx_m": 27,
+    "dy_m": -44
+   }
+  ]
+ },
+ "27": {
+  "estado": "medida",
+  "precision_m": 102.0,
+  "localidades": 1,
+  "mediana_m": 106.7,
+  "desplazamiento_mediano_m": [
+   46,
+   -96
+  ],
+  "pares": [
+   {
+    "localidad": "El Belén",
+    "error_m": 106.7,
+    "dx_m": 46,
+    "dy_m": -96
+   }
+  ]
+ },
+ "28": {
+  "estado": "sin-localidades"
+ },
+ "29": {
+  "estado": "medida",
+  "precision_m": 93.0,
+  "localidades": 1,
+  "mediana_m": 1563.3,
+  "desplazamiento_mediano_m": [
+   1391,
+   -713
+  ],
+  "pares": [
+   {
+    "localidad": "El Copalito",
+    "error_m": 1563.3,
+    "dx_m": 1391,
+    "dy_m": -713
+   }
+  ]
+ },
+ "30": {
+  "estado": "medida",
+  "precision_m": 38.0,
+  "localidades": 1,
+  "mediana_m": 25.1,
+  "desplazamiento_mediano_m": [
+   20,
+   -15
+  ],
+  "pares": [
+   {
+    "localidad": "•El Cardonal",
+    "error_m": 25.1,
+    "dx_m": 20,
+    "dy_m": -15
+   }
+  ]
+ },
+ "31": {
+  "estado": "medida",
+  "precision_m": 59.0,
+  "localidades": 1,
+  "mediana_m": 24.6,
+  "desplazamiento_mediano_m": [
+   12,
+   -22
+  ],
+  "pares": [
+   {
+    "localidad": "El Saucito",
+    "error_m": 24.6,
+    "dx_m": 12,
+    "dy_m": -22
+   }
+  ]
+ },
+ "32": {
+  "estado": "medida",
+  "precision_m": 38.0,
+  "localidades": 1,
+  "mediana_m": 38.0,
+  "desplazamiento_mediano_m": [
+   36,
+   -13
+  ],
+  "pares": [
+   {
+    "localidad": "Lomas Lindas",
+    "error_m": 38.0,
+    "dx_m": 36,
+    "dy_m": -13
+   }
+  ]
+ },
+ "33a": {
+  "estado": "sin-localidades"
+ },
+ "33b": {
+  "estado": "sin-localidades"
+ },
+ "34a": {
+  "estado": "medida",
+  "precision_m": 84.0,
+  "localidades": 4,
+  "mediana_m": 61.9,
+  "desplazamiento_mediano_m": [
+   12,
+   -60
+  ],
+  "pares": [
+   {
+    "localidad": "El Palo Chino",
+    "error_m": 55.1,
+    "dx_m": 55,
+    "dy_m": -2
+   },
+   {
+    "localidad": "Rancho Nuevo",
+    "error_m": 59.5,
+    "dx_m": 18,
+    "dy_m": -57
+   },
+   {
+    "localidad": "San Javier",
+    "error_m": 71.5,
+    "dx_m": 6,
+    "dy_m": -71
+   },
+   {
+    "localidad": "La Fortuna®•",
+    "error_m": 64.2,
+    "dx_m": -10,
+    "dy_m": -63
+   }
+  ]
+ },
+ "34b": {
+  "estado": "medida",
+  "precision_m": 83.0,
+  "localidades": 3,
+  "mediana_m": 70.2,
+  "desplazamiento_mediano_m": [
+   -5,
+   -70
+  ],
+  "pares": [
+   {
+    "localidad": "Rancho Viejo",
+    "error_m": 55.9,
+    "dx_m": 32,
+    "dy_m": -46
+   },
+   {
+    "localidad": "\\San Javier",
+    "error_m": 70.2,
+    "dx_m": -5,
+    "dy_m": -70
+   },
+   {
+    "localidad": "Lá Fortuna®•",
+    "error_m": 72.2,
+    "dx_m": -16,
+    "dy_m": -70
+   }
+  ]
+ },
+ "36a": {
+  "estado": "sin-localidades"
+ },
+ "36b": {
+  "estado": "sin-localidades"
+ },
+ "36c": {
+  "estado": "sin-localidades"
+ },
+ "37a": {
+  "estado": "medida",
+  "precision_m": 127.0,
+  "localidades": 9,
+  "mediana_m": 115.8,
+  "desplazamiento_mediano_m": [
+   51,
+   -17
+  ],
+  "pares": [
+   {
+    "localidad": "El Picacho",
+    "error_m": 107.9,
+    "dx_m": -82,
+    "dy_m": 70
+   },
+   {
+    "localidad": "El Palo Chino",
+    "error_m": 55.0,
+    "dx_m": -52,
+    "dy_m": 19
+   },
+   {
+    "localidad": "Las Cuevas",
+    "error_m": 213.9,
+    "dx_m": 208,
+    "dy_m": -50
+   },
+   {
+    "localidad": "San Guillermo •",
+    "error_m": 69.5,
+    "dx_m": 51,
+    "dy_m": -47
+   },
+   {
+    "localidad": "San Javier",
+    "error_m": 65.5,
+    "dx_m": 41,
+    "dy_m": -51
+   },
+   {
+    "localidad": "El Belén",
+    "error_m": 153.3,
+    "dx_m": 152,
+    "dy_m": -17
+   },
+   {
+    "localidad": "San Ángel",
+    "error_m": 223.0,
+    "dx_m": -171,
+    "dy_m": 143
+   },
+   {
+    "localidad": "Santa Inés",
+    "error_m": 115.8,
+    "dx_m": 115,
+    "dy_m": -16
+   },
+   {
+    "localidad": "El Mezquite",
+    "error_m": 443.0,
+    "dx_m": 271,
+    "dy_m": -350
+   }
+  ]
+ },
+ "37b": {
+  "estado": "medida",
+  "precision_m": 125.0,
+  "localidades": 9,
+  "mediana_m": 61.7,
+  "desplazamiento_mediano_m": [
+   35,
+   -25
+  ],
+  "pares": [
+   {
+    "localidad": "El Picacho",
+    "error_m": 97.6,
+    "dx_m": -68,
+    "dy_m": 70
+   },
+   {
+    "localidad": "• El Palo Chino",
+    "error_m": 43.0,
+    "dx_m": 42,
+    "dy_m": -7
+   },
+   {
+    "localidad": "Las Cuevas",
+    "error_m": 61.7,
+    "dx_m": 37,
+    "dy_m": -49
+   },
+   {
+    "localidad": "El Saucito",
+    "error_m": 28.4,
+    "dx_m": 14,
+    "dy_m": -25
+   },
+   {
+    "localidad": "San Javier",
+    "error_m": 55.7,
+    "dx_m": 21,
+    "dy_m": -52
+   },
+   {
+    "localidad": "El Belén",
+    "error_m": 68.5,
+    "dx_m": 66,
+    "dy_m": -17
+   },
+   {
+    "localidad": "Agua Escondida",
+    "error_m": 121.1,
+    "dx_m": -47,
+    "dy_m": -111
+   },
+   {
+    "localidad": "El Eden",
+    "error_m": 39.2,
+    "dx_m": 35,
+    "dy_m": -18
+   },
+   {
+    "localidad": "•El Mezquite",
+    "error_m": 404.9,
+    "dx_m": 234,
+    "dy_m": -330
+   }
+  ]
+ },
+ "38": {
+  "estado": "sin-localidades"
+ },
+ "39": {
+  "estado": "sin-localidades"
+ },
+ "3a": {
+  "estado": "sin-localidades"
+ },
+ "3b": {
+  "estado": "sin-localidades"
+ },
+ "4": {
+  "estado": "sin-localidades"
+ },
+ "40": {
+  "estado": "sin-localidades"
+ },
+ "41": {
+  "estado": "medida",
+  "precision_m": 26.0,
+  "localidades": 1,
+  "mediana_m": 43.0,
+  "desplazamiento_mediano_m": [
+   31,
+   -30
+  ],
+  "pares": [
+   {
+    "localidad": "•Nopolo",
+    "error_m": 43.0,
+    "dx_m": 31,
+    "dy_m": -30
+   }
+  ]
+ },
+ "42": {
+  "estado": "medida",
+  "precision_m": 78.0,
+  "localidades": 2,
+  "mediana_m": 527.1,
+  "desplazamiento_mediano_m": [
+   -69,
+   -478
+  ],
+  "pares": [
+   {
+    "localidad": "•El Picacho",
+    "error_m": 57.0,
+    "dx_m": -43,
+    "dy_m": 37
+   },
+   {
+    "localidad": "Rancho Nuevo",
+    "error_m": 997.3,
+    "dx_m": -95,
+    "dy_m": -993
+   }
+  ]
+ },
+ "43": {
+  "estado": "medida",
+  "precision_m": 14.0,
+  "localidades": 1,
+  "mediana_m": 41.3,
+  "desplazamiento_mediano_m": [
+   32,
+   -26
+  ],
+  "pares": [
+   {
+    "localidad": "•Nopoló",
+    "error_m": 41.3,
+    "dx_m": 32,
+    "dy_m": -26
+   }
+  ]
+ },
+ "44": {
+  "estado": "medida",
+  "precision_m": 38.0,
+  "localidades": 1,
+  "mediana_m": 48.7,
+  "desplazamiento_mediano_m": [
+   39,
+   -29
+  ],
+  "pares": [
+   {
+    "localidad": "Las Cuevas",
+    "error_m": 48.7,
+    "dx_m": 39,
+    "dy_m": -29
+   }
+  ]
+ },
+ "45": {
+  "estado": "sin-localidades"
+ },
+ "46": {
+  "estado": "sin-localidades"
+ },
+ "47": {
+  "estado": "medida",
+  "precision_m": 50.0,
+  "localidades": 1,
+  "mediana_m": 26.5,
+  "desplazamiento_mediano_m": [
+   25,
+   9
+  ],
+  "pares": [
+   {
+    "localidad": "Él Saucito",
+    "error_m": 26.5,
+    "dx_m": 25,
+    "dy_m": 9
+   }
+  ]
+ },
+ "48": {
+  "estado": "medida",
+  "precision_m": 23.0,
+  "localidades": 1,
+  "mediana_m": 46.6,
+  "desplazamiento_mediano_m": [
+   38,
+   -28
+  ],
+  "pares": [
+   {
+    "localidad": "•Nopoló",
+    "error_m": 46.6,
+    "dx_m": 38,
+    "dy_m": -28
+   }
+  ]
+ },
+ "49a": {
+  "estado": "medida",
+  "precision_m": 69.0,
+  "localidades": 5,
+  "mediana_m": 92.5,
+  "desplazamiento_mediano_m": [
+   17,
+   3
+  ],
+  "pares": [
+   {
+    "localidad": "El Saucito",
+    "error_m": 17.6,
+    "dx_m": 17,
+    "dy_m": 3
+   },
+   {
+    "localidad": "La Calera",
+    "error_m": 92.5,
+    "dx_m": 48,
+    "dy_m": -79
+   },
+   {
+    "localidad": "La Fortuna",
+    "error_m": 44.7,
+    "dx_m": -17,
+    "dy_m": -41
+   },
+   {
+    "localidad": "San Ángel",
+    "error_m": 301.8,
+    "dx_m": -274,
+    "dy_m": 126
+   },
+   {
+    "localidad": "El Corralito",
+    "error_m": 167.8,
+    "dx_m": 81,
+    "dy_m": 147
+   }
+  ]
+ },
+ "49b": {
+  "estado": "sin-localidades"
+ },
+ "50": {
+  "estado": "sin-localidades"
+ },
+ "51": {
+  "estado": "sin-localidades"
+ },
+ "52a": {
+  "estado": "medida",
+  "precision_m": 55.0,
+  "localidades": 1,
+  "mediana_m": 37636.5,
+  "desplazamiento_mediano_m": [
+   24696,
+   -28401
+  ],
+  "pares": [
+   {
+    "localidad": "(•La Presa",
+    "error_m": 37636.5,
+    "dx_m": 24696,
+    "dy_m": -28401
+   }
+  ]
+ },
+ "52b": {
+  "estado": "medida",
+  "precision_m": 55.0,
+  "localidades": 2,
+  "mediana_m": 18830.0,
+  "desplazamiento_mediano_m": [
+   12317,
+   -14224
+  ],
+  "pares": [
+   {
+    "localidad": "La Fortuna",
+    "error_m": 53.8,
+    "dx_m": -18,
+    "dy_m": -51
+   },
+   {
+    "localidad": "(• La Presa",
+    "error_m": 37606.2,
+    "dx_m": 24653,
+    "dy_m": -28398
+   }
+  ]
+ },
+ "53": {
+  "estado": "medida",
+  "precision_m": 28.0,
+  "localidades": 3,
+  "mediana_m": 56.1,
+  "desplazamiento_mediano_m": [
+   -51,
+   23
+  ],
+  "pares": [
+   {
+    "localidad": "Los Dolores",
+    "error_m": 37.6,
+    "dx_m": 4,
+    "dy_m": -37
+   },
+   {
+    "localidad": "•Los Corrales",
+    "error_m": 56.1,
+    "dx_m": -51,
+    "dy_m": 23
+   },
+   {
+    "localidad": "•La Fortuna",
+    "error_m": 2389.8,
+    "dx_m": -2218,
+    "dy_m": 889
+   }
+  ]
+ },
+ "55": {
+  "estado": "medida",
+  "precision_m": 22.0,
+  "localidades": 1,
+  "mediana_m": 35.5,
+  "desplazamiento_mediano_m": [
+   13,
+   -33
+  ],
+  "pares": [
+   {
+    "localidad": "El Belen",
+    "error_m": 35.5,
+    "dx_m": 13,
+    "dy_m": -33
+   }
+  ]
+ },
+ "56a": {
+  "estado": "sin-localidades"
+ },
+ "56b": {
+  "estado": "sin-localidades"
+ },
+ "56c": {
+  "estado": "sin-localidades"
+ },
+ "56d": {
+  "estado": "medida",
+  "precision_m": 23.0,
+  "localidades": 1,
+  "mediana_m": 47.3,
+  "desplazamiento_mediano_m": [
+   28,
+   -38
+  ],
+  "pares": [
+   {
+    "localidad": "Ensenada Blanca",
+    "error_m": 47.3,
+    "dx_m": 28,
+    "dy_m": -38
+   }
+  ]
+ },
+ "57": {
+  "estado": "medida",
+  "precision_m": 24.0,
+  "localidades": 1,
+  "mediana_m": 100.1,
+  "desplazamiento_mediano_m": [
+   73,
+   -69
+  ],
+  "pares": [
+   {
+    "localidad": "Juncalito",
+    "error_m": 100.1,
+    "dx_m": 73,
+    "dy_m": -69
+   }
+  ]
+ },
+ "58": {
+  "estado": "medida",
+  "precision_m": 23.0,
+  "localidades": 1,
+  "mediana_m": 70.0,
+  "desplazamiento_mediano_m": [
+   42,
+   -56
+  ],
+  "pares": [
+   {
+    "localidad": "Juncalito",
+    "error_m": 70.0,
+    "dx_m": 42,
+    "dy_m": -56
+   }
+  ]
+ },
+ "59": {
+  "estado": "medida",
+  "precision_m": 23.0,
+  "localidades": 1,
+  "mediana_m": 2551.4,
+  "desplazamiento_mediano_m": [
+   -2337,
+   1023
+  ],
+  "pares": [
+   {
+    "localidad": "La Fortuna",
+    "error_m": 2551.4,
+    "dx_m": -2337,
+    "dy_m": 1023
+   }
+  ]
+ },
+ "5a": {
+  "estado": "medida",
+  "precision_m": 166.0,
+  "localidades": 5,
+  "mediana_m": 91.2,
+  "desplazamiento_mediano_m": [
+   71,
+   -28
+  ],
+  "pares": [
+   {
+    "localidad": "• La Presa",
+    "error_m": 90812.6,
+    "dx_m": 41423,
+    "dy_m": -80815
+   },
+   {
+    "localidad": "San Nicolas",
+    "error_m": 51.6,
+    "dx_m": 45,
+    "dy_m": -25
+   },
+   {
+    "localidad": "La Ascensión",
+    "error_m": 71.3,
+    "dx_m": 71,
+    "dy_m": -3
+   },
+   {
+    "localidad": "El Copalito",
+    "error_m": 91.2,
+    "dx_m": 87,
+    "dy_m": -28
+   },
+   {
+    "localidad": "•San Vicente",
+    "error_m": 109.4,
+    "dx_m": 57,
+    "dy_m": -94
+   }
+  ]
+ },
+ "5b": {
+  "estado": "medida",
+  "precision_m": 166.0,
+  "localidades": 3,
+  "mediana_m": 102.5,
+  "desplazamiento_mediano_m": [
+   87,
+   -85
+  ],
+  "pares": [
+   {
+    "localidad": "• La Presa",
+    "error_m": 90803.5,
+    "dx_m": 41423,
+    "dy_m": -80805
+   },
+   {
+    "localidad": "El Copalito",
+    "error_m": 88.5,
+    "dx_m": 87,
+    "dy_m": -18
+   },
+   {
+    "localidad": "•San Vicente",
+    "error_m": 102.5,
+    "dx_m": 57,
+    "dy_m": -85
+   }
+  ]
+ },
+ "60": {
+  "estado": "medida",
+  "precision_m": 21.0,
+  "localidades": 1,
+  "mediana_m": 44.8,
+  "desplazamiento_mediano_m": [
+   26,
+   -37
+  ],
+  "pares": [
+   {
+    "localidad": "Juncalito",
+    "error_m": 44.8,
+    "dx_m": 26,
+    "dy_m": -37
+   }
+  ]
+ },
+ "61": {
+  "estado": "sin-localidades"
+ },
+ "62": {
+  "estado": "sin-localidades"
+ },
+ "63": {
+  "estado": "sin-localidades"
+ },
+ "64": {
+  "estado": "sin-localidades"
+ },
+ "65a": {
+  "estado": "medida",
+  "precision_m": 99.0,
+  "localidades": 2,
+  "mediana_m": 66.9,
+  "desplazamiento_mediano_m": [
+   39,
+   -47
+  ],
+  "pares": [
+   {
+    "localidad": "El Belén",
+    "error_m": 84.6,
+    "dx_m": 71,
+    "dy_m": -45
+   },
+   {
+    "localidad": "Rancho Nuevo",
+    "error_m": 49.3,
+    "dx_m": 7,
+    "dy_m": -49
+   }
+  ]
+ },
+ "65b": {
+  "estado": "medida",
+  "precision_m": 99.0,
+  "localidades": 4,
+  "mediana_m": 107.0,
+  "desplazamiento_mediano_m": [
+   13,
+   -54
+  ],
+  "pares": [
+   {
+    "localidad": "/El Segundo Paso",
+    "error_m": 153.2,
+    "dx_m": -93,
+    "dy_m": -122
+   },
+   {
+    "localidad": "El Belén",
+    "error_m": 60.8,
+    "dx_m": 35,
+    "dy_m": -49
+   },
+   {
+    "localidad": ":Rancho Nuevo",
+    "error_m": 60.0,
+    "dx_m": -9,
+    "dy_m": -59
+   },
+   {
+    "localidad": "Los Corrales",
+    "error_m": 3409.2,
+    "dx_m": 3149,
+    "dy_m": 1307
+   }
+  ]
+ },
+ "66": {
+  "estado": "sin-localidades"
+ },
+ "67a": {
+  "estado": "sin-localidades"
+ },
+ "67b": {
+  "estado": "sin-localidades"
+ },
+ "68": {
+  "estado": "medida",
+  "precision_m": 67.0,
+  "localidades": 1,
+  "mediana_m": 113.8,
+  "desplazamiento_mediano_m": [
+   -62,
+   -96
+  ],
+  "pares": [
+   {
+    "localidad": "•Agua Escondida",
+    "error_m": 113.8,
+    "dx_m": -62,
+    "dy_m": -96
+   }
+  ]
+ },
+ "69": {
+  "estado": "sin-localidades"
+ },
+ "70": {
+  "estado": "sin-localidades"
+ },
+ "71": {
+  "estado": "sin-localidades"
+ },
+ "72": {
+  "estado": "sin-localidades"
+ },
+ "73a": {
+  "estado": "medida",
+  "precision_m": 296.0,
+  "localidades": 1,
+  "mediana_m": 88.9,
+  "desplazamiento_mediano_m": [
+   75,
+   -48
+  ],
+  "pares": [
+   {
+    "localidad": "Ensenada Blanca",
+    "error_m": 88.9,
+    "dx_m": 75,
+    "dy_m": -48
+   }
+  ]
+ },
+ "73b": {
+  "estado": "sin-localidades"
+ },
+ "74": {
+  "estado": "sin-localidades"
+ },
+ "75": {
+  "estado": "sin-localidades"
+ },
+ "76": {
+  "estado": "sin-localidades"
+ },
+ "77a": {
+  "estado": "sin-localidades"
+ },
+ "77b": {
+  "estado": "medida",
+  "precision_m": 267.0,
+  "localidades": 1,
+  "mediana_m": 3.8,
+  "desplazamiento_mediano_m": [
+   3,
+   2
+  ],
+  "pares": [
+   {
+    "localidad": "San Cosme",
+    "error_m": 3.8,
+    "dx_m": 3,
+    "dy_m": 2
+   }
+  ]
+ },
+ "78a": {
+  "estado": "sin-localidades"
+ },
+ "78b": {
+  "estado": "sin-localidades"
+ },
+ "79": {
+  "estado": "sin-localidades"
+ },
+ "7a": {
+  "estado": "sin-localidades"
+ },
+ "7b": {
+  "estado": "sin-localidades"
+ },
+ "8": {
+  "estado": "medida",
+  "precision_m": 103.0,
+  "localidades": 3,
+  "mediana_m": 46.2,
+  "desplazamiento_mediano_m": [
+   12,
+   -45
+  ],
+  "pares": [
+   {
+    "localidad": "San Nicolás",
+    "error_m": 19.0,
+    "dx_m": -1,
+    "dy_m": -19
+   },
+   {
+    "localidad": "La Ascensión",
+    "error_m": 46.2,
+    "dx_m": 12,
+    "dy_m": -45
+   },
+   {
+    "localidad": "•San Antonio",
+    "error_m": 75.7,
+    "dx_m": 22,
+    "dy_m": -72
+   }
+  ]
+ },
+ "80": {
+  "estado": "sin-localidades"
+ },
+ "81": {
+  "estado": "sin-localidades"
+ },
+ "82": {
+  "estado": "sin-localidades"
+ },
+ "83": {
+  "estado": "sin-localidades"
+ },
+ "84": {
+  "estado": "sin-localidades"
+ },
+ "85": {
+  "estado": "sin-localidades"
+ },
+ "86": {
+  "estado": "sin-localidades"
+ },
+ "87": {
+  "estado": "sin-localidades"
+ },
+ "88a": {
+  "estado": "sin-localidades"
+ },
+ "88b": {
+  "estado": "sin-localidades"
+ },
+ "88c": {
+  "estado": "sin-localidades"
+ },
+ "88d": {
+  "estado": "sin-localidades"
+ },
+ "88e": {
+  "estado": "sin-localidades"
+ },
+ "88f": {
+  "estado": "sin-localidades"
+ },
+ "89": {
+  "estado": "sin-localidades"
+ },
+ "9": {
+  "estado": "sin-localidades"
+ },
+ "90": {
+  "estado": "sin-localidades"
+ },
+ "91": {
+  "estado": "sin-localidades"
+ },
+ "92": {
+  "estado": "sin-localidades"
+ },
+ "93": {
+  "estado": "sin-localidades"
+ }
+}

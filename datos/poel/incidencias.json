@@ -204,7 +204,7 @@
     "id": "INC-013",
     "estado": "abierta",
     "titulo": "Superficie de la ficha incompatible con su propio mapa",
-    "descripcion": "La superficie declarada en estas fichas no corresponde a la zona que dibuja su mapa de ubicación, georreferenciado con sus rótulos UTM: UGA 31 declara 1,311.55 ha y su mapa dibuja tres partes, rotuladas 31a y 31b, que suman unas 4,550 ha (igual que en 2019), aunque el Apéndice 10 no tiene fichas 31a ni 31b; UGA 88c declara 193.88 ha y su mapa mide unas 300 ha; UGA 88d declara 133.85 ha y su mapa mide unas 197 ha (201 ha en 2019); UGA 88e declara 30.12 ha y su mapa mide unas 214 ha (206 ha en 2019); UGA 91 declara 0.01 ha.",
+    "descripcion": "La superficie declarada en estas fichas no corresponde a la zona que dibuja su mapa de ubicación, georreferenciado con sus rótulos UTM: UGA 31 declara 1,311.55 ha y su mapa dibuja tres partes, rotuladas 31a y 31b, que suman unas 4,550 ha (igual que en 2019), aunque el Apéndice 10 no tiene fichas 31a ni 31b; UGA 88c declara 193.88 ha y su mapa mide unas 300 ha; UGA 88d declara 133.85 ha y su mapa mide unas 197 ha (201 ha en 2019); UGA 88e declara 30.12 ha y su mapa mide unas 214 ha (206 ha en 2019); UGA 91 declara 0.01 ha. En la 88c la costa de su mapa ajusta mejor con una escala de 0.68, así que la diferencia puede deberse también a una lectura equivocada de sus rótulos; queda para revisión manual.",
     "fuentes": [
       "Boletín Oficial No. 12, Apéndice 10, fichas de las UGAs 31, 88e y 91"
     ],
@@ -218,5 +218,19 @@
     "resolucion": "El polígono se toma del mapa; la superficie de la ficha no se usa como control y la ubicación se corrobora con la escala de los rótulos UTM y, cuando existe, con el polígono de 2019.",
     "registrada": "2026-10-08",
     "texto_ficha": "La superficie que declara esta ficha en el Boletín no coincide con la zona que dibuja su mapa; el polígono sigue el mapa."
+  },
+  {
+    "id": "INC-014",
+    "estado": "abierta",
+    "titulo": "Las localidades rescatadas de 2019 están en el datum de los mapas del Boletín",
+    "descripcion": "Las localidades de contexto.geojson (rescatadas de ePOEL 2019) coinciden con los puntos de localidad de los mapas del Boletín sin desplazamiento de datum (mediana de ~50–100 m en 19 UGAs), y quedan ~170–200 m al sur de los polígonos ya corregidos (INC-011). La corrección de datum se confirmó contra la imagen satelital (borde norte de la UGA 3a sobre la orilla) y contra la costa de las cuencas. Por eso las localidades sirven para verificar escala y lectura de rótulos, pero no el datum, y sus etiquetas en el mapa del sitio están corridas unos 200 m.",
+    "fuentes": [
+      "datos/poel/digitalizacion/localidades.json",
+      "herramientas/verificar_con_localidades.py"
+    ],
+    "ugas": [],
+    "resolucion": null,
+    "pendiente": "Confirmar con una referencia actual (INEGI Marco Geoestadístico u OpenStreetMap) y, si se confirma, aplicar a las localidades y caminos de contexto el mismo desplazamiento de datum.",
+    "registrada": "2026-10-08"
   }
 ]

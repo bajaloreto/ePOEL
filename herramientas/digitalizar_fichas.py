@@ -49,6 +49,12 @@ def desplazamiento_datum():
 # verdadero de una UGA; SIN_MAPA_PROPIO son las fichas cuyo mapa es de otra UGA y no tienen el propio.
 MAPA_EN_FICHA = {"7a": "6"}
 SIN_MAPA_PROPIO = {"6"}
+# Rótulos UTM que el OCR lee mal de forma consistente y que el ajuste conjunto no puede resolver solo (dos lecturas
+# igual de coherentes). Cada corrección se apoya en una verificación independiente.
+#   73a y 73b: «460000» se lee «450000» arriba y abajo; las localidades del mapa quedan a +9.8–10.1 km al Este de sus
+#   coordenadas reales con 450000 y a ~100 m con 460000 (verificar_con_localidades.py).
+ROTULOS_CORREGIDOS = {"73a": {450000: 460000}, "73b": {450000: 460000}}
+
 # INC-013: fichas cuya superficie declarada no corresponde a su mapa; el área no sirve de control
 AREA_DUDOSA = set(next((i["ugas"] for i in json.loads((DATOS / "incidencias.json").read_text())
                         if i["id"] == "INC-013"), []))
@@ -331,10 +337,12 @@ def intento(doc, uga, ficha, mapa, f):
     textos = ocr_con_giros(png)
     png.unlink()
     este, norte = rotulos_utm(textos)
+    corregir = ROTULOS_CORREGIDOS.get(uga, {})
+    este = [(p, corregir.get(v, v), o) for p, v, o in este]
     marco = marco_del_mapa(rgb)
     if marco and (len({v for _, v, _ in normalizar(este)}) < 2 or len({v for _, v, _ in normalizar(norte)}) < 2):
         mas_este, mas_norte = rotulos_utm(ocr_de_franjas(rgb, marco, SALIDA / f"{uga}.franja.png"))
-        este, norte = este + mas_este, norte + mas_norte
+        este, norte = este + [(p, corregir.get(v, v), o) for p, v, o in mas_este], norte + mas_norte
     if not normalizar(este) or not normalizar(norte):
         return {"id": uga, "estado": "sin-rotulos", "rotulos_utm": {"este": len(este), "norte": len(norte)}}, None, None
     escala_por_superficie = False

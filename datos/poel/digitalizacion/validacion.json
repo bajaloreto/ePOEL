@@ -1,64 +1,82 @@
 {
  "10": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: 5 localidades a 68 m (mediana)"
+  ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "11a": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 99 m de la real; 4 localidades a 150 m (mediana); coincide con el polígono de 2019 (IoU 0.87)"
+  ],
   "iou_2019": 0.87,
   "distancia_centroide_2019_m": 258
  },
  "11b": {
-  "estado": "revisar",
+  "estado": "aceptada",
   "motivos": [
-   "área -6.9 % respecto a la ficha"
+   "área -6.9 % respecto a la ficha",
+   "posición confirmada: costa del mapa a 162 m de la real; 2 localidades a 61 y 110 m"
   ],
   "iou_2019": 0.73,
   "distancia_centroide_2019_m": 567
  },
  "12": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: coincide con el polígono de 2019 (IoU 0.82)"
+  ],
   "iou_2019": 0.82,
   "distancia_centroide_2019_m": 149
  },
  "13": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 28 m de la real"
+  ],
   "iou_2019": 0.79,
   "distancia_centroide_2019_m": 155
  },
  "14": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 36 m de la real"
+  ],
   "iou_2019": 0.77,
   "distancia_centroide_2019_m": 213
  },
  "15": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 28 m de la real"
+  ],
   "iou_2019": 0.68,
   "distancia_centroide_2019_m": 96
  },
  "16": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 66 m de la real; coincide con el polígono de 2019 (IoU 0.93)"
+  ],
   "iou_2019": 0.93,
   "distancia_centroide_2019_m": 229
  },
  "17": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 87 m de la real; 5 localidades a 54 m (mediana); coincide con el polígono de 2019 (IoU 0.88)"
+  ],
   "iou_2019": 0.88,
   "distancia_centroide_2019_m": 230
  },
  "18a": {
-  "estado": "revisar",
+  "estado": "aceptada",
   "motivos": [
-   "área -6.9 % respecto a la ficha"
+   "área -6.9 % respecto a la ficha",
+   "posición confirmada: 3 localidades a 58 m (mediana)"
   ],
   "iou_2019": 0.55,
   "distancia_centroide_2019_m": 794
@@ -66,162 +84,206 @@
  "18b": {
   "estado": "revisar",
   "motivos": [
-   "área -11.6 % respecto a la ficha"
+   "área -11.6 % respecto a la ficha",
+   "sin verificación independiente de la posición"
   ],
   "iou_2019": 0.56,
   "distancia_centroide_2019_m": 2702
  },
  "19": {
-  "estado": "revisar",
+  "estado": "aceptada",
   "motivos": [
-   "área -7.8 % respecto a la ficha"
+   "área -7.8 % respecto a la ficha",
+   "posición confirmada: costa del mapa a 58 m de la real; 4 localidades a 61 m (mediana)"
   ],
   "iou_2019": 0.8,
   "distancia_centroide_2019_m": 451
  },
  "1a": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "sin verificación independiente de la posición"
+  ],
   "iou_2019": 0.35,
   "distancia_centroide_2019_m": 559
  },
  "1b": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 14 m de la real; coincide con el polígono de 2019 (IoU 0.86)"
+  ],
   "iou_2019": 0.86,
   "distancia_centroide_2019_m": 101
  },
  "1c": {
   "estado": "aceptada",
   "motivos": [
-   "escala por superficie; ubicación corroborada con 2019"
+   "escala por superficie; ubicación corroborada con 2019",
+   "posición confirmada: costa del mapa a 13 m de la real; coincide con el polígono de 2019 (IoU 0.85)"
   ],
   "iou_2019": 0.85,
   "distancia_centroide_2019_m": 81
  },
  "1d": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 9 m de la real"
+  ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "2": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: coincide con el polígono de 2019 (IoU 0.87)"
+  ],
   "iou_2019": 0.87,
   "distancia_centroide_2019_m": 165
  },
  "20": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "sin verificación independiente de la posición"
+  ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "21": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 55 m de la real"
+  ],
   "iou_2019": 0.32,
   "distancia_centroide_2019_m": 1509
  },
  "22a": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "sin verificación independiente de la posición"
+  ],
   "iou_2019": 0.8,
   "distancia_centroide_2019_m": 280
  },
  "22b": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "sin verificación independiente de la posición"
+  ],
   "iou_2019": 0.59,
   "distancia_centroide_2019_m": 744
  },
  "23": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 36 m de la real"
+  ],
   "iou_2019": 0.0,
   "distancia_centroide_2019_m": 2018
  },
  "24": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 40 m de la real; coincide con el polígono de 2019 (IoU 0.87)"
+  ],
   "iou_2019": 0.87,
   "distancia_centroide_2019_m": 211
  },
  "25": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 54 m de la real; 4 localidades a 90 m (mediana); coincide con el polígono de 2019 (IoU 0.93)"
+  ],
   "iou_2019": 0.93,
   "distancia_centroide_2019_m": 180
  },
  "26": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: 3 localidades a 52 m (mediana); coincide con el polígono de 2019 (IoU 0.83)"
+  ],
   "iou_2019": 0.83,
   "distancia_centroide_2019_m": 153
  },
  "27": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 164 m de la real; coincide con el polígono de 2019 (IoU 0.93)"
+  ],
   "iou_2019": 0.93,
   "distancia_centroide_2019_m": 200
  },
  "28": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 28 m de la real"
+  ],
   "iou_2019": 0.0,
   "distancia_centroide_2019_m": 4061
  },
  "29": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 51 m de la real"
+  ],
   "iou_2019": 0.74,
   "distancia_centroide_2019_m": 474
  },
  "30": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: coincide con el polígono de 2019 (IoU 0.84)"
+  ],
   "iou_2019": 0.84,
   "distancia_centroide_2019_m": 163
  },
  "31": {
   "estado": "aceptada",
   "motivos": [
-   "superficie de la ficha incompatible con su mapa (INC-013); no se usa como control"
+   "superficie de la ficha incompatible con su mapa (INC-013); no se usa como control",
+   "posición confirmada: costa del mapa a 53 m de la real; coincide con el polígono de 2019 (IoU 0.86)"
   ],
   "iou_2019": 0.86,
   "distancia_centroide_2019_m": 156
  },
  "32": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 27 m de la real"
+  ],
   "iou_2019": 0.74,
   "distancia_centroide_2019_m": 169
  },
  "33a": {
-  "estado": "revisar",
+  "estado": "aceptada",
   "motivos": [
-   "área +7.0 % respecto a la ficha"
+   "área +7.0 % respecto a la ficha",
+   "posición confirmada: costa del mapa a 49 m de la real; coincide con el polígono de 2019 (IoU 0.84)"
   ],
   "iou_2019": 0.84,
   "distancia_centroide_2019_m": 354
  },
  "33b": {
-  "estado": "revisar",
+  "estado": "aceptada",
   "motivos": [
-   "área +6.1 % respecto a la ficha"
+   "área +6.1 % respecto a la ficha",
+   "posición confirmada: costa del mapa a 67 m de la real"
   ],
   "iou_2019": 0.48,
   "distancia_centroide_2019_m": 228
  },
  "34a": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: 4 localidades a 62 m (mediana); coincide con el polígono de 2019 (IoU 0.86)"
+  ],
   "iou_2019": 0.86,
   "distancia_centroide_2019_m": 217
  },
  "34b": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: 3 localidades a 70 m (mediana); coincide con el polígono de 2019 (IoU 0.85)"
+  ],
   "iou_2019": 0.85,
   "distancia_centroide_2019_m": 195
  },
@@ -233,172 +295,216 @@
  },
  "36a": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 26 m de la real"
+  ],
   "iou_2019": 0.67,
   "distancia_centroide_2019_m": 178
  },
  "36b": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 8 m de la real"
+  ],
   "iou_2019": 0.64,
   "distancia_centroide_2019_m": 140
  },
  "36c": {
   "estado": "aceptada",
   "motivos": [
-   "escala por superficie; ubicación corroborada con 2019"
+   "escala por superficie; ubicación corroborada con 2019",
+   "sin verificación independiente de la posición"
   ],
   "iou_2019": 0.65,
   "distancia_centroide_2019_m": 60
  },
  "37a": {
-  "estado": "revisar",
+  "estado": "aceptada",
   "motivos": [
-   "área -15.3 % respecto a la ficha"
+   "área -15.3 % respecto a la ficha",
+   "posición confirmada: 9 localidades a 116 m (mediana)"
   ],
   "iou_2019": 0.72,
   "distancia_centroide_2019_m": 131
  },
  "37b": {
-  "estado": "revisar",
+  "estado": "aceptada",
   "motivos": [
-   "área -18.7 % respecto a la ficha"
+   "área -18.7 % respecto a la ficha",
+   "posición confirmada: 9 localidades a 62 m (mediana)"
   ],
   "iou_2019": 0.75,
   "distancia_centroide_2019_m": 996
  },
  "38": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 17 m de la real; coincide con el polígono de 2019 (IoU 0.80)"
+  ],
   "iou_2019": 0.8,
   "distancia_centroide_2019_m": 144
  },
  "39": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "sin verificación independiente de la posición"
+  ],
   "iou_2019": 0.73,
   "distancia_centroide_2019_m": 180
  },
  "3a": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 6 m de la real"
+  ],
   "iou_2019": 0.7,
   "distancia_centroide_2019_m": 86
  },
  "3b": {
-  "estado": "revisar",
+  "estado": "aceptada",
   "motivos": [
-   "escala por superficie sin corroborar la ubicación"
+   "escala por superficie sin corroborar la ubicación",
+   "posición confirmada: costa del mapa a 6 m de la real"
   ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "4": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 24 m de la real"
+  ],
   "iou_2019": 0.77,
   "distancia_centroide_2019_m": 124
  },
  "40": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: coincide con el polígono de 2019 (IoU 0.81)"
+  ],
   "iou_2019": 0.81,
   "distancia_centroide_2019_m": 180
  },
  "41": {
   "estado": "aceptada",
   "motivos": [
-   "escala por superficie; ubicación corroborada con 2019"
+   "escala por superficie; ubicación corroborada con 2019",
+   "posición confirmada: costa del mapa a 18 m de la real"
   ],
   "iou_2019": 0.4,
   "distancia_centroide_2019_m": 106
  },
  "42": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: coincide con el polígono de 2019 (IoU 0.91)"
+  ],
   "iou_2019": 0.91,
   "distancia_centroide_2019_m": 206
  },
  "43": {
-  "estado": "revisar",
+  "estado": "aceptada",
   "motivos": [
-   "escala por superficie sin corroborar la ubicación"
+   "escala por superficie sin corroborar la ubicación",
+   "posición confirmada: costa del mapa a 11 m de la real"
   ],
   "iou_2019": 0.1,
   "distancia_centroide_2019_m": 569
  },
  "44": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 13 m de la real; coincide con el polígono de 2019 (IoU 0.84)"
+  ],
   "iou_2019": 0.84,
   "distancia_centroide_2019_m": 171
  },
  "45": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 13 m de la real"
+  ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "46": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 16 m de la real"
+  ],
   "iou_2019": 0.66,
   "distancia_centroide_2019_m": 166
  },
  "47": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 40 m de la real; coincide con el polígono de 2019 (IoU 0.91)"
+  ],
   "iou_2019": 0.91,
   "distancia_centroide_2019_m": 124
  },
  "48": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 13 m de la real"
+  ],
   "iou_2019": 0.11,
   "distancia_centroide_2019_m": 583
  },
  "49a": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: 5 localidades a 92 m (mediana); coincide con el polígono de 2019 (IoU 0.90)"
+  ],
   "iou_2019": 0.9,
   "distancia_centroide_2019_m": 203
  },
  "49b": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "sin verificación independiente de la posición"
+  ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "50": {
   "estado": "aceptada",
   "motivos": [
-   "escala por superficie; ubicación corroborada con 2019"
+   "escala por superficie; ubicación corroborada con 2019",
+   "posición confirmada: costa del mapa a 30 m de la real"
   ],
   "iou_2019": 0.65,
   "distancia_centroide_2019_m": 160
  },
  "51": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 40 m de la real"
+  ],
   "iou_2019": 0.62,
   "distancia_centroide_2019_m": 133
  },
  "52a": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "sin verificación independiente de la posición"
+  ],
   "iou_2019": 0.76,
   "distancia_centroide_2019_m": 163
  },
  "52b": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "sin verificación independiente de la posición"
+  ],
   "iou_2019": 0.69,
   "distancia_centroide_2019_m": 368
  },
  "53": {
   "estado": "aceptada",
   "motivos": [
-   "escala por superficie; ubicación corroborada con 2019"
+   "escala por superficie; ubicación corroborada con 2019",
+   "posición confirmada: 3 localidades a 56 m (mediana)"
   ],
   "iou_2019": 0.46,
   "distancia_centroide_2019_m": 620
@@ -411,40 +517,50 @@
  },
  "55": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "sin verificación independiente de la posición"
+  ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "56a": {
-  "estado": "revisar",
+  "estado": "aceptada",
   "motivos": [
-   "escala por superficie sin corroborar la ubicación"
+   "escala por superficie sin corroborar la ubicación",
+   "posición confirmada: costa del mapa a 9 m de la real"
   ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "56b": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 24 m de la real"
+  ],
   "iou_2019": 0.58,
   "distancia_centroide_2019_m": 147
  },
  "56c": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 9 m de la real"
+  ],
   "iou_2019": 0.67,
   "distancia_centroide_2019_m": 103
  },
  "56d": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 24 m de la real"
+  ],
   "iou_2019": 0.52,
   "distancia_centroide_2019_m": 437
  },
  "57": {
   "estado": "aceptada",
   "motivos": [
-   "escala por superficie; ubicación corroborada con 2019"
+   "escala por superficie; ubicación corroborada con 2019",
+   "posición confirmada: costa del mapa a 30 m de la real"
   ],
   "iou_2019": 0.38,
   "distancia_centroide_2019_m": 146
@@ -452,20 +568,25 @@
  "58": {
   "estado": "aceptada",
   "motivos": [
-   "escala por superficie; ubicación corroborada con 2019"
+   "escala por superficie; ubicación corroborada con 2019",
+   "posición confirmada: costa del mapa a 29 m de la real"
   ],
   "iou_2019": 0.54,
   "distancia_centroide_2019_m": 164
  },
  "59": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "sin verificación independiente de la posición"
+  ],
   "iou_2019": 0.29,
   "distancia_centroide_2019_m": 264
  },
  "5a": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 630 m de la real (ajusta mejor con +0 m E, -664 m N y escala 0.9); 4 localidades a 81 m (mediana)"
+  ],
   "iou_2019": 0.68,
   "distancia_centroide_2019_m": 453
  },
@@ -483,74 +604,97 @@
  },
  "60": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 26 m de la real"
+  ],
   "iou_2019": 0.63,
   "distancia_centroide_2019_m": 135
  },
  "61": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 26 m de la real"
+  ],
   "iou_2019": 0.48,
   "distancia_centroide_2019_m": 146
  },
  "62": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 20 m de la real"
+  ],
   "iou_2019": 0.56,
   "distancia_centroide_2019_m": 63
  },
  "63": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 26 m de la real"
+  ],
   "iou_2019": 0.48,
   "distancia_centroide_2019_m": 81
  },
  "64": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 25 m de la real; coincide con el polígono de 2019 (IoU 0.83)"
+  ],
   "iou_2019": 0.83,
   "distancia_centroide_2019_m": 175
  },
  "65a": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: 2 localidades a 49 y 85 m; coincide con el polígono de 2019 (IoU 0.89)"
+  ],
   "iou_2019": 0.89,
   "distancia_centroide_2019_m": 230
  },
  "65b": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: 4 localidades a 107 m (mediana); coincide con el polígono de 2019 (IoU 0.91)"
+  ],
   "iou_2019": 0.91,
   "distancia_centroide_2019_m": 210
  },
  "66": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: coincide con el polígono de 2019 (IoU 0.93)"
+  ],
   "iou_2019": 0.93,
   "distancia_centroide_2019_m": 210
  },
  "67a": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 59 m de la real; coincide con el polígono de 2019 (IoU 0.91)"
+  ],
   "iou_2019": 0.91,
   "distancia_centroide_2019_m": 186
  },
  "67b": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 54 m de la real; coincide con el polígono de 2019 (IoU 0.87)"
+  ],
   "iou_2019": 0.87,
   "distancia_centroide_2019_m": 194
  },
  "68": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "sin verificación independiente de la posición"
+  ],
   "iou_2019": 0.77,
   "distancia_centroide_2019_m": 256
  },
  "69": {
   "estado": "aceptada",
   "motivos": [
-   "escala por superficie; ubicación corroborada con 2019"
+   "escala por superficie; ubicación corroborada con 2019",
+   "posición confirmada: costa del mapa a 37 m de la real; coincide con el polígono de 2019 (IoU 0.85)"
   ],
   "iou_2019": 0.85,
   "distancia_centroide_2019_m": 155
@@ -558,7 +702,8 @@
  "70": {
   "estado": "aceptada",
   "motivos": [
-   "escala por superficie; ubicación corroborada con 2019"
+   "escala por superficie; ubicación corroborada con 2019",
+   "sin verificación independiente de la posición"
   ],
   "iou_2019": 0.01,
   "distancia_centroide_2019_m": 108
@@ -566,51 +711,65 @@
  "71": {
   "estado": "aceptada",
   "motivos": [
-   "escala por superficie; ubicación corroborada con 2019"
+   "escala por superficie; ubicación corroborada con 2019",
+   "posición confirmada: costa del mapa a 9 m de la real"
   ],
   "iou_2019": 0.49,
   "distancia_centroide_2019_m": 164
  },
  "72": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "sin verificación independiente de la posición"
+  ],
   "iou_2019": 0.26,
   "distancia_centroide_2019_m": 479
  },
  "73a": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 502 m de la real"
+  ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "73b": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 487 m de la real"
+  ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "74": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 13 m de la real"
+  ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "75": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 17 m de la real"
+  ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "76": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 23 m de la real"
+  ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "77a": {
   "estado": "revisar",
   "motivos": [
-   "área -20.5 % respecto a la ficha"
+   "área -20.5 % respecto a la ficha",
+   "sin verificación independiente de la posición"
   ],
   "iou_2019": 0.44,
   "distancia_centroide_2019_m": 632
@@ -618,7 +777,8 @@
  "77b": {
   "estado": "revisar",
   "motivos": [
-   "área -12.0 % respecto a la ficha"
+   "área -12.0 % respecto a la ficha",
+   "sin verificación independiente de la posición"
   ],
   "iou_2019": 0.67,
   "distancia_centroide_2019_m": 911
@@ -626,97 +786,123 @@
  "78a": {
   "estado": "revisar",
   "motivos": [
-   "escala por superficie sin corroborar la ubicación"
+   "escala por superficie sin corroborar la ubicación",
+   "sin verificación independiente de la posición"
   ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "78b": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 254 m de la real"
+  ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "79": {
   "estado": "revisar",
   "motivos": [
-   "escala por superficie sin corroborar la ubicación"
+   "escala por superficie sin corroborar la ubicación",
+   "sin verificación independiente de la posición"
   ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "7a": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 19 m de la real"
+  ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "7b": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 29 m de la real"
+  ],
   "iou_2019": 0.79,
   "distancia_centroide_2019_m": 200
  },
  "8": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 77 m de la real; 3 localidades a 46 m (mediana)"
+  ],
   "iou_2019": 0.67,
   "distancia_centroide_2019_m": 465
  },
  "80": {
   "estado": "revisar",
   "motivos": [
-   "escala por superficie sin corroborar la ubicación"
+   "escala por superficie sin corroborar la ubicación",
+   "sin verificación independiente de la posición"
   ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "81": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 51 m de la real"
+  ],
   "iou_2019": 0.62,
   "distancia_centroide_2019_m": 234
  },
  "82": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "sin verificación independiente de la posición"
+  ],
   "iou_2019": 0.79,
   "distancia_centroide_2019_m": 123
  },
  "83": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "sin verificación independiente de la posición"
+  ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "84": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 58 m de la real; coincide con el polígono de 2019 (IoU 0.83)"
+  ],
   "iou_2019": 0.83,
   "distancia_centroide_2019_m": 211
  },
  "85": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 157 m de la real"
+  ],
   "iou_2019": 0.65,
   "distancia_centroide_2019_m": 651
  },
  "86": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 22 m de la real"
+  ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "87": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 23 m de la real"
+  ],
   "iou_2019": 0.59,
   "distancia_centroide_2019_m": 270
  },
  "88a": {
   "estado": "revisar",
   "motivos": [
-   "área +5.2 % respecto a la ficha"
+   "área +5.2 % respecto a la ficha",
+   "sin verificación independiente de la posición"
   ],
   "iou_2019": 0.0,
   "distancia_centroide_2019_m": 9948
@@ -724,7 +910,8 @@
  "88b": {
   "estado": "revisar",
   "motivos": [
-   "escala por superficie sin corroborar la ubicación"
+   "escala por superficie sin corroborar la ubicación",
+   "posición en duda: costa del mapa a 1424 m de la real (ajusta mejor con +278 m E, +278 m N y escala 0.5)"
   ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
@@ -732,7 +919,8 @@
  "88c": {
   "estado": "revisar",
   "motivos": [
-   "superficie de la ficha incompatible con su mapa (INC-013); no se usa como control"
+   "superficie de la ficha incompatible con su mapa (INC-013); no se usa como control",
+   "sin verificación independiente de la posición"
   ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
@@ -740,7 +928,8 @@
  "88d": {
   "estado": "aceptada",
   "motivos": [
-   "superficie de la ficha incompatible con su mapa (INC-013); no se usa como control"
+   "superficie de la ficha incompatible con su mapa (INC-013); no se usa como control",
+   "posición confirmada: costa del mapa a 20 m de la real"
   ],
   "iou_2019": 0.67,
   "distancia_centroide_2019_m": 145
@@ -748,23 +937,26 @@
  "88e": {
   "estado": "aceptada",
   "motivos": [
-   "superficie de la ficha incompatible con su mapa (INC-013); no se usa como control"
+   "superficie de la ficha incompatible con su mapa (INC-013); no se usa como control",
+   "posición confirmada: costa del mapa a 23 m de la real"
   ],
   "iou_2019": 0.74,
   "distancia_centroide_2019_m": 207
  },
  "88f": {
-  "estado": "revisar",
+  "estado": "aceptada",
   "motivos": [
-   "área -5.3 % respecto a la ficha"
+   "área -5.3 % respecto a la ficha",
+   "posición confirmada: costa del mapa a 19 m de la real"
   ],
   "iou_2019": 0.69,
   "distancia_centroide_2019_m": 153
  },
  "89": {
-  "estado": "revisar",
+  "estado": "aceptada",
   "motivos": [
-   "escala por superficie sin corroborar la ubicación"
+   "escala por superficie sin corroborar la ubicación",
+   "posición confirmada: costa del mapa a 45 m de la real"
   ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
@@ -772,34 +964,42 @@
  "9": {
   "estado": "aceptada",
   "motivos": [
-   "escala por superficie; ubicación corroborada con 2019"
+   "escala por superficie; ubicación corroborada con 2019",
+   "posición confirmada: costa del mapa a 98 m de la real"
   ],
   "iou_2019": 0.34,
   "distancia_centroide_2019_m": 1002
  },
  "90": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 18 m de la real"
+  ],
   "iou_2019": 0.78,
   "distancia_centroide_2019_m": 137
  },
  "91": {
   "estado": "revisar",
   "motivos": [
-   "superficie de la ficha incompatible con su mapa (INC-013); no se usa como control"
+   "superficie de la ficha incompatible con su mapa (INC-013); no se usa como control",
+   "sin verificación independiente de la posición"
   ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
  "92": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "posición confirmada: costa del mapa a 4 m de la real"
+  ],
   "iou_2019": 0.69,
   "distancia_centroide_2019_m": 185
  },
  "93": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "sin verificación independiente de la posición"
+  ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  }
