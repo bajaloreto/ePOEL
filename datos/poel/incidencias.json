@@ -81,7 +81,7 @@
     "id": "INC-007",
     "estado": "abierta",
     "titulo": "ePOEL 2019 no tiene geometría para 27 UGAs",
-    "descripcion": "Los datos de 2019 no incluyen polígono para 27 de las 122 UGAs del Apéndice 10, y sus geometrías se digitalizaron de los mapas en PDF del POEL sin documentar el método. (La UGA 7a sí tenía polígono, registrado como \"UGA-7\"; ver INC-008.)",
+    "descripcion": "Los datos de 2019 no incluyen polígono para 27 de las 122 UGAs del Apéndice 10, y sus geometrías se digitalizaron de los mapas en PDF del POEL sin documentar el método. (El polígono \"UGA-7\" de 2019 lleva la clave de la 7a pero tiene la forma de la 7b; ver INC-008 e INC-012.)",
     "fuentes": [
       "ePOEL 2019 (js/variablesgeojsons.js)",
       "Boletín Oficial No. 12, Apéndice 10"
@@ -91,7 +91,7 @@
       "3b",
       "5b",
       "6",
-      "7b",
+      "7a",
       "10",
       "20",
       "45",
@@ -122,15 +122,16 @@
     "id": "INC-008",
     "estado": "resuelta",
     "titulo": "Identificadores de UGA mal escritos en ePOEL 2019",
-    "descripcion": "En 2019 la UGA 5a aparece como \"UGA-5A\", lo que rompe el enlace a su ficha en GitHub Pages porque distingue mayúsculas. La UGA 7a aparece como \"UGA-7\" y su ficha como 7.pdf; la superficie (1,894.91 ha) confirma que es la 7a.",
+    "descripcion": "En 2019 la UGA 5a aparece como \"UGA-5A\", lo que rompe el enlace a su ficha en GitHub Pages porque distingue mayúsculas. El polígono \"UGA-7\" lleva la clave y la superficie de la 7a (1,894.91 ha), pero su forma es la de la 7b: se digitalizó de la ficha 7a, que en el Boletín trae el mapa de la 7b (INC-012).",
     "fuentes": [
       "ePOEL 2019"
     ],
     "ugas": [
       "5a",
-      "7a"
+      "7a",
+      "7b"
     ],
-    "resolucion": "Se usan los identificadores del Boletín: 5a y 7a.",
+    "resolucion": "Se usan los identificadores del Boletín: 5a, 7a y 7b; el polígono \"UGA-7\" de 2019 se asigna a la 7b.",
     "registrada": "2026-10-07",
     "texto_ficha": "En ePOEL 2019 esta UGA aparecía con otra clave; aquí se usa la del Boletín."
   },
@@ -170,15 +171,33 @@
   },
   {
     "id": "INC-011",
-    "estado": "abierta",
+    "estado": "resuelta",
     "titulo": "La leyenda de los mapas declara un datum contradictorio",
     "descripcion": "La leyenda de las Figuras 22 y 23 dice \"Proyección UTM 12R, Datum horizontal WGS84, Elipsoide Clark 1866\". Clarke 1866 es el elipsoide de NAD27, no de WGS84; si la cartografía original estaba en NAD27, la diferencia en Baja California Sur puede ser de unos 100–200 m. La digitalización piloto supone WGS84.",
     "fuentes": [
       "Boletín Oficial No. 12, Figura 22 (p. 49 del PDF) y Figura 23 (p. 52 del PDF)"
     ],
     "ugas": [],
-    "resolucion": null,
-    "pendiente": "Verificar en la Fase 1 contra la línea de costa y localidades de referencia (OSM/INEGI) qué datum produce el mejor ajuste, antes de digitalizar en lote.",
-    "registrada": "2026-10-07"
+    "resolucion": "Se midió el corrimiento sin suponer el datum: con los bordes de 37 UGAs costeras digitalizadas, el desplazamiento que mejor las ajusta a la costa es +30 m al Este y +165 m al Norte (distancia media truncada de 109 a 70 m). Es constante en mapas de 10 a 140 m por píxel, lo que descarta un error de lectura y apunta a un datum distinto de WGS84; el componente Norte coincide con NAD27 (+197 m), el Este no del todo (NAD27: −65 m). Se aplica a todas las UGAs digitalizadas (datos/poel/digitalizacion/datum.json, herramientas/ajustar_datum.py).",
+    "pendiente": "Confirmar contra imagen satelital u ortofoto de INEGI en QGIS, sobre todo el componente Este.",
+    "registrada": "2026-10-07",
+    "resuelta": "2026-10-08"
+  },
+  {
+    "id": "INC-012",
+    "estado": "abierta",
+    "titulo": "Fichas con el mapa de otra UGA",
+    "descripcion": "En el Apéndice 10, la ficha de la UGA 6 (p. 166 del PDF) trae el mapa de la 7a (rótulo «7a», 1,866.7 ha digitalizadas frente a 1,894.91 de la ficha 7a) y la ficha de la 7a (p. 169) repite la misma imagen que la ficha de la 7b (p. 172). La UGA 6 no tiene mapa propio en el Boletín.",
+    "fuentes": [
+      "Boletín Oficial No. 12, Apéndice 10, pp. 166, 169 y 172 del PDF"
+    ],
+    "ugas": [
+      "6",
+      "7a",
+      "7b"
+    ],
+    "resolucion": "La 7a se digitaliza del mapa impreso en la ficha 6 y la 7b del de su propia ficha; la 6 queda sin polígono hasta contar con otra fuente.",
+    "registrada": "2026-10-08",
+    "texto_ficha": "En el Boletín, la ficha 6 trae el mapa de la 7a y la ficha 7a el de la 7b. Aquí cada polígono se tomó del mapa que corresponde a su UGA; la UGA 6 no tiene mapa propio en el Boletín."
   }
 ]

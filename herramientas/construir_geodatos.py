@@ -37,7 +37,9 @@ def geometrias_2019():
     for m in re.finditer(r"var\s+(\w+)\s*=\s*(\{.*?\n\})\s*;?", texto, re.S):
         for f in json.loads(m.group(2))["features"]:
             uid = f["properties"]["nombre"].replace("UGA-", "").strip().lower()
-            uid = "7a" if uid == "7" else uid  # INC-008
+            # «UGA-7» lleva la clave y la superficie de la 7a, pero su forma es la de la 7b: se digitalizó de la
+            # ficha 7a, que en el Boletín trae el mapa de la 7b (INC-008, INC-012)
+            uid = "7b" if uid == "7" else uid
             out.setdefault(uid, []).append(shape(f["geometry"]).buffer(0))
     return {k: unary_union(v) for k, v in out.items()}
 
@@ -60,6 +62,8 @@ def main():
     crit = {(c["grupo"], c["numero"]): c for c in json.loads((DATOS / "criterios.json").read_text())}
     incidencias = json.loads((DATOS / "incidencias.json").read_text())
     v2019 = geometrias_2019()
+    archivo_validacion = DATOS / "digitalizacion" / "validacion.json"
+    validacion = json.loads(archivo_validacion.read_text()) if archivo_validacion.exists() else {}
 
     (SALIDA / "fichas").mkdir(parents=True, exist_ok=True)
     features, indice = [], []
@@ -67,12 +71,14 @@ def main():
     for uid in sorted(fichas, key=orden):
         f = fichas[uid]
         dig = DATOS / "digitalizacion" / f"{uid}.geojson"
-        if dig.exists():
+        estado_dig = validacion.get(uid, {}).get("estado", "aceptada")
+        if dig.exists() and estado_dig in ("aceptada", "revisar"):
             feat = json.loads(dig.read_text())["features"][0]
             geom = shape(feat["geometry"])
             proc = feat["properties"]["procedencia"]
             procedencia = {"metodo": "digitalizada", "texto": "Digitalizada del mapa de la ficha del Boletín",
-                           "precision_m": proc["precision_aprox_m"], "revisada": proc["revisada_en_qgis"]}
+                           "precision_m": proc["precision_aprox_m"], "revisada": proc["revisada_en_qgis"],
+                           "validacion": estado_dig}
         elif uid in v2019:
             geom = v2019[uid]
             procedencia = {"metodo": "epoel-2019", "texto": "Provisional: geometría de ePOEL 2019, pendiente de re-digitalizar",
