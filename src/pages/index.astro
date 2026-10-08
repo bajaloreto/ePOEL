@@ -1,0 +1,72 @@
+---
+import Base from "../layouts/Base.astro";
+const base = import.meta.env.BASE_URL;
+---
+<Base titulo="ePOEL — Ordenamiento ecológico de Loreto, B.C.S.">
+  <header class="barra">
+    <a class="marca" href={base}>ePOEL<span>Loreto</span></a>
+    <form class="buscar" id="buscar" role="search">
+      <label for="q" class="oculto">Buscar un lugar, coordenadas, UTM o UGA</label>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" autocomplete="off" placeholder="Lugar, coordenadas, UTM o «UGA 45»" />
+      <button type="button" class="gps" id="gps" title="Usar mi ubicación" aria-label="Usar mi ubicación">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+      </button>
+      <div class="aviso-busqueda" id="aviso" role="status" hidden></div>
+    </form>
+    <nav aria-label="Secciones"><a href={`${base}acerca/`}>Acerca de</a><a href="https://github.com/bajaloreto/ePOEL/tree/master/datos" target="_blank" rel="noopener">Datos abiertos</a></nav>
+  </header>
+
+  <main class="app">
+    <section class="tablero" aria-label="UGAs en esta vista">
+      <div class="tablero-cab"><span id="titulo-tablero">UGAs en esta vista</span> <span class="cifra" id="cuenta"></span></div>
+      <div class="tablero-lista">
+        <table>
+          <colgroup><col class="c-uga" /><col /><col class="c-dist" /><col class="c-inc" /></colgroup>
+          <thead><tr><th scope="col">UGA</th><th scope="col">Política</th><th scope="col">Dist.</th><th scope="col">Incid.</th></tr></thead>
+          <tbody id="filas"></tbody>
+        </table>
+      </div>
+      <footer class="donado-tablero">
+        <span>DONADA AL MUNICIPIO DE LORETO Y A ECO‑ALIANZA DE LORETO</span>
+        <div class="instituciones">
+          <img class="escudo" src={`${base}marca/escudo-loreto-gris.webp`} alt="Municipio de Loreto, B.C.S." />
+          <img class="eal" src={`${base}marca/eco-alianza-loreto-blanco.png`} alt="Eco-Alianza de Loreto, A.C." />
+        </div>
+        <span>PLATAFORMA DESARROLLADA Y DONADA POR</span>
+        <img class="hqm" src={`${base}marca/huquma-horizontal-claro.png`} alt="HuQuMa Studio" />
+      </footer>
+    </section>
+
+    <section class="mapa-caja" aria-label="Mapa">
+      <div id="mapa"></div>
+      <div class="capas" id="capas" role="group" aria-label="Capas del mapa">
+        <button type="button" id="b-satelite" aria-pressed="false">Satélite</button>
+      </div>
+      <div class="leyenda" aria-label="Leyenda">
+        <span><i style="background:color-mix(in srgb, var(--aprov) 45%, white);border-color:var(--aprov)"></i>Aprovechamiento sustentable</span>
+        <span><i style="background:color-mix(in srgb, var(--cons) 45%, white);border-color:var(--cons)"></i>Conservación</span>
+        <span><i style="background:color-mix(in srgb, var(--pres) 45%, white);border-color:var(--pres)"></i>Preservación</span>
+        <span><i style="background:color-mix(in srgb, var(--rest) 45%, white);border-color:var(--rest)"></i>Restauración</span>
+        <span class="prov"><i></i>Geometría provisional (2019)</span>
+      </div>
+      <div class="coord cifra" id="coord" aria-live="polite"></div>
+    </section>
+
+    <aside class="lado" id="lado" aria-live="polite">
+      <div class="vacio">
+        <h1>¿Qué dice el POEL aquí?</h1>
+        <p>Toca el mapa o busca un lugar, unas coordenadas o una UGA. Verás la política ambiental, qué puedes hacer y los criterios que aplican, citados del Boletín Oficial.</p>
+        <ul>
+          <li><button type="button" data-ejemplo="UGA 45"><b>UGA 45 · Nopoló</b><span>Zona urbana de Nopoló</span></button></li>
+          <li><button type="button" data-ejemplo="25.9316, -111.3625"><b>25.9316, -111.3625</b><span>Coordenadas geográficas</span></button></li>
+          <li><button type="button" data-ejemplo="463701 2868159"><b>463701 2868159</b><span>Coordenadas UTM zona 12N</span></button></li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <script>
+    import "../scripts/consulta";
+  </script>
+</Base>

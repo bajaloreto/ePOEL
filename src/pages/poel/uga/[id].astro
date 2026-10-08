@@ -1,0 +1,30 @@
+---
+// Página estática y citable de cada UGA: destino del QR y del enlace compartido; se imprime limpia.
+import Base from "../../../layouts/Base.astro";
+import { htmlPase, POLITICA, type Ficha } from "../../../lib/pase";
+import { PRESETS, todasLasFichas } from "../../../lib/datos";
+import qrcode from "qrcode-generator";
+
+export function getStaticPaths() {
+  return todasLasFichas().map((ficha) => ({ params: { id: ficha.id }, props: { ficha } }));
+}
+
+const { ficha } = Astro.props as { ficha: Ficha };
+const base = import.meta.env.BASE_URL;
+const enlace = new URL(`${base}poel/uga/${ficha.id}/`, Astro.site).toString();
+const qr = qrcode(0, "M");
+qr.addData(enlace);
+qr.make();
+const svg = qr.createSvgTag({ cellSize: 2, margin: 0, scalable: true });
+const politica = ficha.politica ? POLITICA[ficha.politica] : ficha.politica_texto;
+---
+<Base titulo={`${ficha.nombre} · ${politica} — ePOEL Loreto`} descripcion={`${ficha.nombre} (${ficha.localidad_referencia ?? "Loreto"}): ${politica}. Criterios de regulación ecológica del POEL de Loreto, citados del Boletín Oficial.`}>
+  <main class="pagina-uga">
+    <a class="volver" href={`${base}?uga=${ficha.id}`}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Ver en el mapa</a>
+    <Fragment set:html={htmlPase(ficha, PRESETS, "todo", { qr: svg, enlace })} />
+  </main>
+  <script>
+    import { conectarPase } from "../../../scripts/pase-interactivo";
+    conectarPase(document.querySelector(".pase") as HTMLElement);
+  </script>
+</Base>

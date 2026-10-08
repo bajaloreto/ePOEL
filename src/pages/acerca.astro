@@ -1,0 +1,43 @@
+---
+import Base from "../layouts/Base.astro";
+const base = import.meta.env.BASE_URL;
+const boletin = "https://finanzas.bcs.gob.mx/wp-content/themes/voice/assets/images/boletines/2014/12.pdf";
+---
+<Base titulo="Acerca de ePOEL — Loreto, B.C.S.">
+  <main class="pagina-texto">
+    <a class="volver" href={base}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Volver al mapa</a>
+    <h1>Acerca de ePOEL</h1>
+    <p class="entrada">ePOEL permite consultar qué dice el Programa de Ordenamiento Ecológico Local del Municipio de Loreto, B.C.S. (POEL) en cualquier punto del municipio: la Unidad de Gestión Ambiental (UGA), su política ambiental y los criterios de regulación ecológica que aplican, cada uno citado del Boletín Oficial.</p>
+
+    <section>
+      <h2>Herramienta informativa, no oficial</h2>
+      <p>La única versión jurídicamente válida del POEL es la publicada en el <a href={boletin} target="_blank" rel="noopener">Boletín Oficial del Gobierno del Estado de B.C.S. No. 12, del 12 de marzo de 2014</a>. Ante cualquier diferencia, prevalece esa publicación.</p>
+      <p>Los polígonos del mapa son una aproximación cartográfica: se digitalizaron a partir de los mapas impresos del Boletín porque los archivos digitales originales no se conservaron. Cada UGA indica su método y su precisión aproximada. No sustituyen un levantamiento topográfico ni una constancia, dictamen o factibilidad de la autoridad competente.</p>
+      <p>El uso de información pública y de nombres o emblemas institucionales no implica que las dependencias que generaron los datos respalden o avalen esta plataforma.</p>
+    </section>
+
+    <section>
+      <h2>El POEL</h2>
+      <p>Elaborado por el Centro de Investigaciones Biológicas del Noroeste, S.C. (CIBNOR), con la coordinación general del Dr. Ricardo Rodríguez‑Estrella. Aprobado por el H. VII Ayuntamiento de Loreto en la Sesión de Cabildo No. 69 (14 de agosto de 2013) y publicado en el Boletín Oficial No. 12 (12 de marzo de 2014).</p>
+    </section>
+
+    <section>
+      <h2>Créditos</h2>
+      <dl class="creditos">
+        <div><dt>Hugo Quintero</dt><dd>Dirección, visión, arquitectura y procesamiento de capas y UGAs (2019); modernización, desarrollo y mantenimiento (2026).</dd></div>
+        <div><dt>Helden Velis</dt><dd>Desarrollo de la versión original de ePOEL (2019).</dd></div>
+        <div><dt>Brenda E. García</dt><dd>Procesamiento de capas (2019).</dd></div>
+        <div><dt>Eco‑Alianza de Loreto, A.C.</dt><dd>Impulsó el proyecto dentro de su Programa de Conservación de Cuencas.</dd></div>
+        <div><dt>Resources Legacy Fund</dt><dd>Financiamiento de la versión inicial (2018).</dd></div>
+        <div><dt>HuQuMa Studio</dt><dd>Desarrolla y dona la plataforma y su mantenimiento al Municipio de Loreto y a Eco‑Alianza de Loreto, en el marco del convenio de colaboración entre Eco‑Alianza y el H. Ayuntamiento.</dd></div>
+      </dl>
+      <img class="hqm-grande" src={`${base}marca/huquma-vertical.png`} alt="HuQuMa Studio" width="200" height="153" />
+    </section>
+
+    <section>
+      <h2>Datos y licencias</h2>
+      <p>El código es software libre (licencia MIT). Los datos derivados por el proyecto se publican bajo <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="noopener">CC BY 4.0</a>; los textos del POEL son información pública del Municipio de Loreto. Mapa de contexto: datos de INEGI rescatados de ePOEL 2019. Imagen satelital opcional: Sentinel‑2 cloudless de EOX (CC BY‑NC‑SA 4.0, uso no comercial).</p>
+      <p><a href="https://github.com/bajaloreto/ePOEL" target="_blank" rel="noopener">Código y datos en GitHub</a> · <a href={`${base}legacy/`}>Versión 2019</a></p>
+    </section>
+  </main>
+</Base>

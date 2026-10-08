@@ -1,0 +1,8 @@
+[
+  { "id": "casa", "nombre": "Construir una casa", "corto": "Casa", "grupos": ["construccion", "asentamientos-humanos-1", "asentamientos-humanos-2", "agua", "residuos"] },
+  { "id": "turismo", "nombre": "Proyecto turístico", "corto": "Turismo", "grupos": ["turismo-1", "turismo-2", "turismo-3", "construccion", "infraestructura", "agua", "residuos"] },
+  { "id": "pesca", "nombre": "Pesca o acuacultura", "corto": "Pesca", "grupos": ["pesca", "acuacultura", "agua", "flora-fauna"] },
+  { "id": "campo", "nombre": "Agricultura o ganadería", "corto": "Campo", "grupos": ["agricultura", "pecuario", "agua", "manejo-ecosistemas"] },
+  { "id": "material", "nombre": "Extraer material", "corto": "Material", "grupos": ["mineria", "manejo-ecosistemas", "agua"] },
+  { "id": "todo", "nombre": "Ver todos los criterios", "corto": "Todo", "grupos": null }
+]

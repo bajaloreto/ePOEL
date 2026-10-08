@@ -13,3 +13,6 @@ datos/poel/digitalizacion/*.png
 .impeccable/decision/
 .impeccable/review/
 .impeccable/questions/
+node_modules/
+dist/
+.astro/

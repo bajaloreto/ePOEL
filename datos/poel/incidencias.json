@@ -74,13 +74,14 @@
       "3a"
     ],
     "resolucion": "Se conservan una sola vez, con el campo repeticiones_en_boletin.",
-    "registrada": "2026-10-07"
+    "registrada": "2026-10-07",
+    "texto_ficha": "El Boletín repite dos lineamientos en esta ficha; aquí se muestran una sola vez."
   },
   {
     "id": "INC-007",
     "estado": "abierta",
-    "titulo": "ePOEL 2019 no tiene geometría para 28 UGAs",
-    "descripcion": "Los datos de 2019 no incluyen polígono para 28 de las 122 UGAs del Apéndice 10, y sus geometrías se digitalizaron de los mapas en PDF del POEL sin documentar el método.",
+    "titulo": "ePOEL 2019 no tiene geometría para 27 UGAs",
+    "descripcion": "Los datos de 2019 no incluyen polígono para 27 de las 122 UGAs del Apéndice 10, y sus geometrías se digitalizaron de los mapas en PDF del POEL sin documentar el método. (La UGA 7a sí tenía polígono, registrado como \"UGA-7\"; ver INC-008.)",
     "fuentes": [
       "ePOEL 2019 (js/variablesgeojsons.js)",
       "Boletín Oficial No. 12, Apéndice 10"
@@ -90,7 +91,6 @@
       "3b",
       "5b",
       "6",
-      "7a",
       "7b",
       "10",
       "20",
@@ -131,7 +131,8 @@
       "7a"
     ],
     "resolucion": "Se usan los identificadores del Boletín: 5a y 7a.",
-    "registrada": "2026-10-07"
+    "registrada": "2026-10-07",
+    "texto_ficha": "En ePOEL 2019 esta UGA aparecía con otra clave; aquí se usa la del Boletín."
   },
   {
     "id": "INC-009",
@@ -150,7 +151,8 @@
       "65b"
     ],
     "resolucion": "Prevalece el Boletín (ADR 0001).",
-    "registrada": "2026-10-07"
+    "registrada": "2026-10-07",
+    "texto_ficha": "La superficie que mostraba ePOEL 2019 tenía un error de captura; aquí se usa la del Boletín."
   },
   {
     "id": "INC-010",
