@@ -87,6 +87,7 @@ def main():
             "presion": (f["presion"] or {}).get("nivel"), "procedencia": procedencia["metodo"],
             "incidencias": sum(1 for i in incs if i["nivel"] == "aviso"),
             "incidencia": next((i["id"] for i in incs if i["nivel"] == "aviso"), None),
+            "nota": next((i["id"] for i in incs if i["nivel"] == "nota"), None),
         }
         if geom is not None and not geom.is_empty:
             c = geom.representative_point()

@@ -182,7 +182,8 @@ function pintarTablero() {
     tr.innerHTML = `<td class="cifra">${u.id.toUpperCase()}</td>
       <td><span class="pol"><i style="background:${u.politica ? COLOR[u.politica] : "#9aa1a8"}"></i>${u.politica ? POLITICA[u.politica] : "—"}</span></td>
       <td class="cifra">${u.id === seleccion ? "AQUÍ" : `${d.toFixed(1)} km`}</td>
-      <td>${u.incidencia ? `<span class="inc cifra">${u.incidencia.replace("INC-", "")}</span>` : `<span class="nada">—</span>`}</td>`;
+      <td>${u.incidencia ? `<span class="inc cifra" title="Aviso ${u.incidencia}">${u.incidencia.replace("INC-", "")}</span>`
+        : u.nota ? `<span class="inc-nota cifra" title="Nota ${u.nota}">${u.nota.replace("INC-", "")}</span>` : `<span class="nada">—</span>`}</td>`;
     return tr;
   });
   filas.replaceChildren(...nuevas);

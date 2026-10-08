@@ -93,6 +93,7 @@ button, .boton { font: inherit; cursor: pointer; }
 .tablero .pol i { width: 10px; height: 10px; border-radius: 2px; flex: none; }
 .tablero .inc { font-size: 12px; font-weight: 700; background: var(--alerta); color: var(--tinta); padding: 1px 5px; border-radius: 3px; }
 .tablero .inc::before { content: "INC "; font-weight: 400; }
+.tablero .inc-nota { font-size: 12px; color: #aeb4ba; border: 1px solid #4a5159; padding: 0 5px; border-radius: 3px; }
 .tablero .nada { color: #4f565e; }
 .tablero tr.sin-ugas td { white-space: normal; color: var(--acero-claro); font-family: var(--f-texto); font-size: 14px; padding: 18px; cursor: default; }
 .tablero .sin-geo { color: var(--acero-claro); font-size: 13px; }
@@ -129,13 +130,13 @@ button, .boton { font: inherit; cursor: pointer; }
 /* Pase */
 .pase { background: var(--superficie); border-radius: 12px; box-shadow: 0 6px 22px rgba(11, 13, 16, .12); overflow: hidden; display: flex; flex-direction: column; min-height: 0; }
 .pase > * { flex: none; }
-.pase-cab { display: flex; justify-content: space-between; align-items: start; gap: 12px; padding: 18px 20px 6px; }
+.pase-cab { display: flex; justify-content: space-between; align-items: start; gap: 12px; padding: 14px 20px 6px; }
 .pase-cab h1 { margin: 0; font-family: var(--f-cond); font-weight: 700; font-size: 56px; line-height: .9; letter-spacing: .01em; transition: font-size .28s var(--curva); }
 .pase-lugar { margin: 6px 0 0; font-size: 14.5px; color: #444a51; }
 .emisor { text-align: right; font-size: 12.5px; color: var(--acero); text-decoration: none; line-height: 1.35; flex: none; }
 .emisor b { display: block; font-size: 14px; color: var(--tinta); font-weight: 600; }
 .emisor:hover b { text-decoration: underline; }
-.politica { display: flex; flex-direction: column; padding: 6px 20px 14px; }
+.politica { display: flex; flex-direction: column; padding: 4px 20px 10px; }
 .politica .etq { font-family: var(--f-cond); font-size: 13px; letter-spacing: .08em; color: var(--acero); text-transform: uppercase; }
 .politica .val { font-family: var(--f-cond); font-weight: 700; font-size: 27px; line-height: 1.05; display: flex; align-items: center; gap: 10px; }
 .politica .val::before { content: ""; width: 14px; height: 14px; border-radius: 3px; background: var(--c, var(--acero)); flex: none; }
@@ -144,11 +145,11 @@ button, .boton { font: inherit; cursor: pointer; }
 .politica[data-politica="preservacion"] { --c: var(--pres); }
 .politica[data-politica="restauracion"] { --c: var(--rest); }
 .segmentos { display: grid; grid-template-columns: 1.45fr .85fr 1fr 1fr; margin: 0; border-top: 1px solid var(--linea); }
-.segmentos div { padding: 9px 12px 10px; border-right: 1px solid var(--linea); min-width: 0; }
+.segmentos div { padding: 7px 12px 8px; border-right: 1px solid var(--linea); min-width: 0; }
 .segmentos div:last-child { border-right: 0; }
 .segmentos dt { font-family: var(--f-cond); font-size: 12.5px; letter-spacing: .08em; color: var(--acero); text-transform: uppercase; }
 .segmentos dd { margin: 2px 0 0; font-size: 15px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.avisos { list-style: none; margin: 0; padding: 8px 20px 10px; border-top: 1px solid var(--linea); display: grid; gap: 4px; font-size: 13px; color: #444a51; }
+.avisos { list-style: none; margin: 0; padding: 6px 20px 8px; border-top: 1px solid var(--linea); display: grid; gap: 2px; font-size: 12.5px; line-height: 1.35; color: #444a51; }
 .avisos mark { font-size: 11.5px; font-weight: 700; }
 .avisos .nota { color: var(--acero); }
 .avisos .nota .cifra { font-size: 11.5px; border: 1px solid var(--linea); border-radius: 3px; padding: 0 4px; margin-right: 2px; }
@@ -164,8 +165,8 @@ button, .boton { font: inherit; cursor: pointer; }
 .perforado::before, .perforado::after { content: ""; position: absolute; top: -12px; width: 22px; height: 22px; border-radius: 50%; background: var(--panel); }
 .perforado::before { left: -26px; }
 .perforado::after { right: -26px; }
-.destinos { padding: 12px 20px 2px; }
-.destinos h2 { margin: 0 0 9px; font-family: var(--f-cond); font-size: 21px; font-weight: 700; }
+.destinos { padding: 10px 20px 2px; }
+.destinos h2 { margin: 0 0 7px; font-family: var(--f-cond); font-size: 21px; font-weight: 700; }
 .destinos .fila { display: grid; grid-template-columns: repeat(6, 1fr); gap: 5px; }
 .destinos button { font-family: var(--f-cond); font-weight: 600; font-size: 15px; letter-spacing: .03em; text-transform: uppercase; padding: 7px 0; border-radius: 4px; border: 1.5px solid var(--tinta); background: var(--superficie); color: var(--tinta); transition: background .15s, color .15s; }
 .destinos button:hover { background: var(--papel); }
@@ -186,8 +187,8 @@ button, .boton { font: inherit; cursor: pointer; }
 .cita { display: block; color: var(--acero); font-size: 12px; margin-top: 3px; }
 .particular { font-size: 14px; color: #30363c; margin: 6px 0 4px; }
 .talon { display: grid; grid-template-columns: 1fr auto auto; gap: 4px 12px; align-items: center; padding: 10px 14px 10px 20px; background: var(--papel); }
-.talon p { margin: 0; font-size: 11.5px; color: #4d535a; line-height: 1.4; }
-.acciones { display: flex; gap: 5px; margin-top: 7px; }
+.talon p { margin: 0; font-size: 11.5px; color: #4d535a; line-height: 1.4; white-space: nowrap; }
+.acciones { display: flex; gap: 5px; margin-top: 6px; }
 .acciones button, .acciones .boton { font-family: var(--f-cond); font-weight: 600; font-size: 14.5px; padding: 5px 9px; border-radius: 4px; border: 1.5px solid var(--tinta); background: var(--superficie); color: var(--tinta); text-decoration: none; white-space: nowrap; }
 .talon-id { display: flex; flex-direction: column; align-items: center; justify-content: center; align-self: stretch; padding-left: 12px; border-left: 2px dashed #cdd1d6; font-family: var(--f-cond); line-height: 1; }
 .talon-id span { font-size: 12px; letter-spacing: .08em; color: var(--acero); }
@@ -237,7 +238,7 @@ button, .boton { font: inherit; cursor: pointer; }
   .barra { grid-template-columns: 1fr; height: auto; padding: 10px 14px 12px; gap: 8px; }
   .barra nav, .marca span { display: none; }
   .app { display: flex; flex-direction: column; height: auto; }
-  .mapa-caja { height: 34vh; order: 1; }
+  .mapa-caja { height: 30vh; order: 1; }
   .maplibregl-ctrl-bottom-left, .maplibregl-ctrl-bottom-right { bottom: 26px; }
   .lado { order: 2; padding: 0 10px; margin-top: -22px; position: relative; z-index: 3; display: block; }
   .tablero { order: 3; margin-top: 16px; }
@@ -250,9 +251,10 @@ button, .boton { font: inherit; cursor: pointer; }
   .politica .val { font-size: 23px; }
   .creditos div { grid-template-columns: 1fr; gap: 4px; }
   .destinos .fila { grid-template-columns: repeat(3, 1fr); }
-  .segmentos { grid-template-columns: repeat(2, 1fr); }
-  .segmentos div:nth-child(2) { border-right: 0; }
-  .segmentos div:nth-child(-n+2) { border-bottom: 1px solid var(--linea); }
+  .segmentos div { padding: 7px 8px 8px; }
+  .segmentos dt { font-size: 11px; letter-spacing: .04em; }
+  .segmentos dd { font-size: 14px; }
+  .destinos h2 { font-size: 19px; }
   .leyenda, .coord { display: none; }
 }
 

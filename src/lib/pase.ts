@@ -35,7 +35,7 @@ export interface Ficha {
 export interface Resumen {
   id: string; nombre: string; politica: Politica | null; actividad: string; superficie_ha: number;
   localidad: string | null; presion: string | null; procedencia: string; incidencias: number;
-  incidencia: string | null; centro?: [number, number];
+  incidencia: string | null; nota: string | null; centro?: [number, number];
 }
 
 export interface Preset { id: string; nombre: string; corto: string; grupos: string[] | null }
@@ -83,9 +83,10 @@ export function htmlPase(ficha: Ficha, presets: Preset[], presetId: string, opci
   const preset = presets.find((p) => p.id === presetId) ?? presets[0];
   const pres = ficha.presion?.nivel;
   const politica = ficha.politica ? POLITICA[ficha.politica] : ficha.politica_texto;
-  const [p0, p1] = ficha.fuente.paginas_pdf;
+  const [p0] = ficha.fuente.paginas_pdf;
   const proc = ficha.procedencia_geometria;
-  const precision = proc.precision_m ? ` ±${proc.precision_m} m` : "";
+  const precision = proc.precision_m ? ` (±${proc.precision_m} m)` : "";
+  const poligono = `Polígono ${({ "digitalizada": "digitalizado del mapa de la ficha", "epoel-2019": "provisional de ePOEL 2019, pendiente de re-digitalizar", "sin-geometria": "pendiente de digitalizar" } as Record<string, string>)[proc.metodo] ?? proc.metodo}${precision}.`;
   return `
   <article class="pase" data-uga="${esc(ficha.id)}" aria-label="Ficha de la ${esc(ficha.nombre)}">
     <header class="pase-cab">
@@ -104,12 +105,13 @@ export function htmlPase(ficha: Ficha, presets: Preset[], presetId: string, opci
         <div><dt>Fragilidad</dt><dd>${cap(ficha.fragilidad?.nivel)}</dd></div>
         <div><dt>Presión</dt><dd>${pres === "alta" ? `<mark>${cap(pres)}</mark>` : cap(pres)}</dd></div>
       </dl>
-      ${ficha.presion?.nota || ficha.incidencias.length ? `<ul class="avisos">
+      <ul class="avisos">
         ${ficha.presion?.nota ? `<li>Presión ${esc(ficha.presion.nivel)}: ${esc(ficha.presion.nota)}.</li>` : ""}
         ${ficha.incidencias.map((i) => i.nivel === "aviso"
           ? `<li><mark class="cifra">${esc(i.id)}</mark> ${esc(i.texto)}</li>`
           : `<li class="nota"><span class="cifra">${esc(i.id)}</span> ${esc(i.texto)}</li>`).join("")}
-      </ul>` : ""}
+        ${proc.metodo !== "digitalizada" && ficha.incidencias.some((i) => i.id === "INC-007") ? "" : `<li class="nota">${esc(poligono)}</li>`}
+      </ul>
     </div></div>
     <div class="perforado" aria-hidden="true"></div>
     <section class="destinos" aria-labelledby="dest-${esc(ficha.id)}">
@@ -130,9 +132,9 @@ export function htmlPase(ficha: Ficha, presets: Preset[], presetId: string, opci
     <div class="perforado" aria-hidden="true"></div>
     <footer class="talon">
       <div class="talon-txt">
-        <p>Boletín Oficial No. 12, pp. ${p0}–${p1} · Polígono ${esc(({ "digitalizada": "digitalizado del Boletín", "epoel-2019": "provisional (2019)", "sin-geometria": "pendiente" } as Record<string, string>)[proc.metodo] ?? proc.metodo)}${precision} · Informativa: solo el Boletín tiene validez jurídica.</p>
+        <p>Informativa: solo el Boletín tiene validez jurídica.</p>
         <div class="acciones">
-          <button type="button" class="prim" data-accion="imprimir">Imprimir</button>
+          <button type="button" class="prim" data-accion="imprimir">Imprimir pase</button>
           <button type="button" data-accion="copiar"${opciones.enlace ? ` data-enlace="${esc(opciones.enlace)}"` : ""}>Copiar enlace</button>
           <a class="boton" data-accion="reportar" href="${esc(enlaceReporte(`Incidencia en la ${ficha.nombre}`))}" target="_blank" rel="noopener">Reportar</a>
         </div>

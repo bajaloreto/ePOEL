@@ -51,12 +51,7 @@ Otros instrumentos (Programa de Manejo del PNBL, POEM del Golfo de California) y
 - Primera revisión de diseño (Impeccable): disposición «fix»; las correcciones ya están aplicadas.
 
 **Para retomar:**
-1. Veredicto de la revisión (2.ª ronda): **fix**. Resueltas: tablero de vecinas, placa de selección, estados de carga y error, foco, impresión y créditos. Pendientes:
-   - talón ≤110 px con la línea de fuente en un renglón, para que los criterios superen 300 px;
-   - en el celular, la primera fila de destinos completa dentro de 812 px (compactar los avisos);
-   - devolver al tablero las incidencias de nivel «nota» como clave neutra (regresión);
-   - volver a «Imprimir pase» (regresión).
-   El revisor señaló que «donada a Eco‑Alianza» no tenía respaldo, pero PRODUCT.md sí lo dice (respuesta de Hugo en la entrevista). Solo falta confirmar la redacción y los vistos buenos.
+1. ~~Veredicto de la revisión (2.ª ronda): **fix**.~~ Cerrado el 2026-10-08: talón de 105 px con el descargo en un renglón (la procedencia del polígono pasó a los avisos del pase); criterios de 307–309 px a 1440×900; primera fila de destinos a ≤786 px en 375×812 (mapa a 30vh, avisos y espaciado compactados); incidencias «nota» de vuelta en el tablero como clave neutra; botón «Imprimir pase». El revisor señaló que «donada a Eco‑Alianza» no tenía respaldo, pero PRODUCT.md sí lo dice (respuesta de Hugo en la entrevista). Solo falta confirmar la redacción y los vistos buenos.
 2. Escribir `DESIGN.md` (documentador de Impeccable) a partir del sitio construido.
 3. **Hugo**:
    - confirmar la leyenda «Donada al Municipio de Loreto y a Eco‑Alianza de Loreto»;
