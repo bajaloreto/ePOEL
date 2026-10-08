@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-08T18:47:34+00:00",
+  "title": "Design System: ePOEL",
+  "extensions": {
+    "colorMeta": {
+      "tinta": {
+        "role": "primary",
+        "displayName": "Tinta",
+        "canonical": "#0b0d10",
+        "tonalRamp": [
+          "oklch(15% 0.007 258)",
+          "oklch(25% 0.007 258)",
+          "oklch(35% 0.007 258)",
+          "oklch(48% 0.007 258)",
+          "oklch(60% 0.007 258)",
+          "oklch(72% 0.007 258)",
+          "oklch(84% 0.007 258)",
+          "oklch(95% 0.007 258)"
+        ]
+      },
+      "pizarra": {
+        "role": "secondary",
+        "displayName": "Pizarra",
+        "canonical": "#1c2127",
+        "tonalRamp": [
+          "oklch(15% 0.014 253)",
+          "oklch(25% 0.014 253)",
+          "oklch(35% 0.014 253)",
+          "oklch(48% 0.014 253)",
+          "oklch(60% 0.014 253)",
+          "oklch(72% 0.014 253)",
+          "oklch(84% 0.014 253)",
+          "oklch(95% 0.014 253)"
+        ]
+      },
+      "linea-oscura": {
+        "role": "secondary",
+        "displayName": "Línea oscura",
+        "canonical": "#23292f",
+        "tonalRamp": [
+          "oklch(15% 0.014 248)",
+          "oklch(25% 0.014 248)",
+          "oklch(35% 0.014 248)",
+          "oklch(48% 0.014 248)",
+          "oklch(60% 0.014 248)",
+          "oklch(72% 0.014 248)",
+          "oklch(84% 0.014 248)",
+          "oklch(95% 0.014 248)"
+        ]
+      },
+      "acero": {
+        "role": "neutral",
+        "displayName": "Acero",
+        "canonical": "#646a71",
+        "tonalRamp": [
+          "oklch(15% 0.013 252)",
+          "oklch(25% 0.013 252)",
+          "oklch(35% 0.013 252)",
+          "oklch(48% 0.013 252)",
+          "oklch(60% 0.013 252)",
+          "oklch(72% 0.013 252)",
+          "oklch(84% 0.013 252)",
+          "oklch(95% 0.013 252)"
+        ]
+      },
+      "acero-claro": {
+        "role": "neutral",
+        "displayName": "Acero claro",
+        "canonical": "#9aa1a8",
+        "tonalRamp": [
+          "oklch(15% 0.013 248)",
+          "oklch(25% 0.013 248)",
+          "oklch(35% 0.013 248)",
+          "oklch(48% 0.013 248)",
+          "oklch(60% 0.013 248)",
+          "oklch(72% 0.013 248)",
+          "oklch(84% 0.013 248)",
+          "oklch(95% 0.013 248)"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel",
+        "canonical": "#e6e8eb",
+        "tonalRamp": [
+          "oklch(15% 0.005 258)",
+          "oklch(25% 0.005 258)",
+          "oklch(35% 0.005 258)",
+          "oklch(48% 0.005 258)",
+          "oklch(60% 0.005 258)",
+          "oklch(72% 0.005 258)",
+          "oklch(84% 0.005 258)",
+          "oklch(95% 0.005 258)"
+        ]
+      },
+      "superficie": {
+        "role": "neutral",
+        "displayName": "Superficie",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15% 0.000 90)",
+          "oklch(25% 0.000 90)",
+          "oklch(35% 0.000 90)",
+          "oklch(48% 0.000 90)",
+          "oklch(60% 0.000 90)",
+          "oklch(72% 0.000 90)",
+          "oklch(84% 0.000 90)",
+          "oklch(95% 0.000 90)"
+        ]
+      },
+      "papel": {
+        "role": "neutral",
+        "displayName": "Papel",
+        "canonical": "#f4f5f7",
+        "tonalRamp": [
+          "oklch(15% 0.003 265)",
+          "oklch(25% 0.003 265)",
+          "oklch(35% 0.003 265)",
+          "oklch(48% 0.003 265)",
+          "oklch(60% 0.003 265)",
+          "oklch(72% 0.003 265)",
+          "oklch(84% 0.003 265)",
+          "oklch(95% 0.003 265)"
+        ]
+      },
+      "linea": {
+        "role": "neutral",
+        "displayName": "Línea",
+        "canonical": "#e1e4e7",
+        "tonalRamp": [
+          "oklch(15% 0.005 248)",
+          "oklch(25% 0.005 248)",
+          "oklch(35% 0.005 248)",
+          "oklch(48% 0.005 248)",
+          "oklch(60% 0.005 248)",
+          "oklch(72% 0.005 248)",
+          "oklch(84% 0.005 248)",
+          "oklch(95% 0.005 248)"
+        ]
+      },
+      "amarillo-senal": {
+        "role": "primary",
+        "displayName": "Amarillo Señal",
+        "canonical": "#ffd400",
+        "tonalRamp": [
+          "oklch(15% 0.120 94)",
+          "oklch(25% 0.120 94)",
+          "oklch(35% 0.120 94)",
+          "oklch(48% 0.120 94)",
+          "oklch(60% 0.120 94)",
+          "oklch(72% 0.120 94)",
+          "oklch(84% 0.120 94)",
+          "oklch(95% 0.120 94)"
+        ]
+      },
+      "politica-aprovechamiento": {
+        "role": "tertiary",
+        "displayName": "Ocre Aprovechamiento",
+        "canonical": "#d08a2e",
+        "tonalRamp": [
+          "oklch(15% 0.120 69)",
+          "oklch(25% 0.120 69)",
+          "oklch(35% 0.120 69)",
+          "oklch(48% 0.120 69)",
+          "oklch(60% 0.120 69)",
+          "oklch(72% 0.120 69)",
+          "oklch(84% 0.120 69)",
+          "oklch(95% 0.120 69)"
+        ]
+      },
+      "politica-conservacion": {
+        "role": "tertiary",
+        "displayName": "Verde Conservación",
+        "canonical": "#2f7d4a",
+        "tonalRamp": [
+          "oklch(15% 0.111 152)",
+          "oklch(25% 0.111 152)",
+          "oklch(35% 0.111 152)",
+          "oklch(48% 0.111 152)",
+          "oklch(60% 0.111 152)",
+          "oklch(72% 0.111 152)",
+          "oklch(84% 0.111 152)",
+          "oklch(95% 0.111 152)"
+        ]
+      },
+      "politica-preservacion": {
+        "role": "tertiary",
+        "displayName": "Verde Preservación",
+        "canonical": "#8cc06d",
+        "tonalRamp": [
+          "oklch(15% 0.120 135)",
+          "oklch(25% 0.120 135)",
+          "oklch(35% 0.120 135)",
+          "oklch(48% 0.120 135)",
+          "oklch(60% 0.120 135)",
+          "oklch(72% 0.120 135)",
+          "oklch(84% 0.120 135)",
+          "oklch(95% 0.120 135)"
+        ]
+      },
+      "politica-restauracion": {
+        "role": "tertiary",
+        "displayName": "Terracota Restauración",
+        "canonical": "#c0533a",
+        "tonalRamp": [
+          "oklch(15% 0.120 34)",
+          "oklch(25% 0.120 34)",
+          "oklch(35% 0.120 34)",
+          "oklch(48% 0.120 34)",
+          "oklch(60% 0.120 34)",
+          "oklch(72% 0.120 34)",
+          "oklch(84% 0.120 34)",
+          "oklch(95% 0.120 34)"
+        ]
+      },
+      "mar": {
+        "role": "neutral",
+        "displayName": "Mar",
+        "canonical": "#d7e2ea",
+        "tonalRamp": [
+          "oklch(15% 0.016 239)",
+          "oklch(25% 0.016 239)",
+          "oklch(35% 0.016 239)",
+          "oklch(48% 0.016 239)",
+          "oklch(60% 0.016 239)",
+          "oklch(72% 0.016 239)",
+          "oklch(84% 0.016 239)",
+          "oklch(95% 0.016 239)"
+        ]
+      },
+      "tierra": {
+        "role": "neutral",
+        "displayName": "Tierra",
+        "canonical": "#f7f8f9",
+        "tonalRamp": [
+          "oklch(15% 0.002 248)",
+          "oklch(25% 0.002 248)",
+          "oklch(35% 0.002 248)",
+          "oklch(48% 0.002 248)",
+          "oklch(60% 0.002 248)",
+          "oklch(72% 0.002 248)",
+          "oklch(84% 0.002 248)",
+          "oklch(95% 0.002 248)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Identificador de la UGA en la cabecera del pase."
+      },
+      "headline": {
+        "displayName": "Política",
+        "purpose": "Nombre de la política ambiental."
+      },
+      "title": {
+        "displayName": "Título",
+        "purpose": "Grupos de criterios, destinos y cabeceras del tablero."
+      },
+      "body": {
+        "displayName": "Lectura",
+        "purpose": "Texto normativo y criterios."
+      },
+      "label": {
+        "displayName": "Rótulo",
+        "purpose": "Segmentos, columnas y leyendas, en mayúsculas espaciadas."
+      },
+      "cifra": {
+        "displayName": "Cifra",
+        "purpose": "Códigos, coordenadas, superficies, distancias y páginas."
+      }
+    },
+    "shadows": [
+      {
+        "name": "pase",
+        "value": "0 6px 22px rgba(11, 13, 16, .12)",
+        "purpose": "El pase y la tarjeta de estado vacío sobre el panel."
+      },
+      {
+        "name": "aviso-flotante",
+        "value": "0 8px 24px rgba(11, 13, 16, .25)",
+        "purpose": "Aviso bajo el buscador."
+      },
+      {
+        "name": "leyenda",
+        "value": "0 2px 10px rgba(11, 13, 16, .12)",
+        "purpose": "Controles flotantes del mapa."
+      },
+      {
+        "name": "foco",
+        "value": "0 0 0 5px #ffd400",
+        "purpose": "Anillo Amarillo Señal alrededor del contorno de foco de tinta."
+      }
+    ],
+    "motion": [
+      {
+        "name": "curva",
+        "value": "cubic-bezier(.2, .8, .2, 1)",
+        "purpose": "Compactar la cabecera, girar los triángulos y desplazar filas del tablero."
+      },
+      {
+        "name": "reordenar-tablero",
+        "value": "420ms",
+        "purpose": "Las filas del tablero se desplazan en su lugar (FLIP) al cambiar de consulta."
+      },
+      {
+        "name": "reimpresion",
+        "value": "segmento por segmento",
+        "purpose": "El pase se revela de arriba abajo al consultar otra UGA; se omite con prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "celular",
+        "value": "860px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botón primario",
+      "kind": "button",
+      "refersTo": "boton-primario",
+      "description": "Acción principal del talón («Imprimir pase») y «Reintentar».",
+      "html": "<button class=\"ds-btn-prim\">Imprimir pase</button>",
+      "css": ".ds-btn-prim { font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 14.5px; padding: 5px 9px; border-radius: 4px; border: 1.5px solid #0b0d10; background: #0b0d10; color: #fff; cursor: pointer; transition: background .15s; } .ds-btn-prim:hover { background: #1c2127; } .ds-btn-prim:focus-visible { outline: 2px solid #0b0d10; outline-offset: 2px; box-shadow: 0 0 0 5px #ffd400; }"
+    },
+    {
+      "name": "Botón secundario",
+      "kind": "button",
+      "refersTo": "boton-secundario",
+      "description": "Acciones secundarias del talón («Copiar enlace», «Reportar»).",
+      "html": "<button class=\"ds-btn-sec\">Copiar enlace</button>",
+      "css": ".ds-btn-sec { font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 14.5px; padding: 5px 9px; border-radius: 4px; border: 1.5px solid #0b0d10; background: #fff; color: #0b0d10; cursor: pointer; transition: background .15s; } .ds-btn-sec:hover { background: #e6e8eb; } .ds-btn-sec:focus-visible { outline: 2px solid #0b0d10; outline-offset: 2px; box-shadow: 0 0 0 5px #ffd400; }"
+    },
+    {
+      "name": "Destinos",
+      "kind": "chip",
+      "refersTo": "destino",
+      "description": "Fila «¿Qué quieres hacer aquí?»: el destino activo se invierte a tinta con texto amarillo.",
+      "html": "<div class=\"ds-destinos\"><button aria-pressed=\"true\">Casa</button><button aria-pressed=\"false\">Turismo</button><button aria-pressed=\"false\">Pesca</button></div>",
+      "css": ".ds-destinos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; width: 300px; } .ds-destinos button { font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: .03em; text-transform: uppercase; padding: 7px 0; border-radius: 4px; border: 1.5px solid #0b0d10; background: #fff; color: #0b0d10; cursor: pointer; transition: background .15s, color .15s; } .ds-destinos button:hover { background: #f4f5f7; } .ds-destinos button[aria-pressed=true] { background: #0b0d10; color: #ffd400; }"
+    },
+    {
+      "name": "Buscador",
+      "kind": "input",
+      "refersTo": "buscador",
+      "description": "Busca lugar, coordenadas, UTM o UGA desde la barra de tinta.",
+      "html": "<div class=\"ds-buscar\"><input placeholder=\"Lugar, coordenadas, UTM o «UGA 45»\"></div>",
+      "css": ".ds-buscar { background: #0b0d10; padding: 10px; width: 380px; } .ds-buscar input { width: 100%; height: 40px; border: 0; border-radius: 4px; background: #f1f3f5; color: #0b0d10; padding: 0 12px; font: 500 15px 'Barlow', system-ui, sans-serif; box-shadow: inset 0 0 0 1px #c9ced4; box-sizing: border-box; } .ds-buscar input::placeholder { color: #5d636a; } .ds-buscar input:focus { outline: none; background: #fff; box-shadow: inset 0 0 0 2px #0b0d10, 0 0 0 3px #ffd400; }"
+    },
+    {
+      "name": "Barra",
+      "kind": "nav",
+      "refersTo": "tablero",
+      "description": "Barra superior de tinta con la marca y la navegación.",
+      "html": "<nav class=\"ds-barra\"><a class=\"ds-marca\">ePOEL<span>Loreto</span></a><span class=\"ds-nav\"><a>Acerca de</a><a>Datos abiertos</a></span></nav>",
+      "css": ".ds-barra { display: flex; justify-content: space-between; align-items: center; height: 60px; padding: 0 20px; background: #0b0d10; } .ds-marca { font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-weight: 700; font-size: 28px; color: #fff; } .ds-marca span { font-weight: 500; font-size: 18px; color: #9aa1a8; margin-left: 8px; } .ds-nav { display: flex; gap: 20px; } .ds-nav a { font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 17px; letter-spacing: .04em; color: #d6d9dd; cursor: pointer; } .ds-nav a:hover { color: #fff; }"
+    },
+    {
+      "name": "Fila del tablero",
+      "kind": "custom",
+      "refersTo": "tablero-fila-seleccionada",
+      "description": "Tablero de UGAs cercanas; la fila seleccionada pinta su UGA en Amarillo Señal.",
+      "html": "<table class=\"ds-tablero\"><tr class=\"sel\"><td>45</td><td><i style=\"background:#d08a2e\"></i>Aprovechamiento sustentable</td><td class=\"n\">AQUÍ</td></tr><tr><td>46</td><td><i style=\"background:#8cc06d\"></i>Preservación</td><td class=\"n\">0.7 km</td></tr></table>",
+      "css": ".ds-tablero { background: #0b0d10; color: #e9ebee; border-collapse: collapse; font: 16px 'Barlow Condensed', 'Arial Narrow', sans-serif; width: 360px; } .ds-tablero td { padding: 10px; border-bottom: 1px solid #1a1f25; } .ds-tablero tr:hover td { background: #141920; } .ds-tablero tr.sel td { background: #1a1f26; color: #fff; } .ds-tablero tr.sel td:first-child { background: #ffd400; color: #0b0d10; font-weight: 700; } .ds-tablero i { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 8px; } .ds-tablero .n { font-family: 'JetBrains Mono', monospace; font-size: 14px; }"
+    },
+    {
+      "name": "Cabecera del pase",
+      "kind": "card",
+      "refersTo": "pase",
+      "description": "Componente insignia: identificador de la UGA, sello del Boletín, política y segmentos.",
+      "html": "<article class=\"ds-pase\"><header><h1>UGA 45</h1><span class=\"sello\">Boletín Oficial<b>No. 12 · p. 306</b>12‑mar‑2014</span></header><p class=\"pol\"><small>POLÍTICA</small><b>Aprovechamiento sustentable</b></p><div class=\"perf\"></div></article>",
+      "css": ".ds-pase { background: #fff; border-radius: 12px; box-shadow: 0 6px 22px rgba(11,13,16,.12); width: 400px; overflow: hidden; color: #0b0d10; } .ds-pase header { display: flex; justify-content: space-between; padding: 14px 20px 6px; } .ds-pase h1 { margin: 0; font: 700 56px/.9 'Barlow Condensed', 'Arial Narrow', sans-serif; } .ds-pase .sello { text-align: right; font: 12.5px/1.35 'Barlow', sans-serif; color: #646a71; } .ds-pase .sello b { display: block; font: 600 14px 'JetBrains Mono', monospace; color: #0b0d10; } .ds-pase .pol { margin: 0; padding: 4px 20px 14px; display: flex; flex-direction: column; } .ds-pase .pol small { font: 13px 'Barlow Condensed', sans-serif; letter-spacing: .08em; color: #646a71; } .ds-pase .pol b { font: 700 27px/1.05 'Barlow Condensed', sans-serif; } .ds-pase .perf { border-top: 2px dashed #cdd1d6; margin: 0 14px 14px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "El Pase del Territorio",
+    "overview": "Cada consulta emite un pase: un documento segmentado, perforado y con talón que dice qué Unidad de Gestión Ambiental (UGA) aplica en un punto, qué política rige y qué criterios valen para la actividad elegida, cada uno con su página del Boletín Oficial. El tablero oscuro funciona como la sala de espera: ordena las UGAs vecinas por distancia, como un tablero de salidas que reacomoda sus filas sin perderlas de vista. El mapa queda en medio, como el territorio que ambos describen.\n\nEl carácter es tangible y oficial. Las piezas se comportan como objetos de papel con bordes firmes de tinta, casi sin sombras, con cifras monoespaciadas para códigos, coordenadas y medidas. Se lee como un documento que podría sellarse, pero habla en lenguaje llano. La densidad es alta y ordenada: en una sola vista caben buscador, tablero, mapa y pase completo, y nada compite con la respuesta.\n\nSe rechazan explícitamente dos mundos: el visor SIG de tarjetas flotantes sobre un mapa a sangre y el portal burocrático de tablas grises.",
+    "keyCharacteristics": [
+      "Tres columnas fijas en escritorio: tablero de tinta, mapa flexible, pase blanco.",
+      "Un solo color de acento, el Amarillo Señal, reservado para lo que cambia o exige atención.",
+      "Barlow Condensed para rotular, Barlow para leer y JetBrains Mono para cifras.",
+      "Perforaciones punteadas, talón con QR real e identificador de la UGA, como un pase de abordar.",
+      "Impresión en blanco y negro puro, completa y citable."
+    ],
+    "rules": [
+      {
+        "name": "The Una Señal Rule",
+        "body": "El Amarillo Señal solo marca selección, alerta o foco. Si un elemento amarillo no cambia ni exige atención, es un error.",
+        "section": "colors"
+      },
+      {
+        "name": "The Política Sagrada Rule",
+        "body": "Los cuatro colores de política significan una política ambiental y nada más. No se reutilizan para estados, categorías ni decoración.",
+        "section": "colors"
+      },
+      {
+        "name": "The Cifra Exacta Rule",
+        "body": "Todo número que alguien podría copiar a un expediente (coordenada, superficie, página, código) va en JetBrains Mono tabular. El texto corrido nunca.",
+        "section": "typography"
+      },
+      {
+        "name": "The Papel Sobre Mesa Rule",
+        "body": "Solo el pase se eleva sobre el panel. Botones, filas, segmentos y grupos son planos; un botón con sombra está fuera del sistema.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** citar la página del Boletín junto a cada criterio («Boletín, p. 103») en acero de 12 px.",
+      "**Do** reservar el Amarillo Señal para selección, presión alta, incidencias de nivel aviso y foco (The Una Señal Rule).",
+      "**Do** declarar la procedencia de cada polígono en el pase y distinguir los provisionales en el mapa con borde punteado y menor opacidad.",
+      "**Do** imprimir en blanco y negro puro: sin barra, tablero, mapa ni destinos; todos los grupos abiertos; marcas con contorno negro.",
+      "**Do** mostrar los logos institucionales y de donación en monocromo (blanco sobre tinta, gris oscuro sobre papel), enlazados a sus sitios."
+    ],
+    "donts": [
+      "**Don't** construir un visor SIG de tarjetas flotantes sobre un mapa a sangre.",
+      "**Don't** caer en el portal burocrático de tablas grises.",
+      "**Don't** usar los colores de política para otra cosa que no sea una política ambiental (The Política Sagrada Rule).",
+      "**Don't** abrir un grupo de criterios por defecto: el usuario debe ver primero cuántos grupos hay.",
+      "**Don't** cargar fuentes, glifos, mosaicos o iconos de servicios con token o cuenta; las fuentes van empaquetadas y los rótulos del mapa son HTML.",
+      "**Don't** sugerir aval oficial: el escudo del Municipio y el logo de Eco‑Alianza nunca encabezan el pase ni se usan como sello."
+    ]
+  }
+}

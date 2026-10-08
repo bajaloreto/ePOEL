@@ -52,14 +52,14 @@ Otros instrumentos (Programa de Manejo del PNBL, POEM del Golfo de California) y
 
 **Para retomar:**
 1. ~~Veredicto de la revisión (2.ª ronda): **fix**.~~ Cerrado el 2026-10-08: talón de 105 px con el descargo en un renglón (la procedencia del polígono pasó a los avisos del pase); criterios de 307–309 px a 1440×900; primera fila de destinos a ≤786 px en 375×812 (mapa a 30vh, avisos y espaciado compactados); incidencias «nota» de vuelta en el tablero como clave neutra; botón «Imprimir pase». El revisor señaló que «donada a Eco‑Alianza» no tenía respaldo, pero PRODUCT.md sí lo dice (respuesta de Hugo en la entrevista). Solo falta confirmar la redacción y los vistos buenos.
-2. Escribir `DESIGN.md` (documentador de Impeccable) a partir del sitio construido.
+2. ~~Escribir `DESIGN.md`~~: hecho el 2026-10-08 (North Star «El Pase del Territorio», Amarillo Señal, carácter tangible y oficial), con su complemento `.impeccable/design.json`.
 3. **Hugo**:
    - ~~confirmar la leyenda~~: Hugo la cambió el 2026-10-08 a «Al servicio del Municipio de Loreto, por Eco‑Alianza de Loreto»;
    - confirmar el correo público para reportes (`src/lib/sitio.ts`, hoy usa GitHub Issues);
    - obtener los vistos buenos de los logos.
 4. Digitalizar en lote las UGAs restantes (`herramientas/digitalizar_fichas.py`). Antes, verificar el datum (INC‑011) contra la costa.
 5. Publicar: workflow de GitHub Actions y cambio de la fuente de GitHub Pages. Requiere el OK de Hugo, porque reemplaza el sitio en vivo.
-   Destino final de producción (Hugo, 2026-10-08): **https://loreto.com/epoel**. Implica cambiar `base` en `astro.config.mjs` a `/epoel`, revisar las URLs absolutas (QR, enlaces copiados, `sitio.ts`) y definir cómo se suben los archivos estáticos a ese hosting; GitHub Pages puede quedar como espejo o redirección.
+   Destino final de producción (Hugo, 2026-10-08): **https://loreto.com/epoel**. Implica cambiar `base` en `astro.config.mjs` a `/epoel`, revisar las URLs absolutas (QR, enlaces copiados, `sitio.ts`) y definir cómo se suben los archivos estáticos a ese hosting; GitHub Pages puede quedar como espejo o redirección. Antes de decidir, evaluar pros y contras de **alojar** en loreto.com frente a **redirigir** loreto.com/epoel al sitio de GitHub Pages (Hugo, 2026-10-08: redirigir si alojar resulta problemático).
 6. Afinar los presets de «¿Qué quieres hacer?» criterio por criterio, y corregir el extractor de «áreas de atención especial».
 
 Para ver el prototipo: `npm install && npm run dev` y abrir http://localhost:4321/ePOEL/
