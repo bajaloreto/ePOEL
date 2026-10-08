@@ -7,3 +7,8 @@ __pycache__/
 fuentes/
 herramientas/ocr/ocr
 datos/poel/digitalizacion/*.png
+
+# Impeccable: maquetas y capturas desechables
+.impeccable/mocks/
+.impeccable/decision/
+.impeccable/review/

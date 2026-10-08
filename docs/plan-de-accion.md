@@ -4,8 +4,8 @@ Acordado con Hugo Quintero el 2026‑10‑07. Sin fecha externa; ritmo de medio 
 
 ## Fase 0 — Rescate y bases (1–2 semanas)
 
-- [x] Congelar la versión 2019: tag `v1-2019` (local; falta publicarlo)
-- [ ] Rescatar las capas de la cuenta de Mapbox de Helden → `rescate/mapbox-2019/` (en curso)
+- [x] Congelar la versión 2019: tag `v1-2019` (publicado en GitHub)
+- [x] Rescatar las capas de la cuenta de Mapbox de Helden → `rescate/mapbox-2019/` (18 capas)
 - [x] Extraer del Boletín las tablas maestras: 19 lineamientos, 18 estrategias y 192 criterios en 16 grupos
 - [x] Extraer las 122 fichas de UGA como datos estructurados, validadas contra las imágenes del Boletín
 - [x] Abrir el registro de incidencias (`datos/poel/incidencias.json`)
@@ -33,3 +33,10 @@ PSDUL 2024 (cuando lleguen los shapefiles; marcado "en proceso" mientras no se p
 ## Fase 3 — Plataforma territorial
 
 Otros instrumentos (Programa de Manejo del PNBL, POEM del Golfo de California) y consulta cruzada: "qué dice cada instrumento en este punto".
+
+## Diseño de la interfaz (en curso)
+
+- [x] Skill Impeccable instalada para el proyecto (`.claude/settings.json`) y `PRODUCT.md` escrito.
+- [x] Tirada de dirección visual (seed `c3ec5e0f`): Hugo se inclina por una mezcla de "Carta topográfica INEGI" y "Manual con pestañas", conservando "¿Qué quieres hacer?".
+- [ ] Elegir dirección con las maquetas A (carta + manual), B (pase y tablero) y C (señalética) en `.impeccable/mocks/comparar.html`.
+- [ ] Pendiente del extractor: las "áreas de atención especial" a veces parten la justificación entre renglones (p. ej. UGA 45).
