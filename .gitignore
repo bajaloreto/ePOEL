@@ -16,3 +16,6 @@ datos/poel/digitalizacion/*.png
 node_modules/
 dist/
 .astro/
+
+# Proyecto de revisión en QGIS: se regenera con herramientas/proyecto_qgis.py
+qgis/revision/

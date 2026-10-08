@@ -17,6 +17,7 @@ npm run datos
 | `<id>.png` | Diagnóstico (no se versiona): contorno detectado sobre el mapa original. |
 | `lote.jsonl` | Resultado de la última corrida para las 122 UGAs, incluidas las que fallaron y por qué. |
 | `datum.json` | Desplazamiento de datum ajustado contra la costa (INC-011). |
+| `revisadas/<id>.geojson` | Polígono revisado a mano en QGIS (o descartado), con notas y fecha. |
 | `validacion.json` | Estado de cada UGA: `aceptada`, `revisar`, `rechazada` o `sin-digitalizar`. El sitio usa las dos primeras. |
 
 Estado al 2026-10-08: 97 aceptadas, 22 por revisar y 3 sin digitalizar.
@@ -28,4 +29,5 @@ Estado al 2026-10-08: 97 aceptadas, 22 por revisar y 3 sin digitalizar.
 - Al construir el mapa (`construir_geodatos.py`), donde dos polígonos se enciman cede el menos preciso ante uno
   aceptado; los «revisar» y los de 2019 no recortan a nadie.
 
-Ninguna está revisada en QGIS todavía.
+Revisión manual: `qgis/LEEME.md`. Las revisiones se guardan en `revisadas/<id>.geojson` y prevalecen sobre la
+digitalización automática. Ninguna está revisada en QGIS todavía.

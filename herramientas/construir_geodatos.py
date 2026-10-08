@@ -93,6 +93,9 @@ def main():
     geometrias = {}
     for uid in fichas:
         dig = DATOS / "digitalizacion" / f"{uid}.geojson"
+        revisada = DATOS / "digitalizacion" / "revisadas" / f"{uid}.geojson"
+        if revisada.exists():
+            dig = revisada  # revisión manual en QGIS (aplicar_revision_qgis.py); si se descartó, no tiene geometría
         estado_dig = validacion.get(uid, {}).get("estado", "aceptada")
         if dig.exists() and estado_dig in ("aceptada", "revisar"):
             feat = json.loads(dig.read_text())["features"][0]

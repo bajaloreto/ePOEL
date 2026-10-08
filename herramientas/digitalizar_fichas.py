@@ -400,6 +400,10 @@ def intento(doc, uga, ficha, mapa, f):
             },
             "control": {k: resultado[k] for k in ("residuo_georreferencia_m", "area_digitalizada_ha", "escala_por_superficie",
                                                     "superficie_ficha_ha", "diferencia_area_pct")},
+            # Transformación píxel -> UTM 12N (antes del desplazamiento de datum) del mapa renderizado al factor
+            # indicado: permite montar el mapa de la ficha georreferenciado (herramientas/proyecto_qgis.py)
+            "georreferencia": {"a_x": ax, "b_x": bx, "a_y": ay, "b_y": by, "factor_render": f,
+                               "pagina_mapa": mapa["pagina_boletin"], "ficha_mapa": origen},
         },
         "geometry": mapping(wgs),
     }

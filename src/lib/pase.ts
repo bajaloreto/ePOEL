@@ -86,7 +86,7 @@ export function htmlPase(ficha: Ficha, presets: Preset[], presetId: string, opci
   const [p0] = ficha.fuente.paginas_pdf;
   const proc = ficha.procedencia_geometria;
   const precision = proc.precision_m ? ` (±${proc.precision_m} m)` : "";
-  const poligono = `Polígono ${({ "digitalizada": "digitalizado del mapa de la ficha", "epoel-2019": "provisional de ePOEL 2019, pendiente de re-digitalizar", "sin-geometria": "pendiente de digitalizar" } as Record<string, string>)[proc.metodo] ?? proc.metodo}${precision}${proc.validacion === "revisar" ? ", con revisión pendiente" : ""}.`;
+  const poligono = `Polígono ${({ "digitalizada": "digitalizado del mapa de la ficha", "epoel-2019": "provisional de ePOEL 2019, pendiente de re-digitalizar", "sin-geometria": "pendiente de digitalizar" } as Record<string, string>)[proc.metodo] ?? proc.metodo}${precision}${proc.revisada ? ", revisado sobre imagen satelital" : proc.validacion === "revisar" ? ", con revisión pendiente" : ""}.`;
   return `
   <article class="pase" data-uga="${esc(ficha.id)}" aria-label="Ficha de la ${esc(ficha.nombre)}">
     <header class="pase-cab">

@@ -9,6 +9,7 @@ Controles por UGA:
   - Duplicado: no debe ser casi el mismo polígono que otra UGA (IoU > 0.6), señal de un mapa equivocado.
 
 Estados: «aceptada» (se usa), «revisar» (se usa con aviso de revisión pendiente) y «rechazada» (no se usa).
+Una revisión manual en QGIS (datos/poel/digitalizacion/revisadas/) prevalece sobre estos controles.
 Resultado: datos/poel/digitalizacion/validacion.json.
 
 Uso: .venv/bin/python herramientas/validar_digitalizacion.py
@@ -46,6 +47,13 @@ def main():
 
     salida = {}
     for uga, r in sorted(lote.items()):
+        revisada = DIGITALIZACION / "revisadas" / f"{uga}.geojson"
+        if revisada.exists():  # la revisión manual en QGIS manda (aplicar_revision_qgis.py)
+            p = json.loads(revisada.read_text())["features"][0]["properties"]
+            salida[uga] = {"estado": "rechazada" if p["revision"] == "descartar" else "aceptada",
+                           "motivos": [f"revisión en QGIS ({p['fecha']}): {p['revision']}" + (f". {p['notas']}" if p["notas"] else "")],
+                           "revision_qgis": p["revision"]}
+            continue
         if uga not in geoms:
             salida[uga] = {"estado": "sin-digitalizar", "motivos": [r.get("detalle") or r["estado"]]}
             continue
