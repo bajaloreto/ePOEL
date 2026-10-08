@@ -70,8 +70,8 @@ export function htmlCriterios(ficha: Ficha, preset: Preset): string {
   const resumen = grupos.length
     ? `${esc(preset.nombre)}: aplican <b>${total} criterios</b> en ${grupos.length} ${grupos.length === 1 ? "grupo" : "grupos"}.`
     : `${esc(preset.nombre)}: esta UGA no tiene criterios de esos grupos.`;
-  return `<p class="resumen">${resumen}</p>` + grupos.map((g, i) => `
-    <details class="grupo" name="grupos"${i === 0 ? " open" : ""}>
+  return `<p class="resumen">${resumen}</p>` + grupos.map((g) => `
+    <details class="grupo" name="grupos">
       <summary><span>${esc(g.nombre)}</span><span class="cifra">${String(g.items.length).padStart(2, "0")}</span></summary>
       <ol>${g.items.map((c) => `
         <li><span class="cifra codigo">${esc(c.id)}</span><div>${esc(c.texto)}<a class="cita" href="${esc(ficha.fuente.url)}#page=${c.pagina}" target="_blank" rel="noopener">Boletín, p. ${c.pagina}</a></div></li>`).join("")}
@@ -141,7 +141,8 @@ export function htmlPase(ficha: Ficha, presets: Preset[], presetId: string, opci
       </div>
       <div class="qr" aria-label="Código QR hacia esta ficha">${opciones.qr ?? ""}</div>
       <div class="talon-id" aria-hidden="true"><span>UGA</span><b>${esc(ficha.id)}</b></div>
-      <p class="donado">Plataforma desarrollada y donada por <img src="${import.meta.env.BASE_URL}marca/huquma-horizontal.png" alt="HuQuMa Studio" width="75" height="18"></p>
+      <p class="donado"><span>Desarrollada y donada por</span> <a href="https://huquma.studio/" target="_blank" rel="noopener"><img src="${import.meta.env.BASE_URL}marca/huquma-horizontal.png" alt="HuQuMa Studio" width="75" height="18"></a>
+        <span class="alojada">Alojada en</span> <a href="https://loreto.com/" target="_blank" rel="noopener"><img src="${import.meta.env.BASE_URL}marca/loreto-com-oscuro.png" alt="Loreto.com" width="51" height="18"></a></p>
     </footer>
   </article>`;
 }

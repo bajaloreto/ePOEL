@@ -102,7 +102,12 @@ button, .boton { font: inherit; cursor: pointer; }
 .donado-tablero .escudo { height: 60px; width: auto; }
 .donado-tablero .eal { height: 38px; width: auto; }
 .donado-tablero span { font-family: var(--f-cond); font-size: 12.5px; letter-spacing: .07em; color: #8d949b; }
-.donado-tablero .hqm { height: 28px; width: auto; align-self: flex-start; }
+.donado-tablero .hqm { height: 28px; width: auto; display: block; }
+.donado-tablero .lcom { height: 27px; width: auto; display: block; }
+.donado-tablero a { display: block; border-radius: 3px; transition: opacity .15s; }
+.donado-tablero a:hover { opacity: .8; }
+.donado-tablero .creditos-pie { display: flex; align-items: flex-end; gap: 28px; flex-wrap: wrap; }
+.donado-tablero .creditos-pie > div { display: flex; flex-direction: column; gap: 8px; }
 
 /* Mapa */
 .mapa-caja { position: relative; background: var(--mar); min-width: 0; }
@@ -177,6 +182,10 @@ button, .boton { font: inherit; cursor: pointer; }
 .grupo { border-top: 1px solid var(--linea); padding: 2px 0 6px; }
 .grupo summary { position: sticky; top: 0; z-index: 1; background: var(--superficie); display: flex; justify-content: space-between; align-items: baseline; padding: 9px 0 7px; cursor: pointer; list-style: none; font-family: var(--f-cond); font-weight: 700; font-size: 19px; }
 .grupo summary::-webkit-details-marker { display: none; }
+.grupo summary > span:first-child { display: inline-flex; align-items: center; gap: 9px; }
+.grupo summary > span:first-child::before { content: ""; flex: none; width: 0; height: 0; border-left: 7px solid currentColor; border-top: 5px solid transparent; border-bottom: 5px solid transparent; transition: transform .2s var(--curva); }
+.grupo[open] summary > span:first-child::before { transform: rotate(90deg); }
+@media (prefers-reduced-motion: reduce) { .grupo summary > span:first-child::before { transition: none; } }
 .grupo summary .cifra { font-size: 13.5px; color: var(--acero); }
 .grupo[open] summary { box-shadow: 0 1px 0 var(--linea); }
 .grupo.extra summary { font-weight: 600; color: #30363c; }
@@ -198,7 +207,9 @@ button, .boton { font: inherit; cursor: pointer; }
 .acciones .prim:hover { background: var(--pizarra); }
 .qr svg { width: 56px; height: 56px; display: block; }
 .donado { grid-column: 1 / -1; display: flex; align-items: center; gap: 8px; padding-top: 6px !important; border-top: 1px solid #dfe2e6; white-space: nowrap; font-size: 11.5px !important; }
-.donado img { height: 18px; width: auto; }
+.donado img { height: 18px; width: auto; display: block; }
+.donado a { display: block; }
+.donado .alojada { margin-left: auto; }
 
 /* Carga y error */
 .pase.cargando .estado-carga { margin: 0; padding: 18px 20px 22px; color: var(--acero); font-family: var(--f-cond); font-size: 17px; border-top: 1px solid var(--linea); }
@@ -271,6 +282,7 @@ button, .boton { font: inherit; cursor: pointer; }
   .criterios { overflow: visible; padding: 0 20px; }
   .grupo summary { position: static; }
   details.grupo { display: block; }
+  .grupo summary > span:first-child::before { display: none; }
   details.grupo > :not(summary) { display: block !important; }
   * { color: #000 !important; background: transparent !important; box-shadow: none !important; }
   mark { outline: 1px solid #000; }

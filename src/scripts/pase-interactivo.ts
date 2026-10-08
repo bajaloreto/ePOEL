@@ -31,8 +31,17 @@ export function conectarPase(pase: HTMLElement, alCambiarPreset?: (id: string) =
     }),
   );
 
-  // La cabecera se compacta mientras se recorren los criterios (solo cuando el pase tiene su propio desplazamiento)
-  lista.addEventListener("scroll", () => pase.classList.toggle("compacto", lista.scrollTop > 24), { passive: true });
+  // La cabecera se compacta mientras se recorren los criterios (solo cuando el pase tiene su propio desplazamiento).
+  // Solo se compacta si, tras crecer la lista, queda contenido por recorrer: si no, el navegador recorta el desplazamiento,
+  // la lista vuelve arriba y la cabecera oscila entre los dos estados.
+  const compactable = pase.querySelector<HTMLElement>(".compactable");
+  lista.addEventListener("scroll", () => {
+    const y = lista.scrollTop;
+    if (!pase.classList.contains("compacto")) {
+      const crece = (compactable?.offsetHeight ?? 0) + 40;
+      if (y > 24 && lista.scrollHeight - lista.clientHeight - crece > 24) pase.classList.add("compacto");
+    } else if (y < 4) pase.classList.remove("compacto");
+  }, { passive: true });
 
   pase.querySelector('[data-accion="imprimir"]')?.addEventListener("click", () => window.print());
   pase.querySelector<HTMLButtonElement>('[data-accion="copiar"]')?.addEventListener("click", async (e) => {

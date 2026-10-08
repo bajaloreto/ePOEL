@@ -28,13 +28,17 @@ const base = import.meta.env.BASE_URL;
         </table>
       </div>
       <footer class="donado-tablero">
-        <span>DONADA AL MUNICIPIO DE LORETO Y A ECO‑ALIANZA DE LORETO</span>
+        <span>AL SERVICIO DEL MUNICIPIO DE LORETO, POR ECO‑ALIANZA DE LORETO</span>
         <div class="instituciones">
-          <img class="escudo" src={`${base}marca/escudo-loreto-gris.webp`} alt="Municipio de Loreto, B.C.S." />
-          <img class="eal" src={`${base}marca/eco-alianza-loreto-blanco.png`} alt="Eco-Alianza de Loreto, A.C." />
+          <a href="https://loreto.gob.mx/" target="_blank" rel="noopener"><img class="escudo" src={`${base}marca/escudo-loreto-gris.webp`} alt="Municipio de Loreto, B.C.S." /></a>
+          <a href="https://espanol.ecoalianzaloreto.org/" target="_blank" rel="noopener"><img class="eal" src={`${base}marca/eco-alianza-loreto-blanco.png`} alt="Eco-Alianza de Loreto, A.C." /></a>
         </div>
-        <span>PLATAFORMA DESARROLLADA Y DONADA POR</span>
-        <img class="hqm" src={`${base}marca/huquma-horizontal-claro.png`} alt="HuQuMa Studio" />
+        <div class="creditos-pie">
+          <div><span>PLATAFORMA DESARROLLADA Y DONADA POR</span>
+            <a href="https://huquma.studio/" target="_blank" rel="noopener"><img class="hqm" src={`${base}marca/huquma-horizontal-claro.png`} alt="HuQuMa Studio" /></a></div>
+          <div><span>ALOJADA EN</span>
+            <a href="https://loreto.com/" target="_blank" rel="noopener"><img class="lcom" src={`${base}marca/loreto-com-blanco.png`} alt="Loreto.com" /></a></div>
+        </div>
       </footer>
     </section>
 
