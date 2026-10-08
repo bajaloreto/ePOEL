@@ -41,3 +41,24 @@ Otros instrumentos (Programa de Manejo del PNBL, POEM del Golfo de California) y
 - [x] Dirección elegida: **B · Pase y tablero** (contrato en `.impeccable/surfaces/src-pages-index-astro.md`).
 - [x] Logos de HuQuMa Studio en `recursos/marca/huquma/` (crédito de donación: pie del tablero y talón del pase).
 - [ ] Pendiente del extractor: las "áreas de atención especial" a veces parten la justificación entre renglones (p. ej. UGA 45).
+
+## Corte del 2026-10-07: dónde nos quedamos
+
+**Hecho en la Fase 1 (rama `fase-1`, sin publicar):** prototipo en Astro con la dirección B (pase y tablero).
+- Mapa propio con MapLibre y búsqueda por localidad, coordenadas, UTM o UGA.
+- Tablero de UGAs cercanas y pase citable con QR e impresión.
+- 122 páginas estáticas por UGA, página «Acerca de» y la versión 2019 en `/legacy`.
+- Primera revisión de diseño (Impeccable): disposición «fix»; las correcciones ya están aplicadas.
+
+**Para retomar:**
+1. Veredicto de la revisión sobre las correcciones (quedó en curso). Lo parcial: el talón mide 137 px (meta ≤110) y en el celular la fila de destinos apenas asoma en el primer viewport.
+2. Escribir `DESIGN.md` (documentador de Impeccable) a partir del sitio construido.
+3. **Hugo**:
+   - confirmar la leyenda «Donada al Municipio de Loreto y a Eco‑Alianza de Loreto»;
+   - confirmar el correo público para reportes (`src/lib/sitio.ts`, hoy usa GitHub Issues);
+   - obtener los vistos buenos de los logos.
+4. Digitalizar en lote las UGAs restantes (`herramientas/digitalizar_fichas.py`). Antes, verificar el datum (INC‑011) contra la costa.
+5. Publicar: workflow de GitHub Actions y cambio de la fuente de GitHub Pages. Requiere el OK de Hugo, porque reemplaza el sitio en vivo.
+6. Afinar los presets de «¿Qué quieres hacer?» criterio por criterio, y corregir el extractor de «áreas de atención especial».
+
+Para ver el prototipo: `npm install && npm run dev` y abrir http://localhost:4321/ePOEL/
