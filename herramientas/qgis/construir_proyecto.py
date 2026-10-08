@@ -127,7 +127,7 @@ def main():
         caja = a_utm.transformBoundingBox(f.geometry().boundingBox())
         caja.scale(1.3)
         marcador = QgsBookmark()
-        marcador.setName(f"UGA {f['uga']} — {f['motivo']}")
+        marcador.setName(f"UGA {f['uga']} — {f['pista'] or f['motivo']}")
         marcador.setGroup("Por revisar")
         marcador.setExtent(QgsReferencedRectangle(caja, UTM))
         proyecto.bookmarkManager().addBookmark(marcador)

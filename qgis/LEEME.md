@@ -2,7 +2,8 @@
 
 Proyecto para revisar a mano, sobre imagen satelital, las UGAs que la digitalización automática dejó «por revisar»
 (10 al 2026-10-08: las que no pudieron verificarse contra la costa ni contra localidades, o que esos controles ponen en duda).
-El motivo de cada una está en su marcador y en el campo `motivo`.
+El motivo de cada una está en el campo `motivo`, y lo que encontraron las verificaciones automáticas (satélite,
+costa, localidades) está en el campo `pista` y en el nombre de su marcador: empieza por ahí.
 Requiere QGIS 3.44 o posterior.
 
 ## Preparar

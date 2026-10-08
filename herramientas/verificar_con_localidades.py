@@ -2,7 +2,7 @@
 
 Los mapas de las fichas marcan localidades con un punto negro y su nombre. Se leen los nombres con OCR, se ubica el
 punto junto a cada nombre y, con la transformación de los rótulos que produjo el polígono, se compara con la
-coordenada de esa localidad en los datos rescatados de 2019 (contexto.geojson). Es un control independiente de la
+coordenada de esa localidad en el catálogo AGEEML de INEGI (datos/referencia/). Es un control independiente de la
 escala y de la lectura de rótulos para los mapas del interior, que no muestran costa.
 
 La comparación se hace SIN el desplazamiento de datum: esas localidades están en el mismo datum que los mapas del
@@ -12,6 +12,7 @@ Resultado: datos/poel/digitalizacion/localidades.json, que usa validar_digitaliz
 
 Uso: .venv/bin/python herramientas/verificar_con_localidades.py [ids...]
 """
+import csv
 import json
 import re
 import sys
@@ -37,12 +38,20 @@ def normalizar(nombre):
 
 
 def localidades():
-    ctx = json.loads((RAIZ / "public" / "datos" / "contexto.geojson").read_text())
+    """Catálogo AGEEML de INEGI (datos/referencia/inegi-localidades-loreto.csv) más las localidades rescatadas de
+    2019 que no estén en él."""
     out = {}
+    with open(DATOS.parent / "referencia" / "inegi-localidades-loreto.csv", newline="") as f:
+        for r in csv.DictReader(f):
+            if r["Lat_Decimal"] and r["Long_Decimal"]:
+                x, y = A_UTM.transform(float(r["Long_Decimal"]), float(r["Lat_Decimal"]))
+                out.setdefault(normalizar(r["Nombre_Localidad"]), []).append((x, y))
+    ctx = json.loads((RAIZ / "public" / "datos" / "contexto.geojson").read_text())
     for f in ctx["features"]:
         if f["properties"].get("capa") == "localidad" and f["geometry"]["type"] == "Point":
-            x, y = A_UTM.transform(*f["geometry"]["coordinates"][:2])
-            out.setdefault(normalizar(f["properties"]["nombre"]), []).append((x, y))
+            nombre = normalizar(f["properties"]["nombre"])
+            if nombre not in out:
+                out[nombre] = [A_UTM.transform(*f["geometry"]["coordinates"][:2])]
     return out
 
 

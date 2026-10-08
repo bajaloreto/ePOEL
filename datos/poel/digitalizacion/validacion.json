@@ -2,7 +2,7 @@
  "10": {
   "estado": "aceptada",
   "motivos": [
-   "posición confirmada: 5 localidades a 68 m (mediana)"
+   "posición confirmada: 4 localidades a 62 m (mediana)"
   ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
@@ -10,7 +10,7 @@
  "11a": {
   "estado": "aceptada",
   "motivos": [
-   "posición confirmada: costa del mapa a 99 m de la real; 4 localidades a 150 m (mediana); coincide con el polígono de 2019 (IoU 0.87)"
+   "posición confirmada: costa del mapa a 99 m de la real; 4 localidades a 139 m (mediana); coincide con el polígono de 2019 (IoU 0.87)"
   ],
   "iou_2019": 0.87,
   "distancia_centroide_2019_m": 258
@@ -19,7 +19,7 @@
   "estado": "aceptada",
   "motivos": [
    "área -6.9 % respecto a la ficha",
-   "posición confirmada: costa del mapa a 162 m de la real; 2 localidades a 61 y 110 m"
+   "posición confirmada: costa del mapa a 162 m de la real; 3 localidades a 58 m (mediana)"
   ],
   "iou_2019": 0.73,
   "distancia_centroide_2019_m": 567
@@ -59,7 +59,7 @@
  "16": {
   "estado": "aceptada",
   "motivos": [
-   "posición confirmada: costa del mapa a 66 m de la real; coincide con el polígono de 2019 (IoU 0.93)"
+   "controles de posición en desacuerdo: costa del mapa a 66 m de la real; 4 localidades a 332 m (mediana); coincide con el polígono de 2019 (IoU 0.93)"
   ],
   "iou_2019": 0.93,
   "distancia_centroide_2019_m": 229
@@ -67,7 +67,7 @@
  "17": {
   "estado": "aceptada",
   "motivos": [
-   "posición confirmada: costa del mapa a 87 m de la real; 5 localidades a 54 m (mediana); coincide con el polígono de 2019 (IoU 0.88)"
+   "posición confirmada: costa del mapa a 87 m de la real; 8 localidades a 68 m (mediana); coincide con el polígono de 2019 (IoU 0.88)"
   ],
   "iou_2019": 0.88,
   "distancia_centroide_2019_m": 230
@@ -76,7 +76,7 @@
   "estado": "aceptada",
   "motivos": [
    "área -6.9 % respecto a la ficha",
-   "posición confirmada: 3 localidades a 58 m (mediana)"
+   "posición confirmada: 5 localidades a 94 m (mediana)"
   ],
   "iou_2019": 0.55,
   "distancia_centroide_2019_m": 794
@@ -94,7 +94,7 @@
   "estado": "aceptada",
   "motivos": [
    "área -7.8 % respecto a la ficha",
-   "posición confirmada: costa del mapa a 58 m de la real; 4 localidades a 61 m (mediana)"
+   "posición confirmada: costa del mapa a 58 m de la real; 6 localidades a 86 m (mediana)"
   ],
   "iou_2019": 0.8,
   "distancia_centroide_2019_m": 451
@@ -191,7 +191,7 @@
  "25": {
   "estado": "aceptada",
   "motivos": [
-   "posición confirmada: costa del mapa a 54 m de la real; 4 localidades a 90 m (mediana); coincide con el polígono de 2019 (IoU 0.93)"
+   "posición confirmada: costa del mapa a 54 m de la real; 9 localidades a 99 m (mediana); coincide con el polígono de 2019 (IoU 0.93)"
   ],
   "iou_2019": 0.93,
   "distancia_centroide_2019_m": 180
@@ -199,7 +199,7 @@
  "26": {
   "estado": "aceptada",
   "motivos": [
-   "posición confirmada: 3 localidades a 52 m (mediana); coincide con el polígono de 2019 (IoU 0.83)"
+   "posición confirmada: 7 localidades a 60 m (mediana); coincide con el polígono de 2019 (IoU 0.83)"
   ],
   "iou_2019": 0.83,
   "distancia_centroide_2019_m": 153
@@ -223,7 +223,7 @@
  "29": {
   "estado": "aceptada",
   "motivos": [
-   "posición confirmada: costa del mapa a 51 m de la real"
+   "controles de posición en desacuerdo: costa del mapa a 51 m de la real; 3 localidades a 492 m (mediana)"
   ],
   "iou_2019": 0.74,
   "distancia_centroide_2019_m": 474
@@ -231,7 +231,7 @@
  "30": {
   "estado": "aceptada",
   "motivos": [
-   "posición confirmada: coincide con el polígono de 2019 (IoU 0.84)"
+   "posición confirmada: 2 localidades a 28 y 57 m; coincide con el polígono de 2019 (IoU 0.84)"
   ],
   "iou_2019": 0.84,
   "distancia_centroide_2019_m": 163
@@ -274,7 +274,7 @@
  "34a": {
   "estado": "aceptada",
   "motivos": [
-   "posición confirmada: 4 localidades a 62 m (mediana); coincide con el polígono de 2019 (IoU 0.86)"
+   "posición confirmada: 4 localidades a 51 m (mediana); coincide con el polígono de 2019 (IoU 0.86)"
   ],
   "iou_2019": 0.86,
   "distancia_centroide_2019_m": 217
@@ -282,7 +282,7 @@
  "34b": {
   "estado": "aceptada",
   "motivos": [
-   "posición confirmada: 3 localidades a 70 m (mediana); coincide con el polígono de 2019 (IoU 0.85)"
+   "posición confirmada: 3 localidades a 72 m (mediana); coincide con el polígono de 2019 (IoU 0.85)"
   ],
   "iou_2019": 0.85,
   "distancia_centroide_2019_m": 195
@@ -322,7 +322,7 @@
   "estado": "aceptada",
   "motivos": [
    "área -15.3 % respecto a la ficha",
-   "posición confirmada: 9 localidades a 116 m (mediana)"
+   "posición confirmada: 10 localidades a 124 m (mediana)"
   ],
   "iou_2019": 0.72,
   "distancia_centroide_2019_m": 131
@@ -331,7 +331,7 @@
   "estado": "aceptada",
   "motivos": [
    "área -18.7 % respecto a la ficha",
-   "posición confirmada: 9 localidades a 62 m (mediana)"
+   "posición confirmada: 9 localidades a 53 m (mediana)"
   ],
   "iou_2019": 0.75,
   "distancia_centroide_2019_m": 996
@@ -454,7 +454,7 @@
  "49a": {
   "estado": "aceptada",
   "motivos": [
-   "posición confirmada: 5 localidades a 92 m (mediana); coincide con el polígono de 2019 (IoU 0.90)"
+   "posición confirmada: 5 localidades a 55 m (mediana); coincide con el polígono de 2019 (IoU 0.90)"
   ],
   "iou_2019": 0.9,
   "distancia_centroide_2019_m": 203
@@ -504,7 +504,7 @@
   "estado": "aceptada",
   "motivos": [
    "escala por superficie; ubicación corroborada con 2019",
-   "posición confirmada: 3 localidades a 56 m (mediana)"
+   "sin verificación independiente de la posición"
   ],
   "iou_2019": 0.46,
   "distancia_centroide_2019_m": 620
@@ -585,14 +585,16 @@
  "5a": {
   "estado": "aceptada",
   "motivos": [
-   "posición confirmada: costa del mapa a 630 m de la real (ajusta mejor con +0 m E, -664 m N y escala 0.9); 4 localidades a 81 m (mediana)"
+   "controles de posición en desacuerdo: costa del mapa a 630 m de la real (ajusta mejor con +0 m E, -664 m N y escala 0.9); 5 localidades a 52 m (mediana)"
   ],
   "iou_2019": 0.68,
   "distancia_centroide_2019_m": 453
  },
  "5b": {
   "estado": "aceptada",
-  "motivos": [],
+  "motivos": [
+   "controles de posición en desacuerdo: costa del mapa a 605 m de la real (ajusta mejor con +0 m E, -664 m N y escala 0.9); 3 localidades a 77 m (mediana)"
+  ],
   "iou_2019": null,
   "distancia_centroide_2019_m": null
  },
@@ -645,7 +647,7 @@
  "65a": {
   "estado": "aceptada",
   "motivos": [
-   "posición confirmada: 2 localidades a 49 y 85 m; coincide con el polígono de 2019 (IoU 0.89)"
+   "posición confirmada: 2 localidades a 8 y 52 m; coincide con el polígono de 2019 (IoU 0.89)"
   ],
   "iou_2019": 0.89,
   "distancia_centroide_2019_m": 230
@@ -653,7 +655,7 @@
  "65b": {
   "estado": "aceptada",
   "motivos": [
-   "posición confirmada: 4 localidades a 107 m (mediana); coincide con el polígono de 2019 (IoU 0.91)"
+   "posición confirmada: 4 localidades a 77 m (mediana); coincide con el polígono de 2019 (IoU 0.91)"
   ],
   "iou_2019": 0.91,
   "distancia_centroide_2019_m": 210
@@ -828,7 +830,7 @@
  "8": {
   "estado": "aceptada",
   "motivos": [
-   "posición confirmada: costa del mapa a 77 m de la real; 3 localidades a 46 m (mediana)"
+   "posición confirmada: costa del mapa a 77 m de la real; 3 localidades a 36 m (mediana)"
   ],
   "iou_2019": 0.67,
   "distancia_centroide_2019_m": 465

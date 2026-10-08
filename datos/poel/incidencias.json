@@ -222,15 +222,16 @@
   {
     "id": "INC-014",
     "estado": "abierta",
-    "titulo": "Las localidades rescatadas de 2019 están en el datum de los mapas del Boletín",
-    "descripcion": "Las localidades de contexto.geojson (rescatadas de ePOEL 2019) coinciden con los puntos de localidad de los mapas del Boletín sin desplazamiento de datum (mediana de ~50–100 m en 19 UGAs), y quedan ~170–200 m al sur de los polígonos ya corregidos (INC-011). La corrección de datum se confirmó contra la imagen satelital (borde norte de la UGA 3a sobre la orilla) y contra la costa de las cuencas. Por eso las localidades sirven para verificar escala y lectura de rótulos, pero no el datum, y sus etiquetas en el mapa del sitio están corridas unos 200 m.",
+    "titulo": "Las localidades de INEGI coinciden con los mapas del Boletín sin la corrección de datum",
+    "descripcion": "Tanto las localidades rescatadas de 2019 como el catálogo AGEEML vigente de INEGI (descargado el 2026-10-08; ambas coinciden entre sí, mediana 42 m) coinciden con los puntos de localidad de los mapas del Boletín sin desplazamiento de datum (~50–100 m), y quedan ~170–200 m al sur de los polígonos corregidos. La corrección de datum se confirmó contra la imagen satelital Sentinel-2 2024: de 10,500 puntos que los mapas marcan como mar o tierra cerca de la orilla, con la corrección caen en agua el 99.1 % de los de mar (93.1 % sin ella) y acierta mejor en 30 de 35 UGAs. Es probable que las coordenadas de esas localidades provengan de cartografía en el datum anterior. Por eso sirven para verificar escala y lectura de rótulos, no el datum, y sus etiquetas en el mapa del sitio están corridas ~200 m.",
     "fuentes": [
+      "datos/referencia/inegi-localidades-loreto.csv",
       "datos/poel/digitalizacion/localidades.json",
       "herramientas/verificar_con_localidades.py"
     ],
     "ugas": [],
     "resolucion": null,
-    "pendiente": "Confirmar con una referencia actual (INEGI Marco Geoestadístico u OpenStreetMap) y, si se confirma, aplicar a las localidades y caminos de contexto el mismo desplazamiento de datum.",
+    "pendiente": "Confirmar con una referencia de alta resolución (ortofoto de INEGI u OpenStreetMap) sobre pueblos reconocibles y, si se confirma, aplicar a las localidades y caminos de contexto el desplazamiento de datum.",
     "registrada": "2026-10-08"
   }
 ]

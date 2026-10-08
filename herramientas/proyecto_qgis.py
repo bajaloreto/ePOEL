@@ -48,6 +48,8 @@ def mapa_georreferenciado(doc, uga, geo, dx, dy):
 def main():
     qgis = Path(sys.argv[sys.argv.index("--qgis") + 1]) if "--qgis" in sys.argv else Path("/Applications/QGIS.app")
     validacion = json.loads((DIG / "validacion.json").read_text())
+    archivo_pistas = DIG / "pistas_revision.json"  # hallazgos de las verificaciones automáticas, para orientar la revisión
+    pistas = json.loads(archivo_pistas.read_text()) if archivo_pistas.exists() else {}
     por_revisar = [u for u, v in validacion.items() if v["estado"] == "revisar"]
     (DESTINO / "mapas").mkdir(parents=True, exist_ok=True)
     (DESTINO / "referencia").mkdir(parents=True, exist_ok=True)
@@ -65,7 +67,8 @@ def main():
                  "precision_m": proc["precision_aprox_m"], "escala_por_superficie": ctrl.get("escala_por_superficie", False),
                  "fuente": proc["fuente"]}
         if uga in por_revisar:
-            props |= {"motivo": "; ".join(validacion[uga]["motivos"]), "revision": "pendiente", "notas": ""}
+            props |= {"motivo": "; ".join(validacion[uga]["motivos"]), "pista": pistas.get(uga, ""),
+                      "revision": "pendiente", "notas": ""}
             revisar.append({"type": "Feature", "properties": props, "geometry": feat["geometry"]})
             mapa_georreferenciado(doc, uga, feat["properties"]["georreferencia"], dx, dy)
         elif validacion.get(uga, {}).get("estado") == "aceptada":

@@ -8,8 +8,8 @@ Controles por UGA:
     polígono de 2019 (centroides a ≤500 m o IoU ≥ 0.3); si no hay de 2019, queda para revisión.
   - Posición (costa.json y localidades.json): la orilla del mapa frente a la costa real y las localidades rotuladas
     frente a sus coordenadas. Dentro de 2 × la precisión confirma (y acepta una UGA por revisar); más allá de 3 ×
-    la pone en duda. Una localidad a más de 1 km delata un rótulo mal leído. Si discrepan, pesan más 3 o más
-    localidades que la costa, cuya capa de referencia es imperfecta.
+    la pone en duda. Una localidad a más de 1 km delata un rótulo mal leído. La costa y 3 o más localidades pesan
+    igual; si discrepan, la UGA conserva su estado y queda la nota.
   - Duplicado: no debe ser casi el mismo polígono que otra UGA (IoU > 0.6), señal de un mapa equivocado.
 
 Estados: «aceptada» (se usa), «revisar» (se usa con aviso de revisión pendiente) y «rechazada» (no se usa).
@@ -105,7 +105,7 @@ def main():
                 mal = cc["mediana_m"] > max(3 * prec, 100)
                 if ok or mal:
                     aj = cc["mejor_ajuste"]
-                    veredictos.append((1, ok, f"costa del mapa a {cc['mediana_m']:.0f} m de la real" + ("" if ok else
+                    veredictos.append((2, ok, f"costa del mapa a {cc['mediana_m']:.0f} m de la real" + ("" if ok else
                         f" (ajusta mejor con {aj['desplazamiento_m'][0]:+} m E, {aj['desplazamiento_m'][1]:+} m N y escala {aj['escala']})")))
             ll = locs.get(uga, {})
             if ll.get("estado") == "medida":
@@ -142,6 +142,8 @@ def main():
                 elif not any(v[1] for v in decisivos):
                     estado = "revisar"
                     motivos.append("posición en duda: " + "; ".join(v[2] for v in veredictos))
+                else:  # controles igual de fuertes en desacuerdo: no cambia el estado, se deja constancia
+                    motivos.append("controles de posición en desacuerdo: " + "; ".join(v[2] for v in veredictos))
             else:
                 motivos.append("sin verificación independiente de la posición")
         salida[uga] = {"estado": estado, "motivos": motivos,

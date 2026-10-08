@@ -1,0 +1,12 @@
+{
+ "78a": "Satélite: el mar de su mapa encaja mucho mejor (0.64 → 0.86) desplazándolo ~10.4 km al OESTE con la misma escala: probable rótulo del Este mal leído por 10,000. Ojo: así se encima 14 % con vecinas. Localidades de referencia: Punta Aguililla, San Cosme, Agua Verde.",
+ "88a": "Posición actual errónea: se encima 96 % con UGAs aceptadas y su mapa no coincide con el satélite (0.49). El ajuste automático (±12 km) no encontró un lugar coherente; probablemente está más lejos. Comparar el mapa de la ficha con la costa entre Ligüí y Agua Verde (serie 88).",
+ "88b": "Posición actual errónea: se encima por completo con UGAs aceptadas y su costa queda a 1.4 km de la real. El satélite sugiere ~10.8 km al NORTE (probable rótulo Norte mal leído), pero aun así se encima 89 %; revisar contra el mapa de la ficha (serie 88, costa entre Ligüí y Agua Verde).",
+ "88c": "Se encima 60 % con UGAs aceptadas; la costa de su mapa encaja mejor con escala ~0.6, lo que contradice su ficha (300 ha digitalizadas frente a 194 declaradas). Revisar rótulos y escala.",
+ "91": "Posición actual errónea: se encima 99 % con UGAs aceptadas (17 y 26). La ficha declara 0.01 ha (INC-013). El satélite no da una ubicación coherente; revisar el mapa de la ficha.",
+ "77a": "Costa del mapa a ~560 m de la real; el satélite no da un ajuste claro (mejora pequeña que empeora la coincidencia con 2019). Mapa de baja resolución (~130 m/px): revisar sobre todo el contorno.",
+ "77b": "Costa del mapa a ~570 m de la real; el satélite no da un ajuste claro. Mapa de baja resolución (~130 m/px); una localidad de su mapa queda a 2.1 km.",
+ "18b": "Sin costa ni localidades legibles en su mapa: no hubo verificación automática. Área 11.6 % menor que la ficha.",
+ "79": "Escala tomada de la superficie y sin costa ni localidades legibles: verificar ubicación y tamaño con el mapa de la ficha.",
+ "80": "Escala tomada de la superficie y sin costa ni localidades legibles: verificar ubicación y tamaño con el mapa de la ficha."
+}
