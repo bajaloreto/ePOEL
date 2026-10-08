@@ -5,6 +5,5 @@ __pycache__/
 
 # Fuentes pesadas: se citan por URL oficial, no se versionan
 fuentes/
-/12.pdf
 herramientas/ocr/ocr
 datos/poel/digitalizacion/*.png
