@@ -8,6 +8,7 @@ setWorkerUrl(urlWorker);
 import qrcode from "qrcode-generator";
 import { htmlError, htmlPase, htmlPaseCargando, POLITICA, type Politica, type Resumen } from "../lib/pase";
 import { geoAUtm, utmAGeo } from "../lib/utm";
+import { BOLETIN_COMPLETO } from "../lib/sitio";
 import { cargarFicha, cargarPresets, conectarPase } from "./pase-interactivo";
 
 const BASE = import.meta.env.BASE_URL;
@@ -266,7 +267,7 @@ function fueraDeCobertura(p: Pos, enTierra: boolean) {
   mostrarCoord(p);
   lado.innerHTML = enTierra
     ? `<div class="vacio"><h1>Zona aún sin polígono</h1><p>Este punto está en tierra dentro del municipio, pero todavía no tenemos digitalizado el polígono de la UGA que le corresponde. Estamos re-digitalizando las UGAs desde los mapas del Boletín Oficial.</p>
-       <p>Mientras tanto, consulta el <a href="https://finanzas.bcs.gob.mx/wp-content/themes/voice/assets/images/boletines/2014/12.pdf#page=136" target="_blank" rel="noopener">Apéndice 10 del Boletín</a> o elige una UGA cercana en el tablero.</p></div>`
+       <p>Mientras tanto, consulta el <a href="${BOLETIN_COMPLETO}#page=136" target="_blank" rel="noopener">Apéndice 10 del Boletín</a> (PDF completo, 40 MB) o elige una UGA cercana en el tablero.</p></div>`
     : `<div class="vacio externo"><h1>Este punto no está cubierto por el POEL de Loreto</h1><p>El POEL regula la parte terrestre del municipio. En el mar o fuera del municipio probablemente aplica otro instrumento:</p>
        <ul><li><a href="https://www.gob.mx/semarnat/acciones-y-programas/bitacora-ambiental-golfo-de-california" target="_blank" rel="noopener">Programa de Ordenamiento Ecológico Marino del Golfo de California</a> (bitácora ambiental, SEMARNAT) </li>
        <li><a href="https://simec.conanp.gob.mx/ficha.php?anp=31&reg=3" target="_blank" rel="noopener">Parque Nacional Bahía de Loreto</a> (ficha CONANP)</li></ul></div>`;

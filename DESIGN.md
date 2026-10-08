@@ -229,6 +229,7 @@ Tangibles y oficiales: rectángulos de 4 px con borde de tinta de 1.5 px y texto
 - **Style:** buscador de 40 px de alto sobre papel, con borde interior de 1 px gris (#c9ced4), lupa a la izquierda y botón de ubicación a la derecha.
 - **Focus:** pasa a blanco con borde interior de tinta de 2 px y anillo Amarillo Señal de 3 px.
 - **Error:** un aviso flotante debajo explica el formato esperado con ejemplos en monoespaciada.
+- **Formularios (Contacto):** mismos campos sobre papel con borde interior gris y foco de tinta con anillo Amarillo Señal; rótulos en mayúsculas espaciadas de Barlow Condensed; un campo inválido toma borde terracota y el mensaje de estado aparece debajo, sobre el botón primario.
 
 ### Navigation
 Barra de tinta de 60 px: «ePOEL» en Barlow Condensed negra a 28 px con «Loreto» en acero claro, buscador al centro y enlaces de texto («Acerca de», «Datos abiertos») a 17 px que pasan de gris claro a blanco al pasar el cursor. En celular la barra se apila y los enlaces se ocultan.

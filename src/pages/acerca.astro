@@ -1,7 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 const base = import.meta.env.BASE_URL;
-const boletin = "https://finanzas.bcs.gob.mx/wp-content/themes/voice/assets/images/boletines/2014/12.pdf";
+import { BOLETIN_COMPLETO, BOLETIN_OFICIAL } from "../lib/sitio";
 ---
 <Base titulo="Acerca de ePOEL — Loreto, B.C.S.">
   <main class="pagina-texto">
@@ -11,14 +11,14 @@ const boletin = "https://finanzas.bcs.gob.mx/wp-content/themes/voice/assets/imag
 
     <section>
       <h2>Herramienta informativa, no oficial</h2>
-      <p>La única versión jurídicamente válida del POEL es la publicada en el <a href={boletin} target="_blank" rel="noopener">Boletín Oficial del Gobierno del Estado de B.C.S. No. 12, del 12 de marzo de 2014</a>. Ante cualquier diferencia, prevalece esa publicación.</p>
+      <p>La única versión jurídicamente válida del POEL es la publicada en el <a href={BOLETIN_COMPLETO} target="_blank" rel="noopener">Boletín Oficial del Gobierno del Estado de B.C.S. No. 12, del 12 de marzo de 2014</a> (copia íntegra alojada en este sitio, PDF de 40 MB; <a href={BOLETIN_OFICIAL} target="_blank" rel="noopener">original en el sitio del Gobierno del Estado</a>). Ante cualquier diferencia, prevalece esa publicación. Las fichas y los criterios se enlazan a extractos con las mismas páginas, más ligeros.</p>
       <p>Los polígonos del mapa son una aproximación cartográfica: se digitalizaron a partir de los mapas impresos del Boletín porque los archivos digitales originales no se conservaron. Cada UGA indica su método y su precisión aproximada. No sustituyen un levantamiento topográfico ni una constancia, dictamen o factibilidad de la autoridad competente.</p>
       <p>El uso de información pública y de nombres o emblemas institucionales no implica que las dependencias que generaron los datos respalden o avalen esta plataforma.</p>
     </section>
 
     <section>
       <h2>El POEL</h2>
-      <p>Elaborado por el Centro de Investigaciones Biológicas del Noroeste, S.C. (CIBNOR), con la coordinación general del Dr. Ricardo Rodríguez‑Estrella. Aprobado por el H. VII Ayuntamiento de Loreto en la Sesión de Cabildo No. 69 (14 de agosto de 2013) y publicado en el Boletín Oficial No. 12 (12 de marzo de 2014).</p>
+      <p>Elaborado por el Centro de Investigaciones Biológicas del Noroeste, S.C. (CIBNOR), con la coordinación general del Dr. Ricardo Rodríguez‑Estrella, en el marco de un convenio firmado por el Gobierno Federal (SEMARNAT), el Gobierno del Estado de Baja California Sur y el Municipio de Loreto. Aprobado por el H. VII Ayuntamiento de Loreto en la Sesión de Cabildo No. 69 (14 de agosto de 2013) y publicado en el Boletín Oficial No. 12 (12 de marzo de 2014).</p>
     </section>
 
     <section>

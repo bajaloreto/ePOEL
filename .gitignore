@@ -3,8 +3,8 @@ node_modules/
 .venv/
 __pycache__/
 
-# Fuentes pesadas: se citan por URL oficial, no se versionan
-fuentes/
+# Original de trabajo del Boletín; el sitio publica su copia y extractos en public/fuentes (herramientas/extractos_boletin.py)
+/fuentes/
 herramientas/ocr/ocr
 datos/poel/digitalizacion/*.png
 

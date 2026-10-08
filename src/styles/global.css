@@ -244,6 +244,25 @@ button, .boton { font: inherit; cursor: pointer; }
 .creditos dd { margin: 0; line-height: 1.5; }
 .hqm-grande { margin-top: 24px; height: auto; }
 
+/* Formulario de contacto */
+.formulario { display: grid; gap: 18px; margin: 28px 0 24px; max-width: 560px; }
+.campo { display: grid; gap: 6px; }
+.campo label { font-family: var(--f-cond); font-weight: 600; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--acero); }
+.campo input, .campo textarea { font: inherit; font-size: 16px; color: var(--tinta); background: var(--papel); border: 0; border-radius: 4px; padding: 10px 12px; box-shadow: inset 0 0 0 1px #c9ced4; }
+.campo textarea { resize: vertical; min-height: 150px; line-height: 1.5; }
+.campo input:focus, .campo textarea:focus { outline: none; background: #fff; box-shadow: inset 0 0 0 2px var(--tinta), 0 0 0 3px var(--alerta); }
+.campo input[aria-invalid="true"], .campo textarea[aria-invalid="true"] { box-shadow: inset 0 0 0 2px var(--rest); }
+.ayuda { margin: 0; font-size: 13px; color: var(--acero); }
+.trampa { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.enviar { justify-self: start; font-family: var(--f-cond); font-weight: 600; font-size: 17px; padding: 9px 18px; border-radius: 4px; border: 1.5px solid var(--tinta); background: var(--tinta); color: #fff; }
+.enviar:hover { background: var(--pizarra); }
+.enviar:disabled { opacity: .6; cursor: progress; }
+.estado-envio { margin: 0; font-size: 14.5px; min-height: 1.4em; }
+.estado-envio[data-tipo="error"] { color: #9b2c17; font-weight: 600; }
+.estado-envio[data-tipo="ok"] { font-weight: 600; }
+.estado-envio[data-tipo="ok"]::before { content: ""; display: inline-block; width: 10px; height: 10px; margin-right: 8px; border-radius: 2px; background: var(--cons); }
+.alterno { font-size: 14.5px; color: #30363c; }
+
 /* Celular: mapa arriba, el pase sube como hoja y la ficha completa queda a un deslizamiento */
 @media (max-width: 860px) {
   .barra { grid-template-columns: 1fr; height: auto; padding: 10px 14px 12px; gap: 8px; }

@@ -55,9 +55,9 @@ Otros instrumentos (Programa de Manejo del PNBL, POEM del Golfo de California) y
 2. ~~Escribir `DESIGN.md`~~: hecho el 2026-10-08 (North Star «El Pase del Territorio», Amarillo Señal, carácter tangible y oficial), con su complemento `.impeccable/design.json`.
 3. **Hugo**:
    - ~~confirmar la leyenda~~: Hugo la cambió el 2026-10-08 a «Al servicio del Municipio de Loreto, por Eco‑Alianza de Loreto»;
-   - confirmar el correo público para reportes (`src/lib/sitio.ts`, hoy usa GitHub Issues);
+   - ~~confirmar el correo público~~: info@loreto.com (2026-10-08). Falta generar la clave de Web3Forms en https://web3forms.com con ese correo y ponerla en `CONTACTO.CLAVE_WEB3FORMS` (`src/lib/sitio.ts`); mientras tanto, el formulario de `/contacto/` abre el programa de correo del visitante;
    - obtener los vistos buenos de los logos.
-4. Digitalizar en lote las UGAs restantes (`herramientas/digitalizar_fichas.py`). Antes, verificar el datum (INC‑011) contra la costa.
+4. ~~Digitalizar en lote~~: hecho el 2026-10-08 (ver `datos/poel/digitalizacion/README.md`). 84 UGAs aceptadas, 14 por revisar y 24 sin digitalizar (rótulos ilegibles, relleno no detectado o área incompatible), que siguen con el polígono de 2019 si existe. Datum resuelto con un desplazamiento de +30 m E y +165 m N (INC‑011); mapas cambiados en las fichas 6 y 7a (INC‑012). Pendiente: digitalizar a mano en QGIS las 24 restantes, revisar las 14 marcadas y confirmar el desplazamiento contra ortofoto.
 5. Publicar: workflow de GitHub Actions y cambio de la fuente de GitHub Pages. Requiere el OK de Hugo, porque reemplaza el sitio en vivo.
    Destino final de producción (Hugo, 2026-10-08): **https://loreto.com/epoel**. Implica cambiar `base` en `astro.config.mjs` a `/epoel`, revisar las URLs absolutas (QR, enlaces copiados, `sitio.ts`) y definir cómo se suben los archivos estáticos a ese hosting; GitHub Pages puede quedar como espejo o redirección. Antes de decidir, evaluar pros y contras de **alojar** en loreto.com frente a **redirigir** loreto.com/epoel al sitio de GitHub Pages (Hugo, 2026-10-08: redirigir si alojar resulta problemático).
 6. Afinar los presets de «¿Qué quieres hacer?» criterio por criterio, y corregir el extractor de «áreas de atención especial».

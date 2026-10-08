@@ -1,0 +1,46 @@
+---
+import Base from "../layouts/Base.astro";
+import { REPO } from "../lib/sitio";
+const base = import.meta.env.BASE_URL;
+---
+<Base titulo="Contacto — ePOEL Loreto" descripcion="Escríbenos para reportar un error en una UGA, proponer una mejora o hacer una pregunta sobre ePOEL.">
+  <main class="pagina-texto">
+    <a class="volver" href={base}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Volver al mapa</a>
+    <h1>Contacto</h1>
+    <p class="entrada">¿Encontraste un polígono fuera de lugar, un criterio que no coincide con el Boletín Oficial o algo que no se entiende? Cuéntanos. Revisamos cada mensaje contra el Boletín y, si hay un error, lo corregimos y lo registramos como incidencia. ePOEL es una herramienta informativa: para trámites, constancias o dictámenes acude a la autoridad municipal.</p>
+
+    <form class="formulario" id="contacto" novalidate>
+      <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="name" type="text" autocomplete="name" required minlength="2" maxlength="100" />
+      </div>
+      <div class="campo">
+        <label for="correo">Correo electrónico</label>
+        <input id="correo" name="email" type="email" autocomplete="email" required maxlength="200" />
+        <p class="ayuda">Solo lo usamos para responderte.</p>
+      </div>
+      <div class="campo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="message" rows="7" required minlength="20" maxlength="4000"></textarea>
+        <p class="ayuda" id="ayuda-mensaje">Si se trata de una UGA, incluye su clave o las coordenadas del punto.</p>
+      </div>
+      <input type="hidden" name="subject" id="asunto" value="Mensaje desde ePOEL" />
+      <input type="hidden" name="uga" id="uga" value="" />
+      <!-- Trampas para robots: campos invisibles que una persona nunca llena -->
+      <div class="trampa" aria-hidden="true">
+        <label for="sitio">Sitio web</label><input id="sitio" name="sitio_web" type="text" tabindex="-1" autocomplete="off" />
+        <input type="checkbox" name="botcheck" tabindex="-1" />
+      </div>
+      <div class="h-captcha" data-captcha="true" id="captcha" hidden></div>
+      <p class="estado-envio" id="estado" role="status" aria-live="polite"></p>
+      <button type="submit" class="enviar" id="enviar">Enviar mensaje</button>
+      <p class="ayuda privacidad">Tu mensaje llega por correo a <span id="correo-publico">info [arroba] loreto.com</span> a través del servicio Web3Forms. No lo publicamos ni lo compartimos.</p>
+    </form>
+
+    <p class="alterno">¿Prefieres un reporte público? Si tienes cuenta de GitHub, puedes <a href={`${REPO}/issues/new?labels=incidencia`} target="_blank" rel="noopener">abrir una incidencia en el repositorio</a>.</p>
+  </main>
+
+  <script>
+    import "../scripts/contacto";
+  </script>
+</Base>

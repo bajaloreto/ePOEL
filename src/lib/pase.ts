@@ -1,6 +1,6 @@
 // Renderizador único del "pase" de una UGA: lo usan las páginas estáticas (/poel/uga/<id>/)
 // y la consulta interactiva, para que ambas muestren exactamente lo mismo.
-import { enlaceReporte } from "./sitio";
+import { enlaceBoletin, enlaceFicha, enlaceReporte } from "./sitio";
 
 export type Politica = "aprovechamiento-sustentable" | "conservacion" | "preservacion" | "restauracion";
 
@@ -74,7 +74,7 @@ export function htmlCriterios(ficha: Ficha, preset: Preset): string {
     <details class="grupo" name="grupos">
       <summary><span>${esc(g.nombre)}</span><span class="cifra">${String(g.items.length).padStart(2, "0")}</span></summary>
       <ol>${g.items.map((c) => `
-        <li><span class="cifra codigo">${esc(c.id)}</span><div>${esc(c.texto)}<a class="cita" href="${esc(ficha.fuente.url)}#page=${c.pagina}" target="_blank" rel="noopener">Boletín, p. ${c.pagina}</a></div></li>`).join("")}
+        <li><span class="cifra codigo">${esc(c.id)}</span><div>${esc(c.texto)}<a class="cita" href="${esc(enlaceBoletin(c.pagina))}" target="_blank" rel="noopener">Boletín, p. ${c.pagina}</a></div></li>`).join("")}
       </ol>
     </details>`).join("");
 }
@@ -94,7 +94,7 @@ export function htmlPase(ficha: Ficha, presets: Preset[], presetId: string, opci
         <h1>${esc(ficha.nombre)}</h1>
         <p class="pase-lugar">${esc(ficha.localidad_referencia ?? "Sin localidad de referencia")} · ${esc(ficha.actividad)}</p>
       </div>
-      <a class="emisor" href="${esc(ficha.fuente.url)}#page=${p0}" target="_blank" rel="noopener">Boletín Oficial<b class="cifra">No. 12 · p. ${p0}</b>12‑mar‑2014</a>
+      <a class="emisor" href="${esc(enlaceFicha(ficha.id))}" target="_blank" rel="noopener" title="Páginas de esta ficha en el Boletín Oficial (PDF)">Boletín Oficial<b class="cifra">No. 12 · p. ${p0}</b>12‑mar‑2014</a>
     </header>
     <p class="linea-compacta">${esc(politica)} · <span class="cifra">${ha(ficha.superficie_ha)} ha</span>${pres ? ` · Presión <b class="${pres === "alta" ? "alerta" : ""}">${cap(pres)}</b>` : ""}</p>
     <div class="compactable"><div>
@@ -136,7 +136,7 @@ export function htmlPase(ficha: Ficha, presets: Preset[], presetId: string, opci
         <div class="acciones">
           <button type="button" class="prim" data-accion="imprimir">Imprimir pase</button>
           <button type="button" data-accion="copiar"${opciones.enlace ? ` data-enlace="${esc(opciones.enlace)}"` : ""}>Copiar enlace</button>
-          <a class="boton" data-accion="reportar" href="${esc(enlaceReporte(`Incidencia en la ${ficha.nombre}`))}" target="_blank" rel="noopener">Reportar</a>
+          <a class="boton" data-accion="reportar" href="${esc(enlaceReporte(`Incidencia en la ${ficha.nombre}`, ficha.id))}">Reportar</a>
         </div>
       </div>
       <div class="qr" aria-label="Código QR hacia esta ficha">${opciones.qr ?? ""}</div>
