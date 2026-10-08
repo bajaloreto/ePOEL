@@ -1,0 +1,246 @@
+{
+  "id": "78b",
+  "numero": 78,
+  "nombre": "UGA 78b",
+  "superficie_ha": 6206.49,
+  "localidad_referencia": "Punta Aguililla, San Cosme, Agua Verde",
+  "poblacion": "Cero habitantes (INEGI 2005)",
+  "actividad": "Conservación, Turismo alternativo y Pesca",
+  "politica": "preservacion",
+  "politica_texto": "Preservación",
+  "conflictos_potenciales": "Afectación a la biodiversidad por el aprovechamiento de fauna o flora silvestre",
+  "vegetacion_ha": [
+    {
+      "tipo": "Matorral sarcocaule",
+      "hectareas": 6126.0
+    },
+    {
+      "tipo": "Matorral sarcocrasicaule",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Mezquital",
+      "hectareas": 84.701
+    },
+    {
+      "tipo": "Vegetación halófila",
+      "hectareas": 0.0
+    }
+  ],
+  "aptitud": [
+    {
+      "sector": "Conservación",
+      "nivel": "alta",
+      "valor": 0.86
+    },
+    {
+      "sector": "Pesca",
+      "nivel": "media",
+      "valor": 0.7
+    },
+    {
+      "sector": "Turismo",
+      "nivel": "alta",
+      "valor": 0.8
+    }
+  ],
+  "areas_atencion_especial": [
+    {
+      "area": "Alta biodiversidad",
+      "justificacion": "Alta riqueza de especies, presencia de especies"
+    },
+    {
+      "area": "AICA",
+      "justificacion": "prioritarias."
+    },
+    {
+      "area": "Región Prioritaria Terrestre",
+      "justificacion": ""
+    },
+    {
+      "area": "UMA Santo Domingo",
+      "justificacion": "Zona de aprovechamiento de fauna silvestre."
+    },
+    {
+      "area": "Zona de recarga de acuífero",
+      "justificacion": "Zona de importancia para el balance hídrico del"
+    },
+    {
+      "area": "Acuífero Loreto",
+      "justificacion": "acuífero."
+    }
+  ],
+  "fragilidad": {
+    "nivel": "media",
+    "nota": null
+  },
+  "vulnerabilidad": {
+    "nivel": "baja",
+    "nota": null
+  },
+  "presion": {
+    "nivel": "baja",
+    "nota": null
+  },
+  "lineamientos": [
+    {
+      "id": "L4",
+      "similitud": 0.999,
+      "texto_en_ficha": "Conservar los recursos naturales para mantener los procesos ecológicos de los humedales, garantizando la preservación de las especies de flora y fauna especialmente endémicas o protegidas por la NOM-059-SEMARNAT-2001, y aquellas zonas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca. Se debe considerar la existencia de corredores biológicos con lo que se respeten las áreas que los contienen"
+    },
+    {
+      "id": "L6",
+      "similitud": 0.988,
+      "texto_en_ficha": "Mantener el área libre de desarrollos turísticos o asentamientos humanos de mediana o alta densidad, para garantizar la preservación de las especies de flora y fauna especialmente endémicas o protegidas por la NOM-059-SEMARNAT-2001, y la integralidad de las zonas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona. Solo se permiten los asentamientos rurales de baja densidad."
+    },
+    {
+      "id": "L15",
+      "similitud": 1.0,
+      "texto_en_ficha": "Conservar las zonas de recarga y descarga natural del acuífero así como aprovechar sustentablemente el agua de pozos, manantiales, norias, cuerpos de agua temporales y oasis a fin de garantizar la preservación de la integralidad de los acuíferos del municipio."
+    },
+    {
+      "id": "L19",
+      "similitud": 0.999,
+      "texto_en_ficha": "Promover zonas de costa de importancia para la conectividad de poblaciones de especies de aves acuáticas y los manglares de la zona costera del Municipio. Área con ecosistemas de importancia ecológica para la conservación por los servicios ambientales que brindan, su la alta riqueza de especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059-SEMARNAT- 2001."
+    }
+  ],
+  "estrategias": [
+    "EG1",
+    "EG2",
+    "EG3",
+    "EG4",
+    "EG5",
+    "EG7",
+    "EG8",
+    "EG9",
+    "EG11",
+    "EG14",
+    "EG15"
+  ],
+  "estrategias_particulares": "Integrar 6,206.47 Ha de la superficie de la UGA, como parte del área propuesta como ANP costera Agua Verde Timbabiche, que es de importancia para mantener la conectividad de los humedales como los manglares y zonas de inundación, así como de las poblaciones de especies de aves acuáticas de la zona costera del Municipio. Esta área contiene ecosistemas de importancia ecológica para la conservación por los servicios ambientales que brindan, y zonas de alta riqueza de especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059-SEMARNAT-2001.",
+  "criterios": {
+    "agua": [
+      1,
+      2,
+      3,
+      8,
+      9,
+      10
+    ],
+    "flora-fauna": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      10,
+      11
+    ],
+    "manejo-ecosistemas": [
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      13,
+      15,
+      16,
+      17
+    ],
+    "residuos": [
+      1,
+      3,
+      5
+    ],
+    "asentamientos-humanos-1": [
+      2,
+      3,
+      5,
+      10,
+      12,
+      15
+    ],
+    "asentamientos-humanos-2": [
+      2
+    ],
+    "infraestructura": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      8,
+      14
+    ],
+    "construccion": [
+      11,
+      13,
+      15,
+      16
+    ],
+    "mineria": [
+      4,
+      7
+    ],
+    "pecuario": [
+      5,
+      6
+    ],
+    "pesca": [
+      1,
+      3,
+      4
+    ],
+    "turismo-1": [
+      5
+    ],
+    "turismo-2": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      11,
+      12
+    ],
+    "turismo-3": [
+      6,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "mapa_ubicacion": {
+    "pagina_boletin": 436,
+    "tipo": "imagen",
+    "xref": 112107,
+    "bbox": [
+      262.1,
+      86.2,
+      512.5,
+      331.8
+    ],
+    "pixeles": [
+      522,
+      512
+    ]
+  },
+  "fuente": {
+    "documento": "Boletín Oficial del Gobierno del Estado de B.C.S. No. 12 Extraordinario, 12-mar-2014, Apéndice 10",
+    "url": "https://finanzas.bcs.gob.mx/wp-content/themes/voice/assets/images/boletines/2014/12.pdf",
+    "paginas_pdf": [
+      436,
+      438
+    ]
+  },
+  "extraccion": {
+    "metodo": "automatica (herramientas/extraer_fichas.py)",
+    "verificada": false
+  }
+}

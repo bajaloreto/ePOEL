@@ -1,0 +1,256 @@
+{
+  "id": "25",
+  "numero": 25,
+  "nombre": "UGA 25",
+  "superficie_ha": 21896.69,
+  "localidad_referencia": "Despoblado",
+  "poblacion": "Cero habitantes (INEGI, 2005)",
+  "actividad": "Conservación y Turismo",
+  "politica": "conservacion",
+  "politica_texto": "Conservación",
+  "conflictos_potenciales": "Usos de suelo, afectación a la biodiversidad por el aprovechamiento de fauna o flora silvestre",
+  "vegetacion_ha": [
+    {
+      "tipo": "Matorral sarcocaule",
+      "hectareas": 20457.23
+    },
+    {
+      "tipo": "Matorral sarcocrasicaule",
+      "hectareas": 1437.76
+    },
+    {
+      "tipo": "Mezquital",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Vegetación halófila",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Sin vegetación aparente",
+      "hectareas": 1.78
+    }
+  ],
+  "aptitud": [
+    {
+      "sector": "Conservación",
+      "nivel": "alta",
+      "valor": 0.71
+    },
+    {
+      "sector": "Pesca",
+      "nivel": "baja",
+      "valor": 0.0
+    },
+    {
+      "sector": "Turismo",
+      "nivel": "alta",
+      "valor": 0.8
+    }
+  ],
+  "areas_atencion_especial": [
+    {
+      "area": "AICA",
+      "justificacion": "Alta riqueza de especies, presencia de especies"
+    },
+    {
+      "area": "Región Prioritaria Terrestre",
+      "justificacion": "prioritarias"
+    },
+    {
+      "area": "Región Hidrológica Prioritaria",
+      "justificacion": ""
+    },
+    {
+      "area": "Zona de recarga de acuífero",
+      "justificacion": ""
+    },
+    {
+      "area": "",
+      "justificacion": "Zona de importancia para el balance hídrico del"
+    },
+    {
+      "area": "Acuífero San Juan Londó, La Purísima",
+      "justificacion": ""
+    },
+    {
+      "area": "",
+      "justificacion": "acuífero"
+    },
+    {
+      "area": "Pozos CNA (3), extracción de agua, sin uso o dato de explotación",
+      "justificacion": ""
+    },
+    {
+      "area": "UMA San Javier",
+      "justificacion": "Zona de aprovechamiento de fauna silvestre"
+    },
+    {
+      "area": "Sitios INA (2)",
+      "justificacion": "Zonas de importancia arqueológica"
+    }
+  ],
+  "fragilidad": {
+    "nivel": "baja",
+    "nota": null
+  },
+  "vulnerabilidad": {
+    "nivel": "baja",
+    "nota": null
+  },
+  "presion": {
+    "nivel": "media",
+    "nota": null
+  },
+  "lineamientos": [
+    {
+      "id": "L9",
+      "similitud": 0.999,
+      "texto_en_ficha": "Desarrollar equilibrada y sustentablemente las actividades de turismo alternativo en sitios de importancia arqueológica y cultural, garantizando la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca y preservando los recursos geológicos, antropológicos y de importancia cultural del Municipio."
+    },
+    {
+      "id": "L13",
+      "similitud": 0.999,
+      "texto_en_ficha": "Promover la modernización de las actividades pecuarias para optimizar el uso de los recursos naturales, como el agua, y disminuir la presión sobre ellos garantizando su sustentabilidad y la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM- 059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca y las zonas de recarga y descarga natural del acuífero."
+    },
+    {
+      "id": "L15",
+      "similitud": 1.0,
+      "texto_en_ficha": "Conservar las zonas de recarga y descarga natural del acuífero así como aprovechar sustentablemente el agua de pozos, manantiales, norias, cuerpos de agua temporales y oasis a fin de garantizar la preservación de la integralidad de los acuíferos del municipio."
+    },
+    {
+      "id": "L18",
+      "similitud": 0.998,
+      "texto_en_ficha": "Promover la declaración de ANP la Sierra de la Giganta, área con ecosistemas de importancia ecológica para la conservación por los servicios ambientales que brindan, su la alta riqueza de especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059-SEMARNAT- 2001."
+    }
+  ],
+  "estrategias": [
+    "EG11",
+    "EG12",
+    "EG14",
+    "EG15",
+    "EG16",
+    "EG17"
+  ],
+  "estrategias_particulares": "Integrar 3,145.56 Ha de la superficie de la UGA como parte de la ANP la Sierra de la Giganta, misma que contiene áreas prioritarias para la conservación de ecosistemas de relevancia por los servicios ambientales que brindan, así como por su la alta riqueza de especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059- SEMARNAT-2001.",
+  "criterios": {
+    "agua": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      10
+    ],
+    "flora-fauna": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      10,
+      11
+    ],
+    "manejo-ecosistemas": [
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      13,
+      15,
+      16,
+      17
+    ],
+    "residuos": [
+      1,
+      5
+    ],
+    "asentamientos-humanos-1": [
+      2,
+      3,
+      5,
+      6,
+      10,
+      12,
+      15
+    ],
+    "infraestructura": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      14
+    ],
+    "construccion": [
+      11,
+      12,
+      13,
+      15,
+      16
+    ],
+    "mineria": [
+      4,
+      7,
+      9
+    ],
+    "pecuario": [
+      5,
+      6
+    ],
+    "turismo-1": [
+      5
+    ],
+    "turismo-2": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ],
+    "turismo-3": [
+      5,
+      6,
+      7,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "mapa_ubicacion": {
+    "pagina_boletin": 232,
+    "tipo": "imagen",
+    "xref": 3600,
+    "bbox": [
+      277.1,
+      76.9,
+      520.5,
+      322.1
+    ],
+    "pixeles": [
+      745,
+      750
+    ]
+  },
+  "fuente": {
+    "documento": "Boletín Oficial del Gobierno del Estado de B.C.S. No. 12 Extraordinario, 12-mar-2014, Apéndice 10",
+    "url": "https://finanzas.bcs.gob.mx/wp-content/themes/voice/assets/images/boletines/2014/12.pdf",
+    "paginas_pdf": [
+      232,
+      234
+    ]
+  },
+  "extraccion": {
+    "metodo": "automatica (herramientas/extraer_fichas.py)",
+    "verificada": false
+  }
+}

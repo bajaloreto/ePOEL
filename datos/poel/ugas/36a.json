@@ -1,0 +1,270 @@
+{
+  "id": "36a",
+  "numero": 36,
+  "nombre": "UGA 36a",
+  "superficie_ha": 274.05,
+  "localidad_referencia": "EL Carrizalito",
+  "poblacion": "Seis habitantes (INEGI, 2005)",
+  "actividad": "Conservación, Pesca, Turismo",
+  "politica": "preservacion",
+  "politica_texto": "Preservación",
+  "conflictos_potenciales": "Uso de suelo y acceso a la costa",
+  "vegetacion_ha": [
+    {
+      "tipo": "Matorral sarcocaule",
+      "hectareas": 234.48
+    },
+    {
+      "tipo": "Matorral sarcocrasicaule",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Mezquital",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Vegetación halófila",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Sin vegetación aparente",
+      "hectareas": 39.57
+    }
+  ],
+  "aptitud": [
+    {
+      "sector": "Conservación",
+      "nivel": "media",
+      "valor": 0.36
+    },
+    {
+      "sector": "Pesca",
+      "nivel": "media",
+      "valor": 0.7
+    },
+    {
+      "sector": "Turismo",
+      "nivel": "media",
+      "valor": 0.5
+    }
+  ],
+  "areas_atencion_especial": [
+    {
+      "area": "Colindancia UGC02 POET GC",
+      "justificacion": "Concordancia con Programas de Ordenamiento ya decretados"
+    },
+    {
+      "area": "1 Campo pesquero",
+      "justificacion": "Se requiere garantizar el acceso de los pescadores a su área de actividad, conservando la misma en óptimas condiciones."
+    },
+    {
+      "area": "Zona costera",
+      "justificacion": "Riqueza moderadamente alta de aves acuáticas y playeras."
+    },
+    {
+      "area": "Acuífero Rosarito, San Juan Londó",
+      "justificacion": "Zona de importancia para el balance hídrico."
+    }
+  ],
+  "fragilidad": {
+    "nivel": "baja",
+    "nota": null
+  },
+  "vulnerabilidad": {
+    "nivel": "baja",
+    "nota": null
+  },
+  "presion": {
+    "nivel": "media",
+    "nota": null
+  },
+  "lineamientos": [
+    {
+      "id": "L2",
+      "similitud": 1.0,
+      "texto_en_ficha": "Preservar el ecosistema de duna y zona costera para mantener los servicios ambientales que proveen, garantizando la preservación de las especies de flora y fauna especialmente endémicas y protegidas por la NOM-059-SEMARNAT-2001"
+    },
+    {
+      "id": "L3",
+      "similitud": 1.0,
+      "texto_en_ficha": "Conservar los recursos naturales para mantener los procesos ecológicos de las zonas costeras, garantizando la preservación de las especies de flora y fauna especialmente endémicas y protegidas por la NOM-059-SEMARNAT-2001"
+    },
+    {
+      "id": "L4",
+      "similitud": 0.999,
+      "texto_en_ficha": "Conservar los recursos naturales para mantener los procesos ecológicos de los humedales, garantizando la preservación de las especies de flora y fauna especialmente endémicas o protegidas por la NOM-059-SEMARNAT-2001, y aquellas zonas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca. Se debe considerar la existencia de corredores biológicos con lo que se respeten las áreas que los contienen"
+    },
+    {
+      "id": "L6",
+      "similitud": 0.988,
+      "texto_en_ficha": "Mantener el área libre de desarrollos turísticos o asentamientos humanos de mediana o alta densidad, para garantizar la preservación de las especies de flora y fauna especialmente endémicas o protegidas por la NOM-059-SEMARNAT-2001, y la integralidad de las zonas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona. Solo se permiten los asentamientos rurales de baja densidad."
+    },
+    {
+      "id": "L7",
+      "similitud": 1.0,
+      "texto_en_ficha": "Desarrollar equilibrada y sustentablemente las actividades de acuacultura y pesca ribereña garantizando la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca."
+    },
+    {
+      "id": "L10",
+      "similitud": 0.999,
+      "texto_en_ficha": "Desarrollar equilibrada y sustentablemente las actividades de turismo garantizando la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059- SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca y las zonas de recarga y descarga natural del acuífero."
+    },
+    {
+      "id": "L13",
+      "similitud": 0.999,
+      "texto_en_ficha": "Promover la modernización de las actividades pecuarias para optimizar el uso de los recursos naturales, como el agua, y disminuir la presión sobre ellos garantizando su sustentabilidad y la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM- 059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca y las zonas de recarga y descarga natural del acuífero."
+    },
+    {
+      "id": "L19",
+      "similitud": 0.999,
+      "texto_en_ficha": "Promover zonas de costa de importancia para la conectividad de poblaciones de especies de aves acuáticas y los manglares de la zona costera del Municipio. Área con ecosistemas de importancia ecológica para la conservación por los servicios ambientales que brindan, su la alta riqueza de especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059-SEMARNAT- 2001."
+    }
+  ],
+  "estrategias": [
+    "EG1",
+    "EG3",
+    "EG5",
+    "EG6",
+    "EG7",
+    "EG9",
+    "EG12",
+    "EG13",
+    "EG15",
+    "EG17",
+    "EG18"
+  ],
+  "estrategias_particulares": "Integrar 274.05 Ha de la superficie de la UGA, como parte del área propuesta como ANP costera Agua Verde Timbabiche, que es de importancia para mantener la conectividad de los humedales como los manglares y zonas de inundación, así como de las poblaciones de especies de aves acuáticas de la zona costera del Municipio. Esta área contiene ecosistemas de importancia ecológica para la conservación por los servicios ambientales que brindan, y zonas de alta riqueza de especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059-SEMARNAT-2001.",
+  "criterios": {
+    "agua": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      10
+    ],
+    "flora-fauna": [
+      2,
+      3,
+      4,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "manejo-ecosistemas": [
+      3,
+      4,
+      5,
+      6,
+      8,
+      10,
+      12,
+      15,
+      16,
+      17
+    ],
+    "residuos": [
+      1,
+      3,
+      5,
+      6,
+      9
+    ],
+    "asentamientos-humanos-1": [
+      1,
+      3,
+      5,
+      6,
+      10,
+      12,
+      14,
+      15
+    ],
+    "infraestructura": [
+      1,
+      3,
+      4,
+      7,
+      8,
+      9,
+      10,
+      11,
+      14
+    ],
+    "construccion": [
+      1,
+      5,
+      6,
+      11,
+      13,
+      15,
+      16
+    ],
+    "mineria": [
+      4
+    ],
+    "pecuario": [
+      5,
+      6
+    ],
+    "pesca": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "turismo-1": [
+      5
+    ],
+    "turismo-2": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      12,
+      13
+    ],
+    "turismo-3": [
+      3,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12
+    ]
+  },
+  "mapa_ubicacion": {
+    "pagina_boletin": 270,
+    "tipo": "imagen",
+    "xref": 3503,
+    "bbox": [
+      296.6,
+      83.1,
+      535.7,
+      329.0
+    ],
+    "pixeles": [
+      498,
+      513
+    ]
+  },
+  "fuente": {
+    "documento": "Boletín Oficial del Gobierno del Estado de B.C.S. No. 12 Extraordinario, 12-mar-2014, Apéndice 10",
+    "url": "https://finanzas.bcs.gob.mx/wp-content/themes/voice/assets/images/boletines/2014/12.pdf",
+    "paginas_pdf": [
+      270,
+      272
+    ]
+  },
+  "extraccion": {
+    "metodo": "automatica (herramientas/extraer_fichas.py)",
+    "verificada": false
+  }
+}

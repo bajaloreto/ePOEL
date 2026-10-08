@@ -1,0 +1,213 @@
+{
+  "id": "30",
+  "numero": 30,
+  "nombre": "UGA 30",
+  "superficie_ha": 663.55,
+  "localidad_referencia": "EL Troquero",
+  "poblacion": "Cero habitantes (INEGI,2005)",
+  "actividad": "Conservación y Turismo",
+  "politica": "conservacion",
+  "politica_texto": "Conservación",
+  "conflictos_potenciales": "Afectación a la biodiversidad por el aprovechamiento de fauna o flora silvestre",
+  "vegetacion_ha": [
+    {
+      "tipo": "Matorral sarcocaule",
+      "hectareas": 663.55
+    },
+    {
+      "tipo": "Matorral sarcocrasicaule",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Mezquital",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Vegetación halófila",
+      "hectareas": 0.0
+    }
+  ],
+  "aptitud": [
+    {
+      "sector": "Conservación",
+      "nivel": "media",
+      "valor": 0.5
+    },
+    {
+      "sector": "Pesca",
+      "nivel": "baja",
+      "valor": 0.0
+    },
+    {
+      "sector": "Turismo",
+      "nivel": "alta",
+      "valor": 0.8
+    }
+  ],
+  "areas_atencion_especial": [
+    {
+      "area": "UMA Ejido La Purísima",
+      "justificacion": "Zona de aprovechamiento de fauna silvestre."
+    },
+    {
+      "area": "Acuífero La Purísima",
+      "justificacion": "Zona de importancia para el balance hídrico del acuífero."
+    }
+  ],
+  "fragilidad": {
+    "nivel": "baja",
+    "nota": null
+  },
+  "vulnerabilidad": {
+    "nivel": "baja",
+    "nota": null
+  },
+  "presion": {
+    "nivel": "baja",
+    "nota": null
+  },
+  "lineamientos": [
+    {
+      "id": "L8",
+      "similitud": 0.999,
+      "texto_en_ficha": "Desarrollar equilibrada y sustentablemente las actividades de turismo alternativo garantizando la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM- 059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca."
+    },
+    {
+      "id": "L13",
+      "similitud": 0.999,
+      "texto_en_ficha": "Promover la modernización de las actividades pecuarias para optimizar el uso de los recursos naturales, como el agua, y disminuir la presión sobre ellos garantizando su sustentabilidad y la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM- 059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca y las zonas de recarga y descarga natural del acuífero."
+    }
+  ],
+  "estrategias": [
+    "EG11",
+    "EG12",
+    "EG13",
+    "EG14",
+    "EG15"
+  ],
+  "estrategias_particulares": null,
+  "criterios": {
+    "agua": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      10
+    ],
+    "flora-fauna": [
+      1,
+      2,
+      3,
+      10,
+      11
+    ],
+    "manejo-ecosistemas": [
+      6,
+      7,
+      8,
+      10,
+      12,
+      13,
+      16,
+      17
+    ],
+    "residuos": [
+      1,
+      5
+    ],
+    "asentamientos-humanos-1": [
+      2,
+      3,
+      5,
+      10,
+      12
+    ],
+    "asentamientos-humanos-2": [
+      10,
+      11,
+      12,
+      13
+    ],
+    "infraestructura": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      14
+    ],
+    "construccion": [
+      2,
+      3,
+      4,
+      7,
+      8,
+      11,
+      12,
+      13,
+      14,
+      16
+    ],
+    "mineria": [
+      3,
+      5,
+      6,
+      9
+    ],
+    "pecuario": [
+      5
+    ],
+    "turismo-1": [
+      6
+    ],
+    "turismo-2": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      10
+    ],
+    "turismo-3": [
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "mapa_ubicacion": {
+    "pagina_boletin": 247,
+    "tipo": "imagen",
+    "xref": 3561,
+    "bbox": [
+      285.1,
+      74.9,
+      529.0,
+      320.1
+    ],
+    "pixeles": [
+      749,
+      750
+    ]
+  },
+  "fuente": {
+    "documento": "Boletín Oficial del Gobierno del Estado de B.C.S. No. 12 Extraordinario, 12-mar-2014, Apéndice 10",
+    "url": "https://finanzas.bcs.gob.mx/wp-content/themes/voice/assets/images/boletines/2014/12.pdf",
+    "paginas_pdf": [
+      247,
+      248
+    ]
+  },
+  "extraccion": {
+    "metodo": "automatica (herramientas/extraer_fichas.py)",
+    "verificada": false
+  }
+}

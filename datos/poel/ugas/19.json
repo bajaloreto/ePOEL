@@ -1,0 +1,278 @@
+{
+  "id": "19",
+  "numero": 19,
+  "nombre": "UGA 19",
+  "superficie_ha": 3228.57,
+  "localidad_referencia": "Lote 9-B, Lote 2-A, Lote 11, El Cimarrón, Lote 3-A, Lote 26, La Giganta, Lote 9 A",
+  "poblacion": "49 habitantes (INEGI 2005)",
+  "actividad": "Agricultura",
+  "politica": "restauracion",
+  "politica_texto": "Restauración",
+  "conflictos_potenciales": "Uso de suelo, afectación del balance hídrico por sobreexplotación de agua",
+  "vegetacion_ha": [
+    {
+      "tipo": "Matorral sarcocaule",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Matorral sarcocrasicaule",
+      "hectareas": 2393.74
+    },
+    {
+      "tipo": "Mezquital",
+      "hectareas": 142.33
+    },
+    {
+      "tipo": "Vegetación halófila",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Agrícola",
+      "hectareas": 687.95
+    }
+  ],
+  "aptitud": [
+    {
+      "sector": "Conservación",
+      "nivel": "media",
+      "valor": 0.5
+    },
+    {
+      "sector": "Pesca",
+      "nivel": "baja",
+      "valor": 0.0
+    },
+    {
+      "sector": "Turismo",
+      "nivel": "alta",
+      "valor": 0.8
+    }
+  ],
+  "areas_atencion_especial": [
+    {
+      "area": "Zona de descarga natural del acuífero",
+      "justificacion": ""
+    },
+    {
+      "area": "Acuífero Tepentú",
+      "justificacion": "Zona de importancia para el balance hídrico del"
+    },
+    {
+      "area": "26 Pozos CNA, para uso agrícola (10), abrevadero (1), tapado (1), sin datos (1), y sin uso (13)",
+      "justificacion": "acuífero."
+    },
+    {
+      "area": "UMA Ejido La Purísima",
+      "justificacion": "Zona de aprovechamiento de fauna silvestre"
+    }
+  ],
+  "fragilidad": {
+    "nivel": "baja",
+    "nota": null
+  },
+  "vulnerabilidad": {
+    "nivel": "media",
+    "nota": null
+  },
+  "presion": {
+    "nivel": "alta",
+    "nota": null
+  },
+  "lineamientos": [
+    {
+      "id": "L8",
+      "similitud": 0.999,
+      "texto_en_ficha": "Desarrollar equilibrada y sustentablemente las actividades de turismo alternativo garantizando la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM- 059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca."
+    },
+    {
+      "id": "L12",
+      "similitud": 0.999,
+      "texto_en_ficha": "Promover la modernización de las actividades agrícolas para optimizar el uso de los recursos naturales, como el agua, y disminuir la presión sobre ellos garantizando su sustentabilidad y la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM- 059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca y las zonas de recarga y descarga natural del acuífero."
+    },
+    {
+      "id": "L13",
+      "similitud": 0.999,
+      "texto_en_ficha": "Promover la modernización de las actividades pecuarias para optimizar el uso de los recursos naturales, como el agua, y disminuir la presión sobre ellos garantizando su sustentabilidad y la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM- 059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca y las zonas de recarga y descarga natural del acuífero."
+    },
+    {
+      "id": "L15",
+      "similitud": 1.0,
+      "texto_en_ficha": "Conservar las zonas de recarga y descarga natural del acuífero así como aprovechar sustentablemente el agua de pozos, manantiales, norias, cuerpos de agua temporales y oasis a fin de garantizar la preservación de la integralidad de los acuíferos del municipio."
+    },
+    {
+      "id": "L17",
+      "similitud": 1.0,
+      "texto_en_ficha": "Restaurar y posteriormente aprovechar de manera sustentable las zonas de aprovechamiento agrícola deterioradas para recuperar nivel de productividad y garantizar la sustentabilidad de los mismos."
+    }
+  ],
+  "estrategias": [
+    "EG10",
+    "EG11",
+    "EG12",
+    "EG13",
+    "EG14",
+    "EG15",
+    "EG16",
+    "EG17"
+  ],
+  "estrategias_particulares": null,
+  "criterios": {
+    "agua": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      9,
+      10
+    ],
+    "flora-fauna": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      10,
+      11
+    ],
+    "manejo-ecosistemas": [
+      6,
+      7,
+      8,
+      10,
+      12,
+      16,
+      17
+    ],
+    "residuos": [
+      1,
+      3,
+      4,
+      5,
+      7,
+      8,
+      10,
+      11
+    ],
+    "asentamientos-humanos-1": [
+      5,
+      9,
+      10,
+      11,
+      12,
+      15,
+      16
+    ],
+    "asentamientos-humanos-2": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      13
+    ],
+    "infraestructura": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      13,
+      14
+    ],
+    "agricultura": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "construccion": [
+      2,
+      3,
+      4,
+      7,
+      8,
+      11,
+      14,
+      16
+    ],
+    "mineria": [
+      3,
+      5,
+      6,
+      8
+    ],
+    "pecuario": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      9
+    ],
+    "turismo-1": [
+      9
+    ],
+    "turismo-2": [
+      2,
+      3,
+      5,
+      9,
+      11
+    ],
+    "turismo-3": [
+      9,
+      13,
+      14,
+      15
+    ]
+  },
+  "mapa_ubicacion": {
+    "pagina_boletin": 212,
+    "tipo": "imagen",
+    "xref": 3651,
+    "bbox": [
+      272.3,
+      77.1,
+      515.2,
+      323.2
+    ],
+    "pixeles": [
+      740,
+      750
+    ]
+  },
+  "fuente": {
+    "documento": "Boletín Oficial del Gobierno del Estado de B.C.S. No. 12 Extraordinario, 12-mar-2014, Apéndice 10",
+    "url": "https://finanzas.bcs.gob.mx/wp-content/themes/voice/assets/images/boletines/2014/12.pdf",
+    "paginas_pdf": [
+      212,
+      214
+    ]
+  },
+  "extraccion": {
+    "metodo": "automatica (herramientas/extraer_fichas.py)",
+    "verificada": false
+  }
+}

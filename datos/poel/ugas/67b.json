@@ -1,0 +1,267 @@
+{
+  "id": "67b",
+  "numero": 67,
+  "nombre": "UGA 67b",
+  "superficie_ha": 3911.23,
+  "localidad_referencia": "Ligüí",
+  "poblacion": null,
+  "actividad": "Conservación, Turismo alternativo",
+  "politica": "preservacion",
+  "politica_texto": "Preservación",
+  "conflictos_potenciales": "Uso de suelo, afectación a la biodiversidad por el aprovechamiento de fauna o flora silvestre, uso de agua, cambio de uso de suelo",
+  "vegetacion_ha": [
+    {
+      "tipo": "Matorral sarcocaule",
+      "hectareas": 3803.79
+    },
+    {
+      "tipo": "Matorral sarcocrasicaule",
+      "hectareas": 11.49
+    },
+    {
+      "tipo": "Mezquital",
+      "hectareas": 42.71
+    },
+    {
+      "tipo": "Vegetación halófila",
+      "hectareas": 0.0
+    }
+  ],
+  "aptitud": [
+    {
+      "sector": "Conservación",
+      "nivel": "alta",
+      "valor": 0.86
+    },
+    {
+      "sector": "Pesca",
+      "nivel": "media",
+      "valor": 0.7
+    },
+    {
+      "sector": "Turismo",
+      "nivel": "alta",
+      "valor": 1.0
+    }
+  ],
+  "areas_atencion_especial": [
+    {
+      "area": "7 Pozos CNA, uno de agua potable, uno para uso de abrevadero, uno sin datos y 4 sin uso aparente",
+      "justificacion": "Zona de importancia para el balance hídrico del acuífero"
+    },
+    {
+      "area": "Zona de recarga de acuífero",
+      "justificacion": ""
+    },
+    {
+      "area": "Acuífero Santo Domingo",
+      "justificacion": ""
+    },
+    {
+      "area": "UMA Loreto",
+      "justificacion": "Zona de aprovechamiento de fauna silvestre"
+    },
+    {
+      "area": "AICA",
+      "justificacion": "Alta riqueza de especies, presencia de especies"
+    },
+    {
+      "area": "Alta biodiversidad",
+      "justificacion": "prioritarias"
+    },
+    {
+      "area": "Región Prioritaria Terrestre",
+      "justificacion": ""
+    }
+  ],
+  "fragilidad": {
+    "nivel": "baja",
+    "nota": null
+  },
+  "vulnerabilidad": {
+    "nivel": "alta",
+    "nota": null
+  },
+  "presion": {
+    "nivel": "alta",
+    "nota": "Dentro del área del PSRDU"
+  },
+  "lineamientos": [
+    {
+      "id": "L10",
+      "similitud": 0.999,
+      "texto_en_ficha": "Desarrollar equilibrada y sustentablemente las actividades de turismo garantizando la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059- SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca y las zonas de recarga y descarga natural del acuífero."
+    },
+    {
+      "id": "L11",
+      "similitud": 0.999,
+      "texto_en_ficha": "Desarrollar equilibrada y sustentablemente los proyectos de crecimiento urbano garantizando la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM- 059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca y las zonas de recarga y descarga natural del acuífero y sin poner en riesgo."
+    },
+    {
+      "id": "L13",
+      "similitud": 0.999,
+      "texto_en_ficha": "Promover la modernización de las actividades pecuarias para optimizar el uso de los recursos naturales, como el agua, y disminuir la presión sobre ellos garantizando su sustentabilidad y la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM- 059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca y las zonas de recarga y descarga natural del acuífero."
+    },
+    {
+      "id": "L15",
+      "similitud": 1.0,
+      "texto_en_ficha": "Conservar las zonas de recarga y descarga natural del acuífero así como aprovechar sustentablemente el agua de pozos, manantiales, norias, cuerpos de agua temporales y oasis a fin de garantizar la preservación de la integralidad de los acuíferos del municipio."
+    },
+    {
+      "id": "L18",
+      "similitud": 0.998,
+      "texto_en_ficha": "Promover la declaración de ANP la Sierra de la Giganta, área con ecosistemas de importancia ecológica para la conservación por los servicios ambientales que brindan, su la alta riqueza de especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059-SEMARNAT- 2001."
+    }
+  ],
+  "estrategias": [
+    "EG1",
+    "EG2",
+    "EG3",
+    "EG4",
+    "EG5",
+    "EG7",
+    "EG8",
+    "EG9",
+    "EG11",
+    "EG14",
+    "EG15",
+    "EG16",
+    "EG17"
+  ],
+  "estrategias_particulares": "Integrar 3,128.55 Ha de la superficie de la UGA como parte de la ANP la Sierra de la Giganta, misma que contiene áreas prioritarias para la conservación de ecosistemas de relevancia por los servicios ambientales que brindan, así como por su la alta riqueza de especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059- SEMARNAT-2001",
+  "criterios": {
+    "agua": [
+      1,
+      2,
+      3,
+      8,
+      9,
+      10
+    ],
+    "flora-fauna": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      10,
+      11
+    ],
+    "manejo-ecosistemas": [
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      13,
+      15,
+      16,
+      17
+    ],
+    "residuos": [
+      1,
+      4,
+      5,
+      7,
+      8,
+      10,
+      11
+    ],
+    "asentamientos-humanos-1": [
+      2,
+      3,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12,
+      15,
+      16
+    ],
+    "asentamientos-humanos-2": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "infraestructura": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      8,
+      14
+    ],
+    "acuacultura": [
+      4
+    ],
+    "construccion": [
+      11,
+      13,
+      15,
+      16
+    ],
+    "mineria": [
+      4,
+      7,
+      8
+    ],
+    "pecuario": [
+      5,
+      6
+    ],
+    "turismo-1": [
+      5
+    ],
+    "turismo-2": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      11,
+      12
+    ],
+    "turismo-3": [
+      6,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "mapa_ubicacion": {
+    "pagina_boletin": 394,
+    "tipo": "vectorial",
+    "bbox": [
+      279.2,
+      64.4,
+      506.8,
+      297.6
+    ]
+  },
+  "fuente": {
+    "documento": "Boletín Oficial del Gobierno del Estado de B.C.S. No. 12 Extraordinario, 12-mar-2014, Apéndice 10",
+    "url": "https://finanzas.bcs.gob.mx/wp-content/themes/voice/assets/images/boletines/2014/12.pdf",
+    "paginas_pdf": [
+      394,
+      396
+    ]
+  },
+  "extraccion": {
+    "metodo": "automatica (herramientas/extraer_fichas.py)",
+    "verificada": false
+  }
+}

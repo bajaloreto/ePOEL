@@ -1,0 +1,243 @@
+{
+  "id": "73a",
+  "numero": 73,
+  "nombre": "UGA 73a",
+  "superficie_ha": 9771.29,
+  "localidad_referencia": "Paso de Santa Cruz, La Altagracia, El Mezquite, El Tulillo, San Antonio de la Higuera, Santa Cruz, Santa Inés, El Palmarcito, La Presa, San Lucas, La Engañosa, Los Sestiaderos",
+  "poblacion": "85 habitantes (INEGI, 2005)",
+  "actividad": "Conservación y Turismo alternativo",
+  "politica": "preservacion",
+  "politica_texto": "Preservación",
+  "conflictos_potenciales": "Afectación a la biodiversidad por el aprovechamiento de fauna o flora silvestre de la zona por su riqueza biológica",
+  "vegetacion_ha": [
+    {
+      "tipo": "Matorral sarcocaule",
+      "hectareas": 9111.48
+    },
+    {
+      "tipo": "Matorral sarcocrasicaule",
+      "hectareas": 569.67
+    },
+    {
+      "tipo": "Mezquital",
+      "hectareas": 81.65
+    },
+    {
+      "tipo": "Vegetación halófila",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Sin vegetación aparente",
+      "hectareas": 7.33
+    }
+  ],
+  "aptitud": [
+    {
+      "sector": "Conservación",
+      "nivel": "alta",
+      "valor": 0.86
+    },
+    {
+      "sector": "Pesca",
+      "nivel": "media",
+      "valor": 0.7
+    },
+    {
+      "sector": "Turismo",
+      "nivel": "alta",
+      "valor": 0.8
+    }
+  ],
+  "areas_atencion_especial": [
+    {
+      "area": "Zona de recarga de acuífero",
+      "justificacion": "Zona de importancia para el balance hídrico del"
+    },
+    {
+      "area": "Acuífero San Juan Londó, Mezquital Seco",
+      "justificacion": "acuífero."
+    },
+    {
+      "area": "UMA Santo Domingo",
+      "justificacion": "Zona de aprovechamiento de fauna silvestre"
+    },
+    {
+      "area": "AICA",
+      "justificacion": "Riqueza moderada de especies, presencia de"
+    },
+    {
+      "area": "Región Prioritaria Terrestre",
+      "justificacion": "especies prioritarias"
+    }
+  ],
+  "fragilidad": {
+    "nivel": "baja",
+    "nota": null
+  },
+  "vulnerabilidad": {
+    "nivel": "baja",
+    "nota": null
+  },
+  "presion": {
+    "nivel": "baja",
+    "nota": null
+  },
+  "lineamientos": [
+    {
+      "id": "L10",
+      "similitud": 0.999,
+      "texto_en_ficha": "Desarrollar equilibrada y sustentablemente las actividades de turismo garantizando la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059- SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca y las zonas de recarga y descarga natural del acuífero."
+    },
+    {
+      "id": "L11",
+      "similitud": 0.999,
+      "texto_en_ficha": "Desarrollar equilibrada y sustentablemente los proyectos de crecimiento urbano garantizando la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM- 059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca y las zonas de recarga y descarga natural del acuífero y sin poner en riesgo."
+    },
+    {
+      "id": "L15",
+      "similitud": 1.0,
+      "texto_en_ficha": "Conservar las zonas de recarga y descarga natural del acuífero así como aprovechar sustentablemente el agua de pozos, manantiales, norias, cuerpos de agua temporales y oasis a fin de garantizar la preservación de la integralidad de los acuíferos del municipio."
+    },
+    {
+      "id": "L18",
+      "similitud": 0.998,
+      "texto_en_ficha": "Promover la declaración de ANP la Sierra de la Giganta, área con ecosistemas de importancia ecológica para la conservación por los servicios ambientales que brindan, su la alta riqueza de especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059-SEMARNAT- 2001."
+    }
+  ],
+  "estrategias": [
+    "EG2",
+    "EG3",
+    "EG4",
+    "EG5",
+    "EG7",
+    "EG8",
+    "EG9",
+    "EG11",
+    "EG14",
+    "EG15",
+    "EG16",
+    "EG17"
+  ],
+  "estrategias_particulares": "Integrar 11,218.77 Ha de la superficie de la UGA como parte de la ANP la Sierra de la Giganta, misma que contiene áreas prioritarias para la conservación de ecosistemas de relevancia por los servicios ambientales que brindan, así como por su la alta riqueza de especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059- SEMARNAT-2001",
+  "criterios": {
+    "agua": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      9,
+      10
+    ],
+    "flora-fauna": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      10,
+      11
+    ],
+    "manejo-ecosistemas": [
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      15,
+      16,
+      17
+    ],
+    "residuos": [
+      1,
+      4,
+      5
+    ],
+    "asentamientos-humanos-1": [
+      2,
+      3,
+      5,
+      6,
+      10,
+      12,
+      15
+    ],
+    "asentamientos-humanos-2": [
+      2
+    ],
+    "infraestructura": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      8,
+      13,
+      14
+    ],
+    "construccion": [
+      11,
+      15,
+      16
+    ],
+    "mineria": [
+      4,
+      7
+    ],
+    "pecuario": [
+      5,
+      6
+    ],
+    "turismo-1": [
+      4
+    ],
+    "turismo-2": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      11,
+      12
+    ],
+    "turismo-3": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "mapa_ubicacion": {
+    "pagina_boletin": 412,
+    "tipo": "imagen",
+    "xref": 112171,
+    "bbox": [
+      281.0,
+      96.9,
+      530.1,
+      342.5
+    ],
+    "pixeles": [
+      519,
+      511
+    ]
+  },
+  "fuente": {
+    "documento": "Boletín Oficial del Gobierno del Estado de B.C.S. No. 12 Extraordinario, 12-mar-2014, Apéndice 10",
+    "url": "https://finanzas.bcs.gob.mx/wp-content/themes/voice/assets/images/boletines/2014/12.pdf",
+    "paginas_pdf": [
+      412,
+      414
+    ]
+  },
+  "extraccion": {
+    "metodo": "automatica (herramientas/extraer_fichas.py)",
+    "verificada": false
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "id": "93",
+  "numero": 93,
+  "nombre": "UGA 93",
+  "superficie_ha": 273.3,
+  "localidad_referencia": null,
+  "poblacion": "Cero habitantes (INEGI, 2005)",
+  "actividad": "Turismo alternativo Pesca y Conservación",
+  "politica": "aprovechamiento-sustentable",
+  "politica_texto": "Aprovechamientos sustentable",
+  "conflictos_potenciales": "Afectación a la biodiversidad por el aprovechamiento de fauna o flora silvestre",
+  "vegetacion_ha": [
+    {
+      "tipo": "Matorral sarcocaule",
+      "hectareas": 273.3
+    },
+    {
+      "tipo": "Matorral sarcocrasicaule",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Mezquital",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Vegetación halófila",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Sin vegetación aparente",
+      "hectareas": 0.0
+    }
+  ],
+  "aptitud": [
+    {
+      "sector": "Conservación",
+      "nivel": "media",
+      "valor": 0.5
+    },
+    {
+      "sector": "Pesca",
+      "nivel": "media",
+      "valor": 0.7
+    },
+    {
+      "sector": "Turismo",
+      "nivel": "alta",
+      "valor": 0.8
+    }
+  ],
+  "areas_atencion_especial": [
+    {
+      "area": "Colindancia UGC03 POET GC",
+      "justificacion": "Concordancia con Programas de Ordenamiento ya decretados"
+    },
+    {
+      "area": "Zona de recarga de acuífero",
+      "justificacion": "Zona de importancia para el balance hídrico"
+    },
+    {
+      "area": "Zona de descarga natural de acuífero",
+      "justificacion": ""
+    },
+    {
+      "area": "",
+      "justificacion": "del acuífero"
+    },
+    {
+      "area": "Acuífero Rosarito",
+      "justificacion": ""
+    },
+    {
+      "area": "UMA Ejido La Purísima",
+      "justificacion": "Zona de aprovechamiento de fauna silvestre"
+    },
+    {
+      "area": "",
+      "justificacion": "Alta riqueza de especies, presencia de"
+    },
+    {
+      "area": "Alta biodiversidad",
+      "justificacion": "especies prioritarias"
+    }
+  ],
+  "fragilidad": {
+    "nivel": "baja",
+    "nota": null
+  },
+  "vulnerabilidad": {
+    "nivel": "baja",
+    "nota": null
+  },
+  "presion": {
+    "nivel": "baja",
+    "nota": null
+  },
+  "lineamientos": [
+    {
+      "id": "L8",
+      "similitud": 0.999,
+      "texto_en_ficha": "Desarrollar equilibrada y sustentablemente las actividades de turismo alternativo garantizando la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM- 059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca."
+    },
+    {
+      "id": "L15",
+      "similitud": 1.0,
+      "texto_en_ficha": "Conservar las zonas de recarga y descarga natural del acuífero así como aprovechar sustentablemente el agua de pozos, manantiales, norias, cuerpos de agua temporales y oasis a fin de garantizar la preservación de la integralidad de los acuíferos del municipio."
+    }
+  ],
+  "estrategias": [
+    "EG11",
+    "EG12",
+    "EG13",
+    "EG14",
+    "EG15"
+  ],
+  "estrategias_particulares": null,
+  "criterios": {
+    "agua": [
+      1,
+      2,
+      3,
+      8,
+      9,
+      10
+    ],
+    "flora-fauna": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      10,
+      11
+    ],
+    "manejo-ecosistemas": [
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      13,
+      15,
+      16,
+      17
+    ],
+    "residuos": [
+      1,
+      5
+    ],
+    "asentamientos-humanos-1": [
+      5,
+      9,
+      10,
+      12
+    ],
+    "asentamientos-humanos-2": [
+      10,
+      11,
+      12,
+      13
+    ],
+    "infraestructura": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      14
+    ],
+    "construccion": [
+      2,
+      3,
+      4,
+      7,
+      8,
+      11,
+      13,
+      14,
+      16
+    ],
+    "mineria": [
+      3,
+      5,
+      6,
+      7
+    ],
+    "pecuario": [
+      5
+    ],
+    "turismo-1": [
+      4
+    ],
+    "turismo-2": [
+      2,
+      3,
+      5,
+      9,
+      11
+    ],
+    "turismo-3": [
+      6,
+      9,
+      13,
+      14,
+      15
+    ]
+  },
+  "mapa_ubicacion": {
+    "pagina_boletin": 493,
+    "tipo": "imagen",
+    "xref": 111946,
+    "bbox": [
+      295.5,
+      108.5,
+      544.7,
+      354.1
+    ],
+    "pixeles": [
+      519,
+      511
+    ]
+  },
+  "fuente": {
+    "documento": "Boletín Oficial del Gobierno del Estado de B.C.S. No. 12 Extraordinario, 12-mar-2014, Apéndice 10",
+    "url": "https://finanzas.bcs.gob.mx/wp-content/themes/voice/assets/images/boletines/2014/12.pdf",
+    "paginas_pdf": [
+      493,
+      495
+    ]
+  },
+  "extraccion": {
+    "metodo": "automatica (herramientas/extraer_fichas.py)",
+    "verificada": false
+  }
+}

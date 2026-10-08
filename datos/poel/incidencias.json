@@ -1,0 +1,103 @@
+[
+  {
+    "id": "INC-001",
+    "estado": "resuelta",
+    "titulo": "El acta de Cabildo llama \"Plan\" al instrumento",
+    "descripcion": "El Acta de la Sesión Extraordinaria de Cabildo No. 69 (14-ago-2013) aprueba el \"Plan de Ordenamiento Ecológico Local\", pero el documento publicado se titula \"Programa de Ordenamiento Ecológico Local del Municipio de Loreto, BCS\" y la LGEEPA (arts. 19 BIS y 20 BIS 4) usa \"programa\".",
+    "fuentes": ["Boletín Oficial No. 12, 12-mar-2014, pp. 1-8"],
+    "ugas": [],
+    "resolucion": "Se usa \"Programa de Ordenamiento Ecológico Local\" (POEL), como el documento y la ley.",
+    "registrada": "2026-10-07"
+  },
+  {
+    "id": "INC-002",
+    "estado": "abierta",
+    "titulo": "La narrativa habla de 94 UGA; el Apéndice 10 tiene fichas de la 1 a la 93",
+    "descripcion": "La narrativa dice que \"se definieron un total de 94 UGA, 31 de ellas subdivididas\". El Apéndice 10 contiene 122 fichas que corresponden a 93 números de UGA (1 a 93), de los cuales 20 están subdivididos. No existe ficha de la UGA 94.",
+    "fuentes": ["Boletín Oficial No. 12, narrativa (Unidades de Gestión Ambiental)", "Boletín Oficial No. 12, Apéndice 10"],
+    "ugas": [],
+    "resolucion": null,
+    "registrada": "2026-10-07"
+  },
+  {
+    "id": "INC-003",
+    "estado": "abierta",
+    "titulo": "Conteo de \"sub unidades\" por política no coincide con las fichas",
+    "descripcion": "La narrativa reporta 184 sub unidades: 51 de aprovechamiento sustentable, 59 de conservación, 64 de preservación y 10 de restauración. Las 122 fichas se reparten 44 / 41 / 35 / 2. Probablemente la narrativa cuenta polígonos y no UGAs; se verificará al digitalizar.",
+    "fuentes": ["Boletín Oficial No. 12, narrativa", "Boletín Oficial No. 12, Apéndice 10"],
+    "ugas": [],
+    "resolucion": null,
+    "registrada": "2026-10-07"
+  },
+  {
+    "id": "INC-004",
+    "estado": "resuelta",
+    "titulo": "Prefijo \"P\" para UGAs dentro del PSRDU",
+    "descripcion": "La narrativa indica que a las UGA dentro del polígono del PSRDU \"se les antepuso la letra P aunque mantuvieron su numeración\", pero ninguna ficha del Apéndice 10 usa el prefijo.",
+    "fuentes": ["Boletín Oficial No. 12, narrativa", "Boletín Oficial No. 12, Apéndice 10"],
+    "ugas": [],
+    "resolucion": "Los identificadores se escriben como en las fichas, sin \"P\". La ubicación dentro del PSRDU se mostrará como dato geográfico cuando exista la capa del PSRDU.",
+    "registrada": "2026-10-07"
+  },
+  {
+    "id": "INC-005",
+    "estado": "resuelta",
+    "titulo": "La Tabla 16 repite el código L18",
+    "descripcion": "La Tabla 16 (lineamientos ecológicos) asigna \"L18\" a dos lineamientos distintos: \"Promover la declaración de ANP la Sierra de la Giganta…\" y \"Promover zonas de costa de importancia para la conectividad…\".",
+    "fuentes": ["Boletín Oficial No. 12, Tabla 16, p. 60 del PDF"],
+    "ugas": [],
+    "resolucion": "El segundo se identifica como L19 (campo id_en_boletin = \"L18\"). Las fichas se vinculan por texto, no por código, así que no hay ambigüedad.",
+    "registrada": "2026-10-07"
+  },
+  {
+    "id": "INC-006",
+    "estado": "resuelta",
+    "titulo": "La ficha de la UGA 3a repite dos lineamientos",
+    "descripcion": "Al inicio de la página 153 del PDF, la ficha 3a repite los lineamientos L2 y L3 que ya aparecen en la página anterior; es un artefacto de maquetación.",
+    "fuentes": ["Boletín Oficial No. 12, Apéndice 10, pp. 152-153 del PDF"],
+    "ugas": ["3a"],
+    "resolucion": "Se conservan una sola vez, con el campo repeticiones_en_boletin.",
+    "registrada": "2026-10-07"
+  },
+  {
+    "id": "INC-007",
+    "estado": "abierta",
+    "titulo": "ePOEL 2019 no tiene geometría para 28 UGAs",
+    "descripcion": "Los datos de 2019 no incluyen polígono para 28 de las 122 UGAs del Apéndice 10, y sus geometrías se digitalizaron de los mapas en PDF del POEL sin documentar el método.",
+    "fuentes": ["ePOEL 2019 (js/variablesgeojsons.js)", "Boletín Oficial No. 12, Apéndice 10"],
+    "ugas": ["1d", "3b", "5b", "6", "7a", "7b", "10", "20", "45", "49b", "55", "56a", "73a", "73b", "74", "75", "76", "78a", "78b", "79", "80", "83", "86", "88b", "88c", "89", "91", "93"],
+    "resolucion": "Todas las UGAs se re-digitalizan desde los mapas de las fichas del Boletín (ADR 0002).",
+    "registrada": "2026-10-07"
+  },
+  {
+    "id": "INC-008",
+    "estado": "resuelta",
+    "titulo": "Identificadores de UGA mal escritos en ePOEL 2019",
+    "descripcion": "En 2019 la UGA 5a aparece como \"UGA-5A\", lo que rompe el enlace a su ficha en GitHub Pages porque distingue mayúsculas. La UGA 7a aparece como \"UGA-7\" y su ficha como 7.pdf; la superficie (1,894.91 ha) confirma que es la 7a.",
+    "fuentes": ["ePOEL 2019"],
+    "ugas": ["5a", "7a"],
+    "resolucion": "Se usan los identificadores del Boletín: 5a y 7a.",
+    "registrada": "2026-10-07"
+  },
+  {
+    "id": "INC-009",
+    "estado": "resuelta",
+    "titulo": "Superficies con errores de captura en ePOEL 2019",
+    "descripcion": "Las superficies de 2019 difieren del Boletín en: UGA 4 (141.25 contra 171.25 ha), 16 (14,407.74 contra 15,407.74), 40 (451.11 contra 457.11), 33a (5,298.83 contra 5,295.83) y 65b (\"15956..63\" contra 15,956.63).",
+    "fuentes": ["ePOEL 2019", "Boletín Oficial No. 12, Apéndice 10"],
+    "ugas": ["4", "16", "40", "33a", "65b"],
+    "resolucion": "Prevalece el Boletín (ADR 0001).",
+    "registrada": "2026-10-07"
+  },
+  {
+    "id": "INC-010",
+    "estado": "abierta",
+    "titulo": "Localidades de referencia de 2019 que no vienen del Boletín",
+    "descripcion": "En 67 UGAs la localidad de referencia de 2019 difiere del Boletín. En muchos casos el Boletín deja el campo vacío y 2019 tiene un valor (p. ej. UGA 8: \"Jacobo\"); en otros, el Boletín lista localidades distintas (p. ej. UGA 17).",
+    "fuentes": ["ePOEL 2019", "Boletín Oficial No. 12, Apéndice 10"],
+    "ugas": [],
+    "resolucion": null,
+    "pendiente": "Decidir si los valores de 2019 se muestran como dato complementario no oficial o se descartan.",
+    "registrada": "2026-10-07"
+  }
+]

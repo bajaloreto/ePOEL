@@ -1,0 +1,389 @@
+{
+  "id": "64",
+  "numero": 64,
+  "nombre": "UGA 64",
+  "superficie_ha": 1500.72,
+  "localidad_referencia": "Juncalito",
+  "poblacion": "42 habitantes (INEGI, 2005)",
+  "actividad": "Pesca, Conservación y Turismo",
+  "politica": "aprovechamiento-sustentable",
+  "politica_texto": "Aprovechamiento sustentable",
+  "conflictos_potenciales": "Uso de suelo, afectación a la biodiversidad por el aprovechamiento de fauna o flora silvestre, acceso a playa, afectación a ecosistemas frágiles, modificación de ecosistemas costeros",
+  "vegetacion_ha": [
+    {
+      "tipo": "Matorral sarcocaule",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Matorral sarcocrasicaule",
+      "hectareas": 1500.72
+    },
+    {
+      "tipo": "Mezquital",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Vegetación halófila",
+      "hectareas": 0.0
+    }
+  ],
+  "aptitud": [
+    {
+      "sector": "Conservación",
+      "nivel": "alta",
+      "valor": 1.0
+    },
+    {
+      "sector": "Pesca",
+      "nivel": "alta",
+      "valor": 1.0
+    },
+    {
+      "sector": "Turismo",
+      "nivel": "alta",
+      "valor": 1.0
+    }
+  ],
+  "areas_atencion_especial": [
+    {
+      "area": "Colindancia UGC02 POET GC",
+      "justificacion": "Concordancia con Programas de Ordenamiento ya decretados"
+    },
+    {
+      "area": "1 Campo Pesquero",
+      "justificacion": "Se requiere garantizar el acceso de los pescadores a su área de actividad, conservando la misma en óptimas condiciones"
+    },
+    {
+      "area": "Zona costera",
+      "justificacion": "Riqueza moderadamente alta de aves acuáticas y playeras"
+    },
+    {
+      "area": "6 Pozos CNA, 2 de uso Doméstico, uno de agua potable, 1 de uso agrícola y dos sin uso aparente.",
+      "justificacion": "Zona de importancia para el balance hídrico del acuífero"
+    },
+    {
+      "area": "Zona de recarga de acuífero",
+      "justificacion": ""
+    },
+    {
+      "area": "Acuífero Rosarito, La Purísima, Bahía Concepción",
+      "justificacion": ""
+    },
+    {
+      "area": "UMA Loreto",
+      "justificacion": "Zona de aprovechamiento de fauna silvestre"
+    },
+    {
+      "area": "AICA",
+      "justificacion": "Riqueza moderadamente alta de aves acuáticas"
+    },
+    {
+      "area": "Alta biodiversidad",
+      "justificacion": "y playeras"
+    },
+    {
+      "area": "Marisma",
+      "justificacion": ""
+    },
+    {
+      "area": "Colindancia Parque Nacional Bahía de Loreto",
+      "justificacion": "Colindancia con ANP"
+    }
+  ],
+  "fragilidad": {
+    "nivel": "media",
+    "nota": null
+  },
+  "vulnerabilidad": {
+    "nivel": "alta",
+    "nota": null
+  },
+  "presion": {
+    "nivel": "alta",
+    "nota": "Dentro del área del PSRDU"
+  },
+  "lineamientos": [
+    {
+      "id": "L2",
+      "similitud": 1.0,
+      "texto_en_ficha": "Preservar el ecosistema de duna y zona costera para mantener los servicios ambientales que proveen, garantizando la preservación de las especies de flora y fauna especialmente endémicas y protegidas por la NOM-059-SEMARNAT-2001"
+    },
+    {
+      "id": "L3",
+      "similitud": 1.0,
+      "texto_en_ficha": "Conservar los recursos naturales para mantener los procesos ecológicos de las zonas costeras, garantizando la preservación de las especies de flora y fauna especialmente endémicas y protegidas por la NOM-059-SEMARNAT-2001"
+    },
+    {
+      "id": "L4",
+      "similitud": 0.999,
+      "texto_en_ficha": "Conservar los recursos naturales para mantener los procesos ecológicos de los humedales, garantizando la preservación de las especies de flora y fauna especialmente endémicas o protegidas por la NOM-059-SEMARNAT-2001, y aquellas zonas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca. Se debe considerar la existencia de corredores biológicos con lo que se respeten las áreas que los contienen"
+    },
+    {
+      "id": "L6",
+      "similitud": 0.988,
+      "texto_en_ficha": "Mantener el área libre de desarrollos turísticos o asentamientos humanos de mediana o alta densidad, para garantizar la preservación de las especies de flora y fauna especialmente endémicas o protegidas por la NOM-059-SEMARNAT-2001, y la integralidad de las zonas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona. Solo se permiten los asentamientos rurales de baja densidad."
+    },
+    {
+      "id": "L7",
+      "similitud": 1.0,
+      "texto_en_ficha": "Desarrollar equilibrada y sustentablemente las actividades de acuacultura y pesca ribereña garantizando la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca."
+    },
+    {
+      "id": "L8",
+      "similitud": 0.999,
+      "texto_en_ficha": "Desarrollar equilibrada y sustentablemente las actividades de turismo alternativo garantizando la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM- 059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca."
+    },
+    {
+      "id": "L10",
+      "similitud": 0.999,
+      "texto_en_ficha": "Desarrollar equilibrada y sustentablemente las actividades de turismo garantizando la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059- SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca y las zonas de recarga y descarga natural del acuífero."
+    },
+    {
+      "id": "L11",
+      "similitud": 0.999,
+      "texto_en_ficha": "Desarrollar equilibrada y sustentablemente los proyectos de crecimiento urbano garantizando la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM- 059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca y las zonas de recarga y descarga natural del acuífero y sin poner en riesgo."
+    },
+    {
+      "id": "L13",
+      "similitud": 0.999,
+      "texto_en_ficha": "Promover la modernización de las actividades pecuarias para optimizar el uso de los recursos naturales, como el agua, y disminuir la presión sobre ellos garantizando su sustentabilidad y la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM- 059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca y las zonas de recarga y descarga natural del acuífero."
+    },
+    {
+      "id": "L14",
+      "similitud": 1.0,
+      "texto_en_ficha": "Restaurar y conservar los recursos naturales afectados en el área de influencia del ANP Parque Nacional Bahía de Loreto."
+    },
+    {
+      "id": "L15",
+      "similitud": 1.0,
+      "texto_en_ficha": "Conservar las zonas de recarga y descarga natural del acuífero así como aprovechar sustentablemente el agua de pozos, manantiales, norias, cuerpos de agua temporales y oasis a fin de garantizar la preservación de la integralidad de los acuíferos del municipio."
+    }
+  ],
+  "estrategias": [
+    "EG1",
+    "EG2",
+    "EG3",
+    "EG4",
+    "EG5",
+    "EG6",
+    "EG7",
+    "EG8",
+    "EG9",
+    "EG10",
+    "EG11",
+    "EG12",
+    "EG13",
+    "EG15",
+    "EG16",
+    "EG17"
+  ],
+  "estrategias_particulares": null,
+  "criterios": {
+    "agua": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "flora-fauna": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "manejo-ecosistemas": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "residuos": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "asentamientos-humanos-1": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14,
+      16
+    ],
+    "asentamientos-humanos-2": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "infraestructura": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "agricultura": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "construccion": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      13,
+      14,
+      16
+    ],
+    "mineria": [
+      3,
+      5,
+      6,
+      7,
+      8
+    ],
+    "pecuario": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9
+    ],
+    "pesca": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "turismo-2": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      11,
+      13,
+      14
+    ],
+    "turismo-3": [
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "mapa_ubicacion": {
+    "pagina_boletin": 379,
+    "tipo": "imagen",
+    "xref": 112253,
+    "bbox": [
+      269.9,
+      92.0,
+      514.1,
+      337.6
+    ],
+    "pixeles": [
+      745,
+      750
+    ]
+  },
+  "fuente": {
+    "documento": "Boletín Oficial del Gobierno del Estado de B.C.S. No. 12 Extraordinario, 12-mar-2014, Apéndice 10",
+    "url": "https://finanzas.bcs.gob.mx/wp-content/themes/voice/assets/images/boletines/2014/12.pdf",
+    "paginas_pdf": [
+      379,
+      381
+    ]
+  },
+  "extraccion": {
+    "metodo": "automatica (herramientas/extraer_fichas.py)",
+    "verificada": false
+  }
+}

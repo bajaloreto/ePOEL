@@ -1,0 +1,307 @@
+{
+  "id": "3b",
+  "numero": 3,
+  "nombre": "UGA 3b",
+  "superficie_ha": 92.55,
+  "localidad_referencia": "Jacobo",
+  "poblacion": "3 habitantes (INEGI, 2005)",
+  "actividad": "Pesca y Conservación",
+  "politica": "aprovechamiento-sustentable",
+  "politica_texto": "Aprovechamiento Sustentable",
+  "conflictos_potenciales": "Uso de suelo, modificación de los ecosistemas costeros",
+  "vegetacion_ha": [
+    {
+      "tipo": "Matorral sarcocaule",
+      "hectareas": 92.55
+    },
+    {
+      "tipo": "Matorral sarcocrasicaule",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Mezquital",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Vegetación halófila",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Sin vegetación aparente",
+      "hectareas": 0.0
+    }
+  ],
+  "aptitud": [
+    {
+      "sector": "Conservación",
+      "nivel": "media",
+      "valor": 0.6
+    },
+    {
+      "sector": "Pesca",
+      "nivel": "media",
+      "valor": 0.7
+    },
+    {
+      "sector": "Turismo",
+      "nivel": "media",
+      "valor": 0.5
+    }
+  ],
+  "areas_atencion_especial": [
+    {
+      "area": "Colindancia UGC03 POET GC",
+      "justificacion": "Concordancia con Programas de Ordenamiento ya decretados"
+    },
+    {
+      "area": "",
+      "justificacion": "Riqueza moderadamente alta de aves acuáticas y"
+    },
+    {
+      "area": "Zona costera",
+      "justificacion": "playeras."
+    },
+    {
+      "area": "Dunas",
+      "justificacion": ""
+    },
+    {
+      "area": "",
+      "justificacion": "Ambiente frágil"
+    },
+    {
+      "area": "Zona de recarga natural del acuífero",
+      "justificacion": "Zona de importancia para el balance hídrico del"
+    },
+    {
+      "area": "Acuífero Bahía Concepción, Rosarito",
+      "justificacion": ""
+    },
+    {
+      "area": "",
+      "justificacion": "acuífero."
+    },
+    {
+      "area": "UMA Ejido La Purísima",
+      "justificacion": "Zona de aprovechamiento de fauna silvestre"
+    },
+    {
+      "area": "",
+      "justificacion": "Alta riqueza de especies, presencia de especies"
+    },
+    {
+      "area": "Alta biodiversidad",
+      "justificacion": "prioritarias"
+    }
+  ],
+  "fragilidad": {
+    "nivel": "media",
+    "nota": null
+  },
+  "vulnerabilidad": {
+    "nivel": "alta",
+    "nota": null
+  },
+  "presion": {
+    "nivel": "media",
+    "nota": null
+  },
+  "lineamientos": [
+    {
+      "id": "L2",
+      "similitud": 1.0,
+      "texto_en_ficha": "Preservar el ecosistema de duna y zona costera para mantener los servicios ambientales que proveen, garantizando la preservación de las especies de flora y fauna especialmente endémicas y protegidas por la NOM-059-SEMARNAT-2001"
+    },
+    {
+      "id": "L3",
+      "similitud": 1.0,
+      "texto_en_ficha": "Conservar los recursos naturales para mantener los procesos ecológicos de las zonas costeras, garantizando la preservación de las especies de flora y fauna especialmente endémicas y protegidas por la NOM-059-SEMARNAT-2001"
+    },
+    {
+      "id": "L6",
+      "similitud": 0.988,
+      "texto_en_ficha": "Mantener el área libre de desarrollos turísticos o asentamientos humanos de mediana o alta densidad, para garantizar la preservación de las especies de flora y fauna especialmente endémicas o protegidas por la NOM-059-SEMARNAT-2001, y la integralidad de las zonas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona. Solo se permiten los asentamientos rurales de baja densidad."
+    },
+    {
+      "id": "L8",
+      "similitud": 0.999,
+      "texto_en_ficha": "Desarrollar equilibrada y sustentablemente las actividades de turismo alternativo garantizando la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM- 059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca."
+    },
+    {
+      "id": "L10",
+      "similitud": 0.999,
+      "texto_en_ficha": "Desarrollar equilibrada y sustentablemente las actividades de turismo garantizando la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059- SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca y las zonas de recarga y descarga natural del acuífero."
+    },
+    {
+      "id": "L13",
+      "similitud": 0.999,
+      "texto_en_ficha": "Promover la modernización de las actividades pecuarias para optimizar el uso de los recursos naturales, como el agua, y disminuir la presión sobre ellos garantizando su sustentabilidad y la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM- 059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca y las zonas de recarga y descarga natural del acuífero."
+    },
+    {
+      "id": "L15",
+      "similitud": 1.0,
+      "texto_en_ficha": "Conservar las zonas de recarga y descarga natural del acuífero así como aprovechar sustentablemente el agua de pozos, manantiales, norias, cuerpos de agua temporales y oasis a fin de garantizar la preservación de la integralidad de los acuíferos del municipio."
+    }
+  ],
+  "estrategias": [
+    "EG11",
+    "EG12",
+    "EG13",
+    "EG15",
+    "EG16",
+    "EG17"
+  ],
+  "estrategias_particulares": null,
+  "criterios": {
+    "agua": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      9,
+      10
+    ],
+    "flora-fauna": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ],
+    "manejo-ecosistemas": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      10,
+      11,
+      12,
+      13,
+      15,
+      16,
+      17
+    ],
+    "residuos": [
+      1,
+      3,
+      5,
+      6
+    ],
+    "asentamientos-humanos-1": [
+      1,
+      5,
+      6,
+      9,
+      10,
+      12,
+      14
+    ],
+    "asentamientos-humanos-2": [
+      10,
+      11,
+      12,
+      13
+    ],
+    "infraestructura": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      14
+    ],
+    "acuacultura": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "construccion": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      14,
+      16
+    ],
+    "mineria": [
+      3,
+      5,
+      6,
+      7
+    ],
+    "pecuario": [
+      5
+    ],
+    "pesca": [
+      1,
+      3,
+      4
+    ],
+    "turismo-1": [
+      1
+    ],
+    "turismo-2": [
+      2,
+      3,
+      5,
+      9,
+      11,
+      13
+    ],
+    "turismo-3": [
+      9,
+      13,
+      14,
+      15
+    ]
+  },
+  "mapa_ubicacion": {
+    "pagina_boletin": 154,
+    "tipo": "imagen",
+    "xref": 3803,
+    "bbox": [
+      267.5,
+      100.6,
+      510.5,
+      345.9
+    ],
+    "pixeles": [
+      747,
+      750
+    ]
+  },
+  "fuente": {
+    "documento": "Boletín Oficial del Gobierno del Estado de B.C.S. No. 12 Extraordinario, 12-mar-2014, Apéndice 10",
+    "url": "https://finanzas.bcs.gob.mx/wp-content/themes/voice/assets/images/boletines/2014/12.pdf",
+    "paginas_pdf": [
+      154,
+      156
+    ]
+  },
+  "extraccion": {
+    "metodo": "automatica (herramientas/extraer_fichas.py)",
+    "verificada": false
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "id": "2",
+  "numero": 2,
+  "nombre": "UGA 2",
+  "superficie_ha": 3784.15,
+  "localidad_referencia": "La Casa de Piedra, El Molino",
+  "poblacion": "3 habitantes (INEGI 2005)",
+  "actividad": "Pesca, Turismo alternativo y Conservación",
+  "politica": "aprovechamiento-sustentable",
+  "politica_texto": "Aprovechamiento sustentable",
+  "conflictos_potenciales": "Uso de zona costera",
+  "vegetacion_ha": [
+    {
+      "tipo": "Matorral sarcocaule",
+      "hectareas": 96.05
+    },
+    {
+      "tipo": "Matorral sarcocrasicaule",
+      "hectareas": 3687.65
+    },
+    {
+      "tipo": "Mezquital",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Vegetación halófila",
+      "hectareas": 0.0
+    }
+  ],
+  "aptitud": [
+    {
+      "sector": "Conservación",
+      "nivel": "media",
+      "valor": 0.5
+    },
+    {
+      "sector": "Pesca",
+      "nivel": "media",
+      "valor": 0.7
+    },
+    {
+      "sector": "Turismo",
+      "nivel": "alta",
+      "valor": 0.8
+    }
+  ],
+  "areas_atencion_especial": [
+    {
+      "area": "1 Campo pesquero",
+      "justificacion": "Se requiere garantizar el acceso de los pescadores a su área de actividad, conservando la misma en óptimas condiciones."
+    },
+    {
+      "area": "Zona costera",
+      "justificacion": "Riqueza moderadamente alta de aves acuáticas y playeras"
+    },
+    {
+      "area": "Zona de descarga natural del acuífero",
+      "justificacion": "Zona de importancia para el balance hídrico del"
+    },
+    {
+      "area": "Zona de recarga de acuífero",
+      "justificacion": "acuífero."
+    },
+    {
+      "area": "Acuífero Santo Domingo",
+      "justificacion": ""
+    },
+    {
+      "area": "UMA Ejido la Purísima",
+      "justificacion": "Zona de aprovechamiento de fauna silvestre"
+    }
+  ],
+  "fragilidad": {
+    "nivel": "media",
+    "nota": null
+  },
+  "vulnerabilidad": {
+    "nivel": "alta",
+    "nota": null
+  },
+  "presion": {
+    "nivel": "alta",
+    "nota": "Proyectos de construcción de desarrollos turísticos"
+  },
+  "lineamientos": [
+    {
+      "id": "L3",
+      "similitud": 1.0,
+      "texto_en_ficha": "Conservar los recursos naturales para mantener los procesos ecológicos de las zonas costeras, garantizando la preservación de las especies de flora y fauna especialmente endémicas y protegidas por la NOM-059-SEMARNAT-2001"
+    },
+    {
+      "id": "L7",
+      "similitud": 1.0,
+      "texto_en_ficha": "Desarrollar equilibrada y sustentablemente las actividades de acuacultura y pesca ribereña garantizando la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca."
+    },
+    {
+      "id": "L8",
+      "similitud": 0.999,
+      "texto_en_ficha": "Desarrollar equilibrada y sustentablemente las actividades de turismo alternativo garantizando la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM- 059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca."
+    },
+    {
+      "id": "L10",
+      "similitud": 0.999,
+      "texto_en_ficha": "Desarrollar equilibrada y sustentablemente las actividades de turismo garantizando la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059- SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca y las zonas de recarga y descarga natural del acuífero."
+    },
+    {
+      "id": "L13",
+      "similitud": 0.999,
+      "texto_en_ficha": "Promover la modernización de las actividades pecuarias para optimizar el uso de los recursos naturales, como el agua, y disminuir la presión sobre ellos garantizando su sustentabilidad y la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM- 059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca y las zonas de recarga y descarga natural del acuífero."
+    },
+    {
+      "id": "L15",
+      "similitud": 1.0,
+      "texto_en_ficha": "Conservar las zonas de recarga y descarga natural del acuífero así como aprovechar sustentablemente el agua de pozos, manantiales, norias, cuerpos de agua temporales y oasis a fin de garantizar la preservación de la integralidad de los acuíferos del municipio."
+    }
+  ],
+  "estrategias": [
+    "EG11",
+    "EG12",
+    "EG13",
+    "EG15",
+    "EG16",
+    "EG17"
+  ],
+  "estrategias_particulares": null,
+  "criterios": {
+    "agua": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      10
+    ],
+    "flora-fauna": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ],
+    "manejo-ecosistemas": [
+      3,
+      4,
+      5,
+      6,
+      8,
+      10,
+      11,
+      12,
+      13,
+      15,
+      16,
+      17
+    ],
+    "residuos": [
+      1,
+      3,
+      5,
+      6
+    ],
+    "asentamientos-humanos-1": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      9,
+      10,
+      12,
+      14
+    ],
+    "asentamientos-humanos-2": [
+      10,
+      11,
+      12,
+      13
+    ],
+    "infraestructura": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      14
+    ],
+    "acuacultura": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "construccion": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      13,
+      14,
+      16
+    ],
+    "mineria": [
+      3,
+      5,
+      6,
+      7
+    ],
+    "pecuario": [
+      5
+    ],
+    "pesca": [
+      1,
+      3,
+      4
+    ],
+    "turismo-2": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      13
+    ],
+    "turismo-3": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "mapa_ubicacion": {
+    "pagina_boletin": 148,
+    "tipo": "imagen",
+    "xref": 3818,
+    "bbox": [
+      282.2,
+      73.7,
+      527.5,
+      319.1
+    ],
+    "pixeles": [
+      749,
+      750
+    ]
+  },
+  "fuente": {
+    "documento": "Boletín Oficial del Gobierno del Estado de B.C.S. No. 12 Extraordinario, 12-mar-2014, Apéndice 10",
+    "url": "https://finanzas.bcs.gob.mx/wp-content/themes/voice/assets/images/boletines/2014/12.pdf",
+    "paginas_pdf": [
+      148,
+      150
+    ]
+  },
+  "extraccion": {
+    "metodo": "automatica (herramientas/extraer_fichas.py)",
+    "verificada": false
+  }
+}

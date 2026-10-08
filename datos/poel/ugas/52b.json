@@ -1,0 +1,225 @@
+{
+  "id": "52b",
+  "numero": 52,
+  "nombre": "UGA 52b",
+  "superficie_ha": 1272.35,
+  "localidad_referencia": null,
+  "poblacion": "Cero habitantes (INEGI, 2005 INEGI)",
+  "actividad": "Conservación y Turismo alternativo",
+  "politica": "conservacion",
+  "politica_texto": "Conservación",
+  "conflictos_potenciales": "Afectación a la biodiversidad por el aprovechamiento de fauna o flora silvestre",
+  "vegetacion_ha": [
+    {
+      "tipo": "Matorral sarcocaule",
+      "hectareas": 831.01
+    },
+    {
+      "tipo": "Matorral sarcocrasicaule",
+      "hectareas": 424.46
+    },
+    {
+      "tipo": "Mezquital",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Vegetación halófila",
+      "hectareas": 0.0
+    },
+    {
+      "tipo": "Sin vegetación aparente",
+      "hectareas": 0.5
+    }
+  ],
+  "aptitud": [
+    {
+      "sector": "Conservación",
+      "nivel": "alta",
+      "valor": 0.79
+    },
+    {
+      "sector": "Pesca",
+      "nivel": "baja",
+      "valor": 0.0
+    },
+    {
+      "sector": "Turismo",
+      "nivel": "alta",
+      "valor": 0.8
+    }
+  ],
+  "areas_atencion_especial": [
+    {
+      "area": "Alta biodiversidad",
+      "justificacion": "Alta riqueza de especies, presencia de especies"
+    },
+    {
+      "area": "Región Prioritaria Terrestre",
+      "justificacion": "prioritarias."
+    },
+    {
+      "area": "UMA San Javier",
+      "justificacion": "Zona de aprovechamiento de fauna silvestre"
+    },
+    {
+      "area": "Zona de recarga de acuífero",
+      "justificacion": "Zona de importancia para el balance hídrico del"
+    },
+    {
+      "area": "Acuífero Loreto",
+      "justificacion": "acuífero."
+    }
+  ],
+  "fragilidad": {
+    "nivel": "baja",
+    "nota": null
+  },
+  "vulnerabilidad": {
+    "nivel": "baja",
+    "nota": null
+  },
+  "presion": {
+    "nivel": "baja",
+    "nota": null
+  },
+  "lineamientos": [
+    {
+      "id": "L13",
+      "similitud": 0.999,
+      "texto_en_ficha": "Promover la modernización de las actividades pecuarias para optimizar el uso de los recursos naturales, como el agua, y disminuir la presión sobre ellos garantizando su sustentabilidad y la preservación de las especies de flora y fauna, especialmente endémicas o protegidas por la NOM- 059-SEMARNAT-2001, y la integralidad de los ecosistemas con alta riqueza de especies de aves acuáticas, conservando las condiciones de la zona para que esa alta riqueza de especies permanezca y las zonas de recarga y descarga natural del acuífero."
+    },
+    {
+      "id": "L15",
+      "similitud": 1.0,
+      "texto_en_ficha": "Conservar las zonas de recarga y descarga natural del acuífero así como aprovechar sustentablemente el agua de pozos, manantiales, norias, cuerpos de agua temporales y oasis a fin de garantizar la preservación de la integralidad de los acuíferos del municipio."
+    },
+    {
+      "id": "L18",
+      "similitud": 0.998,
+      "texto_en_ficha": "Promover la declaración de ANP la Sierra de la Giganta, área con ecosistemas de importancia ecológica para la conservación por los servicios ambientales que brindan, su la alta riqueza de especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059-SEMARNAT- 2001."
+    }
+  ],
+  "estrategias": [
+    "EG11",
+    "EG14",
+    "EG15"
+  ],
+  "estrategias_particulares": "Integrar 1,360.26 Ha de la superficie de la UGA como parte de la ANP la Sierra de la Giganta, misma que contiene áreas prioritarias para la conservación de ecosistemas de relevancia por los servicios ambientales que brindan, así como por su la alta riqueza de especies de flora y fauna, especialmente endémicas o protegidas por la NOM-059- SEMARNAT-2001",
+  "criterios": {
+    "agua": [
+      1,
+      2,
+      3,
+      8,
+      9,
+      10
+    ],
+    "flora-fauna": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      10,
+      11
+    ],
+    "manejo-ecosistemas": [
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      13,
+      15,
+      16,
+      17
+    ],
+    "residuos": [
+      1,
+      5
+    ],
+    "asentamientos-humanos-1": [
+      2,
+      3,
+      5,
+      6,
+      10,
+      12,
+      15
+    ],
+    "infraestructura": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      8,
+      14
+    ],
+    "construccion": [
+      11,
+      13,
+      15,
+      16
+    ],
+    "mineria": [
+      4,
+      7
+    ],
+    "pecuario": [
+      5,
+      6
+    ],
+    "turismo-1": [
+      5
+    ],
+    "turismo-2": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      11,
+      12
+    ],
+    "turismo-3": [
+      6,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "mapa_ubicacion": {
+    "pagina_boletin": 334,
+    "tipo": "imagen",
+    "xref": 3339,
+    "bbox": [
+      272.3,
+      72.4,
+      523.0,
+      318.0
+    ],
+    "pixeles": [
+      766,
+      750
+    ]
+  },
+  "fuente": {
+    "documento": "Boletín Oficial del Gobierno del Estado de B.C.S. No. 12 Extraordinario, 12-mar-2014, Apéndice 10",
+    "url": "https://finanzas.bcs.gob.mx/wp-content/themes/voice/assets/images/boletines/2014/12.pdf",
+    "paginas_pdf": [
+      334,
+      336
+    ]
+  },
+  "extraccion": {
+    "metodo": "automatica (herramientas/extraer_fichas.py)",
+    "verificada": false
+  }
+}
