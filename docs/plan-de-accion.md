@@ -38,5 +38,6 @@ Otros instrumentos (Programa de Manejo del PNBL, POEM del Golfo de California) y
 
 - [x] Skill Impeccable instalada para el proyecto (`.claude/settings.json`) y `PRODUCT.md` escrito.
 - [x] Tirada de dirección visual (seed `c3ec5e0f`): Hugo se inclina por una mezcla de "Carta topográfica INEGI" y "Manual con pestañas", conservando "¿Qué quieres hacer?".
-- [ ] Elegir dirección con las maquetas A (carta + manual), B (pase y tablero) y C (señalética) en `.impeccable/mocks/comparar.html`.
+- [x] Dirección elegida: **B · Pase y tablero** (contrato en `.impeccable/surfaces/src-pages-index-astro.md`).
+- [x] Logos de HuQuMa Studio en `recursos/marca/huquma/` (crédito de donación: pie del tablero y talón del pase).
 - [ ] Pendiente del extractor: las "áreas de atención especial" a veces parten la justificación entre renglones (p. ej. UGA 45).
